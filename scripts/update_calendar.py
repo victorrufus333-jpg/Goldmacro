@@ -108,7 +108,7 @@ def fred_events(config: dict, now: date) -> tuple[list[dict], dict]:
     params = {
         "api_key": key,
         "file_type": "json",
-        "realtime_start": f"{now.year}-01-01",
+        "realtime_start": now.isoformat(),
         "realtime_end": f"{now.year + 1}-12-31",
         "include_release_dates_with_no_data": "true",
         "limit": "1000",
