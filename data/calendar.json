@@ -1,0 +1,314 @@
+{
+  "schema_version": 1,
+  "generated_at": "2026-11-09T19:41:48.988582+00:00",
+  "events": [
+    {
+      "id": "fomc-2026-01-28",
+      "release_type": "fomc",
+      "label": "FOMC",
+      "name": "FOMC statement",
+      "date": "2026-01-28",
+      "time_et": "14:00",
+      "times": {
+        "et": "2026-01-28T14:00:00-05:00",
+        "wat": "2026-01-28T20:00:00+01:00"
+      },
+      "source": {
+        "name": "Federal Reserve FOMC calendar",
+        "url": "https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm",
+        "kind": "federal_reserve_live"
+      },
+      "raw_label": "January 27-28 2026"
+    },
+    {
+      "id": "fomc-2026-03-18",
+      "release_type": "fomc",
+      "label": "FOMC",
+      "name": "FOMC statement",
+      "date": "2026-03-18",
+      "time_et": "14:00",
+      "times": {
+        "et": "2026-03-18T14:00:00-04:00",
+        "wat": "2026-03-18T19:00:00+01:00"
+      },
+      "source": {
+        "name": "Federal Reserve FOMC calendar",
+        "url": "https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm",
+        "kind": "federal_reserve_live"
+      },
+      "raw_label": "March 17-18* 2026"
+    },
+    {
+      "id": "fomc-2026-04-29",
+      "release_type": "fomc",
+      "label": "FOMC",
+      "name": "FOMC statement",
+      "date": "2026-04-29",
+      "time_et": "14:00",
+      "times": {
+        "et": "2026-04-29T14:00:00-04:00",
+        "wat": "2026-04-29T19:00:00+01:00"
+      },
+      "source": {
+        "name": "Federal Reserve FOMC calendar",
+        "url": "https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm",
+        "kind": "federal_reserve_live"
+      },
+      "raw_label": "April 28-29 2026"
+    },
+    {
+      "id": "fomc-2026-06-17",
+      "release_type": "fomc",
+      "label": "FOMC",
+      "name": "FOMC statement",
+      "date": "2026-06-17",
+      "time_et": "14:00",
+      "times": {
+        "et": "2026-06-17T14:00:00-04:00",
+        "wat": "2026-06-17T19:00:00+01:00"
+      },
+      "source": {
+        "name": "Federal Reserve FOMC calendar",
+        "url": "https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm",
+        "kind": "federal_reserve_live"
+      },
+      "raw_label": "June 16-17* 2026"
+    },
+    {
+      "id": "fomc-2026-07-29",
+      "release_type": "fomc",
+      "label": "FOMC",
+      "name": "FOMC statement",
+      "date": "2026-07-29",
+      "time_et": "14:00",
+      "times": {
+        "et": "2026-07-29T14:00:00-04:00",
+        "wat": "2026-07-29T19:00:00+01:00"
+      },
+      "source": {
+        "name": "Federal Reserve FOMC calendar",
+        "url": "https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm",
+        "kind": "federal_reserve_live"
+      },
+      "raw_label": "July 28-29 2026"
+    },
+    {
+      "id": "fomc-2026-09-16",
+      "release_type": "fomc",
+      "label": "FOMC",
+      "name": "FOMC statement",
+      "date": "2026-09-16",
+      "time_et": "14:00",
+      "times": {
+        "et": "2026-09-16T14:00:00-04:00",
+        "wat": "2026-09-16T19:00:00+01:00"
+      },
+      "source": {
+        "name": "Federal Reserve FOMC calendar",
+        "url": "https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm",
+        "kind": "federal_reserve_live"
+      },
+      "raw_label": "September 15-16* 2026"
+    },
+    {
+      "id": "fomc-2026-10-28",
+      "release_type": "fomc",
+      "label": "FOMC",
+      "name": "FOMC statement",
+      "date": "2026-10-28",
+      "time_et": "14:00",
+      "times": {
+        "et": "2026-10-28T14:00:00-04:00",
+        "wat": "2026-10-28T19:00:00+01:00"
+      },
+      "source": {
+        "name": "Federal Reserve FOMC calendar",
+        "url": "https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm",
+        "kind": "federal_reserve_live"
+      },
+      "raw_label": "October 27-28 2026"
+    },
+    {
+      "id": "fomc-2026-12-09",
+      "release_type": "fomc",
+      "label": "FOMC",
+      "name": "FOMC statement",
+      "date": "2026-12-09",
+      "time_et": "14:00",
+      "times": {
+        "et": "2026-12-09T14:00:00-05:00",
+        "wat": "2026-12-09T20:00:00+01:00"
+      },
+      "source": {
+        "name": "Federal Reserve FOMC calendar",
+        "url": "https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm",
+        "kind": "federal_reserve_live"
+      },
+      "raw_label": "December 8-9* 2026"
+    },
+    {
+      "id": "fomc-2027-01-27",
+      "release_type": "fomc",
+      "label": "FOMC",
+      "name": "FOMC statement",
+      "date": "2027-01-27",
+      "time_et": "14:00",
+      "times": {
+        "et": "2027-01-27T14:00:00-05:00",
+        "wat": "2027-01-27T20:00:00+01:00"
+      },
+      "source": {
+        "name": "Federal Reserve FOMC calendar",
+        "url": "https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm",
+        "kind": "federal_reserve_live"
+      },
+      "raw_label": "January 26-27 2027"
+    },
+    {
+      "id": "fomc-2027-03-17",
+      "release_type": "fomc",
+      "label": "FOMC",
+      "name": "FOMC statement",
+      "date": "2027-03-17",
+      "time_et": "14:00",
+      "times": {
+        "et": "2027-03-17T14:00:00-04:00",
+        "wat": "2027-03-17T19:00:00+01:00"
+      },
+      "source": {
+        "name": "Federal Reserve FOMC calendar",
+        "url": "https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm",
+        "kind": "federal_reserve_live"
+      },
+      "raw_label": "March 16-17* 2027"
+    },
+    {
+      "id": "fomc-2027-04-28",
+      "release_type": "fomc",
+      "label": "FOMC",
+      "name": "FOMC statement",
+      "date": "2027-04-28",
+      "time_et": "14:00",
+      "times": {
+        "et": "2027-04-28T14:00:00-04:00",
+        "wat": "2027-04-28T19:00:00+01:00"
+      },
+      "source": {
+        "name": "Federal Reserve FOMC calendar",
+        "url": "https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm",
+        "kind": "federal_reserve_live"
+      },
+      "raw_label": "April 27-28 2027"
+    },
+    {
+      "id": "fomc-2027-06-09",
+      "release_type": "fomc",
+      "label": "FOMC",
+      "name": "FOMC statement",
+      "date": "2027-06-09",
+      "time_et": "14:00",
+      "times": {
+        "et": "2027-06-09T14:00:00-04:00",
+        "wat": "2027-06-09T19:00:00+01:00"
+      },
+      "source": {
+        "name": "Federal Reserve FOMC calendar",
+        "url": "https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm",
+        "kind": "federal_reserve_live"
+      },
+      "raw_label": "June 8-9* 2027"
+    },
+    {
+      "id": "fomc-2027-07-28",
+      "release_type": "fomc",
+      "label": "FOMC",
+      "name": "FOMC statement",
+      "date": "2027-07-28",
+      "time_et": "14:00",
+      "times": {
+        "et": "2027-07-28T14:00:00-04:00",
+        "wat": "2027-07-28T19:00:00+01:00"
+      },
+      "source": {
+        "name": "Federal Reserve FOMC calendar",
+        "url": "https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm",
+        "kind": "federal_reserve_live"
+      },
+      "raw_label": "July 27-28 2027"
+    },
+    {
+      "id": "fomc-2027-09-15",
+      "release_type": "fomc",
+      "label": "FOMC",
+      "name": "FOMC statement",
+      "date": "2027-09-15",
+      "time_et": "14:00",
+      "times": {
+        "et": "2027-09-15T14:00:00-04:00",
+        "wat": "2027-09-15T19:00:00+01:00"
+      },
+      "source": {
+        "name": "Federal Reserve FOMC calendar",
+        "url": "https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm",
+        "kind": "federal_reserve_live"
+      },
+      "raw_label": "September 14-15* 2027"
+    },
+    {
+      "id": "fomc-2027-10-27",
+      "release_type": "fomc",
+      "label": "FOMC",
+      "name": "FOMC statement",
+      "date": "2027-10-27",
+      "time_et": "14:00",
+      "times": {
+        "et": "2027-10-27T14:00:00-04:00",
+        "wat": "2027-10-27T19:00:00+01:00"
+      },
+      "source": {
+        "name": "Federal Reserve FOMC calendar",
+        "url": "https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm",
+        "kind": "federal_reserve_live"
+      },
+      "raw_label": "October 26-27 2027"
+    },
+    {
+      "id": "fomc-2027-12-08",
+      "release_type": "fomc",
+      "label": "FOMC",
+      "name": "FOMC statement",
+      "date": "2027-12-08",
+      "time_et": "14:00",
+      "times": {
+        "et": "2027-12-08T14:00:00-05:00",
+        "wat": "2027-12-08T20:00:00+01:00"
+      },
+      "source": {
+        "name": "Federal Reserve FOMC calendar",
+        "url": "https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm",
+        "kind": "federal_reserve_live"
+      },
+      "raw_label": "December 7-8* 2027"
+    }
+  ],
+  "source_status": {
+    "fred_releases": {
+      "name": "FRED release dates API",
+      "url": "https://api.stlouisfed.org/fred/releases/dates",
+      "state": "unavailable",
+      "last_checked": "2026-11-09T19:41:48.988582+00:00",
+      "records": 0,
+      "detail": "FRED_API_KEY is not configured. No FRED events are available.",
+      "mode": "unavailable"
+    },
+    "federal_reserve_fomc": {
+      "name": "Federal Reserve FOMC calendar",
+      "url": "https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm",
+      "state": "ok",
+      "last_checked": "2026-11-09T19:41:48.988582+00:00",
+      "records": 16,
+      "detail": "Parsed 16 meetings from the official Federal Reserve page.",
+      "mode": "live"
+    }
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "schema_version": 1,
+  "generated_at": "2026-11-09T19:41:48.988582+00:00",
+  "sources": {
+    "fred_releases": {
+      "name": "FRED release dates API",
+      "url": "https://api.stlouisfed.org/fred/releases/dates",
+      "state": "unavailable",
+      "last_checked": "2026-11-09T19:41:48.988582+00:00",
+      "records": 0,
+      "detail": "FRED_API_KEY is not configured. No FRED events are available.",
+      "mode": "unavailable"
+    },
+    "federal_reserve_fomc": {
+      "name": "Federal Reserve FOMC calendar",
+      "url": "https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm",
+      "state": "ok",
+      "last_checked": "2026-11-09T19:41:48.988582+00:00",
+      "records": 16,
+      "detail": "Parsed 16 meetings from the official Federal Reserve page.",
+      "mode": "live"
+    }
+  }
+}

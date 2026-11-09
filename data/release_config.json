@@ -1,0 +1,55 @@
+{
+  "schema_version": 1,
+  "timezones": {
+    "et": "America/New_York",
+    "wat": "Africa/Lagos"
+  },
+  "sources": {
+    "fred_releases": {
+      "name": "FRED release dates API",
+      "url": "https://api.stlouisfed.org/fred/releases/dates",
+      "documentation_url": "https://fred.stlouisfed.org/docs/api/fred/releases_dates.html"
+    },
+    "federal_reserve_fomc": {
+      "name": "Federal Reserve FOMC calendar",
+      "url": "https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm"
+    }
+  },
+  "releases": [
+    {
+      "id": "nfp",
+      "label": "NFP",
+      "name": "Employment Situation",
+      "source_key": "fred_releases",
+      "fred_release_id": 50,
+      "release_time_et": "08:30",
+      "verification_note": "Verified against the official FRED releases list; no series ID is used in Phase 1."
+    },
+    {
+      "id": "cpi",
+      "label": "CPI",
+      "name": "Consumer Price Index",
+      "source_key": "fred_releases",
+      "fred_release_id": 10,
+      "release_time_et": "08:30",
+      "verification_note": "Verified against the official FRED releases list; no series ID is used in Phase 1."
+    },
+    {
+      "id": "ppi",
+      "label": "PPI",
+      "name": "Producer Price Index",
+      "source_key": "fred_releases",
+      "fred_release_id": 46,
+      "release_time_et": "08:30",
+      "verification_note": "Verified against the official FRED releases list; no series ID is used in Phase 1."
+    },
+    {
+      "id": "fomc",
+      "label": "FOMC",
+      "name": "FOMC statement",
+      "source_key": "federal_reserve_fomc",
+      "release_time_et": "14:00",
+      "verification_note": "The Federal Reserve calendar publishes meeting ranges; the statement date is modeled as the second meeting day at 2:00 PM ET."
+    }
+  ]
+}

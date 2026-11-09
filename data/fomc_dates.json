@@ -1,0 +1,25 @@
+{
+  "schema_version": 1,
+  "source_name": "Federal Reserve FOMC calendar",
+  "source_url": "https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm",
+  "source_updated": "2026-10-28",
+  "notes": "Fallback only. Dates are the second day of each published two-day meeting, when the statement is scheduled for 2:00 PM ET. Verify against the official page before editing.",
+  "dates": [
+    {"date": "2026-01-28", "time_et": "14:00", "label": "January 27-28, 2026 FOMC statement", "source_url": "https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm"},
+    {"date": "2026-03-18", "time_et": "14:00", "label": "March 17-18, 2026 FOMC statement", "source_url": "https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm"},
+    {"date": "2026-04-29", "time_et": "14:00", "label": "April 28-29, 2026 FOMC statement", "source_url": "https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm"},
+    {"date": "2026-06-17", "time_et": "14:00", "label": "June 16-17, 2026 FOMC statement", "source_url": "https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm"},
+    {"date": "2026-07-29", "time_et": "14:00", "label": "July 28-29, 2026 FOMC statement", "source_url": "https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm"},
+    {"date": "2026-09-16", "time_et": "14:00", "label": "September 15-16, 2026 FOMC statement", "source_url": "https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm"},
+    {"date": "2026-10-28", "time_et": "14:00", "label": "October 27-28, 2026 FOMC statement", "source_url": "https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm"},
+    {"date": "2026-12-09", "time_et": "14:00", "label": "December 8-9, 2026 FOMC statement", "source_url": "https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm"},
+    {"date": "2027-01-27", "time_et": "14:00", "label": "January 26-27, 2027 FOMC statement", "source_url": "https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm"},
+    {"date": "2027-03-17", "time_et": "14:00", "label": "March 16-17, 2027 FOMC statement", "source_url": "https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm"},
+    {"date": "2027-04-28", "time_et": "14:00", "label": "April 27-28, 2027 FOMC statement", "source_url": "https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm"},
+    {"date": "2027-06-09", "time_et": "14:00", "label": "June 8-9, 2027 FOMC statement", "source_url": "https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm"},
+    {"date": "2027-07-28", "time_et": "14:00", "label": "July 27-28, 2027 FOMC statement", "source_url": "https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm"},
+    {"date": "2027-09-15", "time_et": "14:00", "label": "September 14-15, 2027 FOMC statement", "source_url": "https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm"},
+    {"date": "2027-10-27", "time_et": "14:00", "label": "October 26-27, 2027 FOMC statement", "source_url": "https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm"},
+    {"date": "2027-12-08", "time_et": "14:00", "label": "December 7-8, 2027 FOMC statement", "source_url": "https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm"}
+  ]
+}
