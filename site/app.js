@@ -26,6 +26,9 @@ const app = document.querySelector("#app");
 let calendar = { events: [], source_status: {}, generated_at: null };
 let status = { sources: {}, generated_at: null };
 let signals = { records: [], summary: {} };
+let reactionHistory = { records: [] };
+let trackRecord = { records: [], summary: {} };
+let chainedCases = { records: [], summary: {} };
 let countdownTimer;
 
 function esc(value) {
@@ -66,6 +69,7 @@ function nav(view) {
   return `<nav class="nav" aria-label="Primary navigation">
     ${pageLink("home", "Overview")}
     ${pageLink("calendar", "Calendar")}
+    ${pageLink("track", "Track Record")}
     ${pageLink("status", "Status")}
   </nav>`;
 }
@@ -129,7 +133,7 @@ function eventRow(event, compact = false) {
   const signal = signalFor(event);
   return `<article class="event-row ${compact ? "compact" : ""}">
     <div class="event-date"><span>${esc(formatDate(event.times?.et || event.date, "America/New_York"))}</span><small>${esc(event.date)}</small></div>
-    <div class="event-name"><span class="event-label">${esc(event.label)}</span><strong>${esc(event.name)}</strong><small>${esc(event.raw_label || "Verified release date")}</small></div>
+    <div class="event-name"><span class="event-label">${esc(event.label)}</span><strong><a class="event-detail-link" href="./?view=release&id=${encodeURIComponent(event.id)}" data-view="release" data-release-id="${esc(event.id)}">${esc(event.name)}</a></strong><small>${esc(event.raw_label || "Verified release date")}</small></div>
     <div class="event-time"><span>ET ${esc(formatTime(event.times?.et, "America/New_York"))}</span><span>WAT ${esc(formatTime(event.times?.wat, "Africa/Lagos"))}</span></div>
     <div class="event-source">${sourceBadge(sourceKey, state)}${signal ? `<span class="signal-pill ${signalClass(signal)}">${esc(signal.signal)}</span><small class="signal-state">${esc(signal.lock_state.replaceAll("_", " "))}</small>` : ""}<a href="${esc(event.source?.url || SOURCE_URLS[sourceKey])}" target="_blank" rel="noreferrer">source ↗</a></div>
   </article>`;
@@ -164,18 +168,63 @@ function statusView() {
   }).join("")}</div><section class="method-note"><span class="notice-mark">/ /</span><div><p class="eyebrow">HONESTY CHECK</p><h2>Missing data stays missing.</h2><p>Every vote carries its FRED vintage and observation date. A stale, missing, conflicting, or underpowered score becomes UNSURE. Historical reconstructions are labeled separately from live pre-release locks.</p></div></section>`;
 }
 
+function eventById(id) {
+  return (calendar.events || []).find((item) => item.id === id);
+}
+
+function signalById(id) {
+  return (signals.records || []).find((item) => item.event_id === id);
+}
+
+function historyById(id) {
+  return (reactionHistory.records || []).find((item) => item.event_id === id);
+}
+
+function currentReleaseId() {
+  const queryId = new URLSearchParams(window.location.search).get("id");
+  if (queryId) return queryId;
+  const match = window.location.pathname.match(/\/release\/([^/]+)/);
+  return match ? decodeURIComponent(match[1]) : null;
+}
+
+function releaseDetailView() {
+  const id = currentReleaseId();
+  const event = eventById(id);
+  const signal = signalById(id);
+  const historical = historyById(id);
+  const record = (trackRecord.records || []).find((item) => item.event_id === id);
+  const title = event?.name || signal?.release_name || historical?.release_name || "Release detail";
+  const label = event?.label || signal?.release_label || historical?.release_label || "RELEASE";
+  const indicators = signal?.leading_indicators || historical?.leading_indicators || [];
+  const reaction = historical?.price_reaction || record?.reaction;
+  const context = signal?.historical_context || historical?.historical_context || record?.historical_context_at_lock;
+  const badge = signal ? `<span class="signal-pill ${signalClass(signal)}">${esc(signal.signal)}</span>` : record ? `<span class="signal-pill ${signalClass(record)}">${esc(record.signal)}</span>` : `<span class="signal-pill unsure">UNSURE</span>`;
+  return `${nav("release")}<section class="page-heading"><p class="eyebrow">RELEASE DETAIL / ${esc(label)}</p><h1>${esc(title)}</h1><p>${event ? `${esc(formatDate(event.times?.et || event.date, "America/New_York"))} · ${esc(formatTime(event.times?.et, "America/New_York"))} ET · ${esc(formatTime(event.times?.wat, "Africa/Lagos"))} WAT` : "No verified calendar record is available for this ID."}</p></section>
+    <section class="detail-grid"><article class="detail-card"><div class="detail-card-top"><span class="eyebrow">SIGNAL STATE</span>${badge}</div><h2>${esc(signal?.lock_state?.replaceAll("_", " ") || record?.grade || historical?.signal_state || "Not recorded")}</h2><p>${esc(signal?.reason || record?.grade_reason || historical?.signal_reason || "This release has no live locked record.")}</p><dl><div><dt>SCORE</dt><dd>${esc(signal?.model_score ?? record?.model_score ?? historical?.model_score ?? "—")}</dd></div><div><dt>VINTAGE</dt><dd>${esc(signal?.data_vintage || record?.data_vintage || historical?.signal_data_vintage || "—")}</dd></div><div><dt>HISTORICAL N</dt><dd>${esc(context?.N ?? "—")}</dd></div><div><dt>WIN RATE</dt><dd>${context?.win_rate == null ? "—" : `${Number(context.win_rate).toFixed(1)}%`}</dd></div></dl></article><article class="detail-card"><div class="detail-card-top"><span class="eyebrow">POST-RELEASE REACTION</span><span class="status-count">${esc(reaction?.measure || "not graded")}</span></div><h2>${esc(record?.grade || historical?.grade || "UNSURE-skipped")}</h2><p>${reaction ? `Direction ${esc(reaction.direction || "—")} · return ${reaction.return_pct == null ? "—" : `${Number(reaction.return_pct).toFixed(3)}%`}` : "A reaction is only added after the release and a usable gold observation."}</p><a class="source-link" href="./?view=track">Open immutable track record ↗</a></article></section>
+    <section class="section-block detail-section"><div class="section-heading"><div><p class="eyebrow">INDICATOR EVIDENCE</p><h2>Votes at the cutoff</h2></div><span class="status-count">${esc(signal?.data_vintage || historical?.signal_data_vintage || "No vintage")}</span></div><div class="indicator-list">${indicators.map((item) => `<article class="indicator-row"><div><strong>${esc(item.series_id)}</strong><span>${esc(item.label || "Indicator")}</span></div><div><span class="indicator-value">${item.value == null ? "—" : esc(item.value)}</span><small>${esc(item.vote_label || item.status || "unavailable")} · ${esc(item.observation_date || "no observation")}</small></div></article>`).join("") || `<div class="empty-panel">No indicator votes are recorded for this release.</div>`}</div></section>`;
+}
+
+function trackRecordView() {
+  const summary = trackRecord.summary || {};
+  const records = trackRecord.records || [];
+  const chainSummary = chainedCases.summary || {};
+  return `${nav("track")}<section class="page-heading"><p class="eyebrow">PUBLIC LEDGER / APPEND-ONLY</p><h1>Track record</h1><p>Only signals captured during a live pre-release lock can enter this ledger. Historical reconstructions remain separate research data.</p></section><section class="metric-grid"><div class="metric-card"><span>WIN RATE</span><strong>${summary.win_rate == null ? "—" : `${Number(summary.win_rate).toFixed(1)}%`}</strong><small>N ${esc(summary.N || 0)}</small></div><div class="metric-card"><span>WINS</span><strong>${esc(summary.wins || 0)}</strong><small>Directional cases</small></div><div class="metric-card"><span>LOSSES</span><strong>${esc(summary.losses || 0)}</strong><small>Directional cases</small></div><div class="metric-card"><span>SKIPPED</span><strong>${esc(summary.skipped || 0)}</strong><small>UNSURE / no reaction</small></div></section><section class="section-block"><div class="section-heading"><div><p class="eyebrow">IMMUTABLE RECORDS</p><h2>Locked calls</h2></div><span class="status-count">${records.length} records</span></div>${records.length ? `<div class="event-list">${records.map((item) => `<article class="event-row compact"><div class="event-date"><span>${esc(item.release_date)}</span><small>${esc(item.release_type)}</small></div><div class="event-name"><strong><a class="event-detail-link" href="./?view=release&id=${encodeURIComponent(item.event_id)}" data-view="release" data-release-id="${esc(item.event_id)}">${esc(item.release_name || item.event_id)}</a></strong><small>${esc(item.signal)} · locked ${esc(item.locked_at || "—")}</small></div><div class="event-time"><span>${esc(item.grade)}</span><span>${item.reaction?.return_pct == null ? "—" : `${Number(item.reaction.return_pct).toFixed(3)}%`}</span></div><div class="event-source"><span class="signal-pill ${item.grade === "WIN" ? "buy" : item.grade === "LOSS" ? "sell" : "unsure"}">${esc(item.grade)}</span></div></article>`).join("")}</div>` : `<div class="empty-panel">No live signal has completed the full lock-and-reaction cycle yet. This is an honest empty ledger, not a reconstructed backtest.</div>`}</section><section class="section-block"><div class="section-heading"><div><p class="eyebrow">CHAINED CASES</p><h2>Separate chain statistics</h2></div><span class="status-count">N ${esc(chainSummary.N || 0)}</span></div><p class="detail-copy">A chain pairs consecutive immutable locked records within the configured gap. It is directional only when both component records have WIN or LOSS grades; UNSURE-skipped cases remain visible.</p></section>`;
+}
+
 function getView() {
   const query = new URLSearchParams(window.location.search).get("view");
-  if (query && ["home", "calendar", "status"].includes(query)) return query;
+  if (query && ["home", "calendar", "status", "track", "release"].includes(query)) return query;
   const path = window.location.pathname.replace(/\/+$/, "");
   if (path.endsWith("/calendar")) return "calendar";
   if (path.endsWith("/status")) return "status";
+  if (path.endsWith("/track-record")) return "track";
+  if (path.includes("/release/")) return "release";
   return "home";
 }
 
 function render() {
   const view = getView();
-  app.innerHTML = view === "calendar" ? calendarView() : view === "status" ? statusView() : homeView();
+  app.innerHTML = view === "calendar" ? calendarView() : view === "status" ? statusView() : view === "track" ? trackRecordView() : view === "release" ? releaseDetailView() : homeView();
   document.querySelectorAll("[data-view]").forEach((link) => {
     link.classList.toggle("active", link.dataset.view === view);
     link.addEventListener("click", (event) => {
@@ -197,15 +246,21 @@ function render() {
 
 async function loadData() {
   try {
-    const [calendarResponse, statusResponse, signalsResponse] = await Promise.all([fetch("./data/calendar.json", { cache: "no-store" }), fetch("./data/status.json", { cache: "no-store" }), fetch("./data/signals.json", { cache: "no-store" })]);
+    const [calendarResponse, statusResponse, signalsResponse, historyResponse, trackResponse, chainsResponse] = await Promise.all([fetch("./data/calendar.json", { cache: "no-store" }), fetch("./data/status.json", { cache: "no-store" }), fetch("./data/signals.json", { cache: "no-store" }), fetch("./data/historical_reactions.json", { cache: "no-store" }), fetch("./data/track_record.json", { cache: "no-store" }), fetch("./data/chained_cases.json", { cache: "no-store" })]);
     if (!calendarResponse.ok || !statusResponse.ok) throw new Error("generated JSON is not available");
     calendar = await calendarResponse.json();
     status = await statusResponse.json();
     signals = signalsResponse.ok ? await signalsResponse.json() : { records: [], summary: {} };
+    reactionHistory = historyResponse.ok ? await historyResponse.json() : { records: [] };
+    trackRecord = trackResponse.ok ? await trackResponse.json() : { records: [], summary: {} };
+    chainedCases = chainsResponse.ok ? await chainsResponse.json() : { records: [], summary: {} };
   } catch (error) {
     calendar = { events: [], source_status: {}, generated_at: null };
     status = { sources: {}, generated_at: null, load_error: error.message };
     signals = { records: [], summary: {} };
+    reactionHistory = { records: [] };
+    trackRecord = { records: [], summary: {} };
+    chainedCases = { records: [], summary: {} };
   }
   render();
 }

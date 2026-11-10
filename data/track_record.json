@@ -1,0 +1,8 @@
+{
+  "schema_version": 1,
+  "append_only": true,
+  "policy": "Existing records are never rewritten. New records are appended only after a live locked_pre_release snapshot has a post-release reaction.",
+  "generated_at": null,
+  "summary": {"N": 0, "wins": 0, "losses": 0, "skipped": 0, "win_rate": null, "by_release_type": {}},
+  "records": []
+}

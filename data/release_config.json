@@ -98,6 +98,16 @@
       ]
     }
   },
+  "track_record": {
+    "eligibility": "Only signals captured while locked_pre_release are eligible for the immutable public record; historical_reconstruction records remain research-only.",
+    "append_only": true,
+    "unsure_policy": "UNSURE-skipped is retained and excluded from directional win-rate N."
+  },
+  "chaining": {
+    "max_gap_days": 45,
+    "pairing": "Chronological consecutive immutable locked records within the configured gap.",
+    "chain_win_definition": "A chain is directional only when both component records are WIN or LOSS; the current record determines the chain result."
+  },
   "releases": [
     {
       "id": "nfp",

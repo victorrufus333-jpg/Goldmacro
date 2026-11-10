@@ -1,0 +1,53 @@
+name: Capture locked pre-release signal
+
+on:
+  schedule:
+    # Covers the 60-minute lock for 08:30 ET BLS releases and 14:00 ET FOMC releases across DST.
+    - cron: "35 11 * * *"
+    - cron: "35 12 * * *"
+    - cron: "05 17 * * *"
+    - cron: "05 18 * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  capture:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Build current candidate and capture only a live lock
+        env:
+          FRED_API_KEY: ${{ secrets.FRED_API_KEY }}
+        run: |
+          before=$(python3 -c 'import json; print(len(json.load(open("data/locked_signals.json"))["records"]))')
+          python3 scripts/build_signals.py
+          python3 scripts/capture_locked_signals.py
+          after=$(python3 -c 'import json; print(len(json.load(open("data/locked_signals.json"))["records"]))')
+          if [ "$before" = "$after" ]; then
+            # Do not create noisy commits from refreshed timestamps when no lock was captured.
+            git checkout -- data/signals.json data/historical_reactions.json data/status.json
+          else
+            python3 scripts/update_track_record.py
+            python3 scripts/build_chains.py
+          fi
+
+      - name: Commit a new locked snapshot
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data/signals.json data/status.json data/historical_reactions.json data/locked_signals.json data/track_record.json data/chained_cases.json
+          if git diff --cached --quiet; then
+            echo "No new locked signal captured."
+          else
+            git commit -m "chore: capture locked macro signal"
+            git push
+          fi

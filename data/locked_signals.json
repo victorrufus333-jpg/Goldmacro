@@ -1,0 +1,8 @@
+{
+  "schema_version": 1,
+  "append_only": true,
+  "eligibility": "Only live locked_pre_release snapshots are included; historical reconstructions are excluded.",
+  "generated_at": null,
+  "summary": {"records": 0},
+  "records": []
+}

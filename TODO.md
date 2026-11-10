@@ -39,5 +39,14 @@
 - [x] Historical records receive a model score, leading-indicator vote details, signal state, sample size `N` inputs, and a clear revised-data/consensus limitation; no point-in-time claim is made without a vintage.
 - [x] Upcoming events expose a candidate signal before the lock, lock the signal during the final 60 minutes before release, and stop updating it after release.
 - [x] Historical grading, win rate, and `N` are joined to the reaction labels; UNSURE-skipped cases are not counted as losses.
-- [ ] Full website pages, immutable pre-release signal track record, automatic grading, and hourly release-day automation.
-- [ ] Release chaining with separate chained-case win rates.
+- [ ] Methodology page, release-detail archive filters, and production deployment/publish integration.
+- [x] Release chaining with separate chained-case win rates.
+
+## Phase 4 — public ledger and release detail
+
+- [x] Release Detail is available for calendar and signal records and shows the signal state, score, vintage cutoff, indicator evidence, reaction, and historical N/win-rate context.
+- [x] Only a live `locked_pre_release` snapshot is eligible for the public append-only ledger; historical reconstructions are excluded.
+- [x] Existing locked snapshots and track-record entries are never rewritten; new entries are appended only after a post-release reaction is available.
+- [x] Automatic post-release grading records WIN, LOSS, or UNSURE-skipped and excludes skipped cases from directional N.
+- [x] Consecutive immutable records within 45 days are calculated separately as chained cases with their own N and win rate.
+- [x] The phone-triggerable GitHub workflows refresh daily data and run dedicated lock-window captures across New York daylight-saving schedules.

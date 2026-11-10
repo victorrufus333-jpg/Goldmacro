@@ -1,0 +1,8 @@
+{
+  "schema_version": 1,
+  "append_only_source": "track_record.json",
+  "max_gap_days": 45,
+  "generated_at": null,
+  "summary": {"N": 0, "wins": 0, "losses": 0, "skipped": 0, "win_rate": null, "by_transition": {}},
+  "records": []
+}

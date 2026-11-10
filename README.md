@@ -16,6 +16,8 @@ Phase 3 verifies and retrieves FRED indicator series with vintage dates. It calc
 
 Phase 3 also records a research-only grade against the measured `GC=F` reaction. `N` counts only BUY/SELL cases with a non-flat reaction; UNSURE-skipped cases are shown separately and are not treated as losses. The generated signal file is `data/signals.json`; the Phase 3 source and scoring limitations are in `DEVIATIONS_PHASE3.md`.
 
+Phase 4 adds **Track Record** and **Release Detail** views. Only a signal captured while `locked_pre_release` can enter `data/locked_signals.json`; existing snapshots are never rewritten. After a completed release has a usable reaction, `scripts/update_track_record.py` appends a WIN, LOSS, or UNSURE-skipped record to `data/track_record.json`. `data/chained_cases.json` keeps separate statistics for consecutive immutable records within the configured 45-day gap.
+
 ## Owner setup from a phone
 
 1. Open the repository on GitHub in the GitHub mobile app or your phone browser.
@@ -37,6 +39,9 @@ python3 scripts/update_calendar.py
 python3 -m pip install -r requirements.txt
 python3 scripts/build_historical.py
 python3 scripts/build_signals.py
+python3 scripts/capture_locked_signals.py
+python3 scripts/update_track_record.py
+python3 scripts/build_chains.py
 python3 scripts/build_static.py
 python3 -m http.server 3000 --directory dist
 ```
@@ -45,7 +50,7 @@ A missing `FRED_API_KEY` is expected on a fresh checkout. In that case the pipel
 
 ## Current phase boundary
 
-Phase 3 provides indicator votes, candidate/lock state, research grading, N, and win-rate context. Full immutable public track record, automatic post-release grading, release chaining, and the final Methodology/Track Record pages remain later-phase work. `GC=F` remains a gold-futures proxy, not spot XAUUSD.
+Phase 4 provides the immutable public-ledger mechanics, release details, automatic lock-window capture, post-release grading, and separate chain statistics. The ledger starts empty until a real signal passes through the live lock window; historical reconstructions are never backfilled into it. `GC=F` remains a gold-futures proxy, not spot XAUUSD.
 
 ## Disclaimer
 
