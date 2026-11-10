@@ -143,10 +143,10 @@ def strip_tags(value: str) -> str:
     return re.sub(r"<[^>]+>", " ", unescape(value)).strip()
 
 
-def live_fomc_events(config: dict, now: date) -> tuple[list[dict], dict]:
+def live_fomc_events(config: dict, now: date, years: set[int] | None = None) -> tuple[list[dict], dict]:
     source = config["sources"]["federal_reserve_fomc"]
     html = fetch_bytes(source["url"]).decode("utf-8", "replace")
-    years = {now.year, now.year + 1}
+    years = years or {now.year, now.year + 1}
     block_pattern = re.compile(
         r'<div class="panel panel-default">\s*<div class="panel-heading"><h4><a[^>]*>\s*(20\d{2}) FOMC Meetings\s*</a></h4></div>(.*?)(?=<div class="panel panel-default">|\Z)',
         re.S,
@@ -261,10 +261,13 @@ def main() -> int:
         "events": merged_events,
         "source_status": source_status,
     }
+    prior_status = read_json(STATUS_PATH, {})
+    prior_sources = prior_status.get("sources") if isinstance(prior_status, dict) else {}
+    retained_sources = {key: value for key, value in prior_sources.items() if key not in {"fred_releases", "federal_reserve_fomc"}} if isinstance(prior_sources, dict) else {}
     status = {
         "schema_version": 1,
         "generated_at": checked_at,
-        "sources": source_status,
+        "sources": {**retained_sources, **source_status},
     }
     write_json_atomic(CALENDAR_PATH, calendar)
     write_json_atomic(STATUS_PATH, status)

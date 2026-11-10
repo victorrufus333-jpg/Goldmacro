@@ -2,10 +2,20 @@ const RELEASE_ORDER = ["nfp", "cpi", "ppi", "fomc"];
 const SOURCE_LABELS = {
   fred_releases: "FRED API",
   federal_reserve_fomc: "Federal Reserve",
+  fred_history: "FRED history",
+  fomc_history: "Fed history",
+  gold_price_hourly: "Yahoo hourly",
+  gold_price_daily: "Yahoo daily",
+  historical_reactions: "Reaction database",
 };
 const SOURCE_URLS = {
   fred_releases: "https://api.stlouisfed.org/fred/releases/dates",
   federal_reserve_fomc: "https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm",
+  fred_history: "https://api.stlouisfed.org/fred/releases/dates",
+  fomc_history: "https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm",
+  gold_price_hourly: "https://finance.yahoo.com/quote/GC=F/history",
+  gold_price_daily: "https://finance.yahoo.com/quote/GC=F/history",
+  historical_reactions: "./data/historical_reactions.json",
 };
 
 const app = document.querySelector("#app");
@@ -124,7 +134,7 @@ function calendarView() {
 }
 
 function statusView() {
-  const sourceKeys = ["fred_releases", "federal_reserve_fomc"];
+  const sourceKeys = ["fred_releases", "federal_reserve_fomc", "fred_history", "fomc_history", "gold_price_hourly", "gold_price_daily", "historical_reactions"];
   return `${nav("status")}<section class="page-heading"><p class="eyebrow">DATA PROVENANCE</p><h1>Status</h1><p>Health is reported per source. Stale means the last known data was kept after a failed refresh; unavailable means no verified records exist.</p></section><div class="status-grid">${sourceKeys.map((key) => {
     const item = status.sources?.[key] || { name: SOURCE_LABELS[key], state: "unavailable", detail: "No status has been recorded yet.", records: 0 };
     const sourceUrl = item.url || SOURCE_URLS[key];

@@ -15,6 +15,23 @@
       "url": "https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm"
     }
   },
+  "history": {
+    "start_date": "2026-01-01",
+    "max_fred_pages": 20,
+    "fred_page_size": 1000,
+    "notes": "Phase 2 starts with the current calendar year to keep the free FRED API pull bounded. Extend only by changing this file and rerunning the same pipeline."
+  },
+  "gold_price": {
+    "provider": "Yahoo Finance via yfinance",
+    "symbol": "GC=F",
+    "instrument_label": "COMEX gold futures front-month proxy; not spot XAUUSD",
+    "source_url": "https://finance.yahoo.com/quote/GC=F/history",
+    "hourly_interval": "1h",
+    "daily_interval": "1d",
+    "hourly_history_limit_days": 730,
+    "adjustment": "unadjusted OHLC close",
+    "notes": "XAUUSD=X was checked and returned no Yahoo Finance price data in this run, so GC=F is used only as a clearly labeled free gold-price proxy."
+  },
   "releases": [
     {
       "id": "nfp",

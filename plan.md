@@ -68,3 +68,11 @@ The implementation uses only standard-library Python for the refresh and static 
 4. Validate JSON, route manifest, refresh behavior, stale-data preservation, and static build output.
 5. Commit the Phase 1 source and generated data to canonical `main` after fetching and integrating the current remote tip.
 6. Publish only when explicitly requested; the current approved Phase 1 work is saved as a checkpoint but not silently published.
+
+## Phase 2 extension
+
+Phase 2 adds `scripts/build_historical.py`, a single configurable pipeline that loops through every release in `data/release_config.json`. It collects historical FRED release dates for NFP, CPI, and PPI with pagination, collects the same-year FOMC dates from the Federal Reserve page, downloads Yahoo Finance `GC=F` gold futures proxy prices through pinned `yfinance`, and records the post-release reaction for each event.
+
+The primary reaction is hourly when Yahoo provides both a last hourly observation before the release and the first observation at or after 60 minutes after the release. Older or incomplete hourly history falls back to daily close-to-close from the previous trading day to the release day. The record stores the actual observation timestamps, the measure used, the symbol, interval, retrieval time, and adjustment basis. It never calls the proxy spot XAUUSD and never mixes hourly and daily measures silently.
+
+Phase 2 intentionally leaves `leading_indicators` and `model_score` null with an explicit Phase 3 note. It builds the historical reaction database only; it does not generate a BUY, SELL, or UNSURE signal yet.

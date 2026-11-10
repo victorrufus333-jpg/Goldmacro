@@ -29,7 +29,11 @@
 
 ## Phase 2 and later — intentionally open
 
-- [ ] Historical gold reaction database for all four releases through one configurable pipeline.
+- [x] Historical gold reaction database for all four releases through one configurable pipeline driven by `data/release_config.json`; adding a release must not require a code-path fork.
+- [x] Each historical record stores release date, leading-indicator placeholder state, model-score placeholder state, and what gold did afterward without inventing unavailable values.
+- [x] Gold reaction uses free Yahoo Finance data with the source, symbol, retrieval time, interval, adjustment basis, and history limitations recorded.
+- [x] Primary reaction is the move from the last price before release to the price 60 minutes later when hourly data is available; otherwise the record explicitly uses daily close-to-close on release day as the fallback, without mixing measures silently.
+- [x] The Phase 2 Status page shows history-source health and the reaction database state.
 - [ ] Indicator votes, signal engine, thresholds, historical win rate, N, UNSURE logic, and one-hour locking.
 - [ ] Full website pages, immutable pre-release signal track record, automatic grading, and hourly release-day automation.
 - [ ] Release chaining with separate chained-case win rates.
