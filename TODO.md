@@ -50,3 +50,10 @@
 - [x] Automatic post-release grading records WIN, LOSS, or UNSURE-skipped and excludes skipped cases from directional N.
 - [x] Consecutive immutable records within 45 days are calculated separately as chained cases with their own N and win rate.
 - [x] The phone-triggerable GitHub workflows refresh daily data and run dedicated lock-window captures across New York daylight-saving schedules.
+
+## Final hardening
+
+- [x] Methodology page documents calendar timing, vote thresholds, UNSURE rules, lock behavior, reaction measurement, N, win rate, and source limitations.
+- [x] Track Record filters distinguish all, NFP, CPI, PPI, and FOMC and separate immutable live records from reconstructed research records.
+- [x] Static route manifest includes Home, Calendar, Track Record, Release Detail, Methodology, and Status.
+- [ ] Connect the canonical repository to a user-owned GitHub Pages, Netlify, or Cloudflare Pages destination and confirm the production URL.

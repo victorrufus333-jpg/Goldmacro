@@ -31,7 +31,7 @@ def main() -> None:
 
     # Static hosts can resolve these logical views without server-side routing.
     index = DIST / "index.html"
-    for view in ("calendar", "track-record", "status"):
+    for view in ("calendar", "track-record", "methodology", "status"):
         target = DIST / view / "index.html"
         target.parent.mkdir(parents=True, exist_ok=True)
         shutil.copy2(index, target)
@@ -42,6 +42,7 @@ def main() -> None:
             {"path": "/calendar", "title": "Macro Calendar"},
             {"path": "/track-record", "title": "Immutable Track Record"},
             {"path": "/release/:id", "title": "Release Detail"},
+            {"path": "/methodology", "title": "Methodology"},
             {"path": "/status", "title": "Source Status"},
         ]
     }

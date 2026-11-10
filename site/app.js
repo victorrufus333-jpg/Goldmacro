@@ -70,6 +70,7 @@ function nav(view) {
     ${pageLink("home", "Overview")}
     ${pageLink("calendar", "Calendar")}
     ${pageLink("track", "Track Record")}
+    ${pageLink("methodology", "Methodology")}
     ${pageLink("status", "Status")}
   </nav>`;
 }
@@ -211,26 +212,49 @@ function trackRecordView() {
   return `${nav("track")}<section class="page-heading"><p class="eyebrow">PUBLIC LEDGER / APPEND-ONLY</p><h1>Track record</h1><p>Only signals captured during a live pre-release lock can enter this ledger. Historical reconstructions remain separate research data.</p></section><section class="metric-grid"><div class="metric-card"><span>WIN RATE</span><strong>${summary.win_rate == null ? "—" : `${Number(summary.win_rate).toFixed(1)}%`}</strong><small>N ${esc(summary.N || 0)}</small></div><div class="metric-card"><span>WINS</span><strong>${esc(summary.wins || 0)}</strong><small>Directional cases</small></div><div class="metric-card"><span>LOSSES</span><strong>${esc(summary.losses || 0)}</strong><small>Directional cases</small></div><div class="metric-card"><span>SKIPPED</span><strong>${esc(summary.skipped || 0)}</strong><small>UNSURE / no reaction</small></div></section><section class="section-block"><div class="section-heading"><div><p class="eyebrow">IMMUTABLE RECORDS</p><h2>Locked calls</h2></div><span class="status-count">${records.length} records</span></div>${records.length ? `<div class="event-list">${records.map((item) => `<article class="event-row compact"><div class="event-date"><span>${esc(item.release_date)}</span><small>${esc(item.release_type)}</small></div><div class="event-name"><strong><a class="event-detail-link" href="./?view=release&id=${encodeURIComponent(item.event_id)}" data-view="release" data-release-id="${esc(item.event_id)}">${esc(item.release_name || item.event_id)}</a></strong><small>${esc(item.signal)} · locked ${esc(item.locked_at || "—")}</small></div><div class="event-time"><span>${esc(item.grade)}</span><span>${item.reaction?.return_pct == null ? "—" : `${Number(item.reaction.return_pct).toFixed(3)}%`}</span></div><div class="event-source"><span class="signal-pill ${item.grade === "WIN" ? "buy" : item.grade === "LOSS" ? "sell" : "unsure"}">${esc(item.grade)}</span></div></article>`).join("")}</div>` : `<div class="empty-panel">No live signal has completed the full lock-and-reaction cycle yet. This is an honest empty ledger, not a reconstructed backtest.</div>`}</section><section class="section-block"><div class="section-heading"><div><p class="eyebrow">CHAINED CASES</p><h2>Separate chain statistics</h2></div><span class="status-count">N ${esc(chainSummary.N || 0)}</span></div><p class="detail-copy">A chain pairs consecutive immutable locked records within the configured gap. It is directional only when both component records have WIN or LOSS grades; UNSURE-skipped cases remain visible.</p></section>`;
 }
 
+function trackFilter() {
+  const value = new URLSearchParams(window.location.search).get("type");
+  return RELEASE_ORDER.includes(value) ? value : "all";
+}
+
+function trackRecordViewFinal() {
+  const filter = trackFilter();
+  const summary = trackRecord.summary || {};
+  const records = (trackRecord.records || []).filter((item) => filter === "all" || item.release_type === filter);
+  const research = (signals.records || []).filter((item) => item.mode === "historical_reconstruction" && (filter === "all" || item.release_type === filter));
+  const chainSummary = chainedCases.summary || {};
+  const filterLinks = [{id: "all", label: "All"}, ...RELEASE_ORDER.map((id) => ({id, label: id.toUpperCase()}))].map((item) => `<a class="filter-link ${filter === item.id ? "active" : ""}" href="./?view=track&type=${item.id}" data-view="track" data-track-filter="${item.id}">${item.label}</a>`).join("");
+  const liveRows = records.length ? `<div class="event-list">${records.map((item) => `<article class="event-row compact"><div class="event-date"><span>${esc(item.release_date)}</span><small>${esc(item.release_type)}</small></div><div class="event-name"><strong><a class="event-detail-link" href="./?view=release&id=${encodeURIComponent(item.event_id)}" data-view="release">${esc(item.release_name || item.event_id)}</a></strong><small>${esc(item.signal)} · locked ${esc(item.locked_at || "—")}</small></div><div class="event-time"><span>${esc(item.grade)}</span><span>${item.reaction?.return_pct == null ? "—" : `${Number(item.reaction.return_pct).toFixed(3)}%`}</span></div><div class="event-source"><span class="signal-pill ${item.grade === "WIN" ? "buy" : item.grade === "LOSS" ? "sell" : "unsure"}">${esc(item.grade)}</span></div></article>`).join("")}</div>` : `<div class="empty-panel">No immutable live records match this filter. Historical reconstructions are not inserted into this ledger.</div>`;
+  const researchRows = research.length ? `<div class="event-list">${research.slice(0, 12).map((item) => `<article class="event-row compact"><div class="event-date"><span>${esc(item.release_date)}</span><small>${esc(item.release_type)}</small></div><div class="event-name"><strong><a class="event-detail-link" href="./?view=release&id=${encodeURIComponent(item.event_id)}" data-view="release">${esc(item.release_name || item.event_id)}</a></strong><small>historical reconstruction · vintage ${esc(item.data_vintage || "—")}</small></div><div class="event-time"><span>${esc(item.signal)}</span><span>score ${esc(item.model_score ?? "—")}</span></div><div class="event-source"><span class="signal-pill ${signalClass(item)}">${esc(item.grade || "UNSURE-skipped")}</span></div></article>`).join("")}</div>` : `<div class="empty-panel">No research reconstruction matches this filter.</div>`;
+  return `${nav("track")}<section class="page-heading"><p class="eyebrow">PUBLIC LEDGER / ARCHIVE FILTER</p><h1>Track record</h1><p>Immutable live calls and Phase 3 historical reconstructions are displayed in separate sections. A blank public ledger is an honest result.</p></section><div class="filter-links" aria-label="Track record filters">${filterLinks}</div><section class="metric-grid"><div class="metric-card"><span>LIVE WIN RATE</span><strong>${summary.win_rate == null ? "—" : `${Number(summary.win_rate).toFixed(1)}%`}</strong><small>N ${esc(summary.N || 0)}</small></div><div class="metric-card"><span>WINS</span><strong>${esc(summary.wins || 0)}</strong><small>Immutable live cases</small></div><div class="metric-card"><span>LOSSES</span><strong>${esc(summary.losses || 0)}</strong><small>Immutable live cases</small></div><div class="metric-card"><span>CHAIN N</span><strong>${esc(chainSummary.N || 0)}</strong><small>Separate chained cases</small></div></section><section class="section-block"><div class="section-heading"><div><p class="eyebrow">IMMUTABLE RECORDS</p><h2>Locked calls</h2></div><span class="status-count">${records.length} records</span></div>${liveRows}</section><section class="section-block"><div class="section-heading"><div><p class="eyebrow">RESEARCH ARCHIVE</p><h2>Historical reconstructions</h2></div><span class="status-count">${research.length} shown</span></div>${researchRows}<p class="detail-copy">These records use historical FRED vintages and the free GC=F proxy. They are research context, not immutable public calls and not a guarantee of future results.</p></section>`;
+}
+
+function methodologyView() {
+  return `${nav("methodology")}<section class="page-heading"><p class="eyebrow">METHOD / CONFIGURATION</p><h1>Methodology</h1><p>Gold Macro Signal is a source-first educational research tool. It refuses to fill missing inputs with guesses.</p></section><section class="method-grid"><article class="method-card"><span class="eyebrow">01 / CALENDAR</span><h2>Release timing</h2><p>NFP, CPI, and PPI use verified FRED release dates at 8:30 AM ET. FOMC uses the Federal Reserve calendar at 2:00 PM ET. Every page shows ET and WAT.</p></article><article class="method-card"><span class="eyebrow">02 / VOTES</span><h2>Indicator rules</h2><p>Each release has configured FRED series, lookbacks, native-unit thresholds, and a gold-bias direction. Every vote carries its vintage and observation date.</p></article><article class="method-card"><span class="eyebrow">03 / SIGNAL</span><h2>BUY / SELL / UNSURE</h2><p>BUY requires score at least 2. SELL requires score at most -2. Fewer than three usable votes, over 40% missing or stale inputs, a tie, or an uncleared threshold returns UNSURE.</p></article><article class="method-card"><span class="eyebrow">04 / LOCK</span><h2>Pre-release integrity</h2><p>A candidate can change before the final 60 minutes. Inside that window the signal is locked. Historical reconstructions use the day-before-release FRED vintage and are never inserted into the public ledger.</p></article><article class="method-card"><span class="eyebrow">05 / REACTION</span><h2>Gold measurement</h2><p>The primary reaction is the last hourly GC=F close before release to the first hourly close at or after 60 minutes. If hourly data is unavailable, the record uses daily close-to-close and says so.</p></article><article class="method-card"><span class="eyebrow">06 / TRACK RECORD</span><h2>N and win rate</h2><p>N counts only live locked BUY/SELL calls with a non-flat post-release reaction. UNSURE-skipped cases remain visible but are excluded from directional win rate. Existing records are never rewritten.</p></article></section><section class="method-note"><span class="notice-mark">/ /</span><div><p class="eyebrow">LIMITS</p><h2>Research, not advice.</h2><p>FRED vintages are not a licensed real-time consensus feed. GC=F is a COMEX futures proxy, not spot XAUUSD. Thresholds are transparent heuristics and are not independently validated for future performance.</p></div></section>`;
+}
+
 function getView() {
   const query = new URLSearchParams(window.location.search).get("view");
-  if (query && ["home", "calendar", "status", "track", "release"].includes(query)) return query;
+  if (query && ["home", "calendar", "status", "track", "release", "methodology"].includes(query)) return query;
   const path = window.location.pathname.replace(/\/+$/, "");
   if (path.endsWith("/calendar")) return "calendar";
   if (path.endsWith("/status")) return "status";
   if (path.endsWith("/track-record")) return "track";
+  if (path.endsWith("/methodology")) return "methodology";
   if (path.includes("/release/")) return "release";
   return "home";
 }
 
 function render() {
   const view = getView();
-  app.innerHTML = view === "calendar" ? calendarView() : view === "status" ? statusView() : view === "track" ? trackRecordView() : view === "release" ? releaseDetailView() : homeView();
+  app.innerHTML = view === "calendar" ? calendarView() : view === "status" ? statusView() : view === "track" ? trackRecordViewFinal() : view === "release" ? releaseDetailView() : view === "methodology" ? methodologyView() : homeView();
   document.querySelectorAll("[data-view]").forEach((link) => {
     link.classList.toggle("active", link.dataset.view === view);
     link.addEventListener("click", (event) => {
       event.preventDefault();
       const next = link.dataset.view;
-      history.pushState({}, "", `./?view=${next}`);
+      const filter = link.dataset.trackFilter ? `&type=${encodeURIComponent(link.dataset.trackFilter)}` : "";
+      history.pushState({}, "", `./?view=${next}${filter}`);
       render();
       window.scrollTo({ top: 0, behavior: "smooth" });
     });

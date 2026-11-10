@@ -18,6 +18,8 @@ Phase 3 also records a research-only grade against the measured `GC=F` reaction.
 
 Phase 4 adds **Track Record** and **Release Detail** views. Only a signal captured while `locked_pre_release` can enter `data/locked_signals.json`; existing snapshots are never rewritten. After a completed release has a usable reaction, `scripts/update_track_record.py` appends a WIN, LOSS, or UNSURE-skipped record to `data/track_record.json`. `data/chained_cases.json` keeps separate statistics for consecutive immutable records within the configured 45-day gap.
 
+Final hardening adds the **Methodology** page and Track Record filters for all, NFP, CPI, PPI, and FOMC. The live ledger and reconstructed research archive are deliberately separate.
+
 ## Owner setup from a phone
 
 1. Open the repository on GitHub in the GitHub mobile app or your phone browser.
@@ -50,7 +52,7 @@ A missing `FRED_API_KEY` is expected on a fresh checkout. In that case the pipel
 
 ## Current phase boundary
 
-Phase 4 provides the immutable public-ledger mechanics, release details, automatic lock-window capture, post-release grading, and separate chain statistics. The ledger starts empty until a real signal passes through the live lock window; historical reconstructions are never backfilled into it. `GC=F` remains a gold-futures proxy, not spot XAUUSD.
+Final hardening is complete in the repository. A public production URL still requires connecting this repository to GitHub Pages, Netlify, or Cloudflare Pages. The ledger starts empty until a real signal passes through the live lock window; historical reconstructions are never backfilled into it. `GC=F` remains a gold-futures proxy, not spot XAUUSD.
 
 ## Disclaimer
 
