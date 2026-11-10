@@ -62,12 +62,12 @@ The implementation uses only standard-library Python for the refresh and static 
 
 ## Build and delivery workflow
 
-1. Run `python3 scripts/update_calendar.py` with `FRED_API_KEY` set only in the GitHub Actions secret environment.
+1. Run `python3 scripts/update_calendar.py`, `python3 scripts/build_historical.py`, and `python3 scripts/build_signals.py` with `FRED_API_KEY` set only in the GitHub Actions secret environment.
 2. Run `python3 scripts/build_static.py` to produce `dist/`.
 3. Serve `dist/` on the configured port for Preview validation.
-4. Validate JSON, route manifest, refresh behavior, stale-data preservation, and static build output.
-5. Commit the Phase 1 source and generated data to canonical `main` after fetching and integrating the current remote tip.
-6. Publish only when explicitly requested; the current approved Phase 1 work is saved as a checkpoint but not silently published.
+4. Validate JSON, route manifest, source health, vintage cutoff, signal lock state, stale-data preservation, and static build output.
+5. Commit the intended source and generated data to canonical `main` after fetching and integrating the current remote tip.
+6. Publish only when explicitly requested; checkpointing and publication remain separate.
 
 ## Phase 2 extension
 
@@ -76,3 +76,9 @@ Phase 2 adds `scripts/build_historical.py`, a single configurable pipeline that 
 The primary reaction is hourly when Yahoo provides both a last hourly observation before the release and the first observation at or after 60 minutes after the release. Older or incomplete hourly history falls back to daily close-to-close from the previous trading day to the release day. The record stores the actual observation timestamps, the measure used, the symbol, interval, retrieval time, and adjustment basis. It never calls the proxy spot XAUUSD and never mixes hourly and daily measures silently.
 
 Phase 2 intentionally leaves `leading_indicators` and `model_score` null with an explicit Phase 3 note. It builds the historical reaction database only; it does not generate a BUY, SELL, or UNSURE signal yet.
+
+## Phase 3 extension
+
+Phase 3 adds verified FRED series metadata and rules to `data/release_config.json` and implements `scripts/build_signals.py`. The engine requests FRED `output_type=2` observations by vintage date, uses the day before each release as the historical cutoff, and never forward-fills a missing series. Each rule has a method, lookback, threshold, gold-bias direction, source series, units, observation date, staleness check, and vote.
+
+The engine sums BUY/SELL/neutral votes. It returns BUY only at score `>= 2`, SELL only at score `<= -2`, and UNSURE when fewer than three votes are usable, more than 40% are missing/stale, or the score does not clear a threshold. Upcoming records expose a candidate signal before the lock, a locked signal during the final 60 minutes before release, and a released state after the event. Historical records are labeled `historical_reconstruction` and carry the revised-data/consensus limitation beside the score.

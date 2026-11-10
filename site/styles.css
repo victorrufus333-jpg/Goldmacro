@@ -67,6 +67,12 @@ h2 { margin-bottom: 0; font-size: 20px; letter-spacing: -.03em; }
 .not-available { position: relative; z-index: 1; display: grid; gap: 5px; margin-top: 26px; padding-top: 15px; border-top: 1px solid var(--line); }
 .not-available strong { color: var(--gold); font: 12px var(--mono); text-transform: uppercase; letter-spacing: .08em; }
 .not-available span, .empty-copy { color: var(--muted); font-size: 12px; line-height: 1.5; }
+.signal-callout { position: relative; z-index: 1; display: grid; gap: 5px; margin-top: 26px; padding-top: 15px; border-top: 1px solid var(--line); }
+.signal-callout strong { font: 600 20px var(--mono); letter-spacing: .08em; }
+.signal-callout span { color: var(--muted); font: 11px var(--mono); text-transform: uppercase; letter-spacing: .04em; }
+.signal-callout.buy strong, .signal-pill.buy { color: var(--mint); }.signal-callout.sell strong, .signal-pill.sell { color: var(--red); }.signal-callout.unsure strong, .signal-pill.unsure { color: var(--muted); }
+.signal-pill { display: inline-block; width: fit-content; margin-top: 9px; padding: 4px 6px; border: 1px solid currentColor; font: 10px var(--mono); letter-spacing: .08em; }
+.signal-state { color: var(--muted-2); font: 9px var(--mono); text-transform: uppercase; letter-spacing: .04em; }
 .empty-title { margin-top: 90px; font-size: 19px; line-height: 1.2; }
 .section-block { padding: 34px 0 12px; border-top: 1px solid var(--line); }
 .section-heading { display: flex; align-items: end; justify-content: space-between; gap: 12px; margin-bottom: 20px; }

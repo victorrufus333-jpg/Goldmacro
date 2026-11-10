@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-11-09T20:08:02.004165+00:00",
+  "generated_at": "2026-11-10T02:16:32.540772+00:00",
   "sources": {
     "fred_releases": {
       "name": "FRED release dates API",
@@ -64,6 +64,24 @@
       "records": 39,
       "detail": "Built 39 records across all configured release types using explicit measure labels.",
       "mode": "phase2"
+    },
+    "fred_indicators": {
+      "name": "FRED indicator observations",
+      "url": "https://api.stlouisfed.org/fred/series/observations",
+      "state": "ok",
+      "last_checked": "2026-11-10T02:16:32.540772+00:00",
+      "records": 2775,
+      "detail": "Retrieved 15 of 15 configured indicator series using vintage_dates.",
+      "mode": "vintage"
+    },
+    "signal_engine": {
+      "name": "Configurable signal engine",
+      "url": "data/signals.json",
+      "state": "ok",
+      "last_checked": "2026-11-10T02:16:32.540772+00:00",
+      "records": 52,
+      "detail": "Built 39 historical reconstructions and 13 upcoming signal records.",
+      "mode": "phase3"
     }
   }
 }

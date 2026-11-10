@@ -34,6 +34,10 @@
 - [x] Gold reaction uses free Yahoo Finance data with the source, symbol, retrieval time, interval, adjustment basis, and history limitations recorded.
 - [x] Primary reaction is the move from the last price before release to the price 60 minutes later when hourly data is available; otherwise the record explicitly uses daily close-to-close on release day as the fallback, without mixing measures silently.
 - [x] The Phase 2 Status page shows history-source health and the reaction database state.
-- [ ] Indicator votes, signal engine, thresholds, historical win rate, N, UNSURE logic, and one-hour locking.
+- [x] Indicator votes use verified FRED series with source metadata, observation dates, vintage cutoff dates, configured lookbacks, thresholds, and no forward-filling.
+- [x] The shared signal engine returns BUY only at the configured positive threshold, SELL only at the configured negative threshold, and UNSURE for missing, stale, conflicting, or underpowered data.
+- [x] Historical records receive a model score, leading-indicator vote details, signal state, sample size `N` inputs, and a clear revised-data/consensus limitation; no point-in-time claim is made without a vintage.
+- [x] Upcoming events expose a candidate signal before the lock, lock the signal during the final 60 minutes before release, and stop updating it after release.
+- [x] Historical grading, win rate, and `N` are joined to the reaction labels; UNSURE-skipped cases are not counted as losses.
 - [ ] Full website pages, immutable pre-release signal track record, automatic grading, and hourly release-day automation.
 - [ ] Release chaining with separate chained-case win rates.

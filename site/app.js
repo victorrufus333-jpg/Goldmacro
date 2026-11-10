@@ -7,6 +7,8 @@ const SOURCE_LABELS = {
   gold_price_hourly: "Yahoo hourly",
   gold_price_daily: "Yahoo daily",
   historical_reactions: "Reaction database",
+  fred_indicators: "FRED indicators",
+  signal_engine: "Signal engine",
 };
 const SOURCE_URLS = {
   fred_releases: "https://api.stlouisfed.org/fred/releases/dates",
@@ -16,11 +18,14 @@ const SOURCE_URLS = {
   gold_price_hourly: "https://finance.yahoo.com/quote/GC=F/history",
   gold_price_daily: "https://finance.yahoo.com/quote/GC=F/history",
   historical_reactions: "./data/historical_reactions.json",
+  fred_indicators: "https://api.stlouisfed.org/fred/series/observations",
+  signal_engine: "./data/signals.json",
 };
 
 const app = document.querySelector("#app");
 let calendar = { events: [], source_status: {}, generated_at: null };
 let status = { sources: {}, generated_at: null };
+let signals = { records: [], summary: {} };
 let countdownTimer;
 
 function esc(value) {
@@ -66,7 +71,7 @@ function nav(view) {
 }
 
 function phaseNotice() {
-  return `<aside class="phase-notice"><span class="phase-number">01</span><div><strong>Calendar layer only</strong><p>Signals, indicators, win rates, historical gold reactions, locking, grading, and chaining are not available in this phase. No trade call is being generated.</p></div><span class="notice-mark">/ /</span></aside>`;
+  return `<aside class="phase-notice"><span class="phase-number">03</span><div><strong>Signal engine / pre-release research</strong><p>Signals use configurable FRED indicator votes and a one-hour pre-release lock. Historical scores use FRED vintage dates and remain research reconstructions, not guaranteed real-time consensus backtests.</p></div><span class="notice-mark">/ /</span></aside>`;
 }
 
 function sourceSummary() {
@@ -91,6 +96,20 @@ function countdown(event) {
   return `${String(Math.max(0, hours)).padStart(2, "0")}h ${String(minutes).padStart(2, "0")}m ${String(seconds).padStart(2, "0")}s`;
 }
 
+function signalFor(event) {
+  return (signals.records || []).find((item) => item.event_id === event?.id);
+}
+
+function signalClass(signal) {
+  return signal?.signal === "BUY" ? "buy" : signal?.signal === "SELL" ? "sell" : "unsure";
+}
+
+function trackRecordLabel(signal) {
+  const context = signal?.historical_context;
+  if (!context) return "historical track record unavailable";
+  return context.N ? `${Number(context.win_rate).toFixed(1)}% historical · N ${context.N}` : "historical N 0 · no graded cases";
+}
+
 function releaseStrip() {
   const byType = Object.fromEntries(RELEASE_ORDER.map((id) => [id, []]));
   for (const event of calendar.events || []) {
@@ -99,29 +118,32 @@ function releaseStrip() {
   return `<div class="release-strip">${RELEASE_ORDER.map((id) => {
     const event = byType[id].find((item) => new Date(item.times?.et || item.date) >= new Date());
     const label = id === "fomc" ? "FOMC" : id.toUpperCase();
-    return `<div class="release-cell"><span class="cell-label">${label}</span>${event ? `<strong>${esc(formatDate(event.times.et))}</strong><small>${esc(formatTime(event.times.et, "America/New_York"))} ET</small>` : `<strong class="muted">NOT AVAILABLE</strong><small>Awaiting verified source</small>`}</div>`;
+    const signal = signalFor(event);
+    return `<div class="release-cell"><span class="cell-label">${label}</span>${event ? `<strong>${esc(formatDate(event.times.et))}</strong><small>${esc(formatTime(event.times.et, "America/New_York"))} ET</small>${signal ? `<span class="signal-pill ${signalClass(signal)}">${esc(signal.signal)}</span>` : ""}` : `<strong class="muted">NOT AVAILABLE</strong><small>Awaiting verified source</small>`}</div>`;
   }).join("")}</div>`;
 }
 
 function eventRow(event, compact = false) {
   const sourceKey = event.source?.kind === "manual_fallback" ? "federal_reserve_fomc" : event.source?.kind === "fred_api" ? "fred_releases" : event.release_type === "fomc" ? "federal_reserve_fomc" : "fred_releases";
   const state = status.sources?.[sourceKey]?.state || "unavailable";
+  const signal = signalFor(event);
   return `<article class="event-row ${compact ? "compact" : ""}">
     <div class="event-date"><span>${esc(formatDate(event.times?.et || event.date, "America/New_York"))}</span><small>${esc(event.date)}</small></div>
     <div class="event-name"><span class="event-label">${esc(event.label)}</span><strong>${esc(event.name)}</strong><small>${esc(event.raw_label || "Verified release date")}</small></div>
     <div class="event-time"><span>ET ${esc(formatTime(event.times?.et, "America/New_York"))}</span><span>WAT ${esc(formatTime(event.times?.wat, "Africa/Lagos"))}</span></div>
-    <div class="event-source">${sourceBadge(sourceKey, state)}<a href="${esc(event.source?.url || SOURCE_URLS[sourceKey])}" target="_blank" rel="noreferrer">source ↗</a></div>
+    <div class="event-source">${sourceBadge(sourceKey, state)}${signal ? `<span class="signal-pill ${signalClass(signal)}">${esc(signal.signal)}</span><small class="signal-state">${esc(signal.lock_state.replaceAll("_", " "))}</small>` : ""}<a href="${esc(event.source?.url || SOURCE_URLS[sourceKey])}" target="_blank" rel="noreferrer">source ↗</a></div>
   </article>`;
 }
 
 function homeView() {
   const event = nextEvent();
+  const signal = signalFor(event);
   return `${nav("home")}${phaseNotice()}${sourceSummary()}
     <section class="hero-grid">
       <div class="hero-copy"><p class="eyebrow">PRE-RELEASE MACRO MONITOR / XAUUSD</p><h1>The next verified release.</h1><p class="lede">A source-first calendar for the events that move the gold conversation. Dates are collected before the release; nothing is inferred when a source is missing.</p></div>
       <div class="next-card ${event ? "has-event" : "empty"}">
-        <div class="card-top"><span>NEXT RELEASE</span><span class="lock-label">PHASE 1 / NO SIGNAL</span></div>
-        ${event ? `<div class="next-type">${esc(event.label)} <span>/</span> ${esc(event.name)}</div><div class="countdown" data-countdown>${esc(countdown(event))}</div><div class="next-meta"><span>${esc(formatDate(event.times?.et, "America/New_York"))}</span>${timePair(event)}</div><div class="not-available"><strong>Signal not available</strong><span>Indicator and outcome layers begin in a later phase.</span></div>` : `<div class="empty-title">No verified upcoming release data</div><p class="empty-copy">The dashboard will not invent dates. Add the FRED API key in GitHub Actions, or inspect Status for the exact source condition.</p>`}
+        <div class="card-top"><span>NEXT RELEASE</span><span class="lock-label">PHASE 3 / ${esc(signal?.lock_state?.replaceAll("_", " ") || "SIGNAL ENGINE")}</span></div>
+        ${event ? `<div class="next-type">${esc(event.label)} <span>/</span> ${esc(event.name)}</div><div class="countdown" data-countdown>${esc(countdown(event))}</div><div class="next-meta"><span>${esc(formatDate(event.times?.et, "America/New_York"))}</span>${timePair(event)}</div><div class="signal-callout ${signalClass(signal)}"><strong>${esc(signal?.signal || "UNSURE")}</strong><span>${esc(signal ? `${signal.lock_state.replaceAll("_", " ")} · score ${signal.model_score ?? "—"} · ${trackRecordLabel(signal)}` : "No signal record is available; the engine stays UNSURE.")}</span></div>` : `<div class="empty-title">No verified upcoming release data</div><p class="empty-copy">The dashboard will not invent dates. Add the FRED API key in GitHub Actions, or inspect Status for the exact source condition.</p>`}
       </div>
     </section>
     <section class="section-block"><div class="section-heading"><div><p class="eyebrow">ALL FOUR RELEASE LANES</p><h2>This week at a glance</h2></div><a class="text-link" data-view="calendar" href="./?view=calendar">Open calendar →</a></div>${releaseStrip()}</section>
@@ -134,12 +156,12 @@ function calendarView() {
 }
 
 function statusView() {
-  const sourceKeys = ["fred_releases", "federal_reserve_fomc", "fred_history", "fomc_history", "gold_price_hourly", "gold_price_daily", "historical_reactions"];
+  const sourceKeys = ["fred_releases", "federal_reserve_fomc", "fred_history", "fomc_history", "gold_price_hourly", "gold_price_daily", "historical_reactions", "fred_indicators", "signal_engine"];
   return `${nav("status")}<section class="page-heading"><p class="eyebrow">DATA PROVENANCE</p><h1>Status</h1><p>Health is reported per source. Stale means the last known data was kept after a failed refresh; unavailable means no verified records exist.</p></section><div class="status-grid">${sourceKeys.map((key) => {
     const item = status.sources?.[key] || { name: SOURCE_LABELS[key], state: "unavailable", detail: "No status has been recorded yet.", records: 0 };
     const sourceUrl = item.url || SOURCE_URLS[key];
     return `<article class="status-card ${esc(item.state)}"><div class="status-card-top">${sourceBadge(key, item.state)}<span class="status-count">${esc(item.records || 0)} records</span></div><h2>${esc(item.name || SOURCE_LABELS[key])}</h2><p>${esc(item.detail)}</p><dl><div><dt>LAST CHECKED</dt><dd>${item.last_checked ? esc(formatDate(item.last_checked, "Africa/Lagos")) : "Not recorded"}</dd></div><div><dt>MODE</dt><dd>${esc(item.mode || "—")}</dd></div></dl><a class="source-link" href="${esc(sourceUrl)}" target="_blank" rel="noreferrer">Open official source ↗</a></article>`;
-  }).join("")}</div><section class="method-note"><span class="notice-mark">/ /</span><div><p class="eyebrow">HONESTY CHECK</p><h2>Missing data stays missing.</h2><p>Phase 1 never shows a guessed date, a placeholder value, or a signal dressed up as research. The next phase cannot begin until the calendar layer remains reliable.</p></div></section>`;
+  }).join("")}</div><section class="method-note"><span class="notice-mark">/ /</span><div><p class="eyebrow">HONESTY CHECK</p><h2>Missing data stays missing.</h2><p>Every vote carries its FRED vintage and observation date. A stale, missing, conflicting, or underpowered score becomes UNSURE. Historical reconstructions are labeled separately from live pre-release locks.</p></div></section>`;
 }
 
 function getView() {
@@ -175,13 +197,15 @@ function render() {
 
 async function loadData() {
   try {
-    const [calendarResponse, statusResponse] = await Promise.all([fetch("./data/calendar.json", { cache: "no-store" }), fetch("./data/status.json", { cache: "no-store" })]);
+    const [calendarResponse, statusResponse, signalsResponse] = await Promise.all([fetch("./data/calendar.json", { cache: "no-store" }), fetch("./data/status.json", { cache: "no-store" }), fetch("./data/signals.json", { cache: "no-store" })]);
     if (!calendarResponse.ok || !statusResponse.ok) throw new Error("generated JSON is not available");
     calendar = await calendarResponse.json();
     status = await statusResponse.json();
+    signals = signalsResponse.ok ? await signalsResponse.json() : { records: [], summary: {} };
   } catch (error) {
     calendar = { events: [], source_status: {}, generated_at: null };
     status = { sources: {}, generated_at: null, load_error: error.message };
+    signals = { records: [], summary: {} };
   }
   render();
 }
