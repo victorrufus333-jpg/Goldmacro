@@ -1,39 +1,21 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-11-10T02:16:32.540772+00:00",
+  "generated_at": "2026-11-11T19:35:13.478896+00:00",
   "sources": {
-    "fred_releases": {
-      "name": "FRED release dates API",
-      "url": "https://api.stlouisfed.org/fred/releases/dates",
-      "state": "ok",
-      "last_checked": "2026-11-09T19:53:15.667223+00:00",
-      "records": 4,
-      "detail": "Fetched 4 verified release-date records from FRED.",
-      "mode": "live"
-    },
-    "federal_reserve_fomc": {
-      "name": "Federal Reserve FOMC calendar",
-      "url": "https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm",
-      "state": "ok",
-      "last_checked": "2026-11-09T19:53:15.667223+00:00",
-      "records": 16,
-      "detail": "Parsed 16 meetings from the official Federal Reserve page.",
-      "mode": "live"
-    },
     "fred_history": {
       "name": "FRED release dates API",
       "url": "https://api.stlouisfed.org/fred/releases/dates",
       "state": "ok",
-      "last_checked": "2026-11-09T20:08:02.004165+00:00",
-      "records": 32,
-      "detail": "Fetched 32 historical BLS release records across 9 FRED pages.",
+      "last_checked": "2026-11-11T19:33:03.214991+00:00",
+      "records": 33,
+      "detail": "Fetched 33 historical BLS release records across 9 FRED pages.",
       "mode": "live"
     },
     "fomc_history": {
       "name": "Federal Reserve FOMC calendar",
       "url": "https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm",
       "state": "ok",
-      "last_checked": "2026-11-09T20:08:02.004165+00:00",
+      "last_checked": "2026-11-11T19:33:03.214991+00:00",
       "records": 7,
       "detail": "Parsed 7 historical FOMC events from the official calendar.",
       "mode": "live"
@@ -42,7 +24,7 @@
       "name": "Yahoo Finance via yfinance",
       "url": "https://finance.yahoo.com/quote/GC=F/history",
       "state": "ok",
-      "last_checked": "2026-11-09T20:08:02.004165+00:00",
+      "last_checked": "2026-11-11T19:33:03.214991+00:00",
       "records": 13730,
       "detail": "Loaded 13730 hourly GC=F rows; Yahoo hourly history is limited to approximately 730 days.",
       "mode": "hourly"
@@ -51,26 +33,26 @@
       "name": "Yahoo Finance via yfinance",
       "url": "https://finance.yahoo.com/quote/GC=F/history",
       "state": "ok",
-      "last_checked": "2026-11-09T20:08:02.004165+00:00",
-      "records": 219,
-      "detail": "Loaded 219 daily GC=F rows for the daily fallback.",
+      "last_checked": "2026-11-11T19:33:03.214991+00:00",
+      "records": 221,
+      "detail": "Loaded 221 daily GC=F rows for the daily fallback.",
       "mode": "daily_fallback"
     },
     "historical_reactions": {
       "name": "Historical reaction database",
       "url": "data/historical_reactions.json",
       "state": "ok",
-      "last_checked": "2026-11-09T20:08:02.004165+00:00",
-      "records": 39,
-      "detail": "Built 39 records across all configured release types using explicit measure labels.",
+      "last_checked": "2026-11-11T19:33:03.214991+00:00",
+      "records": 40,
+      "detail": "Built 40 records across all configured release types using explicit measure labels.",
       "mode": "phase2"
     },
     "fred_indicators": {
       "name": "FRED indicator observations",
       "url": "https://api.stlouisfed.org/fred/series/observations",
       "state": "ok",
-      "last_checked": "2026-11-10T02:16:32.540772+00:00",
-      "records": 2775,
+      "last_checked": "2026-11-11T19:35:13.478896+00:00",
+      "records": 2780,
       "detail": "Retrieved 15 of 15 configured indicator series using vintage_dates.",
       "mode": "vintage"
     },
@@ -78,10 +60,28 @@
       "name": "Configurable signal engine",
       "url": "data/signals.json",
       "state": "ok",
-      "last_checked": "2026-11-10T02:16:32.540772+00:00",
-      "records": 52,
-      "detail": "Built 39 historical reconstructions and 13 upcoming signal records.",
+      "last_checked": "2026-11-11T19:35:13.478896+00:00",
+      "records": 53,
+      "detail": "Built 40 historical reconstructions and 13 upcoming signal records.",
       "mode": "phase3"
+    },
+    "fred_releases": {
+      "name": "FRED release dates API",
+      "url": "https://api.stlouisfed.org/fred/releases/dates",
+      "state": "ok",
+      "last_checked": "2026-11-11T19:33:00.914730+00:00",
+      "records": 4,
+      "detail": "Fetched 4 verified release-date records from FRED.",
+      "mode": "live"
+    },
+    "federal_reserve_fomc": {
+      "name": "Federal Reserve FOMC calendar",
+      "url": "https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm",
+      "state": "ok",
+      "last_checked": "2026-11-11T19:33:00.914730+00:00",
+      "records": 16,
+      "detail": "Parsed 16 meetings from the official Federal Reserve page.",
+      "mode": "live"
     }
   }
 }

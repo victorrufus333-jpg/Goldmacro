@@ -1,21 +1,21 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-11-10T02:16:32.540772+00:00",
+  "generated_at": "2026-11-11T19:35:13.478896+00:00",
   "history_window": {
     "start_date": "2026-01-01",
-    "end_date": "2026-11-09"
+    "end_date": "2026-11-11"
   },
   "data_manifest": {
     "provider": "Yahoo Finance via yfinance",
     "symbol": "GC=F",
     "instrument_label": "COMEX gold futures front-month proxy; not spot XAUUSD",
     "source_url": "https://finance.yahoo.com/quote/GC=F/history",
-    "retrieved_at": "2026-11-09T20:10:07.833956+00:00",
+    "retrieved_at": "2026-11-11T19:35:12.650694+00:00",
     "adjustment": "unadjusted OHLC close",
     "hourly_interval": "1h",
     "daily_interval": "1d",
     "hourly_rows": 13730,
-    "daily_rows": 219
+    "daily_rows": 221
   },
   "measure_definitions": {
     "hourly_60m": "Primary: last hourly Close before the release to the first hourly Close at or after 60 minutes after the release.",
@@ -23,15 +23,15 @@
     "unavailable": "No usable source observations; never converted to a zero or a guessed result."
   },
   "summary": {
-    "records": 39,
+    "records": 40,
     "by_release_type": {
       "nfp": 11,
-      "cpi": 10,
+      "cpi": 11,
       "ppi": 11,
       "fomc": 7
     },
     "by_measure": {
-      "hourly_60m": 39
+      "hourly_60m": 40
     }
   },
   "records": [
@@ -176,7 +176,7 @@
           "provider": "Yahoo Finance via yfinance",
           "symbol": "GC=F",
           "source_url": "https://finance.yahoo.com/quote/GC=F/history",
-          "retrieved_at": "2026-11-09T20:10:07.833956+00:00",
+          "retrieved_at": "2026-11-11T19:35:12.650694+00:00",
           "adjustment": "unadjusted OHLC close"
         }
       },
@@ -336,7 +336,7 @@
           "provider": "Yahoo Finance via yfinance",
           "symbol": "GC=F",
           "source_url": "https://finance.yahoo.com/quote/GC=F/history",
-          "retrieved_at": "2026-11-09T20:10:07.833956+00:00",
+          "retrieved_at": "2026-11-11T19:35:12.650694+00:00",
           "adjustment": "unadjusted OHLC close"
         }
       },
@@ -349,11 +349,11 @@
       "grade": "UNSURE-skipped",
       "grade_reason": "Signal was UNSURE and is excluded from win-rate N.",
       "historical_context": {
-        "N": 9,
+        "N": 10,
         "wins": 3,
-        "losses": 6,
+        "losses": 7,
         "skipped": 1,
-        "win_rate": 33.33333333333333,
+        "win_rate": 30.0,
         "definition": "N counts only BUY/SELL cases with an available non-flat gold reaction; UNSURE-skipped cases are reported separately."
       }
     },
@@ -474,7 +474,7 @@
           "provider": "Yahoo Finance via yfinance",
           "symbol": "GC=F",
           "source_url": "https://finance.yahoo.com/quote/GC=F/history",
-          "retrieved_at": "2026-11-09T20:10:07.833956+00:00",
+          "retrieved_at": "2026-11-11T19:35:12.650694+00:00",
           "adjustment": "unadjusted OHLC close"
         }
       },
@@ -592,7 +592,7 @@
           "provider": "Yahoo Finance via yfinance",
           "symbol": "GC=F",
           "source_url": "https://finance.yahoo.com/quote/GC=F/history",
-          "retrieved_at": "2026-11-09T20:10:07.833956+00:00",
+          "retrieved_at": "2026-11-11T19:35:12.650694+00:00",
           "adjustment": "unadjusted OHLC close"
         }
       },
@@ -732,7 +732,7 @@
           "provider": "Yahoo Finance via yfinance",
           "symbol": "GC=F",
           "source_url": "https://finance.yahoo.com/quote/GC=F/history",
-          "retrieved_at": "2026-11-09T20:10:07.833956+00:00",
+          "retrieved_at": "2026-11-11T19:35:12.650694+00:00",
           "adjustment": "unadjusted OHLC close"
         }
       },
@@ -894,7 +894,7 @@
           "provider": "Yahoo Finance via yfinance",
           "symbol": "GC=F",
           "source_url": "https://finance.yahoo.com/quote/GC=F/history",
-          "retrieved_at": "2026-11-09T20:10:07.833956+00:00",
+          "retrieved_at": "2026-11-11T19:35:12.650694+00:00",
           "adjustment": "unadjusted OHLC close"
         }
       },
@@ -1056,7 +1056,7 @@
           "provider": "Yahoo Finance via yfinance",
           "symbol": "GC=F",
           "source_url": "https://finance.yahoo.com/quote/GC=F/history",
-          "retrieved_at": "2026-11-09T20:10:07.833956+00:00",
+          "retrieved_at": "2026-11-11T19:35:12.650694+00:00",
           "adjustment": "unadjusted OHLC close"
         }
       },
@@ -1069,11 +1069,11 @@
       "grade": "LOSS",
       "grade_reason": "Signal direction did not match the measured gold direction.",
       "historical_context": {
-        "N": 9,
+        "N": 10,
         "wins": 3,
-        "losses": 6,
+        "losses": 7,
         "skipped": 1,
-        "win_rate": 33.33333333333333,
+        "win_rate": 30.0,
         "definition": "N counts only BUY/SELL cases with an available non-flat gold reaction; UNSURE-skipped cases are reported separately."
       }
     },
@@ -1196,7 +1196,7 @@
           "provider": "Yahoo Finance via yfinance",
           "symbol": "GC=F",
           "source_url": "https://finance.yahoo.com/quote/GC=F/history",
-          "retrieved_at": "2026-11-09T20:10:07.833956+00:00",
+          "retrieved_at": "2026-11-11T19:35:12.650694+00:00",
           "adjustment": "unadjusted OHLC close"
         }
       },
@@ -1357,7 +1357,7 @@
           "provider": "Yahoo Finance via yfinance",
           "symbol": "GC=F",
           "source_url": "https://finance.yahoo.com/quote/GC=F/history",
-          "retrieved_at": "2026-11-09T20:10:07.833956+00:00",
+          "retrieved_at": "2026-11-11T19:35:12.650694+00:00",
           "adjustment": "unadjusted OHLC close"
         }
       },
@@ -1519,7 +1519,7 @@
           "provider": "Yahoo Finance via yfinance",
           "symbol": "GC=F",
           "source_url": "https://finance.yahoo.com/quote/GC=F/history",
-          "retrieved_at": "2026-11-09T20:10:07.833956+00:00",
+          "retrieved_at": "2026-11-11T19:35:12.650694+00:00",
           "adjustment": "unadjusted OHLC close"
         }
       },
@@ -1532,11 +1532,11 @@
       "grade": "WIN",
       "grade_reason": "Signal direction matched the measured gold direction.",
       "historical_context": {
-        "N": 9,
+        "N": 10,
         "wins": 3,
-        "losses": 6,
+        "losses": 7,
         "skipped": 1,
-        "win_rate": 33.33333333333333,
+        "win_rate": 30.0,
         "definition": "N counts only BUY/SELL cases with an available non-flat gold reaction; UNSURE-skipped cases are reported separately."
       }
     },
@@ -1659,7 +1659,7 @@
           "provider": "Yahoo Finance via yfinance",
           "symbol": "GC=F",
           "source_url": "https://finance.yahoo.com/quote/GC=F/history",
-          "retrieved_at": "2026-11-09T20:10:07.833956+00:00",
+          "retrieved_at": "2026-11-11T19:35:12.650694+00:00",
           "adjustment": "unadjusted OHLC close"
         }
       },
@@ -1777,7 +1777,7 @@
           "provider": "Yahoo Finance via yfinance",
           "symbol": "GC=F",
           "source_url": "https://finance.yahoo.com/quote/GC=F/history",
-          "retrieved_at": "2026-11-09T20:10:07.833956+00:00",
+          "retrieved_at": "2026-11-11T19:35:12.650694+00:00",
           "adjustment": "unadjusted OHLC close"
         }
       },
@@ -1939,7 +1939,7 @@
           "provider": "Yahoo Finance via yfinance",
           "symbol": "GC=F",
           "source_url": "https://finance.yahoo.com/quote/GC=F/history",
-          "retrieved_at": "2026-11-09T20:10:07.833956+00:00",
+          "retrieved_at": "2026-11-11T19:35:12.650694+00:00",
           "adjustment": "unadjusted OHLC close"
         }
       },
@@ -2101,7 +2101,7 @@
           "provider": "Yahoo Finance via yfinance",
           "symbol": "GC=F",
           "source_url": "https://finance.yahoo.com/quote/GC=F/history",
-          "retrieved_at": "2026-11-09T20:10:07.833956+00:00",
+          "retrieved_at": "2026-11-11T19:35:12.650694+00:00",
           "adjustment": "unadjusted OHLC close"
         }
       },
@@ -2114,11 +2114,11 @@
       "grade": "WIN",
       "grade_reason": "Signal direction matched the measured gold direction.",
       "historical_context": {
-        "N": 9,
+        "N": 10,
         "wins": 3,
-        "losses": 6,
+        "losses": 7,
         "skipped": 1,
-        "win_rate": 33.33333333333333,
+        "win_rate": 30.0,
         "definition": "N counts only BUY/SELL cases with an available non-flat gold reaction; UNSURE-skipped cases are reported separately."
       }
     },
@@ -2241,7 +2241,7 @@
           "provider": "Yahoo Finance via yfinance",
           "symbol": "GC=F",
           "source_url": "https://finance.yahoo.com/quote/GC=F/history",
-          "retrieved_at": "2026-11-09T20:10:07.833956+00:00",
+          "retrieved_at": "2026-11-11T19:35:12.650694+00:00",
           "adjustment": "unadjusted OHLC close"
         }
       },
@@ -2359,7 +2359,7 @@
           "provider": "Yahoo Finance via yfinance",
           "symbol": "GC=F",
           "source_url": "https://finance.yahoo.com/quote/GC=F/history",
-          "retrieved_at": "2026-11-09T20:10:07.833956+00:00",
+          "retrieved_at": "2026-11-11T19:35:12.650694+00:00",
           "adjustment": "unadjusted OHLC close"
         }
       },
@@ -2521,7 +2521,7 @@
           "provider": "Yahoo Finance via yfinance",
           "symbol": "GC=F",
           "source_url": "https://finance.yahoo.com/quote/GC=F/history",
-          "retrieved_at": "2026-11-09T20:10:07.833956+00:00",
+          "retrieved_at": "2026-11-11T19:35:12.650694+00:00",
           "adjustment": "unadjusted OHLC close"
         }
       },
@@ -2683,7 +2683,7 @@
           "provider": "Yahoo Finance via yfinance",
           "symbol": "GC=F",
           "source_url": "https://finance.yahoo.com/quote/GC=F/history",
-          "retrieved_at": "2026-11-09T20:10:07.833956+00:00",
+          "retrieved_at": "2026-11-11T19:35:12.650694+00:00",
           "adjustment": "unadjusted OHLC close"
         }
       },
@@ -2696,11 +2696,11 @@
       "grade": "LOSS",
       "grade_reason": "Signal direction did not match the measured gold direction.",
       "historical_context": {
-        "N": 9,
+        "N": 10,
         "wins": 3,
-        "losses": 6,
+        "losses": 7,
         "skipped": 1,
-        "win_rate": 33.33333333333333,
+        "win_rate": 30.0,
         "definition": "N counts only BUY/SELL cases with an available non-flat gold reaction; UNSURE-skipped cases are reported separately."
       }
     },
@@ -2823,7 +2823,7 @@
           "provider": "Yahoo Finance via yfinance",
           "symbol": "GC=F",
           "source_url": "https://finance.yahoo.com/quote/GC=F/history",
-          "retrieved_at": "2026-11-09T20:10:07.833956+00:00",
+          "retrieved_at": "2026-11-11T19:35:12.650694+00:00",
           "adjustment": "unadjusted OHLC close"
         }
       },
@@ -2985,7 +2985,7 @@
           "provider": "Yahoo Finance via yfinance",
           "symbol": "GC=F",
           "source_url": "https://finance.yahoo.com/quote/GC=F/history",
-          "retrieved_at": "2026-11-09T20:10:07.833956+00:00",
+          "retrieved_at": "2026-11-11T19:35:12.650694+00:00",
           "adjustment": "unadjusted OHLC close"
         }
       },
@@ -3147,7 +3147,7 @@
           "provider": "Yahoo Finance via yfinance",
           "symbol": "GC=F",
           "source_url": "https://finance.yahoo.com/quote/GC=F/history",
-          "retrieved_at": "2026-11-09T20:10:07.833956+00:00",
+          "retrieved_at": "2026-11-11T19:35:12.650694+00:00",
           "adjustment": "unadjusted OHLC close"
         }
       },
@@ -3160,11 +3160,11 @@
       "grade": "LOSS",
       "grade_reason": "Signal direction did not match the measured gold direction.",
       "historical_context": {
-        "N": 9,
+        "N": 10,
         "wins": 3,
-        "losses": 6,
+        "losses": 7,
         "skipped": 1,
-        "win_rate": 33.33333333333333,
+        "win_rate": 30.0,
         "definition": "N counts only BUY/SELL cases with an available non-flat gold reaction; UNSURE-skipped cases are reported separately."
       }
     },
@@ -3287,7 +3287,7 @@
           "provider": "Yahoo Finance via yfinance",
           "symbol": "GC=F",
           "source_url": "https://finance.yahoo.com/quote/GC=F/history",
-          "retrieved_at": "2026-11-09T20:10:07.833956+00:00",
+          "retrieved_at": "2026-11-11T19:35:12.650694+00:00",
           "adjustment": "unadjusted OHLC close"
         }
       },
@@ -3405,7 +3405,7 @@
           "provider": "Yahoo Finance via yfinance",
           "symbol": "GC=F",
           "source_url": "https://finance.yahoo.com/quote/GC=F/history",
-          "retrieved_at": "2026-11-09T20:10:07.833956+00:00",
+          "retrieved_at": "2026-11-11T19:35:12.650694+00:00",
           "adjustment": "unadjusted OHLC close"
         }
       },
@@ -3567,7 +3567,7 @@
           "provider": "Yahoo Finance via yfinance",
           "symbol": "GC=F",
           "source_url": "https://finance.yahoo.com/quote/GC=F/history",
-          "retrieved_at": "2026-11-09T20:10:07.833956+00:00",
+          "retrieved_at": "2026-11-11T19:35:12.650694+00:00",
           "adjustment": "unadjusted OHLC close"
         }
       },
@@ -3729,7 +3729,7 @@
           "provider": "Yahoo Finance via yfinance",
           "symbol": "GC=F",
           "source_url": "https://finance.yahoo.com/quote/GC=F/history",
-          "retrieved_at": "2026-11-09T20:10:07.833956+00:00",
+          "retrieved_at": "2026-11-11T19:35:12.650694+00:00",
           "adjustment": "unadjusted OHLC close"
         }
       },
@@ -3742,11 +3742,11 @@
       "grade": "WIN",
       "grade_reason": "Signal direction matched the measured gold direction.",
       "historical_context": {
-        "N": 9,
+        "N": 10,
         "wins": 3,
-        "losses": 6,
+        "losses": 7,
         "skipped": 1,
-        "win_rate": 33.33333333333333,
+        "win_rate": 30.0,
         "definition": "N counts only BUY/SELL cases with an available non-flat gold reaction; UNSURE-skipped cases are reported separately."
       }
     },
@@ -3869,7 +3869,7 @@
           "provider": "Yahoo Finance via yfinance",
           "symbol": "GC=F",
           "source_url": "https://finance.yahoo.com/quote/GC=F/history",
-          "retrieved_at": "2026-11-09T20:10:07.833956+00:00",
+          "retrieved_at": "2026-11-11T19:35:12.650694+00:00",
           "adjustment": "unadjusted OHLC close"
         }
       },
@@ -3987,7 +3987,7 @@
           "provider": "Yahoo Finance via yfinance",
           "symbol": "GC=F",
           "source_url": "https://finance.yahoo.com/quote/GC=F/history",
-          "retrieved_at": "2026-11-09T20:10:07.833956+00:00",
+          "retrieved_at": "2026-11-11T19:35:12.650694+00:00",
           "adjustment": "unadjusted OHLC close"
         }
       },
@@ -4149,7 +4149,7 @@
           "provider": "Yahoo Finance via yfinance",
           "symbol": "GC=F",
           "source_url": "https://finance.yahoo.com/quote/GC=F/history",
-          "retrieved_at": "2026-11-09T20:10:07.833956+00:00",
+          "retrieved_at": "2026-11-11T19:35:12.650694+00:00",
           "adjustment": "unadjusted OHLC close"
         }
       },
@@ -4311,7 +4311,7 @@
           "provider": "Yahoo Finance via yfinance",
           "symbol": "GC=F",
           "source_url": "https://finance.yahoo.com/quote/GC=F/history",
-          "retrieved_at": "2026-11-09T20:10:07.833956+00:00",
+          "retrieved_at": "2026-11-11T19:35:12.650694+00:00",
           "adjustment": "unadjusted OHLC close"
         }
       },
@@ -4324,11 +4324,11 @@
       "grade": "LOSS",
       "grade_reason": "Signal direction did not match the measured gold direction.",
       "historical_context": {
-        "N": 9,
+        "N": 10,
         "wins": 3,
-        "losses": 6,
+        "losses": 7,
         "skipped": 1,
-        "win_rate": 33.33333333333333,
+        "win_rate": 30.0,
         "definition": "N counts only BUY/SELL cases with an available non-flat gold reaction; UNSURE-skipped cases are reported separately."
       }
     },
@@ -4451,7 +4451,7 @@
           "provider": "Yahoo Finance via yfinance",
           "symbol": "GC=F",
           "source_url": "https://finance.yahoo.com/quote/GC=F/history",
-          "retrieved_at": "2026-11-09T20:10:07.833956+00:00",
+          "retrieved_at": "2026-11-11T19:35:12.650694+00:00",
           "adjustment": "unadjusted OHLC close"
         }
       },
@@ -4613,7 +4613,7 @@
           "provider": "Yahoo Finance via yfinance",
           "symbol": "GC=F",
           "source_url": "https://finance.yahoo.com/quote/GC=F/history",
-          "retrieved_at": "2026-11-09T20:10:07.833956+00:00",
+          "retrieved_at": "2026-11-11T19:35:12.650694+00:00",
           "adjustment": "unadjusted OHLC close"
         }
       },
@@ -4753,7 +4753,7 @@
           "provider": "Yahoo Finance via yfinance",
           "symbol": "GC=F",
           "source_url": "https://finance.yahoo.com/quote/GC=F/history",
-          "retrieved_at": "2026-11-09T20:10:07.833956+00:00",
+          "retrieved_at": "2026-11-11T19:35:12.650694+00:00",
           "adjustment": "unadjusted OHLC close"
         }
       },
@@ -4915,7 +4915,7 @@
           "provider": "Yahoo Finance via yfinance",
           "symbol": "GC=F",
           "source_url": "https://finance.yahoo.com/quote/GC=F/history",
-          "retrieved_at": "2026-11-09T20:10:07.833956+00:00",
+          "retrieved_at": "2026-11-11T19:35:12.650694+00:00",
           "adjustment": "unadjusted OHLC close"
         }
       },
@@ -4928,11 +4928,11 @@
       "grade": "LOSS",
       "grade_reason": "Signal direction did not match the measured gold direction.",
       "historical_context": {
-        "N": 9,
+        "N": 10,
         "wins": 3,
-        "losses": 6,
+        "losses": 7,
         "skipped": 1,
-        "win_rate": 33.33333333333333,
+        "win_rate": 30.0,
         "definition": "N counts only BUY/SELL cases with an available non-flat gold reaction; UNSURE-skipped cases are reported separately."
       }
     },
@@ -5033,7 +5033,7 @@
           "provider": "Yahoo Finance via yfinance",
           "symbol": "GC=F",
           "source_url": "https://finance.yahoo.com/quote/GC=F/history",
-          "retrieved_at": "2026-11-09T20:10:07.833956+00:00",
+          "retrieved_at": "2026-11-11T19:35:12.650694+00:00",
           "adjustment": "unadjusted OHLC close"
         }
       },
@@ -5195,7 +5195,7 @@
           "provider": "Yahoo Finance via yfinance",
           "symbol": "GC=F",
           "source_url": "https://finance.yahoo.com/quote/GC=F/history",
-          "retrieved_at": "2026-11-09T20:10:07.833956+00:00",
+          "retrieved_at": "2026-11-11T19:35:12.650694+00:00",
           "adjustment": "unadjusted OHLC close"
         }
       },
@@ -5357,7 +5357,7 @@
           "provider": "Yahoo Finance via yfinance",
           "symbol": "GC=F",
           "source_url": "https://finance.yahoo.com/quote/GC=F/history",
-          "retrieved_at": "2026-11-09T20:10:07.833956+00:00",
+          "retrieved_at": "2026-11-11T19:35:12.650694+00:00",
           "adjustment": "unadjusted OHLC close"
         }
       },
@@ -5370,11 +5370,11 @@
       "grade": "LOSS",
       "grade_reason": "Signal direction did not match the measured gold direction.",
       "historical_context": {
-        "N": 9,
+        "N": 10,
         "wins": 3,
-        "losses": 6,
+        "losses": 7,
         "skipped": 1,
-        "win_rate": 33.33333333333333,
+        "win_rate": 30.0,
         "definition": "N counts only BUY/SELL cases with an available non-flat gold reaction; UNSURE-skipped cases are reported separately."
       }
     },
@@ -5497,7 +5497,7 @@
           "provider": "Yahoo Finance via yfinance",
           "symbol": "GC=F",
           "source_url": "https://finance.yahoo.com/quote/GC=F/history",
-          "retrieved_at": "2026-11-09T20:10:07.833956+00:00",
+          "retrieved_at": "2026-11-11T19:35:12.650694+00:00",
           "adjustment": "unadjusted OHLC close"
         }
       },
@@ -5615,7 +5615,7 @@
           "provider": "Yahoo Finance via yfinance",
           "symbol": "GC=F",
           "source_url": "https://finance.yahoo.com/quote/GC=F/history",
-          "retrieved_at": "2026-11-09T20:10:07.833956+00:00",
+          "retrieved_at": "2026-11-11T19:35:12.650694+00:00",
           "adjustment": "unadjusted OHLC close"
         }
       },
@@ -5777,7 +5777,7 @@
           "provider": "Yahoo Finance via yfinance",
           "symbol": "GC=F",
           "source_url": "https://finance.yahoo.com/quote/GC=F/history",
-          "retrieved_at": "2026-11-09T20:10:07.833956+00:00",
+          "retrieved_at": "2026-11-11T19:35:12.650694+00:00",
           "adjustment": "unadjusted OHLC close"
         }
       },
@@ -5797,29 +5797,191 @@
         "win_rate": 25.0,
         "definition": "N counts only BUY/SELL cases with an available non-flat gold reaction; UNSURE-skipped cases are reported separately."
       }
+    },
+    {
+      "event_id": "cpi-2026-11-10",
+      "release_type": "cpi",
+      "release_label": "CPI",
+      "release_name": "Consumer Price Index",
+      "release_date": "2026-11-10",
+      "release_time_et": "08:30",
+      "release_time_wat": "2026-11-10T14:30:00+01:00",
+      "leading_indicators": [
+        {
+          "series_id": "CPIAUCSL",
+          "label": "Headline inflation rose",
+          "method": "delta",
+          "lookback": 12,
+          "threshold": 0.2,
+          "buy_when": "positive",
+          "units": "Index 1982-1984=100",
+          "frequency": "Monthly",
+          "source_url": "https://api.stlouisfed.org/fred/series/observations",
+          "cutoff_vintage": "2026-11-09",
+          "status": "ok",
+          "observation_date": "2026-09-01",
+          "value": 336.298,
+          "prior_observation_date": "2025-08-01",
+          "prior_value": 323.291,
+          "delta": 13.007000000000005,
+          "staleness_days": 69,
+          "direction": "positive",
+          "vote": 1,
+          "vote_label": "BUY"
+        },
+        {
+          "series_id": "CPILFESL",
+          "label": "Core inflation rose",
+          "method": "delta",
+          "lookback": 12,
+          "threshold": 0.15,
+          "buy_when": "positive",
+          "units": "Index 1982-1984=100",
+          "frequency": "Monthly",
+          "source_url": "https://api.stlouisfed.org/fred/series/observations",
+          "cutoff_vintage": "2026-11-09",
+          "status": "ok",
+          "observation_date": "2026-09-01",
+          "value": 338.896,
+          "prior_observation_date": "2025-08-01",
+          "prior_value": 329.7,
+          "delta": 9.196000000000026,
+          "staleness_days": 69,
+          "direction": "positive",
+          "vote": 1,
+          "vote_label": "BUY"
+        },
+        {
+          "series_id": "PPIFES",
+          "label": "Core producer prices rose",
+          "method": "delta",
+          "lookback": 12,
+          "threshold": 0.2,
+          "buy_when": "positive",
+          "units": "Index Apr 2010=100",
+          "frequency": "Monthly",
+          "source_url": "https://api.stlouisfed.org/fred/series/observations",
+          "cutoff_vintage": "2026-11-09",
+          "status": "ok",
+          "observation_date": "2026-09-01",
+          "value": 156.172,
+          "prior_observation_date": "2025-09-01",
+          "prior_value": 148.767,
+          "delta": 7.405000000000001,
+          "staleness_days": 69,
+          "direction": "positive",
+          "vote": 1,
+          "vote_label": "BUY"
+        },
+        {
+          "series_id": "IR",
+          "label": "Import prices rose",
+          "method": "delta",
+          "lookback": 12,
+          "threshold": 0.2,
+          "buy_when": "positive",
+          "units": "Index 2000=100",
+          "frequency": "Monthly",
+          "source_url": "https://api.stlouisfed.org/fred/series/observations",
+          "cutoff_vintage": "2026-11-09",
+          "status": "ok",
+          "observation_date": "2026-09-01",
+          "value": 152.2,
+          "prior_observation_date": "2025-08-01",
+          "prior_value": 141.0,
+          "delta": 11.199999999999989,
+          "staleness_days": 69,
+          "direction": "positive",
+          "vote": 1,
+          "vote_label": "BUY"
+        },
+        {
+          "series_id": "GASREGW",
+          "label": "Gasoline prices rose",
+          "method": "delta",
+          "lookback": 4,
+          "threshold": 0.05,
+          "buy_when": "positive",
+          "units": "Dollars per Gallon",
+          "frequency": "Weekly, Ending Monday",
+          "source_url": "https://api.stlouisfed.org/fred/series/observations",
+          "cutoff_vintage": "2026-11-09",
+          "status": "ok",
+          "observation_date": "2026-11-02",
+          "value": 4.153,
+          "prior_observation_date": "2026-10-05",
+          "prior_value": 4.354,
+          "delta": -0.2010000000000005,
+          "staleness_days": 7,
+          "direction": "negative",
+          "vote": -1,
+          "vote_label": "SELL"
+        }
+      ],
+      "model_score": 3,
+      "phase_note": "Phase 3 signal reconstruction uses FRED vintage_dates and is not a licensed real-time consensus backtest.",
+      "price_reaction": {
+        "measure": "hourly_60m",
+        "definition": "Last Yahoo hourly Close timestamped before the release to the first Yahoo hourly Close timestamped at or after release + 60 minutes.",
+        "pre_release": {
+          "timestamp": "2026-11-10T13:00:00+00:00",
+          "price": 4060.10009765625
+        },
+        "post_release": {
+          "timestamp": "2026-11-10T15:00:00+00:00",
+          "price": 4050.39990234375
+        },
+        "change": -9.7001953125,
+        "return_pct": -0.23891517645339763,
+        "direction": "down",
+        "interval": "1h",
+        "source": {
+          "provider": "Yahoo Finance via yfinance",
+          "symbol": "GC=F",
+          "source_url": "https://finance.yahoo.com/quote/GC=F/history",
+          "retrieved_at": "2026-11-11T19:35:12.650694+00:00",
+          "adjustment": "unadjusted OHLC close"
+        }
+      },
+      "reaction_status": "hourly_primary",
+      "signal": "BUY",
+      "signal_state": "historical_reconstruction",
+      "signal_reason": "Score 3 cleared the configured threshold with 5 usable votes.",
+      "signal_data_vintage": "2026-11-09",
+      "signal_revised_data_warning": "A vintage is used when FRED supplies it, but FRED vintages and release timestamps are not a substitute for a licensed real-time consensus feed.",
+      "grade": "LOSS",
+      "grade_reason": "Signal direction did not match the measured gold direction.",
+      "historical_context": {
+        "N": 10,
+        "wins": 3,
+        "losses": 7,
+        "skipped": 1,
+        "win_rate": 30.0,
+        "definition": "N counts only BUY/SELL cases with an available non-flat gold reaction; UNSURE-skipped cases are reported separately."
+      }
     }
   ],
   "signal_engine_version": 1,
   "signal_summary": {
     "by_signal": {
       "UNSURE": 18,
-      "BUY": 19,
+      "BUY": 20,
       "SELL": 2
     },
     "by_release_type": {
       "nfp": 11,
-      "cpi": 10,
+      "cpi": 11,
       "ppi": 11,
       "fomc": 7
     },
-    "historical_records": 39,
+    "historical_records": 40,
     "track_record": {
       "cpi": {
-        "N": 9,
+        "N": 10,
         "wins": 3,
-        "losses": 6,
+        "losses": 7,
         "skipped": 1,
-        "win_rate": 33.33333333333333,
+        "win_rate": 30.0,
         "definition": "N counts only BUY/SELL cases with an available non-flat gold reaction; UNSURE-skipped cases are reported separately."
       },
       "fomc": {
