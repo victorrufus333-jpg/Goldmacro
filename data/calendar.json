@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-11-11T19:33:00.914730+00:00",
+  "generated_at": "2026-11-12T05:45:03.992641+00:00",
   "events": [
     {
       "id": "fomc-2026-01-28",
@@ -368,7 +368,7 @@
       "name": "FRED release dates API",
       "url": "https://api.stlouisfed.org/fred/releases/dates",
       "state": "ok",
-      "last_checked": "2026-11-11T19:33:00.914730+00:00",
+      "last_checked": "2026-11-12T05:45:03.992641+00:00",
       "records": 4,
       "detail": "Fetched 4 verified release-date records from FRED.",
       "mode": "live"
@@ -377,7 +377,7 @@
       "name": "Federal Reserve FOMC calendar",
       "url": "https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm",
       "state": "ok",
-      "last_checked": "2026-11-11T19:33:00.914730+00:00",
+      "last_checked": "2026-11-12T05:45:03.992641+00:00",
       "records": 16,
       "detail": "Parsed 16 meetings from the official Federal Reserve page.",
       "mode": "live"
