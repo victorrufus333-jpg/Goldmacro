@@ -1,12 +1,12 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-11-12T05:47:04.966694+00:00",
+  "generated_at": "2026-11-12T19:54:10.708412+00:00",
   "sources": {
     "fred_history": {
       "name": "FRED release dates API",
       "url": "https://api.stlouisfed.org/fred/releases/dates",
       "state": "ok",
-      "last_checked": "2026-11-12T05:45:05.424052+00:00",
+      "last_checked": "2026-11-12T19:52:02.909312+00:00",
       "records": 33,
       "detail": "Fetched 33 historical BLS release records across 9 FRED pages.",
       "mode": "live"
@@ -15,7 +15,7 @@
       "name": "Federal Reserve FOMC calendar",
       "url": "https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm",
       "state": "ok",
-      "last_checked": "2026-11-12T05:45:05.424052+00:00",
+      "last_checked": "2026-11-12T19:52:02.909312+00:00",
       "records": 7,
       "detail": "Parsed 7 historical FOMC events from the official calendar.",
       "mode": "live"
@@ -24,16 +24,16 @@
       "name": "Yahoo Finance via yfinance",
       "url": "https://finance.yahoo.com/quote/GC=F/history",
       "state": "ok",
-      "last_checked": "2026-11-12T05:45:05.424052+00:00",
-      "records": 13718,
-      "detail": "Loaded 13718 hourly GC=F rows; Yahoo hourly history is limited to approximately 730 days.",
+      "last_checked": "2026-11-12T19:52:02.909312+00:00",
+      "records": 13736,
+      "detail": "Loaded 13736 hourly GC=F rows; Yahoo hourly history is limited to approximately 730 days.",
       "mode": "hourly"
     },
     "gold_price_daily": {
       "name": "Yahoo Finance via yfinance",
       "url": "https://finance.yahoo.com/quote/GC=F/history",
       "state": "ok",
-      "last_checked": "2026-11-12T05:45:05.424052+00:00",
+      "last_checked": "2026-11-12T19:52:02.909312+00:00",
       "records": 222,
       "detail": "Loaded 222 daily GC=F rows for the daily fallback.",
       "mode": "daily_fallback"
@@ -42,7 +42,7 @@
       "name": "Historical reaction database",
       "url": "data/historical_reactions.json",
       "state": "ok",
-      "last_checked": "2026-11-12T05:45:05.424052+00:00",
+      "last_checked": "2026-11-12T19:52:02.909312+00:00",
       "records": 40,
       "detail": "Built 40 records across all configured release types using explicit measure labels.",
       "mode": "phase2"
@@ -51,7 +51,7 @@
       "name": "FRED indicator observations",
       "url": "https://api.stlouisfed.org/fred/series/observations",
       "state": "ok",
-      "last_checked": "2026-11-12T05:47:04.966694+00:00",
+      "last_checked": "2026-11-12T19:54:10.708412+00:00",
       "records": 2780,
       "detail": "Retrieved 15 of 15 configured indicator series using vintage_dates.",
       "mode": "vintage"
@@ -60,7 +60,7 @@
       "name": "Configurable signal engine",
       "url": "data/signals.json",
       "state": "ok",
-      "last_checked": "2026-11-12T05:47:04.966694+00:00",
+      "last_checked": "2026-11-12T19:54:10.708412+00:00",
       "records": 53,
       "detail": "Built 40 historical reconstructions and 13 upcoming signal records.",
       "mode": "phase3"
@@ -69,7 +69,7 @@
       "name": "FRED release dates API",
       "url": "https://api.stlouisfed.org/fred/releases/dates",
       "state": "ok",
-      "last_checked": "2026-11-12T05:45:03.992641+00:00",
+      "last_checked": "2026-11-12T19:52:00.977735+00:00",
       "records": 4,
       "detail": "Fetched 4 verified release-date records from FRED.",
       "mode": "live"
@@ -78,7 +78,7 @@
       "name": "Federal Reserve FOMC calendar",
       "url": "https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm",
       "state": "ok",
-      "last_checked": "2026-11-12T05:45:03.992641+00:00",
+      "last_checked": "2026-11-12T19:52:00.977735+00:00",
       "records": 16,
       "detail": "Parsed 16 meetings from the official Federal Reserve page.",
       "mode": "live"

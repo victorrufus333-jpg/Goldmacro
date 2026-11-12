@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-11-12T05:47:04.966694+00:00",
+  "generated_at": "2026-11-12T19:54:10.708412+00:00",
   "engine_version": 1,
   "lock_minutes_before_release": 60,
   "historical_vintage_rule": "For historical reconstruction, request the FRED vintage from the calendar day before the release to avoid using same-day release information.",
@@ -188,7 +188,7 @@
       "missing_fraction": 0.0,
       "reason": "Score 1 did not clear BUY 2 or SELL -2.",
       "revised_data_warning": "A vintage is used when FRED supplies it, but FRED vintages and release timestamps are not a substitute for a licensed real-time consensus feed.",
-      "generated_at": "2026-11-12T05:47:04.966694+00:00",
+      "generated_at": "2026-11-12T19:54:10.708412+00:00",
       "grade": "UNSURE-skipped",
       "grade_reason": "Signal was UNSURE and is excluded from win-rate N.",
       "historical_context": {
@@ -332,7 +332,7 @@
       "missing_fraction": 0.4,
       "reason": "Score 1 did not clear BUY 2 or SELL -2.",
       "revised_data_warning": "A vintage is used when FRED supplies it, but FRED vintages and release timestamps are not a substitute for a licensed real-time consensus feed.",
-      "generated_at": "2026-11-12T05:47:04.966694+00:00",
+      "generated_at": "2026-11-12T19:54:10.708412+00:00",
       "grade": "UNSURE-skipped",
       "grade_reason": "Signal was UNSURE and is excluded from win-rate N.",
       "historical_context": {
@@ -454,7 +454,7 @@
       "missing_fraction": 0.5,
       "reason": "Only 2 of 4 indicator votes are usable; minimum is 3. Missing or stale indicators are 50%; maximum allowed is 40%.",
       "revised_data_warning": "A vintage is used when FRED supplies it, but FRED vintages and release timestamps are not a substitute for a licensed real-time consensus feed.",
-      "generated_at": "2026-11-12T05:47:04.966694+00:00",
+      "generated_at": "2026-11-12T19:54:10.708412+00:00",
       "grade": "UNSURE-skipped",
       "grade_reason": "Signal was UNSURE and is excluded from win-rate N.",
       "historical_context": {
@@ -556,7 +556,7 @@
       "missing_fraction": 0.0,
       "reason": "Score 1 did not clear BUY 2 or SELL -2.",
       "revised_data_warning": "A vintage is used when FRED supplies it, but FRED vintages and release timestamps are not a substitute for a licensed real-time consensus feed.",
-      "generated_at": "2026-11-12T05:47:04.966694+00:00",
+      "generated_at": "2026-11-12T19:54:10.708412+00:00",
       "grade": "UNSURE-skipped",
       "grade_reason": "Signal was UNSURE and is excluded from win-rate N.",
       "historical_context": {
@@ -680,7 +680,7 @@
       "missing_fraction": 0.0,
       "reason": "Score 2 cleared the configured threshold with 4 usable votes.",
       "revised_data_warning": "A vintage is used when FRED supplies it, but FRED vintages and release timestamps are not a substitute for a licensed real-time consensus feed.",
-      "generated_at": "2026-11-12T05:47:04.966694+00:00",
+      "generated_at": "2026-11-12T19:54:10.708412+00:00",
       "grade": "WIN",
       "grade_reason": "Signal direction matched the measured gold direction.",
       "historical_context": {
@@ -826,7 +826,7 @@
       "missing_fraction": 0.0,
       "reason": "Score 3 cleared the configured threshold with 5 usable votes.",
       "revised_data_warning": "A vintage is used when FRED supplies it, but FRED vintages and release timestamps are not a substitute for a licensed real-time consensus feed.",
-      "generated_at": "2026-11-12T05:47:04.966694+00:00",
+      "generated_at": "2026-11-12T19:54:10.708412+00:00",
       "grade": "LOSS",
       "grade_reason": "Signal direction did not match the measured gold direction.",
       "historical_context": {
@@ -972,7 +972,7 @@
       "missing_fraction": 0.0,
       "reason": "Score 4 cleared the configured threshold with 5 usable votes.",
       "revised_data_warning": "A vintage is used when FRED supplies it, but FRED vintages and release timestamps are not a substitute for a licensed real-time consensus feed.",
-      "generated_at": "2026-11-12T05:47:04.966694+00:00",
+      "generated_at": "2026-11-12T19:54:10.708412+00:00",
       "grade": "LOSS",
       "grade_reason": "Signal direction did not match the measured gold direction.",
       "historical_context": {
@@ -1096,7 +1096,7 @@
       "missing_fraction": 0.0,
       "reason": "Score 4 cleared the configured threshold with 4 usable votes.",
       "revised_data_warning": "A vintage is used when FRED supplies it, but FRED vintages and release timestamps are not a substitute for a licensed real-time consensus feed.",
-      "generated_at": "2026-11-12T05:47:04.966694+00:00",
+      "generated_at": "2026-11-12T19:54:10.708412+00:00",
       "grade": "WIN",
       "grade_reason": "Signal direction matched the measured gold direction.",
       "historical_context": {
@@ -1241,7 +1241,7 @@
       "missing_fraction": 0.2,
       "reason": "Score -2 cleared the configured threshold with 4 usable votes.",
       "revised_data_warning": "A vintage is used when FRED supplies it, but FRED vintages and release timestamps are not a substitute for a licensed real-time consensus feed.",
-      "generated_at": "2026-11-12T05:47:04.966694+00:00",
+      "generated_at": "2026-11-12T19:54:10.708412+00:00",
       "grade": "LOSS",
       "grade_reason": "Signal direction did not match the measured gold direction.",
       "historical_context": {
@@ -1387,7 +1387,7 @@
       "missing_fraction": 0.0,
       "reason": "Score 5 cleared the configured threshold with 5 usable votes.",
       "revised_data_warning": "A vintage is used when FRED supplies it, but FRED vintages and release timestamps are not a substitute for a licensed real-time consensus feed.",
-      "generated_at": "2026-11-12T05:47:04.966694+00:00",
+      "generated_at": "2026-11-12T19:54:10.708412+00:00",
       "grade": "WIN",
       "grade_reason": "Signal direction matched the measured gold direction.",
       "historical_context": {
@@ -1511,7 +1511,7 @@
       "missing_fraction": 0.0,
       "reason": "Score 4 cleared the configured threshold with 4 usable votes.",
       "revised_data_warning": "A vintage is used when FRED supplies it, but FRED vintages and release timestamps are not a substitute for a licensed real-time consensus feed.",
-      "generated_at": "2026-11-12T05:47:04.966694+00:00",
+      "generated_at": "2026-11-12T19:54:10.708412+00:00",
       "grade": "LOSS",
       "grade_reason": "Signal direction did not match the measured gold direction.",
       "historical_context": {
@@ -1613,7 +1613,7 @@
       "missing_fraction": 0.0,
       "reason": "Score -1 did not clear BUY 2 or SELL -2.",
       "revised_data_warning": "A vintage is used when FRED supplies it, but FRED vintages and release timestamps are not a substitute for a licensed real-time consensus feed.",
-      "generated_at": "2026-11-12T05:47:04.966694+00:00",
+      "generated_at": "2026-11-12T19:54:10.708412+00:00",
       "grade": "UNSURE-skipped",
       "grade_reason": "Signal was UNSURE and is excluded from win-rate N.",
       "historical_context": {
@@ -1759,7 +1759,7 @@
       "missing_fraction": 0.0,
       "reason": "Score 2 cleared the configured threshold with 5 usable votes.",
       "revised_data_warning": "A vintage is used when FRED supplies it, but FRED vintages and release timestamps are not a substitute for a licensed real-time consensus feed.",
-      "generated_at": "2026-11-12T05:47:04.966694+00:00",
+      "generated_at": "2026-11-12T19:54:10.708412+00:00",
       "grade": "LOSS",
       "grade_reason": "Signal direction did not match the measured gold direction.",
       "historical_context": {
@@ -1905,7 +1905,7 @@
       "missing_fraction": 0.0,
       "reason": "Score 5 cleared the configured threshold with 5 usable votes.",
       "revised_data_warning": "A vintage is used when FRED supplies it, but FRED vintages and release timestamps are not a substitute for a licensed real-time consensus feed.",
-      "generated_at": "2026-11-12T05:47:04.966694+00:00",
+      "generated_at": "2026-11-12T19:54:10.708412+00:00",
       "grade": "WIN",
       "grade_reason": "Signal direction matched the measured gold direction.",
       "historical_context": {
@@ -2029,7 +2029,7 @@
       "missing_fraction": 0.0,
       "reason": "Score 4 cleared the configured threshold with 4 usable votes.",
       "revised_data_warning": "A vintage is used when FRED supplies it, but FRED vintages and release timestamps are not a substitute for a licensed real-time consensus feed.",
-      "generated_at": "2026-11-12T05:47:04.966694+00:00",
+      "generated_at": "2026-11-12T19:54:10.708412+00:00",
       "grade": "WIN",
       "grade_reason": "Signal direction matched the measured gold direction.",
       "historical_context": {
@@ -2131,7 +2131,7 @@
       "missing_fraction": 0.0,
       "reason": "Score 0 did not clear BUY 2 or SELL -2.",
       "revised_data_warning": "A vintage is used when FRED supplies it, but FRED vintages and release timestamps are not a substitute for a licensed real-time consensus feed.",
-      "generated_at": "2026-11-12T05:47:04.966694+00:00",
+      "generated_at": "2026-11-12T19:54:10.708412+00:00",
       "grade": "UNSURE-skipped",
       "grade_reason": "Signal was UNSURE and is excluded from win-rate N.",
       "historical_context": {
@@ -2277,7 +2277,7 @@
       "missing_fraction": 0.0,
       "reason": "Score -2 cleared the configured threshold with 5 usable votes.",
       "revised_data_warning": "A vintage is used when FRED supplies it, but FRED vintages and release timestamps are not a substitute for a licensed real-time consensus feed.",
-      "generated_at": "2026-11-12T05:47:04.966694+00:00",
+      "generated_at": "2026-11-12T19:54:10.708412+00:00",
       "grade": "WIN",
       "grade_reason": "Signal direction matched the measured gold direction.",
       "historical_context": {
@@ -2423,7 +2423,7 @@
       "missing_fraction": 0.0,
       "reason": "Score 5 cleared the configured threshold with 5 usable votes.",
       "revised_data_warning": "A vintage is used when FRED supplies it, but FRED vintages and release timestamps are not a substitute for a licensed real-time consensus feed.",
-      "generated_at": "2026-11-12T05:47:04.966694+00:00",
+      "generated_at": "2026-11-12T19:54:10.708412+00:00",
       "grade": "LOSS",
       "grade_reason": "Signal direction did not match the measured gold direction.",
       "historical_context": {
@@ -2547,7 +2547,7 @@
       "missing_fraction": 0.0,
       "reason": "Score 2 cleared the configured threshold with 4 usable votes.",
       "revised_data_warning": "A vintage is used when FRED supplies it, but FRED vintages and release timestamps are not a substitute for a licensed real-time consensus feed.",
-      "generated_at": "2026-11-12T05:47:04.966694+00:00",
+      "generated_at": "2026-11-12T19:54:10.708412+00:00",
       "grade": "LOSS",
       "grade_reason": "Signal direction did not match the measured gold direction.",
       "historical_context": {
@@ -2693,7 +2693,7 @@
       "missing_fraction": 0.0,
       "reason": "Score 0 did not clear BUY 2 or SELL -2.",
       "revised_data_warning": "A vintage is used when FRED supplies it, but FRED vintages and release timestamps are not a substitute for a licensed real-time consensus feed.",
-      "generated_at": "2026-11-12T05:47:04.966694+00:00",
+      "generated_at": "2026-11-12T19:54:10.708412+00:00",
       "grade": "UNSURE-skipped",
       "grade_reason": "Signal was UNSURE and is excluded from win-rate N.",
       "historical_context": {
@@ -2839,7 +2839,7 @@
       "missing_fraction": 0.0,
       "reason": "Score 3 cleared the configured threshold with 5 usable votes.",
       "revised_data_warning": "A vintage is used when FRED supplies it, but FRED vintages and release timestamps are not a substitute for a licensed real-time consensus feed.",
-      "generated_at": "2026-11-12T05:47:04.966694+00:00",
+      "generated_at": "2026-11-12T19:54:10.708412+00:00",
       "grade": "LOSS",
       "grade_reason": "Signal direction did not match the measured gold direction.",
       "historical_context": {
@@ -2963,7 +2963,7 @@
       "missing_fraction": 0.0,
       "reason": "Score 0 did not clear BUY 2 or SELL -2.",
       "revised_data_warning": "A vintage is used when FRED supplies it, but FRED vintages and release timestamps are not a substitute for a licensed real-time consensus feed.",
-      "generated_at": "2026-11-12T05:47:04.966694+00:00",
+      "generated_at": "2026-11-12T19:54:10.708412+00:00",
       "grade": "UNSURE-skipped",
       "grade_reason": "Signal was UNSURE and is excluded from win-rate N.",
       "historical_context": {
@@ -3065,7 +3065,7 @@
       "missing_fraction": 0.0,
       "reason": "Score 0 did not clear BUY 2 or SELL -2.",
       "revised_data_warning": "A vintage is used when FRED supplies it, but FRED vintages and release timestamps are not a substitute for a licensed real-time consensus feed.",
-      "generated_at": "2026-11-12T05:47:04.966694+00:00",
+      "generated_at": "2026-11-12T19:54:10.708412+00:00",
       "grade": "UNSURE-skipped",
       "grade_reason": "Signal was UNSURE and is excluded from win-rate N.",
       "historical_context": {
@@ -3211,7 +3211,7 @@
       "missing_fraction": 0.0,
       "reason": "Score 0 did not clear BUY 2 or SELL -2.",
       "revised_data_warning": "A vintage is used when FRED supplies it, but FRED vintages and release timestamps are not a substitute for a licensed real-time consensus feed.",
-      "generated_at": "2026-11-12T05:47:04.966694+00:00",
+      "generated_at": "2026-11-12T19:54:10.708412+00:00",
       "grade": "UNSURE-skipped",
       "grade_reason": "Signal was UNSURE and is excluded from win-rate N.",
       "historical_context": {
@@ -3357,7 +3357,7 @@
       "missing_fraction": 0.0,
       "reason": "Score 3 cleared the configured threshold with 5 usable votes.",
       "revised_data_warning": "A vintage is used when FRED supplies it, but FRED vintages and release timestamps are not a substitute for a licensed real-time consensus feed.",
-      "generated_at": "2026-11-12T05:47:04.966694+00:00",
+      "generated_at": "2026-11-12T19:54:10.708412+00:00",
       "grade": "WIN",
       "grade_reason": "Signal direction matched the measured gold direction.",
       "historical_context": {
@@ -3481,7 +3481,7 @@
       "missing_fraction": 0.0,
       "reason": "Score 0 did not clear BUY 2 or SELL -2.",
       "revised_data_warning": "A vintage is used when FRED supplies it, but FRED vintages and release timestamps are not a substitute for a licensed real-time consensus feed.",
-      "generated_at": "2026-11-12T05:47:04.966694+00:00",
+      "generated_at": "2026-11-12T19:54:10.708412+00:00",
       "grade": "UNSURE-skipped",
       "grade_reason": "Signal was UNSURE and is excluded from win-rate N.",
       "historical_context": {
@@ -3583,7 +3583,7 @@
       "missing_fraction": 0.0,
       "reason": "Score 0 did not clear BUY 2 or SELL -2.",
       "revised_data_warning": "A vintage is used when FRED supplies it, but FRED vintages and release timestamps are not a substitute for a licensed real-time consensus feed.",
-      "generated_at": "2026-11-12T05:47:04.966694+00:00",
+      "generated_at": "2026-11-12T19:54:10.708412+00:00",
       "grade": "UNSURE-skipped",
       "grade_reason": "Signal was UNSURE and is excluded from win-rate N.",
       "historical_context": {
@@ -3729,7 +3729,7 @@
       "missing_fraction": 0.0,
       "reason": "Score 1 did not clear BUY 2 or SELL -2.",
       "revised_data_warning": "A vintage is used when FRED supplies it, but FRED vintages and release timestamps are not a substitute for a licensed real-time consensus feed.",
-      "generated_at": "2026-11-12T05:47:04.966694+00:00",
+      "generated_at": "2026-11-12T19:54:10.708412+00:00",
       "grade": "UNSURE-skipped",
       "grade_reason": "Signal was UNSURE and is excluded from win-rate N.",
       "historical_context": {
@@ -3875,7 +3875,7 @@
       "missing_fraction": 0.0,
       "reason": "Score 5 cleared the configured threshold with 5 usable votes.",
       "revised_data_warning": "A vintage is used when FRED supplies it, but FRED vintages and release timestamps are not a substitute for a licensed real-time consensus feed.",
-      "generated_at": "2026-11-12T05:47:04.966694+00:00",
+      "generated_at": "2026-11-12T19:54:10.708412+00:00",
       "grade": "LOSS",
       "grade_reason": "Signal direction did not match the measured gold direction.",
       "historical_context": {
@@ -3999,7 +3999,7 @@
       "missing_fraction": 0.0,
       "reason": "Score 4 cleared the configured threshold with 4 usable votes.",
       "revised_data_warning": "A vintage is used when FRED supplies it, but FRED vintages and release timestamps are not a substitute for a licensed real-time consensus feed.",
-      "generated_at": "2026-11-12T05:47:04.966694+00:00",
+      "generated_at": "2026-11-12T19:54:10.708412+00:00",
       "grade": "LOSS",
       "grade_reason": "Signal direction did not match the measured gold direction.",
       "historical_context": {
@@ -4145,7 +4145,7 @@
       "missing_fraction": 0.0,
       "reason": "Score -1 did not clear BUY 2 or SELL -2.",
       "revised_data_warning": "A vintage is used when FRED supplies it, but FRED vintages and release timestamps are not a substitute for a licensed real-time consensus feed.",
-      "generated_at": "2026-11-12T05:47:04.966694+00:00",
+      "generated_at": "2026-11-12T19:54:10.708412+00:00",
       "grade": "UNSURE-skipped",
       "grade_reason": "Signal was UNSURE and is excluded from win-rate N.",
       "historical_context": {
@@ -4269,7 +4269,7 @@
       "missing_fraction": 0.0,
       "reason": "Score 4 cleared the configured threshold with 4 usable votes.",
       "revised_data_warning": "A vintage is used when FRED supplies it, but FRED vintages and release timestamps are not a substitute for a licensed real-time consensus feed.",
-      "generated_at": "2026-11-12T05:47:04.966694+00:00",
+      "generated_at": "2026-11-12T19:54:10.708412+00:00",
       "grade": "WIN",
       "grade_reason": "Signal direction matched the measured gold direction.",
       "historical_context": {
@@ -4415,7 +4415,7 @@
       "missing_fraction": 0.0,
       "reason": "Score 5 cleared the configured threshold with 5 usable votes.",
       "revised_data_warning": "A vintage is used when FRED supplies it, but FRED vintages and release timestamps are not a substitute for a licensed real-time consensus feed.",
-      "generated_at": "2026-11-12T05:47:04.966694+00:00",
+      "generated_at": "2026-11-12T19:54:10.708412+00:00",
       "grade": "LOSS",
       "grade_reason": "Signal direction did not match the measured gold direction.",
       "historical_context": {
@@ -4517,7 +4517,7 @@
       "missing_fraction": 0.0,
       "reason": "Score -1 did not clear BUY 2 or SELL -2.",
       "revised_data_warning": "A vintage is used when FRED supplies it, but FRED vintages and release timestamps are not a substitute for a licensed real-time consensus feed.",
-      "generated_at": "2026-11-12T05:47:04.966694+00:00",
+      "generated_at": "2026-11-12T19:54:10.708412+00:00",
       "grade": "UNSURE-skipped",
       "grade_reason": "Signal was UNSURE and is excluded from win-rate N.",
       "historical_context": {
@@ -4663,7 +4663,7 @@
       "missing_fraction": 0.0,
       "reason": "Score 0 did not clear BUY 2 or SELL -2.",
       "revised_data_warning": "A vintage is used when FRED supplies it, but FRED vintages and release timestamps are not a substitute for a licensed real-time consensus feed.",
-      "generated_at": "2026-11-12T05:47:04.966694+00:00",
+      "generated_at": "2026-11-12T19:54:10.708412+00:00",
       "grade": "UNSURE-skipped",
       "grade_reason": "Signal was UNSURE and is excluded from win-rate N.",
       "historical_context": {
@@ -4809,7 +4809,7 @@
       "missing_fraction": 0.0,
       "reason": "Score 5 cleared the configured threshold with 5 usable votes.",
       "revised_data_warning": "A vintage is used when FRED supplies it, but FRED vintages and release timestamps are not a substitute for a licensed real-time consensus feed.",
-      "generated_at": "2026-11-12T05:47:04.966694+00:00",
+      "generated_at": "2026-11-12T19:54:10.708412+00:00",
       "grade": "LOSS",
       "grade_reason": "Signal direction did not match the measured gold direction.",
       "historical_context": {
@@ -4933,7 +4933,7 @@
       "missing_fraction": 0.0,
       "reason": "Score 2 cleared the configured threshold with 4 usable votes.",
       "revised_data_warning": "A vintage is used when FRED supplies it, but FRED vintages and release timestamps are not a substitute for a licensed real-time consensus feed.",
-      "generated_at": "2026-11-12T05:47:04.966694+00:00",
+      "generated_at": "2026-11-12T19:54:10.708412+00:00",
       "grade": "WIN",
       "grade_reason": "Signal direction matched the measured gold direction.",
       "historical_context": {
@@ -5035,7 +5035,7 @@
       "missing_fraction": 0.0,
       "reason": "Score 0 did not clear BUY 2 or SELL -2.",
       "revised_data_warning": "A vintage is used when FRED supplies it, but FRED vintages and release timestamps are not a substitute for a licensed real-time consensus feed.",
-      "generated_at": "2026-11-12T05:47:04.966694+00:00",
+      "generated_at": "2026-11-12T19:54:10.708412+00:00",
       "grade": "UNSURE-skipped",
       "grade_reason": "Signal was UNSURE and is excluded from win-rate N.",
       "historical_context": {
@@ -5181,7 +5181,7 @@
       "missing_fraction": 0.0,
       "reason": "Score 1 did not clear BUY 2 or SELL -2.",
       "revised_data_warning": "A vintage is used when FRED supplies it, but FRED vintages and release timestamps are not a substitute for a licensed real-time consensus feed.",
-      "generated_at": "2026-11-12T05:47:04.966694+00:00",
+      "generated_at": "2026-11-12T19:54:10.708412+00:00",
       "grade": "UNSURE-skipped",
       "grade_reason": "Signal was UNSURE and is excluded from win-rate N.",
       "historical_context": {
@@ -5327,7 +5327,7 @@
       "missing_fraction": 0.0,
       "reason": "Score 3 cleared the configured threshold with 5 usable votes.",
       "revised_data_warning": "A vintage is used when FRED supplies it, but FRED vintages and release timestamps are not a substitute for a licensed real-time consensus feed.",
-      "generated_at": "2026-11-12T05:47:04.966694+00:00",
+      "generated_at": "2026-11-12T19:54:10.708412+00:00",
       "grade": "LOSS",
       "grade_reason": "Signal direction did not match the measured gold direction.",
       "historical_context": {
@@ -5451,7 +5451,7 @@
       "missing_fraction": 0.0,
       "reason": "Score 2 cleared the configured threshold with 4 usable votes.",
       "revised_data_warning": "A vintage is used when FRED supplies it, but FRED vintages and release timestamps are not a substitute for a licensed real-time consensus feed.",
-      "generated_at": "2026-11-12T05:47:04.966694+00:00",
+      "generated_at": "2026-11-12T19:54:10.708412+00:00",
       "historical_context": {
         "N": 8,
         "wins": 5,
@@ -5595,7 +5595,7 @@
       "missing_fraction": 0.0,
       "reason": "Score -2 cleared the configured threshold with 5 usable votes.",
       "revised_data_warning": "A vintage is used when FRED supplies it, but FRED vintages and release timestamps are not a substitute for a licensed real-time consensus feed.",
-      "generated_at": "2026-11-12T05:47:04.966694+00:00",
+      "generated_at": "2026-11-12T19:54:10.708412+00:00",
       "historical_context": {
         "N": 4,
         "wins": 1,
@@ -5695,7 +5695,7 @@
       "missing_fraction": 0.0,
       "reason": "Score 0 did not clear BUY 2 or SELL -2.",
       "revised_data_warning": "A vintage is used when FRED supplies it, but FRED vintages and release timestamps are not a substitute for a licensed real-time consensus feed.",
-      "generated_at": "2026-11-12T05:47:04.966694+00:00",
+      "generated_at": "2026-11-12T19:54:10.708412+00:00",
       "historical_context": {
         "N": 0,
         "wins": 0,
@@ -5839,7 +5839,7 @@
       "missing_fraction": 0.0,
       "reason": "Score 3 cleared the configured threshold with 5 usable votes.",
       "revised_data_warning": "A vintage is used when FRED supplies it, but FRED vintages and release timestamps are not a substitute for a licensed real-time consensus feed.",
-      "generated_at": "2026-11-12T05:47:04.966694+00:00",
+      "generated_at": "2026-11-12T19:54:10.708412+00:00",
       "historical_context": {
         "N": 10,
         "wins": 3,
@@ -5961,7 +5961,7 @@
       "missing_fraction": 0.0,
       "reason": "Score 2 cleared the configured threshold with 4 usable votes.",
       "revised_data_warning": "A vintage is used when FRED supplies it, but FRED vintages and release timestamps are not a substitute for a licensed real-time consensus feed.",
-      "generated_at": "2026-11-12T05:47:04.966694+00:00",
+      "generated_at": "2026-11-12T19:54:10.708412+00:00",
       "historical_context": {
         "N": 8,
         "wins": 5,
@@ -6061,7 +6061,7 @@
       "missing_fraction": 0.0,
       "reason": "Score 0 did not clear BUY 2 or SELL -2.",
       "revised_data_warning": "A vintage is used when FRED supplies it, but FRED vintages and release timestamps are not a substitute for a licensed real-time consensus feed.",
-      "generated_at": "2026-11-12T05:47:04.966694+00:00",
+      "generated_at": "2026-11-12T19:54:10.708412+00:00",
       "historical_context": {
         "N": 0,
         "wins": 0,
@@ -6161,7 +6161,7 @@
       "missing_fraction": 0.0,
       "reason": "Score 0 did not clear BUY 2 or SELL -2.",
       "revised_data_warning": "A vintage is used when FRED supplies it, but FRED vintages and release timestamps are not a substitute for a licensed real-time consensus feed.",
-      "generated_at": "2026-11-12T05:47:04.966694+00:00",
+      "generated_at": "2026-11-12T19:54:10.708412+00:00",
       "historical_context": {
         "N": 0,
         "wins": 0,
@@ -6261,7 +6261,7 @@
       "missing_fraction": 0.0,
       "reason": "Score 0 did not clear BUY 2 or SELL -2.",
       "revised_data_warning": "A vintage is used when FRED supplies it, but FRED vintages and release timestamps are not a substitute for a licensed real-time consensus feed.",
-      "generated_at": "2026-11-12T05:47:04.966694+00:00",
+      "generated_at": "2026-11-12T19:54:10.708412+00:00",
       "historical_context": {
         "N": 0,
         "wins": 0,
@@ -6361,7 +6361,7 @@
       "missing_fraction": 0.0,
       "reason": "Score 0 did not clear BUY 2 or SELL -2.",
       "revised_data_warning": "A vintage is used when FRED supplies it, but FRED vintages and release timestamps are not a substitute for a licensed real-time consensus feed.",
-      "generated_at": "2026-11-12T05:47:04.966694+00:00",
+      "generated_at": "2026-11-12T19:54:10.708412+00:00",
       "historical_context": {
         "N": 0,
         "wins": 0,
@@ -6461,7 +6461,7 @@
       "missing_fraction": 0.0,
       "reason": "Score 0 did not clear BUY 2 or SELL -2.",
       "revised_data_warning": "A vintage is used when FRED supplies it, but FRED vintages and release timestamps are not a substitute for a licensed real-time consensus feed.",
-      "generated_at": "2026-11-12T05:47:04.966694+00:00",
+      "generated_at": "2026-11-12T19:54:10.708412+00:00",
       "historical_context": {
         "N": 0,
         "wins": 0,
@@ -6561,7 +6561,7 @@
       "missing_fraction": 0.0,
       "reason": "Score 0 did not clear BUY 2 or SELL -2.",
       "revised_data_warning": "A vintage is used when FRED supplies it, but FRED vintages and release timestamps are not a substitute for a licensed real-time consensus feed.",
-      "generated_at": "2026-11-12T05:47:04.966694+00:00",
+      "generated_at": "2026-11-12T19:54:10.708412+00:00",
       "historical_context": {
         "N": 0,
         "wins": 0,
@@ -6661,7 +6661,7 @@
       "missing_fraction": 0.0,
       "reason": "Score 0 did not clear BUY 2 or SELL -2.",
       "revised_data_warning": "A vintage is used when FRED supplies it, but FRED vintages and release timestamps are not a substitute for a licensed real-time consensus feed.",
-      "generated_at": "2026-11-12T05:47:04.966694+00:00",
+      "generated_at": "2026-11-12T19:54:10.708412+00:00",
       "historical_context": {
         "N": 0,
         "wins": 0,
@@ -6672,13 +6672,13 @@
       }
     },
     {
-      "event_id": "fomc-2027-12-08",
+      "event_id": "fomc-2027-11-17",
       "release_type": "fomc",
       "release_label": "FOMC",
       "release_name": "FOMC statement",
-      "release_date": "2027-12-08",
+      "release_date": "2027-11-17",
       "release_time_et": "14:00",
-      "release_time_wat": "2027-12-08T20:00:00+01:00",
+      "release_time_wat": "2027-11-17T20:00:00+01:00",
       "mode": "live_candidate",
       "data_vintage": "2026-11-11",
       "indicator_source": "FRED series observations with vintage_dates",
@@ -6754,14 +6754,14 @@
       "signal": "UNSURE",
       "signal_locked": false,
       "lock_state": "candidate_before_lock",
-      "lock_time_et": "2027-12-08T13:00:00-05:00",
+      "lock_time_et": "2027-11-17T13:00:00-05:00",
       "lock_minutes_before_release": 60,
       "available_votes": 3,
       "missing_indicators": 0,
       "missing_fraction": 0.0,
       "reason": "Score 0 did not clear BUY 2 or SELL -2.",
       "revised_data_warning": "A vintage is used when FRED supplies it, but FRED vintages and release timestamps are not a substitute for a licensed real-time consensus feed.",
-      "generated_at": "2026-11-12T05:47:04.966694+00:00",
+      "generated_at": "2026-11-12T19:54:10.708412+00:00",
       "historical_context": {
         "N": 0,
         "wins": 0,

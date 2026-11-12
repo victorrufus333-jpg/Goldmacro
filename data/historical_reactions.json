@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-11-12T05:47:04.966694+00:00",
+  "generated_at": "2026-11-12T19:54:10.708412+00:00",
   "history_window": {
     "start_date": "2026-01-01",
     "end_date": "2026-11-12"
@@ -10,11 +10,11 @@
     "symbol": "GC=F",
     "instrument_label": "COMEX gold futures front-month proxy; not spot XAUUSD",
     "source_url": "https://finance.yahoo.com/quote/GC=F/history",
-    "retrieved_at": "2026-11-12T05:47:03.704033+00:00",
+    "retrieved_at": "2026-11-12T19:54:09.729842+00:00",
     "adjustment": "unadjusted OHLC close",
     "hourly_interval": "1h",
     "daily_interval": "1d",
-    "hourly_rows": 13718,
+    "hourly_rows": 13736,
     "daily_rows": 222
   },
   "measure_definitions": {
@@ -176,7 +176,7 @@
           "provider": "Yahoo Finance via yfinance",
           "symbol": "GC=F",
           "source_url": "https://finance.yahoo.com/quote/GC=F/history",
-          "retrieved_at": "2026-11-12T05:47:03.704033+00:00",
+          "retrieved_at": "2026-11-12T19:54:09.729842+00:00",
           "adjustment": "unadjusted OHLC close"
         }
       },
@@ -336,7 +336,7 @@
           "provider": "Yahoo Finance via yfinance",
           "symbol": "GC=F",
           "source_url": "https://finance.yahoo.com/quote/GC=F/history",
-          "retrieved_at": "2026-11-12T05:47:03.704033+00:00",
+          "retrieved_at": "2026-11-12T19:54:09.729842+00:00",
           "adjustment": "unadjusted OHLC close"
         }
       },
@@ -474,7 +474,7 @@
           "provider": "Yahoo Finance via yfinance",
           "symbol": "GC=F",
           "source_url": "https://finance.yahoo.com/quote/GC=F/history",
-          "retrieved_at": "2026-11-12T05:47:03.704033+00:00",
+          "retrieved_at": "2026-11-12T19:54:09.729842+00:00",
           "adjustment": "unadjusted OHLC close"
         }
       },
@@ -592,7 +592,7 @@
           "provider": "Yahoo Finance via yfinance",
           "symbol": "GC=F",
           "source_url": "https://finance.yahoo.com/quote/GC=F/history",
-          "retrieved_at": "2026-11-12T05:47:03.704033+00:00",
+          "retrieved_at": "2026-11-12T19:54:09.729842+00:00",
           "adjustment": "unadjusted OHLC close"
         }
       },
@@ -732,7 +732,7 @@
           "provider": "Yahoo Finance via yfinance",
           "symbol": "GC=F",
           "source_url": "https://finance.yahoo.com/quote/GC=F/history",
-          "retrieved_at": "2026-11-12T05:47:03.704033+00:00",
+          "retrieved_at": "2026-11-12T19:54:09.729842+00:00",
           "adjustment": "unadjusted OHLC close"
         }
       },
@@ -894,7 +894,7 @@
           "provider": "Yahoo Finance via yfinance",
           "symbol": "GC=F",
           "source_url": "https://finance.yahoo.com/quote/GC=F/history",
-          "retrieved_at": "2026-11-12T05:47:03.704033+00:00",
+          "retrieved_at": "2026-11-12T19:54:09.729842+00:00",
           "adjustment": "unadjusted OHLC close"
         }
       },
@@ -1056,7 +1056,7 @@
           "provider": "Yahoo Finance via yfinance",
           "symbol": "GC=F",
           "source_url": "https://finance.yahoo.com/quote/GC=F/history",
-          "retrieved_at": "2026-11-12T05:47:03.704033+00:00",
+          "retrieved_at": "2026-11-12T19:54:09.729842+00:00",
           "adjustment": "unadjusted OHLC close"
         }
       },
@@ -1196,7 +1196,7 @@
           "provider": "Yahoo Finance via yfinance",
           "symbol": "GC=F",
           "source_url": "https://finance.yahoo.com/quote/GC=F/history",
-          "retrieved_at": "2026-11-12T05:47:03.704033+00:00",
+          "retrieved_at": "2026-11-12T19:54:09.729842+00:00",
           "adjustment": "unadjusted OHLC close"
         }
       },
@@ -1357,7 +1357,7 @@
           "provider": "Yahoo Finance via yfinance",
           "symbol": "GC=F",
           "source_url": "https://finance.yahoo.com/quote/GC=F/history",
-          "retrieved_at": "2026-11-12T05:47:03.704033+00:00",
+          "retrieved_at": "2026-11-12T19:54:09.729842+00:00",
           "adjustment": "unadjusted OHLC close"
         }
       },
@@ -1519,7 +1519,7 @@
           "provider": "Yahoo Finance via yfinance",
           "symbol": "GC=F",
           "source_url": "https://finance.yahoo.com/quote/GC=F/history",
-          "retrieved_at": "2026-11-12T05:47:03.704033+00:00",
+          "retrieved_at": "2026-11-12T19:54:09.729842+00:00",
           "adjustment": "unadjusted OHLC close"
         }
       },
@@ -1659,7 +1659,7 @@
           "provider": "Yahoo Finance via yfinance",
           "symbol": "GC=F",
           "source_url": "https://finance.yahoo.com/quote/GC=F/history",
-          "retrieved_at": "2026-11-12T05:47:03.704033+00:00",
+          "retrieved_at": "2026-11-12T19:54:09.729842+00:00",
           "adjustment": "unadjusted OHLC close"
         }
       },
@@ -1777,7 +1777,7 @@
           "provider": "Yahoo Finance via yfinance",
           "symbol": "GC=F",
           "source_url": "https://finance.yahoo.com/quote/GC=F/history",
-          "retrieved_at": "2026-11-12T05:47:03.704033+00:00",
+          "retrieved_at": "2026-11-12T19:54:09.729842+00:00",
           "adjustment": "unadjusted OHLC close"
         }
       },
@@ -1939,7 +1939,7 @@
           "provider": "Yahoo Finance via yfinance",
           "symbol": "GC=F",
           "source_url": "https://finance.yahoo.com/quote/GC=F/history",
-          "retrieved_at": "2026-11-12T05:47:03.704033+00:00",
+          "retrieved_at": "2026-11-12T19:54:09.729842+00:00",
           "adjustment": "unadjusted OHLC close"
         }
       },
@@ -2101,7 +2101,7 @@
           "provider": "Yahoo Finance via yfinance",
           "symbol": "GC=F",
           "source_url": "https://finance.yahoo.com/quote/GC=F/history",
-          "retrieved_at": "2026-11-12T05:47:03.704033+00:00",
+          "retrieved_at": "2026-11-12T19:54:09.729842+00:00",
           "adjustment": "unadjusted OHLC close"
         }
       },
@@ -2241,7 +2241,7 @@
           "provider": "Yahoo Finance via yfinance",
           "symbol": "GC=F",
           "source_url": "https://finance.yahoo.com/quote/GC=F/history",
-          "retrieved_at": "2026-11-12T05:47:03.704033+00:00",
+          "retrieved_at": "2026-11-12T19:54:09.729842+00:00",
           "adjustment": "unadjusted OHLC close"
         }
       },
@@ -2359,7 +2359,7 @@
           "provider": "Yahoo Finance via yfinance",
           "symbol": "GC=F",
           "source_url": "https://finance.yahoo.com/quote/GC=F/history",
-          "retrieved_at": "2026-11-12T05:47:03.704033+00:00",
+          "retrieved_at": "2026-11-12T19:54:09.729842+00:00",
           "adjustment": "unadjusted OHLC close"
         }
       },
@@ -2521,7 +2521,7 @@
           "provider": "Yahoo Finance via yfinance",
           "symbol": "GC=F",
           "source_url": "https://finance.yahoo.com/quote/GC=F/history",
-          "retrieved_at": "2026-11-12T05:47:03.704033+00:00",
+          "retrieved_at": "2026-11-12T19:54:09.729842+00:00",
           "adjustment": "unadjusted OHLC close"
         }
       },
@@ -2683,7 +2683,7 @@
           "provider": "Yahoo Finance via yfinance",
           "symbol": "GC=F",
           "source_url": "https://finance.yahoo.com/quote/GC=F/history",
-          "retrieved_at": "2026-11-12T05:47:03.704033+00:00",
+          "retrieved_at": "2026-11-12T19:54:09.729842+00:00",
           "adjustment": "unadjusted OHLC close"
         }
       },
@@ -2823,7 +2823,7 @@
           "provider": "Yahoo Finance via yfinance",
           "symbol": "GC=F",
           "source_url": "https://finance.yahoo.com/quote/GC=F/history",
-          "retrieved_at": "2026-11-12T05:47:03.704033+00:00",
+          "retrieved_at": "2026-11-12T19:54:09.729842+00:00",
           "adjustment": "unadjusted OHLC close"
         }
       },
@@ -2985,7 +2985,7 @@
           "provider": "Yahoo Finance via yfinance",
           "symbol": "GC=F",
           "source_url": "https://finance.yahoo.com/quote/GC=F/history",
-          "retrieved_at": "2026-11-12T05:47:03.704033+00:00",
+          "retrieved_at": "2026-11-12T19:54:09.729842+00:00",
           "adjustment": "unadjusted OHLC close"
         }
       },
@@ -3147,7 +3147,7 @@
           "provider": "Yahoo Finance via yfinance",
           "symbol": "GC=F",
           "source_url": "https://finance.yahoo.com/quote/GC=F/history",
-          "retrieved_at": "2026-11-12T05:47:03.704033+00:00",
+          "retrieved_at": "2026-11-12T19:54:09.729842+00:00",
           "adjustment": "unadjusted OHLC close"
         }
       },
@@ -3287,7 +3287,7 @@
           "provider": "Yahoo Finance via yfinance",
           "symbol": "GC=F",
           "source_url": "https://finance.yahoo.com/quote/GC=F/history",
-          "retrieved_at": "2026-11-12T05:47:03.704033+00:00",
+          "retrieved_at": "2026-11-12T19:54:09.729842+00:00",
           "adjustment": "unadjusted OHLC close"
         }
       },
@@ -3405,7 +3405,7 @@
           "provider": "Yahoo Finance via yfinance",
           "symbol": "GC=F",
           "source_url": "https://finance.yahoo.com/quote/GC=F/history",
-          "retrieved_at": "2026-11-12T05:47:03.704033+00:00",
+          "retrieved_at": "2026-11-12T19:54:09.729842+00:00",
           "adjustment": "unadjusted OHLC close"
         }
       },
@@ -3567,7 +3567,7 @@
           "provider": "Yahoo Finance via yfinance",
           "symbol": "GC=F",
           "source_url": "https://finance.yahoo.com/quote/GC=F/history",
-          "retrieved_at": "2026-11-12T05:47:03.704033+00:00",
+          "retrieved_at": "2026-11-12T19:54:09.729842+00:00",
           "adjustment": "unadjusted OHLC close"
         }
       },
@@ -3729,7 +3729,7 @@
           "provider": "Yahoo Finance via yfinance",
           "symbol": "GC=F",
           "source_url": "https://finance.yahoo.com/quote/GC=F/history",
-          "retrieved_at": "2026-11-12T05:47:03.704033+00:00",
+          "retrieved_at": "2026-11-12T19:54:09.729842+00:00",
           "adjustment": "unadjusted OHLC close"
         }
       },
@@ -3869,7 +3869,7 @@
           "provider": "Yahoo Finance via yfinance",
           "symbol": "GC=F",
           "source_url": "https://finance.yahoo.com/quote/GC=F/history",
-          "retrieved_at": "2026-11-12T05:47:03.704033+00:00",
+          "retrieved_at": "2026-11-12T19:54:09.729842+00:00",
           "adjustment": "unadjusted OHLC close"
         }
       },
@@ -3987,7 +3987,7 @@
           "provider": "Yahoo Finance via yfinance",
           "symbol": "GC=F",
           "source_url": "https://finance.yahoo.com/quote/GC=F/history",
-          "retrieved_at": "2026-11-12T05:47:03.704033+00:00",
+          "retrieved_at": "2026-11-12T19:54:09.729842+00:00",
           "adjustment": "unadjusted OHLC close"
         }
       },
@@ -4149,7 +4149,7 @@
           "provider": "Yahoo Finance via yfinance",
           "symbol": "GC=F",
           "source_url": "https://finance.yahoo.com/quote/GC=F/history",
-          "retrieved_at": "2026-11-12T05:47:03.704033+00:00",
+          "retrieved_at": "2026-11-12T19:54:09.729842+00:00",
           "adjustment": "unadjusted OHLC close"
         }
       },
@@ -4311,7 +4311,7 @@
           "provider": "Yahoo Finance via yfinance",
           "symbol": "GC=F",
           "source_url": "https://finance.yahoo.com/quote/GC=F/history",
-          "retrieved_at": "2026-11-12T05:47:03.704033+00:00",
+          "retrieved_at": "2026-11-12T19:54:09.729842+00:00",
           "adjustment": "unadjusted OHLC close"
         }
       },
@@ -4451,7 +4451,7 @@
           "provider": "Yahoo Finance via yfinance",
           "symbol": "GC=F",
           "source_url": "https://finance.yahoo.com/quote/GC=F/history",
-          "retrieved_at": "2026-11-12T05:47:03.704033+00:00",
+          "retrieved_at": "2026-11-12T19:54:09.729842+00:00",
           "adjustment": "unadjusted OHLC close"
         }
       },
@@ -4613,7 +4613,7 @@
           "provider": "Yahoo Finance via yfinance",
           "symbol": "GC=F",
           "source_url": "https://finance.yahoo.com/quote/GC=F/history",
-          "retrieved_at": "2026-11-12T05:47:03.704033+00:00",
+          "retrieved_at": "2026-11-12T19:54:09.729842+00:00",
           "adjustment": "unadjusted OHLC close"
         }
       },
@@ -4753,7 +4753,7 @@
           "provider": "Yahoo Finance via yfinance",
           "symbol": "GC=F",
           "source_url": "https://finance.yahoo.com/quote/GC=F/history",
-          "retrieved_at": "2026-11-12T05:47:03.704033+00:00",
+          "retrieved_at": "2026-11-12T19:54:09.729842+00:00",
           "adjustment": "unadjusted OHLC close"
         }
       },
@@ -4915,7 +4915,7 @@
           "provider": "Yahoo Finance via yfinance",
           "symbol": "GC=F",
           "source_url": "https://finance.yahoo.com/quote/GC=F/history",
-          "retrieved_at": "2026-11-12T05:47:03.704033+00:00",
+          "retrieved_at": "2026-11-12T19:54:09.729842+00:00",
           "adjustment": "unadjusted OHLC close"
         }
       },
@@ -5033,7 +5033,7 @@
           "provider": "Yahoo Finance via yfinance",
           "symbol": "GC=F",
           "source_url": "https://finance.yahoo.com/quote/GC=F/history",
-          "retrieved_at": "2026-11-12T05:47:03.704033+00:00",
+          "retrieved_at": "2026-11-12T19:54:09.729842+00:00",
           "adjustment": "unadjusted OHLC close"
         }
       },
@@ -5195,7 +5195,7 @@
           "provider": "Yahoo Finance via yfinance",
           "symbol": "GC=F",
           "source_url": "https://finance.yahoo.com/quote/GC=F/history",
-          "retrieved_at": "2026-11-12T05:47:03.704033+00:00",
+          "retrieved_at": "2026-11-12T19:54:09.729842+00:00",
           "adjustment": "unadjusted OHLC close"
         }
       },
@@ -5357,7 +5357,7 @@
           "provider": "Yahoo Finance via yfinance",
           "symbol": "GC=F",
           "source_url": "https://finance.yahoo.com/quote/GC=F/history",
-          "retrieved_at": "2026-11-12T05:47:03.704033+00:00",
+          "retrieved_at": "2026-11-12T19:54:09.729842+00:00",
           "adjustment": "unadjusted OHLC close"
         }
       },
@@ -5497,7 +5497,7 @@
           "provider": "Yahoo Finance via yfinance",
           "symbol": "GC=F",
           "source_url": "https://finance.yahoo.com/quote/GC=F/history",
-          "retrieved_at": "2026-11-12T05:47:03.704033+00:00",
+          "retrieved_at": "2026-11-12T19:54:09.729842+00:00",
           "adjustment": "unadjusted OHLC close"
         }
       },
@@ -5615,7 +5615,7 @@
           "provider": "Yahoo Finance via yfinance",
           "symbol": "GC=F",
           "source_url": "https://finance.yahoo.com/quote/GC=F/history",
-          "retrieved_at": "2026-11-12T05:47:03.704033+00:00",
+          "retrieved_at": "2026-11-12T19:54:09.729842+00:00",
           "adjustment": "unadjusted OHLC close"
         }
       },
@@ -5777,7 +5777,7 @@
           "provider": "Yahoo Finance via yfinance",
           "symbol": "GC=F",
           "source_url": "https://finance.yahoo.com/quote/GC=F/history",
-          "retrieved_at": "2026-11-12T05:47:03.704033+00:00",
+          "retrieved_at": "2026-11-12T19:54:09.729842+00:00",
           "adjustment": "unadjusted OHLC close"
         }
       },
@@ -5939,7 +5939,7 @@
           "provider": "Yahoo Finance via yfinance",
           "symbol": "GC=F",
           "source_url": "https://finance.yahoo.com/quote/GC=F/history",
-          "retrieved_at": "2026-11-12T05:47:03.704033+00:00",
+          "retrieved_at": "2026-11-12T19:54:09.729842+00:00",
           "adjustment": "unadjusted OHLC close"
         }
       },

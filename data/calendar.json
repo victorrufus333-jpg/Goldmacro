@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-11-12T05:45:03.992641+00:00",
+  "generated_at": "2026-11-12T19:52:00.977735+00:00",
   "events": [
     {
       "id": "fomc-2026-01-28",
@@ -252,7 +252,7 @@
         "url": "https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm",
         "kind": "federal_reserve_live"
       },
-      "raw_label": "March 16-17* 2027"
+      "raw_label": "March 16-17 2027"
     },
     {
       "id": "fomc-2027-04-28",
@@ -288,7 +288,7 @@
         "url": "https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm",
         "kind": "federal_reserve_live"
       },
-      "raw_label": "June 8-9* 2027"
+      "raw_label": "June 8-9 2027"
     },
     {
       "id": "fomc-2027-07-28",
@@ -324,7 +324,7 @@
         "url": "https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm",
         "kind": "federal_reserve_live"
       },
-      "raw_label": "September 14-15* 2027"
+      "raw_label": "September 14-15 2027"
     },
     {
       "id": "fomc-2027-10-27",
@@ -345,22 +345,22 @@
       "raw_label": "October 26-27 2027"
     },
     {
-      "id": "fomc-2027-12-08",
+      "id": "fomc-2027-11-17",
       "release_type": "fomc",
       "label": "FOMC",
       "name": "FOMC statement",
-      "date": "2027-12-08",
+      "date": "2027-11-17",
       "time_et": "14:00",
       "times": {
-        "et": "2027-12-08T14:00:00-05:00",
-        "wat": "2027-12-08T20:00:00+01:00"
+        "et": "2027-11-17T14:00:00-05:00",
+        "wat": "2027-11-17T20:00:00+01:00"
       },
       "source": {
         "name": "Federal Reserve FOMC calendar",
         "url": "https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm",
         "kind": "federal_reserve_live"
       },
-      "raw_label": "December 7-8* 2027"
+      "raw_label": "November 16-17 2027"
     }
   ],
   "source_status": {
@@ -368,7 +368,7 @@
       "name": "FRED release dates API",
       "url": "https://api.stlouisfed.org/fred/releases/dates",
       "state": "ok",
-      "last_checked": "2026-11-12T05:45:03.992641+00:00",
+      "last_checked": "2026-11-12T19:52:00.977735+00:00",
       "records": 4,
       "detail": "Fetched 4 verified release-date records from FRED.",
       "mode": "live"
@@ -377,7 +377,7 @@
       "name": "Federal Reserve FOMC calendar",
       "url": "https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm",
       "state": "ok",
-      "last_checked": "2026-11-12T05:45:03.992641+00:00",
+      "last_checked": "2026-11-12T19:52:00.977735+00:00",
       "records": 16,
       "detail": "Parsed 16 meetings from the official Federal Reserve page.",
       "mode": "live"
