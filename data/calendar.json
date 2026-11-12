@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-11-09T19:53:15.667223+00:00",
+  "generated_at": "2026-11-12T05:45:03.992641+00:00",
   "events": [
     {
       "id": "fomc-2026-01-28",
@@ -129,24 +129,6 @@
       "raw_label": "October 27-28 2026"
     },
     {
-      "id": "cpi-2026-11-10",
-      "release_type": "cpi",
-      "label": "CPI",
-      "name": "Consumer Price Index",
-      "date": "2026-11-10",
-      "time_et": "08:30",
-      "times": {
-        "et": "2026-11-10T08:30:00-05:00",
-        "wat": "2026-11-10T14:30:00+01:00"
-      },
-      "source": {
-        "name": "FRED release dates API",
-        "url": "https://api.stlouisfed.org/fred/releases/dates",
-        "kind": "fred_api"
-      },
-      "raw_label": "Consumer Price Index"
-    },
-    {
       "id": "ppi-2026-11-13",
       "release_type": "ppi",
       "label": "PPI",
@@ -217,6 +199,24 @@
         "kind": "fred_api"
       },
       "raw_label": "Consumer Price Index"
+    },
+    {
+      "id": "ppi-2026-12-15",
+      "release_type": "ppi",
+      "label": "PPI",
+      "name": "Producer Price Index",
+      "date": "2026-12-15",
+      "time_et": "08:30",
+      "times": {
+        "et": "2026-12-15T08:30:00-05:00",
+        "wat": "2026-12-15T14:30:00+01:00"
+      },
+      "source": {
+        "name": "FRED release dates API",
+        "url": "https://api.stlouisfed.org/fred/releases/dates",
+        "kind": "fred_api"
+      },
+      "raw_label": "Producer Price Index"
     },
     {
       "id": "fomc-2027-01-27",
@@ -368,7 +368,7 @@
       "name": "FRED release dates API",
       "url": "https://api.stlouisfed.org/fred/releases/dates",
       "state": "ok",
-      "last_checked": "2026-11-09T19:53:15.667223+00:00",
+      "last_checked": "2026-11-12T05:45:03.992641+00:00",
       "records": 4,
       "detail": "Fetched 4 verified release-date records from FRED.",
       "mode": "live"
@@ -377,7 +377,7 @@
       "name": "Federal Reserve FOMC calendar",
       "url": "https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm",
       "state": "ok",
-      "last_checked": "2026-11-09T19:53:15.667223+00:00",
+      "last_checked": "2026-11-12T05:45:03.992641+00:00",
       "records": 16,
       "detail": "Parsed 16 meetings from the official Federal Reserve page.",
       "mode": "live"
