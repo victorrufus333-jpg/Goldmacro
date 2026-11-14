@@ -1,7 +1,9 @@
 const RELEASE_ORDER = ["nfp", "cpi", "ppi", "fomc"];
 const SOURCE_LABELS = {
   fred_releases: "FRED API",
+  bls_schedules: "BLS schedules",
   federal_reserve_fomc: "Federal Reserve",
+  calendar_coverage: "12-month coverage",
   fred_history: "FRED history",
   fomc_history: "Fed history",
   gold_price_hourly: "Yahoo hourly",
@@ -12,7 +14,9 @@ const SOURCE_LABELS = {
 };
 const SOURCE_URLS = {
   fred_releases: "https://api.stlouisfed.org/fred/releases/dates",
+  bls_schedules: "https://www.bls.gov/schedule/news_release/",
   federal_reserve_fomc: "https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm",
+  calendar_coverage: "https://www.bls.gov/schedule/news_release/",
   fred_history: "https://api.stlouisfed.org/fred/releases/dates",
   fomc_history: "https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm",
   gold_price_hourly: "https://finance.yahoo.com/quote/GC=F/history",
@@ -129,7 +133,7 @@ function releaseStrip() {
 }
 
 function eventRow(event, compact = false) {
-  const sourceKey = event.source?.kind === "manual_fallback" ? "federal_reserve_fomc" : event.source?.kind === "fred_api" ? "fred_releases" : event.release_type === "fomc" ? "federal_reserve_fomc" : "fred_releases";
+  const sourceKey = event.source?.kind === "manual_fallback" ? "federal_reserve_fomc" : event.source?.kind === "bls_schedule" ? "bls_schedules" : event.source?.kind === "fred_api" ? "fred_releases" : event.release_type === "fomc" ? "federal_reserve_fomc" : "fred_releases";
   const state = status.sources?.[sourceKey]?.state || "unavailable";
   const signal = signalFor(event);
   return `<article class="event-row ${compact ? "compact" : ""}">
@@ -157,11 +161,11 @@ function homeView() {
 
 function calendarView() {
   const events = [...(calendar.events || [])].sort((a, b) => new Date(a.times?.et || a.date) - new Date(b.times?.et || b.date));
-  return `${nav("calendar")}${phaseNotice()}<section class="page-heading"><p class="eyebrow">VERIFIED EVENT STREAM</p><h1>Macro calendar</h1><p>Every displayed date comes from FRED or the Federal Reserve fallback file. The model does not attempt to fill missing BLS dates.</p></section><div class="calendar-key"><span><i class="key-dot fred"></i>FRED release date</span><span><i class="key-dot fed"></i>Federal Reserve calendar</span><span><i class="key-dot fallback"></i>manual fallback</span></div><section class="event-list full-list">${events.map((item) => eventRow(item)).join("") || `<div class="empty-panel">No verified calendar records are available. Check Status for the source reason.</div>`}</section>`;
+  return `${nav("calendar")}${phaseNotice()}<section class="page-heading"><p class="eyebrow">VERIFIED EVENT STREAM</p><h1>Macro calendar</h1><p>Every displayed date comes from FRED, the official BLS release schedules, or the Federal Reserve fallback file. The model does not infer missing dates.</p></section><div class="calendar-key"><span><i class="key-dot fred"></i>FRED release date</span><span><i class="key-dot fed"></i>Federal Reserve calendar</span><span><i class="key-dot fallback"></i>BLS/manual fallback</span></div><section class="event-list full-list">${events.map((item) => eventRow(item)).join("") || `<div class="empty-panel">No verified calendar records are available. Check Status for the source reason.</div>`}</section>`;
 }
 
 function statusView() {
-  const sourceKeys = ["fred_releases", "federal_reserve_fomc", "fred_history", "fomc_history", "gold_price_hourly", "gold_price_daily", "historical_reactions", "fred_indicators", "signal_engine"];
+  const sourceKeys = ["fred_releases", "bls_schedules", "federal_reserve_fomc", "calendar_coverage", "fred_history", "fomc_history", "gold_price_hourly", "gold_price_daily", "historical_reactions", "fred_indicators", "signal_engine"];
   return `${nav("status")}<section class="page-heading"><p class="eyebrow">DATA PROVENANCE</p><h1>Status</h1><p>Health is reported per source. Stale means the last known data was kept after a failed refresh; unavailable means no verified records exist.</p></section><div class="status-grid">${sourceKeys.map((key) => {
     const item = status.sources?.[key] || { name: SOURCE_LABELS[key], state: "unavailable", detail: "No status has been recorded yet.", records: 0 };
     const sourceUrl = item.url || SOURCE_URLS[key];

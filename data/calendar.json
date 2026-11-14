@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-11-12T05:45:03.992641+00:00",
+  "generated_at": "2026-11-14T16:53:26.361432+00:00",
   "events": [
     {
       "id": "fomc-2026-01-28",
@@ -129,6 +129,42 @@
       "raw_label": "October 27-28 2026"
     },
     {
+      "id": "nfp-2026-11-06",
+      "release_type": "nfp",
+      "label": "NFP",
+      "name": "Employment Situation",
+      "date": "2026-11-06",
+      "time_et": "08:30",
+      "times": {
+        "et": "2026-11-06T08:30:00-05:00",
+        "wat": "2026-11-06T14:30:00+01:00"
+      },
+      "source": {
+        "name": "BLS official release schedules",
+        "url": "https://www.bls.gov/schedule/news_release/empsit.htm",
+        "kind": "bls_schedule"
+      },
+      "raw_label": "October 2026"
+    },
+    {
+      "id": "cpi-2026-11-10",
+      "release_type": "cpi",
+      "label": "CPI",
+      "name": "Consumer Price Index",
+      "date": "2026-11-10",
+      "time_et": "08:30",
+      "times": {
+        "et": "2026-11-10T08:30:00-05:00",
+        "wat": "2026-11-10T14:30:00+01:00"
+      },
+      "source": {
+        "name": "BLS official release schedules",
+        "url": "https://www.bls.gov/schedule/news_release/cpi.htm",
+        "kind": "bls_schedule"
+      },
+      "raw_label": "October 2026"
+    },
+    {
       "id": "ppi-2026-11-13",
       "release_type": "ppi",
       "label": "PPI",
@@ -140,11 +176,11 @@
         "wat": "2026-11-13T14:30:00+01:00"
       },
       "source": {
-        "name": "FRED release dates API",
-        "url": "https://api.stlouisfed.org/fred/releases/dates",
-        "kind": "fred_api"
+        "name": "BLS official release schedules",
+        "url": "https://www.bls.gov/schedule/news_release/ppi.htm",
+        "kind": "bls_schedule"
       },
-      "raw_label": "Producer Price Index"
+      "raw_label": "October 2026"
     },
     {
       "id": "nfp-2026-12-04",
@@ -219,6 +255,60 @@
       "raw_label": "Producer Price Index"
     },
     {
+      "id": "nfp-2027-01-08",
+      "release_type": "nfp",
+      "label": "NFP",
+      "name": "Employment Situation",
+      "date": "2027-01-08",
+      "time_et": "08:30",
+      "times": {
+        "et": "2027-01-08T08:30:00-05:00",
+        "wat": "2027-01-08T14:30:00+01:00"
+      },
+      "source": {
+        "name": "BLS official release schedules",
+        "url": "https://www.bls.gov/schedule/news_release/empsit.htm",
+        "kind": "bls_schedule"
+      },
+      "raw_label": "December 2026"
+    },
+    {
+      "id": "cpi-2027-01-13",
+      "release_type": "cpi",
+      "label": "CPI",
+      "name": "Consumer Price Index",
+      "date": "2027-01-13",
+      "time_et": "08:30",
+      "times": {
+        "et": "2027-01-13T08:30:00-05:00",
+        "wat": "2027-01-13T14:30:00+01:00"
+      },
+      "source": {
+        "name": "BLS official release schedules",
+        "url": "https://www.bls.gov/schedule/news_release/cpi.htm",
+        "kind": "bls_schedule"
+      },
+      "raw_label": "December 2026"
+    },
+    {
+      "id": "ppi-2027-01-14",
+      "release_type": "ppi",
+      "label": "PPI",
+      "name": "Producer Price Index",
+      "date": "2027-01-14",
+      "time_et": "08:30",
+      "times": {
+        "et": "2027-01-14T08:30:00-05:00",
+        "wat": "2027-01-14T14:30:00+01:00"
+      },
+      "source": {
+        "name": "BLS official release schedules",
+        "url": "https://www.bls.gov/schedule/news_release/ppi.htm",
+        "kind": "bls_schedule"
+      },
+      "raw_label": "December 2026"
+    },
+    {
       "id": "fomc-2027-01-27",
       "release_type": "fomc",
       "label": "FOMC",
@@ -237,6 +327,114 @@
       "raw_label": "January 26-27 2027"
     },
     {
+      "id": "nfp-2027-02-05",
+      "release_type": "nfp",
+      "label": "NFP",
+      "name": "Employment Situation",
+      "date": "2027-02-05",
+      "time_et": "08:30",
+      "times": {
+        "et": "2027-02-05T08:30:00-05:00",
+        "wat": "2027-02-05T14:30:00+01:00"
+      },
+      "source": {
+        "name": "BLS official release schedules",
+        "url": "https://www.bls.gov/schedule/news_release/empsit.htm",
+        "kind": "bls_schedule"
+      },
+      "raw_label": "January 2027"
+    },
+    {
+      "id": "cpi-2027-02-11",
+      "release_type": "cpi",
+      "label": "CPI",
+      "name": "Consumer Price Index",
+      "date": "2027-02-11",
+      "time_et": "08:30",
+      "times": {
+        "et": "2027-02-11T08:30:00-05:00",
+        "wat": "2027-02-11T14:30:00+01:00"
+      },
+      "source": {
+        "name": "BLS official release schedules",
+        "url": "https://www.bls.gov/schedule/news_release/cpi.htm",
+        "kind": "bls_schedule"
+      },
+      "raw_label": "January 2027"
+    },
+    {
+      "id": "ppi-2027-02-12",
+      "release_type": "ppi",
+      "label": "PPI",
+      "name": "Producer Price Index",
+      "date": "2027-02-12",
+      "time_et": "08:30",
+      "times": {
+        "et": "2027-02-12T08:30:00-05:00",
+        "wat": "2027-02-12T14:30:00+01:00"
+      },
+      "source": {
+        "name": "BLS official release schedules",
+        "url": "https://www.bls.gov/schedule/news_release/ppi.htm",
+        "kind": "bls_schedule"
+      },
+      "raw_label": "January 2027"
+    },
+    {
+      "id": "nfp-2027-03-05",
+      "release_type": "nfp",
+      "label": "NFP",
+      "name": "Employment Situation",
+      "date": "2027-03-05",
+      "time_et": "08:30",
+      "times": {
+        "et": "2027-03-05T08:30:00-05:00",
+        "wat": "2027-03-05T14:30:00+01:00"
+      },
+      "source": {
+        "name": "BLS official release schedules",
+        "url": "https://www.bls.gov/schedule/news_release/empsit.htm",
+        "kind": "bls_schedule"
+      },
+      "raw_label": "February 2027"
+    },
+    {
+      "id": "cpi-2027-03-10",
+      "release_type": "cpi",
+      "label": "CPI",
+      "name": "Consumer Price Index",
+      "date": "2027-03-10",
+      "time_et": "08:30",
+      "times": {
+        "et": "2027-03-10T08:30:00-05:00",
+        "wat": "2027-03-10T14:30:00+01:00"
+      },
+      "source": {
+        "name": "BLS official release schedules",
+        "url": "https://www.bls.gov/schedule/news_release/cpi.htm",
+        "kind": "bls_schedule"
+      },
+      "raw_label": "February 2027"
+    },
+    {
+      "id": "ppi-2027-03-12",
+      "release_type": "ppi",
+      "label": "PPI",
+      "name": "Producer Price Index",
+      "date": "2027-03-12",
+      "time_et": "08:30",
+      "times": {
+        "et": "2027-03-12T08:30:00-05:00",
+        "wat": "2027-03-12T14:30:00+01:00"
+      },
+      "source": {
+        "name": "BLS official release schedules",
+        "url": "https://www.bls.gov/schedule/news_release/ppi.htm",
+        "kind": "bls_schedule"
+      },
+      "raw_label": "February 2027"
+    },
+    {
       "id": "fomc-2027-03-17",
       "release_type": "fomc",
       "label": "FOMC",
@@ -252,7 +450,61 @@
         "url": "https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm",
         "kind": "federal_reserve_live"
       },
-      "raw_label": "March 16-17* 2027"
+      "raw_label": "March 16-17 2027"
+    },
+    {
+      "id": "nfp-2027-04-02",
+      "release_type": "nfp",
+      "label": "NFP",
+      "name": "Employment Situation",
+      "date": "2027-04-02",
+      "time_et": "08:30",
+      "times": {
+        "et": "2027-04-02T08:30:00-04:00",
+        "wat": "2027-04-02T13:30:00+01:00"
+      },
+      "source": {
+        "name": "BLS official release schedules",
+        "url": "https://www.bls.gov/schedule/news_release/empsit.htm",
+        "kind": "bls_schedule"
+      },
+      "raw_label": "March 2027"
+    },
+    {
+      "id": "cpi-2027-04-13",
+      "release_type": "cpi",
+      "label": "CPI",
+      "name": "Consumer Price Index",
+      "date": "2027-04-13",
+      "time_et": "08:30",
+      "times": {
+        "et": "2027-04-13T08:30:00-04:00",
+        "wat": "2027-04-13T13:30:00+01:00"
+      },
+      "source": {
+        "name": "BLS official release schedules",
+        "url": "https://www.bls.gov/schedule/news_release/cpi.htm",
+        "kind": "bls_schedule"
+      },
+      "raw_label": "March 2027"
+    },
+    {
+      "id": "ppi-2027-04-14",
+      "release_type": "ppi",
+      "label": "PPI",
+      "name": "Producer Price Index",
+      "date": "2027-04-14",
+      "time_et": "08:30",
+      "times": {
+        "et": "2027-04-14T08:30:00-04:00",
+        "wat": "2027-04-14T13:30:00+01:00"
+      },
+      "source": {
+        "name": "BLS official release schedules",
+        "url": "https://www.bls.gov/schedule/news_release/ppi.htm",
+        "kind": "bls_schedule"
+      },
+      "raw_label": "March 2027"
     },
     {
       "id": "fomc-2027-04-28",
@@ -273,6 +525,78 @@
       "raw_label": "April 27-28 2027"
     },
     {
+      "id": "nfp-2027-05-07",
+      "release_type": "nfp",
+      "label": "NFP",
+      "name": "Employment Situation",
+      "date": "2027-05-07",
+      "time_et": "08:30",
+      "times": {
+        "et": "2027-05-07T08:30:00-04:00",
+        "wat": "2027-05-07T13:30:00+01:00"
+      },
+      "source": {
+        "name": "BLS official release schedules",
+        "url": "https://www.bls.gov/schedule/news_release/empsit.htm",
+        "kind": "bls_schedule"
+      },
+      "raw_label": "April 2027"
+    },
+    {
+      "id": "cpi-2027-05-12",
+      "release_type": "cpi",
+      "label": "CPI",
+      "name": "Consumer Price Index",
+      "date": "2027-05-12",
+      "time_et": "08:30",
+      "times": {
+        "et": "2027-05-12T08:30:00-04:00",
+        "wat": "2027-05-12T13:30:00+01:00"
+      },
+      "source": {
+        "name": "BLS official release schedules",
+        "url": "https://www.bls.gov/schedule/news_release/cpi.htm",
+        "kind": "bls_schedule"
+      },
+      "raw_label": "April 2027"
+    },
+    {
+      "id": "ppi-2027-05-13",
+      "release_type": "ppi",
+      "label": "PPI",
+      "name": "Producer Price Index",
+      "date": "2027-05-13",
+      "time_et": "08:30",
+      "times": {
+        "et": "2027-05-13T08:30:00-04:00",
+        "wat": "2027-05-13T13:30:00+01:00"
+      },
+      "source": {
+        "name": "BLS official release schedules",
+        "url": "https://www.bls.gov/schedule/news_release/ppi.htm",
+        "kind": "bls_schedule"
+      },
+      "raw_label": "April 2027"
+    },
+    {
+      "id": "nfp-2027-06-04",
+      "release_type": "nfp",
+      "label": "NFP",
+      "name": "Employment Situation",
+      "date": "2027-06-04",
+      "time_et": "08:30",
+      "times": {
+        "et": "2027-06-04T08:30:00-04:00",
+        "wat": "2027-06-04T13:30:00+01:00"
+      },
+      "source": {
+        "name": "BLS official release schedules",
+        "url": "https://www.bls.gov/schedule/news_release/empsit.htm",
+        "kind": "bls_schedule"
+      },
+      "raw_label": "May 2027"
+    },
+    {
       "id": "fomc-2027-06-09",
       "release_type": "fomc",
       "label": "FOMC",
@@ -288,7 +612,97 @@
         "url": "https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm",
         "kind": "federal_reserve_live"
       },
-      "raw_label": "June 8-9* 2027"
+      "raw_label": "June 8-9 2027"
+    },
+    {
+      "id": "cpi-2027-06-10",
+      "release_type": "cpi",
+      "label": "CPI",
+      "name": "Consumer Price Index",
+      "date": "2027-06-10",
+      "time_et": "08:30",
+      "times": {
+        "et": "2027-06-10T08:30:00-04:00",
+        "wat": "2027-06-10T13:30:00+01:00"
+      },
+      "source": {
+        "name": "BLS official release schedules",
+        "url": "https://www.bls.gov/schedule/news_release/cpi.htm",
+        "kind": "bls_schedule"
+      },
+      "raw_label": "May 2027"
+    },
+    {
+      "id": "ppi-2027-06-11",
+      "release_type": "ppi",
+      "label": "PPI",
+      "name": "Producer Price Index",
+      "date": "2027-06-11",
+      "time_et": "08:30",
+      "times": {
+        "et": "2027-06-11T08:30:00-04:00",
+        "wat": "2027-06-11T13:30:00+01:00"
+      },
+      "source": {
+        "name": "BLS official release schedules",
+        "url": "https://www.bls.gov/schedule/news_release/ppi.htm",
+        "kind": "bls_schedule"
+      },
+      "raw_label": "May 2027"
+    },
+    {
+      "id": "nfp-2027-07-02",
+      "release_type": "nfp",
+      "label": "NFP",
+      "name": "Employment Situation",
+      "date": "2027-07-02",
+      "time_et": "08:30",
+      "times": {
+        "et": "2027-07-02T08:30:00-04:00",
+        "wat": "2027-07-02T13:30:00+01:00"
+      },
+      "source": {
+        "name": "BLS official release schedules",
+        "url": "https://www.bls.gov/schedule/news_release/empsit.htm",
+        "kind": "bls_schedule"
+      },
+      "raw_label": "June 2027"
+    },
+    {
+      "id": "cpi-2027-07-14",
+      "release_type": "cpi",
+      "label": "CPI",
+      "name": "Consumer Price Index",
+      "date": "2027-07-14",
+      "time_et": "08:30",
+      "times": {
+        "et": "2027-07-14T08:30:00-04:00",
+        "wat": "2027-07-14T13:30:00+01:00"
+      },
+      "source": {
+        "name": "BLS official release schedules",
+        "url": "https://www.bls.gov/schedule/news_release/cpi.htm",
+        "kind": "bls_schedule"
+      },
+      "raw_label": "June 2027"
+    },
+    {
+      "id": "ppi-2027-07-15",
+      "release_type": "ppi",
+      "label": "PPI",
+      "name": "Producer Price Index",
+      "date": "2027-07-15",
+      "time_et": "08:30",
+      "times": {
+        "et": "2027-07-15T08:30:00-04:00",
+        "wat": "2027-07-15T13:30:00+01:00"
+      },
+      "source": {
+        "name": "BLS official release schedules",
+        "url": "https://www.bls.gov/schedule/news_release/ppi.htm",
+        "kind": "bls_schedule"
+      },
+      "raw_label": "June 2027"
     },
     {
       "id": "fomc-2027-07-28",
@@ -309,6 +723,114 @@
       "raw_label": "July 27-28 2027"
     },
     {
+      "id": "nfp-2027-08-06",
+      "release_type": "nfp",
+      "label": "NFP",
+      "name": "Employment Situation",
+      "date": "2027-08-06",
+      "time_et": "08:30",
+      "times": {
+        "et": "2027-08-06T08:30:00-04:00",
+        "wat": "2027-08-06T13:30:00+01:00"
+      },
+      "source": {
+        "name": "BLS official release schedules",
+        "url": "https://www.bls.gov/schedule/news_release/empsit.htm",
+        "kind": "bls_schedule"
+      },
+      "raw_label": "July 2027"
+    },
+    {
+      "id": "ppi-2027-08-10",
+      "release_type": "ppi",
+      "label": "PPI",
+      "name": "Producer Price Index",
+      "date": "2027-08-10",
+      "time_et": "08:30",
+      "times": {
+        "et": "2027-08-10T08:30:00-04:00",
+        "wat": "2027-08-10T13:30:00+01:00"
+      },
+      "source": {
+        "name": "BLS official release schedules",
+        "url": "https://www.bls.gov/schedule/news_release/ppi.htm",
+        "kind": "bls_schedule"
+      },
+      "raw_label": "July 2027"
+    },
+    {
+      "id": "cpi-2027-08-11",
+      "release_type": "cpi",
+      "label": "CPI",
+      "name": "Consumer Price Index",
+      "date": "2027-08-11",
+      "time_et": "08:30",
+      "times": {
+        "et": "2027-08-11T08:30:00-04:00",
+        "wat": "2027-08-11T13:30:00+01:00"
+      },
+      "source": {
+        "name": "BLS official release schedules",
+        "url": "https://www.bls.gov/schedule/news_release/cpi.htm",
+        "kind": "bls_schedule"
+      },
+      "raw_label": "July 2027"
+    },
+    {
+      "id": "nfp-2027-09-03",
+      "release_type": "nfp",
+      "label": "NFP",
+      "name": "Employment Situation",
+      "date": "2027-09-03",
+      "time_et": "08:30",
+      "times": {
+        "et": "2027-09-03T08:30:00-04:00",
+        "wat": "2027-09-03T13:30:00+01:00"
+      },
+      "source": {
+        "name": "BLS official release schedules",
+        "url": "https://www.bls.gov/schedule/news_release/empsit.htm",
+        "kind": "bls_schedule"
+      },
+      "raw_label": "August 2027"
+    },
+    {
+      "id": "ppi-2027-09-10",
+      "release_type": "ppi",
+      "label": "PPI",
+      "name": "Producer Price Index",
+      "date": "2027-09-10",
+      "time_et": "08:30",
+      "times": {
+        "et": "2027-09-10T08:30:00-04:00",
+        "wat": "2027-09-10T13:30:00+01:00"
+      },
+      "source": {
+        "name": "BLS official release schedules",
+        "url": "https://www.bls.gov/schedule/news_release/ppi.htm",
+        "kind": "bls_schedule"
+      },
+      "raw_label": "August 2027"
+    },
+    {
+      "id": "cpi-2027-09-14",
+      "release_type": "cpi",
+      "label": "CPI",
+      "name": "Consumer Price Index",
+      "date": "2027-09-14",
+      "time_et": "08:30",
+      "times": {
+        "et": "2027-09-14T08:30:00-04:00",
+        "wat": "2027-09-14T13:30:00+01:00"
+      },
+      "source": {
+        "name": "BLS official release schedules",
+        "url": "https://www.bls.gov/schedule/news_release/cpi.htm",
+        "kind": "bls_schedule"
+      },
+      "raw_label": "August 2027"
+    },
+    {
       "id": "fomc-2027-09-15",
       "release_type": "fomc",
       "label": "FOMC",
@@ -324,7 +846,61 @@
         "url": "https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm",
         "kind": "federal_reserve_live"
       },
-      "raw_label": "September 14-15* 2027"
+      "raw_label": "September 14-15 2027"
+    },
+    {
+      "id": "nfp-2027-10-08",
+      "release_type": "nfp",
+      "label": "NFP",
+      "name": "Employment Situation",
+      "date": "2027-10-08",
+      "time_et": "08:30",
+      "times": {
+        "et": "2027-10-08T08:30:00-04:00",
+        "wat": "2027-10-08T13:30:00+01:00"
+      },
+      "source": {
+        "name": "BLS official release schedules",
+        "url": "https://www.bls.gov/schedule/news_release/empsit.htm",
+        "kind": "bls_schedule"
+      },
+      "raw_label": "September 2027"
+    },
+    {
+      "id": "cpi-2027-10-14",
+      "release_type": "cpi",
+      "label": "CPI",
+      "name": "Consumer Price Index",
+      "date": "2027-10-14",
+      "time_et": "08:30",
+      "times": {
+        "et": "2027-10-14T08:30:00-04:00",
+        "wat": "2027-10-14T13:30:00+01:00"
+      },
+      "source": {
+        "name": "BLS official release schedules",
+        "url": "https://www.bls.gov/schedule/news_release/cpi.htm",
+        "kind": "bls_schedule"
+      },
+      "raw_label": "September 2027"
+    },
+    {
+      "id": "ppi-2027-10-15",
+      "release_type": "ppi",
+      "label": "PPI",
+      "name": "Producer Price Index",
+      "date": "2027-10-15",
+      "time_et": "08:30",
+      "times": {
+        "et": "2027-10-15T08:30:00-04:00",
+        "wat": "2027-10-15T13:30:00+01:00"
+      },
+      "source": {
+        "name": "BLS official release schedules",
+        "url": "https://www.bls.gov/schedule/news_release/ppi.htm",
+        "kind": "bls_schedule"
+      },
+      "raw_label": "September 2027"
     },
     {
       "id": "fomc-2027-10-27",
@@ -345,22 +921,130 @@
       "raw_label": "October 26-27 2027"
     },
     {
-      "id": "fomc-2027-12-08",
+      "id": "nfp-2027-11-05",
+      "release_type": "nfp",
+      "label": "NFP",
+      "name": "Employment Situation",
+      "date": "2027-11-05",
+      "time_et": "08:30",
+      "times": {
+        "et": "2027-11-05T08:30:00-04:00",
+        "wat": "2027-11-05T13:30:00+01:00"
+      },
+      "source": {
+        "name": "BLS official release schedules",
+        "url": "https://www.bls.gov/schedule/news_release/empsit.htm",
+        "kind": "bls_schedule"
+      },
+      "raw_label": "October 2027"
+    },
+    {
+      "id": "cpi-2027-11-10",
+      "release_type": "cpi",
+      "label": "CPI",
+      "name": "Consumer Price Index",
+      "date": "2027-11-10",
+      "time_et": "08:30",
+      "times": {
+        "et": "2027-11-10T08:30:00-05:00",
+        "wat": "2027-11-10T14:30:00+01:00"
+      },
+      "source": {
+        "name": "BLS official release schedules",
+        "url": "https://www.bls.gov/schedule/news_release/cpi.htm",
+        "kind": "bls_schedule"
+      },
+      "raw_label": "October 2027"
+    },
+    {
+      "id": "ppi-2027-11-12",
+      "release_type": "ppi",
+      "label": "PPI",
+      "name": "Producer Price Index",
+      "date": "2027-11-12",
+      "time_et": "08:30",
+      "times": {
+        "et": "2027-11-12T08:30:00-05:00",
+        "wat": "2027-11-12T14:30:00+01:00"
+      },
+      "source": {
+        "name": "BLS official release schedules",
+        "url": "https://www.bls.gov/schedule/news_release/ppi.htm",
+        "kind": "bls_schedule"
+      },
+      "raw_label": "October 2027"
+    },
+    {
+      "id": "fomc-2027-11-17",
       "release_type": "fomc",
       "label": "FOMC",
       "name": "FOMC statement",
-      "date": "2027-12-08",
+      "date": "2027-11-17",
       "time_et": "14:00",
       "times": {
-        "et": "2027-12-08T14:00:00-05:00",
-        "wat": "2027-12-08T20:00:00+01:00"
+        "et": "2027-11-17T14:00:00-05:00",
+        "wat": "2027-11-17T20:00:00+01:00"
       },
       "source": {
         "name": "Federal Reserve FOMC calendar",
         "url": "https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm",
         "kind": "federal_reserve_live"
       },
-      "raw_label": "December 7-8* 2027"
+      "raw_label": "November 16-17 2027"
+    },
+    {
+      "id": "nfp-2027-12-03",
+      "release_type": "nfp",
+      "label": "NFP",
+      "name": "Employment Situation",
+      "date": "2027-12-03",
+      "time_et": "08:30",
+      "times": {
+        "et": "2027-12-03T08:30:00-05:00",
+        "wat": "2027-12-03T14:30:00+01:00"
+      },
+      "source": {
+        "name": "BLS official release schedules",
+        "url": "https://www.bls.gov/schedule/news_release/empsit.htm",
+        "kind": "bls_schedule"
+      },
+      "raw_label": "November 2027"
+    },
+    {
+      "id": "cpi-2027-12-10",
+      "release_type": "cpi",
+      "label": "CPI",
+      "name": "Consumer Price Index",
+      "date": "2027-12-10",
+      "time_et": "08:30",
+      "times": {
+        "et": "2027-12-10T08:30:00-05:00",
+        "wat": "2027-12-10T14:30:00+01:00"
+      },
+      "source": {
+        "name": "BLS official release schedules",
+        "url": "https://www.bls.gov/schedule/news_release/cpi.htm",
+        "kind": "bls_schedule"
+      },
+      "raw_label": "November 2027"
+    },
+    {
+      "id": "ppi-2027-12-15",
+      "release_type": "ppi",
+      "label": "PPI",
+      "name": "Producer Price Index",
+      "date": "2027-12-15",
+      "time_et": "08:30",
+      "times": {
+        "et": "2027-12-15T08:30:00-05:00",
+        "wat": "2027-12-15T14:30:00+01:00"
+      },
+      "source": {
+        "name": "BLS official release schedules",
+        "url": "https://www.bls.gov/schedule/news_release/ppi.htm",
+        "kind": "bls_schedule"
+      },
+      "raw_label": "November 2027"
     }
   ],
   "source_status": {
@@ -368,19 +1052,37 @@
       "name": "FRED release dates API",
       "url": "https://api.stlouisfed.org/fred/releases/dates",
       "state": "ok",
-      "last_checked": "2026-11-12T05:45:03.992641+00:00",
-      "records": 4,
-      "detail": "Fetched 4 verified release-date records from FRED.",
+      "last_checked": "2026-11-14T16:53:26.361432+00:00",
+      "records": 3,
+      "detail": "Fetched 3 verified release-date records from FRED.",
+      "mode": "live"
+    },
+    "bls_schedules": {
+      "name": "BLS official release schedules",
+      "url": "https://www.bls.gov/schedule/news_release/",
+      "state": "ok",
+      "last_checked": "2026-11-14T16:53:26.361432+00:00",
+      "records": 42,
+      "detail": "Parsed 42 official BLS NFP, CPI, and PPI schedule records.",
       "mode": "live"
     },
     "federal_reserve_fomc": {
       "name": "Federal Reserve FOMC calendar",
       "url": "https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm",
       "state": "ok",
-      "last_checked": "2026-11-12T05:45:03.992641+00:00",
+      "last_checked": "2026-11-14T16:53:26.361432+00:00",
       "records": 16,
       "detail": "Parsed 16 meetings from the official Federal Reserve page.",
       "mode": "live"
+    },
+    "calendar_coverage": {
+      "name": "12-month calendar coverage check",
+      "url": "https://www.bls.gov/schedule/news_release/",
+      "state": "ok",
+      "last_checked": "2026-11-14T16:53:26.361432+00:00",
+      "records": 44,
+      "detail": "Upcoming dates within 12 months by release: {'nfp': 12, 'cpi': 12, 'ppi': 12, 'fomc': 8}.",
+      "mode": "automatic_check"
     }
   }
 }

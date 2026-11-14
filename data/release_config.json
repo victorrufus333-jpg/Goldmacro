@@ -10,9 +10,22 @@
       "url": "https://api.stlouisfed.org/fred/releases/dates",
       "documentation_url": "https://fred.stlouisfed.org/docs/api/fred/releases_dates.html"
     },
+    "bls_schedules": {
+      "name": "BLS official release schedules",
+      "url": "https://www.bls.gov/schedule/news_release/",
+      "urls": {
+        "nfp": "https://www.bls.gov/schedule/news_release/empsit.htm",
+        "cpi": "https://www.bls.gov/schedule/news_release/cpi.htm",
+        "ppi": "https://www.bls.gov/schedule/news_release/ppi.htm"
+      }
+    },
     "federal_reserve_fomc": {
       "name": "Federal Reserve FOMC calendar",
       "url": "https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm"
+    },
+    "calendar_coverage": {
+      "name": "12-month calendar coverage check",
+      "url": "https://www.bls.gov/schedule/news_release/"
     }
   },
   "history": {
