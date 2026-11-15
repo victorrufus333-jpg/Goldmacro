@@ -56,4 +56,13 @@
 - [x] Methodology page documents calendar timing, vote thresholds, UNSURE rules, lock behavior, reaction measurement, N, win rate, and source limitations.
 - [x] Track Record filters distinguish all, NFP, CPI, PPI, and FOMC and separate immutable live records from reconstructed research records.
 - [x] Static route manifest includes Home, Calendar, Track Record, Release Detail, Methodology, and Status.
-- [ ] Connect the canonical repository to a user-owned GitHub Pages, Netlify, or Cloudflare Pages destination and confirm the production URL.
+- [x] Connect the canonical repository to a user-owned GitHub Pages, Netlify, or Cloudflare Pages destination and confirm the production URL.
+
+## Task 2 — confidence and conviction analytics
+
+- [x] Calculate per-release, per-indicator historical reliability from the configured signed indicator delta and the existing post-release gold reaction, preserving source, sample N, and the approximate p-value method.
+- [x] Convert measured positive reliability into data-derived indicator weights with small-sample shrinkage; do not invent weights when the sample is underpowered.
+- [x] Calculate a confidence percentage from shrunk similar-case outcomes and a conviction percentage from the weighted vote net; expose both on signal and Release Detail records without changing BUY, SELL, or UNSURE rules.
+- [x] Enforce walk-forward historical contexts using only chronologically prior cases, while upcoming contexts use completed historical cases; report in-sample and walk-forward out-of-sample validation separately.
+- [x] Report calibration buckets and explicit limitations: GC=F is a futures proxy, FRED vintages are not licensed real-time consensus, approximate p-values are not guarantees, and small samples/regime shifts can make reliability unstable.
+- [x] Run Task 2 from both the daily refresh workflow and the lock-window workflow, include generated confidence data in the static build, and show confidence-engine health on Status.

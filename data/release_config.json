@@ -111,6 +111,20 @@
       ]
     }
   },
+  "confidence": {
+    "version": 1,
+    "minimum_reliability_N": 5,
+    "similar_case_top_k": 10,
+    "similar_case_min_similarity": 0.5,
+    "prior_strength": 4,
+    "confidence_floor": 0,
+    "confidence_ceiling": 100,
+    "p_value_note": "Spearman p-values use a deterministic large-sample normal approximation; small samples are marked underpowered.",
+    "walk_forward": {
+      "minimum_prior_cases": 3,
+      "outcome_horizon": "existing post-release reaction measure"
+    }
+  },
   "track_record": {
     "eligibility": "Only signals captured while locked_pre_release are eligible for the immutable public record; historical_reconstruction records remain research-only.",
     "append_only": true,

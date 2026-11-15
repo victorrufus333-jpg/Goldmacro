@@ -1,6 +1,6 @@
 # Gold Macro Signal
 
-A free, calendar-driven research site for US macro releases that may matter to gold. Phase 3 adds a configurable research signal engine while keeping missing or underpowered data as UNSURE.
+A free, calendar-driven research site for US macro releases that may matter to gold. Phase 3 adds a configurable research signal engine, and Task 2 adds transparent confidence and conviction analytics while keeping missing or underpowered data as UNSURE.
 
 ## What Phase 1 and Phase 2 do
 
@@ -20,12 +20,14 @@ Phase 4 adds **Track Record** and **Release Detail** views. Only a signal captur
 
 Final hardening adds the **Methodology** page and Track Record filters for all, NFP, CPI, PPI, and FOMC. The live ledger and reconstructed research archive are deliberately separate.
 
+Task 2 adds `data/confidence.json` through `scripts/build_confidence.py`. It reports indicator reliability, sample N, approximate Spearman p-values, data-derived weights, similar-case hit rates, confidence percentage, conviction percentage, in-sample validation, walk-forward out-of-sample validation, and calibration buckets. Historical confidence contexts use only earlier release cases; upcoming contexts use completed historical cases. These are evidence-strength measures, not guaranteed probabilities, and do not alter the BUY/SELL/UNSURE decision rules.
+
 ## Owner setup from a phone
 
 1. Open the repository on GitHub in the GitHub mobile app or your phone browser.
 2. Open **Settings → Secrets and variables → Actions → New repository secret**.
 3. Create a secret named `FRED_API_KEY` and paste your free FRED API key as the value. Do not put the key in a tracked file.
-4. Open **Actions → Refresh macro calendar → Run workflow** once to test the refresh. The schedule then runs daily.
+4. Open **Actions → Refresh macro calendar → Run workflow** once to test the refresh. The schedule then runs daily at 12:15 UTC. A separate lock-window workflow runs at four UTC times to cover the 08:30 ET BLS releases and 14:00 ET FOMC statements across daylight-saving schedules.
 5. Open the deployed site and tap **Status**. A green source means the latest fetch worked. A yellow source means the last known data was kept while the source was stale. A grey source means no verified data is available yet. The **12-month coverage** card must also be green for NFP, CPI, PPI, and FOMC.
 
 ## Phone-editable fallback files
@@ -41,6 +43,7 @@ python3 scripts/update_calendar.py
 python3 -m pip install -r requirements.txt
 python3 scripts/build_historical.py
 python3 scripts/build_signals.py
+python3 scripts/build_confidence.py
 python3 scripts/capture_locked_signals.py
 python3 scripts/update_track_record.py
 python3 scripts/build_chains.py
@@ -52,7 +55,7 @@ A missing `FRED_API_KEY` is expected on a fresh checkout. In that case the pipel
 
 ## Current phase boundary
 
-Final hardening is complete in the repository. A public production URL still requires connecting this repository to GitHub Pages, Netlify, or Cloudflare Pages. The ledger starts empty until a real signal passes through the live lock window; historical reconstructions are never backfilled into it. `GC=F` remains a gold-futures proxy, not spot XAUUSD.
+The site is hosted on GitHub Pages at `https://victorrufus333-jpg.github.io/Goldmacro/`. GitHub Actions, not the Manus sandbox, performs automatic refreshes: the calendar/history/signal/confidence workflow runs daily, the lock-window workflow captures live locks, and the Pages workflow redeploys after generated JSON commits. The ledger starts empty until a real signal passes through the live lock window; historical reconstructions are never backfilled into it. `GC=F` remains a gold-futures proxy, not spot XAUUSD.
 
 ## Disclaimer
 

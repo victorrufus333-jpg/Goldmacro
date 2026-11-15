@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-11-14T16:53:26.361432+00:00",
+  "generated_at": "2026-11-14T17:02:00.319968+00:00",
   "sources": {
     "fred_history": {
       "name": "FRED release dates API",
@@ -100,6 +100,15 @@
       "records": 44,
       "detail": "Upcoming dates within 12 months by release: {'nfp': 12, 'cpi': 12, 'ppi': 12, 'fomc': 8}.",
       "mode": "automatic_check"
+    },
+    "confidence_engine": {
+      "name": "Confidence and conviction engine",
+      "url": "data/confidence.json",
+      "state": "ok",
+      "last_checked": "2026-11-14T17:02:00.319968+00:00",
+      "records": 53,
+      "detail": "Built confidence contexts for 53 signals with reliability, similar-case, walk-forward, and calibration outputs.",
+      "mode": "task2"
     }
   }
 }

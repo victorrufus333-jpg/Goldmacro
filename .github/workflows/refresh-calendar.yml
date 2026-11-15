@@ -38,6 +38,9 @@ jobs:
           FRED_API_KEY: ${{ secrets.FRED_API_KEY }}
         run: python3 scripts/build_signals.py
 
+      - name: Build Task 2 confidence and conviction
+        run: python3 scripts/build_confidence.py
+
       - name: Capture live locked signals
         run: python3 scripts/capture_locked_signals.py
 
@@ -51,7 +54,7 @@ jobs:
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add data/calendar.json data/status.json data/historical_reactions.json data/signals.json data/locked_signals.json data/track_record.json data/chained_cases.json
+          git add data/calendar.json data/status.json data/historical_reactions.json data/signals.json data/confidence.json data/locked_signals.json data/track_record.json data/chained_cases.json
           if git diff --cached --quiet; then
             echo "No generated data changes to commit."
           else

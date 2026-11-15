@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-11-13T19:39:03.311502+00:00",
+  "generated_at": "2026-11-14T17:02:00.319968+00:00",
   "history_window": {
     "start_date": "2026-01-01",
     "end_date": "2026-11-13"
@@ -195,6 +195,80 @@
         "skipped": 7,
         "win_rate": 25.0,
         "definition": "N counts only BUY/SELL cases with an available non-flat gold reaction; UNSURE-skipped cases are reported separately."
+      },
+      "confidence": {
+        "confidence_pct": 50.0,
+        "conviction_pct": 0.0,
+        "confidence_label": "evidence strength only; action remains UNSURE",
+        "walk_forward": true,
+        "walk_forward_eligible": true,
+        "prior_case_N": 11,
+        "similar_case_N": 0,
+        "similar_case_candidates": 0,
+        "similar_hit_rate_shrunk": 50.0,
+        "similar_wins": 0,
+        "similar_losses": 0,
+        "weighted_vote_net": 0.0,
+        "weighted_vote_support_pct": 0.0,
+        "reliability": [
+          {
+            "release_type": "nfp",
+            "series_id": "PAYEMS",
+            "label": "Payroll growth cooled",
+            "N": 0,
+            "spearman_rho": null,
+            "p_value": null,
+            "weight_raw": 0.0,
+            "status": "underpowered",
+            "note": "Positive rho means the configured BUY direction historically aligned with a positive GC=F reaction. p_value is a normal approximation; it is not a guarantee of predictive power."
+          },
+          {
+            "release_type": "nfp",
+            "series_id": "UNRATE",
+            "label": "Unemployment rose",
+            "N": 0,
+            "spearman_rho": null,
+            "p_value": null,
+            "weight_raw": 0.0,
+            "status": "underpowered",
+            "note": "Positive rho means the configured BUY direction historically aligned with a positive GC=F reaction. p_value is a normal approximation; it is not a guarantee of predictive power."
+          },
+          {
+            "release_type": "nfp",
+            "series_id": "CES0500000003",
+            "label": "Hourly earnings rose",
+            "N": 0,
+            "spearman_rho": null,
+            "p_value": null,
+            "weight_raw": 0.0,
+            "status": "underpowered",
+            "note": "Positive rho means the configured BUY direction historically aligned with a positive GC=F reaction. p_value is a normal approximation; it is not a guarantee of predictive power."
+          },
+          {
+            "release_type": "nfp",
+            "series_id": "ICSA",
+            "label": "Claims pressure rose",
+            "N": 0,
+            "spearman_rho": null,
+            "p_value": null,
+            "weight_raw": 0.0,
+            "status": "underpowered",
+            "note": "Positive rho means the configured BUY direction historically aligned with a positive GC=F reaction. p_value is a normal approximation; it is not a guarantee of predictive power."
+          },
+          {
+            "release_type": "nfp",
+            "series_id": "JTSJOL",
+            "label": "Job openings fell",
+            "N": 0,
+            "spearman_rho": null,
+            "p_value": null,
+            "weight_raw": 0.0,
+            "status": "underpowered",
+            "note": "Positive rho means the configured BUY direction historically aligned with a positive GC=F reaction. p_value is a normal approximation; it is not a guarantee of predictive power."
+          }
+        ],
+        "similar_cases": [],
+        "method": "Walk-forward historical cases only for historical records; all completed historical cases for upcoming records. Reliability weights use signed indicator deltas and GC=F reaction returns."
       }
     },
     {
@@ -355,6 +429,80 @@
         "skipped": 1,
         "win_rate": 30.0,
         "definition": "N counts only BUY/SELL cases with an available non-flat gold reaction; UNSURE-skipped cases are reported separately."
+      },
+      "confidence": {
+        "confidence_pct": 50.0,
+        "conviction_pct": 0.0,
+        "confidence_label": "evidence strength only; action remains UNSURE",
+        "walk_forward": true,
+        "walk_forward_eligible": true,
+        "prior_case_N": 11,
+        "similar_case_N": 0,
+        "similar_case_candidates": 0,
+        "similar_hit_rate_shrunk": 50.0,
+        "similar_wins": 0,
+        "similar_losses": 0,
+        "weighted_vote_net": 0.0,
+        "weighted_vote_support_pct": 0.0,
+        "reliability": [
+          {
+            "release_type": "cpi",
+            "series_id": "CPIAUCSL",
+            "label": "Headline inflation rose",
+            "N": 0,
+            "spearman_rho": null,
+            "p_value": null,
+            "weight_raw": 0.0,
+            "status": "underpowered",
+            "note": "Positive rho means the configured BUY direction historically aligned with a positive GC=F reaction. p_value is a normal approximation; it is not a guarantee of predictive power."
+          },
+          {
+            "release_type": "cpi",
+            "series_id": "CPILFESL",
+            "label": "Core inflation rose",
+            "N": 0,
+            "spearman_rho": null,
+            "p_value": null,
+            "weight_raw": 0.0,
+            "status": "underpowered",
+            "note": "Positive rho means the configured BUY direction historically aligned with a positive GC=F reaction. p_value is a normal approximation; it is not a guarantee of predictive power."
+          },
+          {
+            "release_type": "cpi",
+            "series_id": "PPIFES",
+            "label": "Core producer prices rose",
+            "N": 0,
+            "spearman_rho": null,
+            "p_value": null,
+            "weight_raw": 0.0,
+            "status": "underpowered",
+            "note": "Positive rho means the configured BUY direction historically aligned with a positive GC=F reaction. p_value is a normal approximation; it is not a guarantee of predictive power."
+          },
+          {
+            "release_type": "cpi",
+            "series_id": "IR",
+            "label": "Import prices rose",
+            "N": 0,
+            "spearman_rho": null,
+            "p_value": null,
+            "weight_raw": 0.0,
+            "status": "underpowered",
+            "note": "Positive rho means the configured BUY direction historically aligned with a positive GC=F reaction. p_value is a normal approximation; it is not a guarantee of predictive power."
+          },
+          {
+            "release_type": "cpi",
+            "series_id": "GASREGW",
+            "label": "Gasoline prices rose",
+            "N": 0,
+            "spearman_rho": null,
+            "p_value": null,
+            "weight_raw": 0.0,
+            "status": "underpowered",
+            "note": "Positive rho means the configured BUY direction historically aligned with a positive GC=F reaction. p_value is a normal approximation; it is not a guarantee of predictive power."
+          }
+        ],
+        "similar_cases": [],
+        "method": "Walk-forward historical cases only for historical records; all completed historical cases for upcoming records. Reliability weights use signed indicator deltas and GC=F reaction returns."
       }
     },
     {
@@ -493,6 +641,69 @@
         "skipped": 4,
         "win_rate": 62.5,
         "definition": "N counts only BUY/SELL cases with an available non-flat gold reaction; UNSURE-skipped cases are reported separately."
+      },
+      "confidence": {
+        "confidence_pct": 50.0,
+        "conviction_pct": 0.0,
+        "confidence_label": "evidence strength only; action remains UNSURE",
+        "walk_forward": true,
+        "walk_forward_eligible": true,
+        "prior_case_N": 11,
+        "similar_case_N": 0,
+        "similar_case_candidates": 0,
+        "similar_hit_rate_shrunk": 50.0,
+        "similar_wins": 0,
+        "similar_losses": 0,
+        "weighted_vote_net": 0.0,
+        "weighted_vote_support_pct": 0.0,
+        "reliability": [
+          {
+            "release_type": "ppi",
+            "series_id": "PPIFIS",
+            "label": "Final demand PPI rose",
+            "N": 0,
+            "spearman_rho": null,
+            "p_value": null,
+            "weight_raw": 0.0,
+            "status": "underpowered",
+            "note": "Positive rho means the configured BUY direction historically aligned with a positive GC=F reaction. p_value is a normal approximation; it is not a guarantee of predictive power."
+          },
+          {
+            "release_type": "ppi",
+            "series_id": "PPIFES",
+            "label": "Core final demand PPI rose",
+            "N": 0,
+            "spearman_rho": null,
+            "p_value": null,
+            "weight_raw": 0.0,
+            "status": "underpowered",
+            "note": "Positive rho means the configured BUY direction historically aligned with a positive GC=F reaction. p_value is a normal approximation; it is not a guarantee of predictive power."
+          },
+          {
+            "release_type": "ppi",
+            "series_id": "DCOILWTICO",
+            "label": "WTI rose",
+            "N": 0,
+            "spearman_rho": null,
+            "p_value": null,
+            "weight_raw": 0.0,
+            "status": "underpowered",
+            "note": "Positive rho means the configured BUY direction historically aligned with a positive GC=F reaction. p_value is a normal approximation; it is not a guarantee of predictive power."
+          },
+          {
+            "release_type": "ppi",
+            "series_id": "GASREGW",
+            "label": "Gasoline prices rose",
+            "N": 0,
+            "spearman_rho": null,
+            "p_value": null,
+            "weight_raw": 0.0,
+            "status": "underpowered",
+            "note": "Positive rho means the configured BUY direction historically aligned with a positive GC=F reaction. p_value is a normal approximation; it is not a guarantee of predictive power."
+          }
+        ],
+        "similar_cases": [],
+        "method": "Walk-forward historical cases only for historical records; all completed historical cases for upcoming records. Reliability weights use signed indicator deltas and GC=F reaction returns."
       }
     },
     {
@@ -611,6 +822,58 @@
         "skipped": 7,
         "win_rate": null,
         "definition": "N counts only BUY/SELL cases with an available non-flat gold reaction; UNSURE-skipped cases are reported separately."
+      },
+      "confidence": {
+        "confidence_pct": 50.0,
+        "conviction_pct": 0.0,
+        "confidence_label": "evidence strength only; action remains UNSURE",
+        "walk_forward": true,
+        "walk_forward_eligible": true,
+        "prior_case_N": 7,
+        "similar_case_N": 0,
+        "similar_case_candidates": 0,
+        "similar_hit_rate_shrunk": 50.0,
+        "similar_wins": 0,
+        "similar_losses": 0,
+        "weighted_vote_net": 0.0,
+        "weighted_vote_support_pct": 0.0,
+        "reliability": [
+          {
+            "release_type": "fomc",
+            "series_id": "FEDFUNDS",
+            "label": "Effective policy rate fell",
+            "N": 0,
+            "spearman_rho": null,
+            "p_value": null,
+            "weight_raw": 0.0,
+            "status": "underpowered",
+            "note": "Positive rho means the configured BUY direction historically aligned with a positive GC=F reaction. p_value is a normal approximation; it is not a guarantee of predictive power."
+          },
+          {
+            "release_type": "fomc",
+            "series_id": "DGS2",
+            "label": "Two-year yield fell",
+            "N": 0,
+            "spearman_rho": null,
+            "p_value": null,
+            "weight_raw": 0.0,
+            "status": "underpowered",
+            "note": "Positive rho means the configured BUY direction historically aligned with a positive GC=F reaction. p_value is a normal approximation; it is not a guarantee of predictive power."
+          },
+          {
+            "release_type": "fomc",
+            "series_id": "SOFR",
+            "label": "Funding rate fell",
+            "N": 0,
+            "spearman_rho": null,
+            "p_value": null,
+            "weight_raw": 0.0,
+            "status": "underpowered",
+            "note": "Positive rho means the configured BUY direction historically aligned with a positive GC=F reaction. p_value is a normal approximation; it is not a guarantee of predictive power."
+          }
+        ],
+        "similar_cases": [],
+        "method": "Walk-forward historical cases only for historical records; all completed historical cases for upcoming records. Reliability weights use signed indicator deltas and GC=F reaction returns."
       }
     },
     {
@@ -751,6 +1014,76 @@
         "skipped": 4,
         "win_rate": 62.5,
         "definition": "N counts only BUY/SELL cases with an available non-flat gold reaction; UNSURE-skipped cases are reported separately."
+      },
+      "confidence": {
+        "confidence_pct": 50.0,
+        "conviction_pct": 0.0,
+        "confidence_label": "directional evidence",
+        "walk_forward": true,
+        "walk_forward_eligible": true,
+        "prior_case_N": 11,
+        "similar_case_N": 0,
+        "similar_case_candidates": 1,
+        "similar_hit_rate_shrunk": 50.0,
+        "similar_wins": 0,
+        "similar_losses": 0,
+        "weighted_vote_net": 0.0,
+        "weighted_vote_support_pct": 0.0,
+        "reliability": [
+          {
+            "release_type": "ppi",
+            "series_id": "PPIFIS",
+            "label": "Final demand PPI rose",
+            "N": 0,
+            "spearman_rho": null,
+            "p_value": null,
+            "weight_raw": 0.0,
+            "status": "underpowered",
+            "note": "Positive rho means the configured BUY direction historically aligned with a positive GC=F reaction. p_value is a normal approximation; it is not a guarantee of predictive power."
+          },
+          {
+            "release_type": "ppi",
+            "series_id": "PPIFES",
+            "label": "Core final demand PPI rose",
+            "N": 0,
+            "spearman_rho": null,
+            "p_value": null,
+            "weight_raw": 0.0,
+            "status": "underpowered",
+            "note": "Positive rho means the configured BUY direction historically aligned with a positive GC=F reaction. p_value is a normal approximation; it is not a guarantee of predictive power."
+          },
+          {
+            "release_type": "ppi",
+            "series_id": "DCOILWTICO",
+            "label": "WTI rose",
+            "N": 0,
+            "spearman_rho": null,
+            "p_value": null,
+            "weight_raw": 0.0,
+            "status": "underpowered",
+            "note": "Positive rho means the configured BUY direction historically aligned with a positive GC=F reaction. p_value is a normal approximation; it is not a guarantee of predictive power."
+          },
+          {
+            "release_type": "ppi",
+            "series_id": "GASREGW",
+            "label": "Gasoline prices rose",
+            "N": 0,
+            "spearman_rho": null,
+            "p_value": null,
+            "weight_raw": 0.0,
+            "status": "underpowered",
+            "note": "Positive rho means the configured BUY direction historically aligned with a positive GC=F reaction. p_value is a normal approximation; it is not a guarantee of predictive power."
+          }
+        ],
+        "similar_cases": [
+          {
+            "event_id": "ppi-2026-01-14",
+            "release_date": "2026-01-14",
+            "similarity": 0.5,
+            "grade": "UNSURE-skipped"
+          }
+        ],
+        "method": "Walk-forward historical cases only for historical records; all completed historical cases for upcoming records. Reliability weights use signed indicator deltas and GC=F reaction returns."
       }
     },
     {
@@ -913,6 +1246,80 @@
         "skipped": 7,
         "win_rate": 25.0,
         "definition": "N counts only BUY/SELL cases with an available non-flat gold reaction; UNSURE-skipped cases are reported separately."
+      },
+      "confidence": {
+        "confidence_pct": 50.0,
+        "conviction_pct": 0.0,
+        "confidence_label": "directional evidence",
+        "walk_forward": true,
+        "walk_forward_eligible": true,
+        "prior_case_N": 11,
+        "similar_case_N": 0,
+        "similar_case_candidates": 0,
+        "similar_hit_rate_shrunk": 50.0,
+        "similar_wins": 0,
+        "similar_losses": 0,
+        "weighted_vote_net": 0.0,
+        "weighted_vote_support_pct": 0.0,
+        "reliability": [
+          {
+            "release_type": "nfp",
+            "series_id": "PAYEMS",
+            "label": "Payroll growth cooled",
+            "N": 0,
+            "spearman_rho": null,
+            "p_value": null,
+            "weight_raw": 0.0,
+            "status": "underpowered",
+            "note": "Positive rho means the configured BUY direction historically aligned with a positive GC=F reaction. p_value is a normal approximation; it is not a guarantee of predictive power."
+          },
+          {
+            "release_type": "nfp",
+            "series_id": "UNRATE",
+            "label": "Unemployment rose",
+            "N": 0,
+            "spearman_rho": null,
+            "p_value": null,
+            "weight_raw": 0.0,
+            "status": "underpowered",
+            "note": "Positive rho means the configured BUY direction historically aligned with a positive GC=F reaction. p_value is a normal approximation; it is not a guarantee of predictive power."
+          },
+          {
+            "release_type": "nfp",
+            "series_id": "CES0500000003",
+            "label": "Hourly earnings rose",
+            "N": 0,
+            "spearman_rho": null,
+            "p_value": null,
+            "weight_raw": 0.0,
+            "status": "underpowered",
+            "note": "Positive rho means the configured BUY direction historically aligned with a positive GC=F reaction. p_value is a normal approximation; it is not a guarantee of predictive power."
+          },
+          {
+            "release_type": "nfp",
+            "series_id": "ICSA",
+            "label": "Claims pressure rose",
+            "N": 0,
+            "spearman_rho": null,
+            "p_value": null,
+            "weight_raw": 0.0,
+            "status": "underpowered",
+            "note": "Positive rho means the configured BUY direction historically aligned with a positive GC=F reaction. p_value is a normal approximation; it is not a guarantee of predictive power."
+          },
+          {
+            "release_type": "nfp",
+            "series_id": "JTSJOL",
+            "label": "Job openings fell",
+            "N": 0,
+            "spearman_rho": null,
+            "p_value": null,
+            "weight_raw": 0.0,
+            "status": "underpowered",
+            "note": "Positive rho means the configured BUY direction historically aligned with a positive GC=F reaction. p_value is a normal approximation; it is not a guarantee of predictive power."
+          }
+        ],
+        "similar_cases": [],
+        "method": "Walk-forward historical cases only for historical records; all completed historical cases for upcoming records. Reliability weights use signed indicator deltas and GC=F reaction returns."
       }
     },
     {
@@ -1075,6 +1482,87 @@
         "skipped": 1,
         "win_rate": 30.0,
         "definition": "N counts only BUY/SELL cases with an available non-flat gold reaction; UNSURE-skipped cases are reported separately."
+      },
+      "confidence": {
+        "confidence_pct": 50.0,
+        "conviction_pct": 0.0,
+        "confidence_label": "directional evidence",
+        "walk_forward": true,
+        "walk_forward_eligible": true,
+        "prior_case_N": 11,
+        "similar_case_N": 0,
+        "similar_case_candidates": 1,
+        "similar_hit_rate_shrunk": 50.0,
+        "similar_wins": 0,
+        "similar_losses": 0,
+        "weighted_vote_net": 0.0,
+        "weighted_vote_support_pct": 0.0,
+        "reliability": [
+          {
+            "release_type": "cpi",
+            "series_id": "CPIAUCSL",
+            "label": "Headline inflation rose",
+            "N": 0,
+            "spearman_rho": null,
+            "p_value": null,
+            "weight_raw": 0.0,
+            "status": "underpowered",
+            "note": "Positive rho means the configured BUY direction historically aligned with a positive GC=F reaction. p_value is a normal approximation; it is not a guarantee of predictive power."
+          },
+          {
+            "release_type": "cpi",
+            "series_id": "CPILFESL",
+            "label": "Core inflation rose",
+            "N": 0,
+            "spearman_rho": null,
+            "p_value": null,
+            "weight_raw": 0.0,
+            "status": "underpowered",
+            "note": "Positive rho means the configured BUY direction historically aligned with a positive GC=F reaction. p_value is a normal approximation; it is not a guarantee of predictive power."
+          },
+          {
+            "release_type": "cpi",
+            "series_id": "PPIFES",
+            "label": "Core producer prices rose",
+            "N": 0,
+            "spearman_rho": null,
+            "p_value": null,
+            "weight_raw": 0.0,
+            "status": "underpowered",
+            "note": "Positive rho means the configured BUY direction historically aligned with a positive GC=F reaction. p_value is a normal approximation; it is not a guarantee of predictive power."
+          },
+          {
+            "release_type": "cpi",
+            "series_id": "IR",
+            "label": "Import prices rose",
+            "N": 0,
+            "spearman_rho": null,
+            "p_value": null,
+            "weight_raw": 0.0,
+            "status": "underpowered",
+            "note": "Positive rho means the configured BUY direction historically aligned with a positive GC=F reaction. p_value is a normal approximation; it is not a guarantee of predictive power."
+          },
+          {
+            "release_type": "cpi",
+            "series_id": "GASREGW",
+            "label": "Gasoline prices rose",
+            "N": 0,
+            "spearman_rho": null,
+            "p_value": null,
+            "weight_raw": 0.0,
+            "status": "underpowered",
+            "note": "Positive rho means the configured BUY direction historically aligned with a positive GC=F reaction. p_value is a normal approximation; it is not a guarantee of predictive power."
+          }
+        ],
+        "similar_cases": [
+          {
+            "event_id": "cpi-2026-01-13",
+            "release_date": "2026-01-13",
+            "similarity": 0.667,
+            "grade": "UNSURE-skipped"
+          }
+        ],
+        "method": "Walk-forward historical cases only for historical records; all completed historical cases for upcoming records. Reliability weights use signed indicator deltas and GC=F reaction returns."
       }
     },
     {
@@ -1215,6 +1703,76 @@
         "skipped": 4,
         "win_rate": 62.5,
         "definition": "N counts only BUY/SELL cases with an available non-flat gold reaction; UNSURE-skipped cases are reported separately."
+      },
+      "confidence": {
+        "confidence_pct": 56.5,
+        "conviction_pct": 0.0,
+        "confidence_label": "directional evidence",
+        "walk_forward": true,
+        "walk_forward_eligible": true,
+        "prior_case_N": 11,
+        "similar_case_N": 1,
+        "similar_case_candidates": 1,
+        "similar_hit_rate_shrunk": 60.0,
+        "similar_wins": 1,
+        "similar_losses": 0,
+        "weighted_vote_net": 0.0,
+        "weighted_vote_support_pct": 0.0,
+        "reliability": [
+          {
+            "release_type": "ppi",
+            "series_id": "PPIFIS",
+            "label": "Final demand PPI rose",
+            "N": 0,
+            "spearman_rho": null,
+            "p_value": null,
+            "weight_raw": 0.0,
+            "status": "underpowered",
+            "note": "Positive rho means the configured BUY direction historically aligned with a positive GC=F reaction. p_value is a normal approximation; it is not a guarantee of predictive power."
+          },
+          {
+            "release_type": "ppi",
+            "series_id": "PPIFES",
+            "label": "Core final demand PPI rose",
+            "N": 0,
+            "spearman_rho": null,
+            "p_value": null,
+            "weight_raw": 0.0,
+            "status": "underpowered",
+            "note": "Positive rho means the configured BUY direction historically aligned with a positive GC=F reaction. p_value is a normal approximation; it is not a guarantee of predictive power."
+          },
+          {
+            "release_type": "ppi",
+            "series_id": "DCOILWTICO",
+            "label": "WTI rose",
+            "N": 0,
+            "spearman_rho": null,
+            "p_value": null,
+            "weight_raw": 0.0,
+            "status": "underpowered",
+            "note": "Positive rho means the configured BUY direction historically aligned with a positive GC=F reaction. p_value is a normal approximation; it is not a guarantee of predictive power."
+          },
+          {
+            "release_type": "ppi",
+            "series_id": "GASREGW",
+            "label": "Gasoline prices rose",
+            "N": 0,
+            "spearman_rho": null,
+            "p_value": null,
+            "weight_raw": 0.0,
+            "status": "underpowered",
+            "note": "Positive rho means the configured BUY direction historically aligned with a positive GC=F reaction. p_value is a normal approximation; it is not a guarantee of predictive power."
+          }
+        ],
+        "similar_cases": [
+          {
+            "event_id": "ppi-2026-01-30",
+            "release_date": "2026-01-30",
+            "similarity": 0.5,
+            "grade": "WIN"
+          }
+        ],
+        "method": "Walk-forward historical cases only for historical records; all completed historical cases for upcoming records. Reliability weights use signed indicator deltas and GC=F reaction returns."
       }
     },
     {
@@ -1376,6 +1934,80 @@
         "skipped": 7,
         "win_rate": 25.0,
         "definition": "N counts only BUY/SELL cases with an available non-flat gold reaction; UNSURE-skipped cases are reported separately."
+      },
+      "confidence": {
+        "confidence_pct": 50.0,
+        "conviction_pct": 0.0,
+        "confidence_label": "directional evidence",
+        "walk_forward": true,
+        "walk_forward_eligible": true,
+        "prior_case_N": 11,
+        "similar_case_N": 0,
+        "similar_case_candidates": 0,
+        "similar_hit_rate_shrunk": 50.0,
+        "similar_wins": 0,
+        "similar_losses": 0,
+        "weighted_vote_net": 0.0,
+        "weighted_vote_support_pct": 0.0,
+        "reliability": [
+          {
+            "release_type": "nfp",
+            "series_id": "PAYEMS",
+            "label": "Payroll growth cooled",
+            "N": 0,
+            "spearman_rho": null,
+            "p_value": null,
+            "weight_raw": 0.0,
+            "status": "underpowered",
+            "note": "Positive rho means the configured BUY direction historically aligned with a positive GC=F reaction. p_value is a normal approximation; it is not a guarantee of predictive power."
+          },
+          {
+            "release_type": "nfp",
+            "series_id": "UNRATE",
+            "label": "Unemployment rose",
+            "N": 0,
+            "spearman_rho": null,
+            "p_value": null,
+            "weight_raw": 0.0,
+            "status": "underpowered",
+            "note": "Positive rho means the configured BUY direction historically aligned with a positive GC=F reaction. p_value is a normal approximation; it is not a guarantee of predictive power."
+          },
+          {
+            "release_type": "nfp",
+            "series_id": "CES0500000003",
+            "label": "Hourly earnings rose",
+            "N": 0,
+            "spearman_rho": null,
+            "p_value": null,
+            "weight_raw": 0.0,
+            "status": "underpowered",
+            "note": "Positive rho means the configured BUY direction historically aligned with a positive GC=F reaction. p_value is a normal approximation; it is not a guarantee of predictive power."
+          },
+          {
+            "release_type": "nfp",
+            "series_id": "ICSA",
+            "label": "Claims pressure rose",
+            "N": 0,
+            "spearman_rho": null,
+            "p_value": null,
+            "weight_raw": 0.0,
+            "status": "underpowered",
+            "note": "Positive rho means the configured BUY direction historically aligned with a positive GC=F reaction. p_value is a normal approximation; it is not a guarantee of predictive power."
+          },
+          {
+            "release_type": "nfp",
+            "series_id": "JTSJOL",
+            "label": "Job openings fell",
+            "N": 0,
+            "spearman_rho": null,
+            "p_value": null,
+            "weight_raw": 0.0,
+            "status": "underpowered",
+            "note": "Positive rho means the configured BUY direction historically aligned with a positive GC=F reaction. p_value is a normal approximation; it is not a guarantee of predictive power."
+          }
+        ],
+        "similar_cases": [],
+        "method": "Walk-forward historical cases only for historical records; all completed historical cases for upcoming records. Reliability weights use signed indicator deltas and GC=F reaction returns."
       }
     },
     {
@@ -1538,6 +2170,93 @@
         "skipped": 1,
         "win_rate": 30.0,
         "definition": "N counts only BUY/SELL cases with an available non-flat gold reaction; UNSURE-skipped cases are reported separately."
+      },
+      "confidence": {
+        "confidence_pct": 43.5,
+        "conviction_pct": 0.0,
+        "confidence_label": "directional evidence",
+        "walk_forward": true,
+        "walk_forward_eligible": true,
+        "prior_case_N": 11,
+        "similar_case_N": 1,
+        "similar_case_candidates": 2,
+        "similar_hit_rate_shrunk": 40.0,
+        "similar_wins": 0,
+        "similar_losses": 1,
+        "weighted_vote_net": 0.0,
+        "weighted_vote_support_pct": 0.0,
+        "reliability": [
+          {
+            "release_type": "cpi",
+            "series_id": "CPIAUCSL",
+            "label": "Headline inflation rose",
+            "N": 0,
+            "spearman_rho": null,
+            "p_value": null,
+            "weight_raw": 0.0,
+            "status": "underpowered",
+            "note": "Positive rho means the configured BUY direction historically aligned with a positive GC=F reaction. p_value is a normal approximation; it is not a guarantee of predictive power."
+          },
+          {
+            "release_type": "cpi",
+            "series_id": "CPILFESL",
+            "label": "Core inflation rose",
+            "N": 0,
+            "spearman_rho": null,
+            "p_value": null,
+            "weight_raw": 0.0,
+            "status": "underpowered",
+            "note": "Positive rho means the configured BUY direction historically aligned with a positive GC=F reaction. p_value is a normal approximation; it is not a guarantee of predictive power."
+          },
+          {
+            "release_type": "cpi",
+            "series_id": "PPIFES",
+            "label": "Core producer prices rose",
+            "N": 0,
+            "spearman_rho": null,
+            "p_value": null,
+            "weight_raw": 0.0,
+            "status": "underpowered",
+            "note": "Positive rho means the configured BUY direction historically aligned with a positive GC=F reaction. p_value is a normal approximation; it is not a guarantee of predictive power."
+          },
+          {
+            "release_type": "cpi",
+            "series_id": "IR",
+            "label": "Import prices rose",
+            "N": 0,
+            "spearman_rho": null,
+            "p_value": null,
+            "weight_raw": 0.0,
+            "status": "underpowered",
+            "note": "Positive rho means the configured BUY direction historically aligned with a positive GC=F reaction. p_value is a normal approximation; it is not a guarantee of predictive power."
+          },
+          {
+            "release_type": "cpi",
+            "series_id": "GASREGW",
+            "label": "Gasoline prices rose",
+            "N": 0,
+            "spearman_rho": null,
+            "p_value": null,
+            "weight_raw": 0.0,
+            "status": "underpowered",
+            "note": "Positive rho means the configured BUY direction historically aligned with a positive GC=F reaction. p_value is a normal approximation; it is not a guarantee of predictive power."
+          }
+        ],
+        "similar_cases": [
+          {
+            "event_id": "cpi-2026-02-13",
+            "release_date": "2026-02-13",
+            "similarity": 0.8,
+            "grade": "LOSS"
+          },
+          {
+            "event_id": "cpi-2026-01-13",
+            "release_date": "2026-01-13",
+            "similarity": 0.667,
+            "grade": "UNSURE-skipped"
+          }
+        ],
+        "method": "Walk-forward historical cases only for historical records; all completed historical cases for upcoming records. Reliability weights use signed indicator deltas and GC=F reaction returns."
       }
     },
     {
@@ -1678,6 +2397,82 @@
         "skipped": 4,
         "win_rate": 62.5,
         "definition": "N counts only BUY/SELL cases with an available non-flat gold reaction; UNSURE-skipped cases are reported separately."
+      },
+      "confidence": {
+        "confidence_pct": 60.83,
+        "conviction_pct": 0.0,
+        "confidence_label": "directional evidence",
+        "walk_forward": true,
+        "walk_forward_eligible": true,
+        "prior_case_N": 11,
+        "similar_case_N": 2,
+        "similar_case_candidates": 2,
+        "similar_hit_rate_shrunk": 66.67,
+        "similar_wins": 2,
+        "similar_losses": 0,
+        "weighted_vote_net": 0.0,
+        "weighted_vote_support_pct": 0.0,
+        "reliability": [
+          {
+            "release_type": "ppi",
+            "series_id": "PPIFIS",
+            "label": "Final demand PPI rose",
+            "N": 0,
+            "spearman_rho": null,
+            "p_value": null,
+            "weight_raw": 0.0,
+            "status": "underpowered",
+            "note": "Positive rho means the configured BUY direction historically aligned with a positive GC=F reaction. p_value is a normal approximation; it is not a guarantee of predictive power."
+          },
+          {
+            "release_type": "ppi",
+            "series_id": "PPIFES",
+            "label": "Core final demand PPI rose",
+            "N": 0,
+            "spearman_rho": null,
+            "p_value": null,
+            "weight_raw": 0.0,
+            "status": "underpowered",
+            "note": "Positive rho means the configured BUY direction historically aligned with a positive GC=F reaction. p_value is a normal approximation; it is not a guarantee of predictive power."
+          },
+          {
+            "release_type": "ppi",
+            "series_id": "DCOILWTICO",
+            "label": "WTI rose",
+            "N": 0,
+            "spearman_rho": null,
+            "p_value": null,
+            "weight_raw": 0.0,
+            "status": "underpowered",
+            "note": "Positive rho means the configured BUY direction historically aligned with a positive GC=F reaction. p_value is a normal approximation; it is not a guarantee of predictive power."
+          },
+          {
+            "release_type": "ppi",
+            "series_id": "GASREGW",
+            "label": "Gasoline prices rose",
+            "N": 0,
+            "spearman_rho": null,
+            "p_value": null,
+            "weight_raw": 0.0,
+            "status": "underpowered",
+            "note": "Positive rho means the configured BUY direction historically aligned with a positive GC=F reaction. p_value is a normal approximation; it is not a guarantee of predictive power."
+          }
+        ],
+        "similar_cases": [
+          {
+            "event_id": "ppi-2026-02-27",
+            "release_date": "2026-02-27",
+            "similarity": 1.0,
+            "grade": "WIN"
+          },
+          {
+            "event_id": "ppi-2026-01-30",
+            "release_date": "2026-01-30",
+            "similarity": 0.5,
+            "grade": "WIN"
+          }
+        ],
+        "method": "Walk-forward historical cases only for historical records; all completed historical cases for upcoming records. Reliability weights use signed indicator deltas and GC=F reaction returns."
       }
     },
     {
@@ -1796,6 +2591,58 @@
         "skipped": 7,
         "win_rate": null,
         "definition": "N counts only BUY/SELL cases with an available non-flat gold reaction; UNSURE-skipped cases are reported separately."
+      },
+      "confidence": {
+        "confidence_pct": 50.0,
+        "conviction_pct": 0.0,
+        "confidence_label": "evidence strength only; action remains UNSURE",
+        "walk_forward": true,
+        "walk_forward_eligible": true,
+        "prior_case_N": 7,
+        "similar_case_N": 0,
+        "similar_case_candidates": 0,
+        "similar_hit_rate_shrunk": 50.0,
+        "similar_wins": 0,
+        "similar_losses": 0,
+        "weighted_vote_net": 0.0,
+        "weighted_vote_support_pct": 0.0,
+        "reliability": [
+          {
+            "release_type": "fomc",
+            "series_id": "FEDFUNDS",
+            "label": "Effective policy rate fell",
+            "N": 0,
+            "spearman_rho": null,
+            "p_value": null,
+            "weight_raw": 0.0,
+            "status": "underpowered",
+            "note": "Positive rho means the configured BUY direction historically aligned with a positive GC=F reaction. p_value is a normal approximation; it is not a guarantee of predictive power."
+          },
+          {
+            "release_type": "fomc",
+            "series_id": "DGS2",
+            "label": "Two-year yield fell",
+            "N": 0,
+            "spearman_rho": null,
+            "p_value": null,
+            "weight_raw": 0.0,
+            "status": "underpowered",
+            "note": "Positive rho means the configured BUY direction historically aligned with a positive GC=F reaction. p_value is a normal approximation; it is not a guarantee of predictive power."
+          },
+          {
+            "release_type": "fomc",
+            "series_id": "SOFR",
+            "label": "Funding rate fell",
+            "N": 0,
+            "spearman_rho": null,
+            "p_value": null,
+            "weight_raw": 0.0,
+            "status": "underpowered",
+            "note": "Positive rho means the configured BUY direction historically aligned with a positive GC=F reaction. p_value is a normal approximation; it is not a guarantee of predictive power."
+          }
+        ],
+        "similar_cases": [],
+        "method": "Walk-forward historical cases only for historical records; all completed historical cases for upcoming records. Reliability weights use signed indicator deltas and GC=F reaction returns."
       }
     },
     {
@@ -1958,6 +2805,99 @@
         "skipped": 7,
         "win_rate": 25.0,
         "definition": "N counts only BUY/SELL cases with an available non-flat gold reaction; UNSURE-skipped cases are reported separately."
+      },
+      "confidence": {
+        "confidence_pct": 39.17,
+        "conviction_pct": 0.0,
+        "confidence_label": "directional evidence",
+        "walk_forward": true,
+        "walk_forward_eligible": true,
+        "prior_case_N": 11,
+        "similar_case_N": 2,
+        "similar_case_candidates": 3,
+        "similar_hit_rate_shrunk": 33.33,
+        "similar_wins": 0,
+        "similar_losses": 2,
+        "weighted_vote_net": 0.0,
+        "weighted_vote_support_pct": 0.0,
+        "reliability": [
+          {
+            "release_type": "nfp",
+            "series_id": "PAYEMS",
+            "label": "Payroll growth cooled",
+            "N": 0,
+            "spearman_rho": null,
+            "p_value": null,
+            "weight_raw": 0.0,
+            "status": "underpowered",
+            "note": "Positive rho means the configured BUY direction historically aligned with a positive GC=F reaction. p_value is a normal approximation; it is not a guarantee of predictive power."
+          },
+          {
+            "release_type": "nfp",
+            "series_id": "UNRATE",
+            "label": "Unemployment rose",
+            "N": 0,
+            "spearman_rho": null,
+            "p_value": null,
+            "weight_raw": 0.0,
+            "status": "underpowered",
+            "note": "Positive rho means the configured BUY direction historically aligned with a positive GC=F reaction. p_value is a normal approximation; it is not a guarantee of predictive power."
+          },
+          {
+            "release_type": "nfp",
+            "series_id": "CES0500000003",
+            "label": "Hourly earnings rose",
+            "N": 0,
+            "spearman_rho": null,
+            "p_value": null,
+            "weight_raw": 0.0,
+            "status": "underpowered",
+            "note": "Positive rho means the configured BUY direction historically aligned with a positive GC=F reaction. p_value is a normal approximation; it is not a guarantee of predictive power."
+          },
+          {
+            "release_type": "nfp",
+            "series_id": "ICSA",
+            "label": "Claims pressure rose",
+            "N": 0,
+            "spearman_rho": null,
+            "p_value": null,
+            "weight_raw": 0.0,
+            "status": "underpowered",
+            "note": "Positive rho means the configured BUY direction historically aligned with a positive GC=F reaction. p_value is a normal approximation; it is not a guarantee of predictive power."
+          },
+          {
+            "release_type": "nfp",
+            "series_id": "JTSJOL",
+            "label": "Job openings fell",
+            "N": 0,
+            "spearman_rho": null,
+            "p_value": null,
+            "weight_raw": 0.0,
+            "status": "underpowered",
+            "note": "Positive rho means the configured BUY direction historically aligned with a positive GC=F reaction. p_value is a normal approximation; it is not a guarantee of predictive power."
+          }
+        ],
+        "similar_cases": [
+          {
+            "event_id": "nfp-2026-01-09",
+            "release_date": "2026-01-09",
+            "similarity": 0.8,
+            "grade": "UNSURE-skipped"
+          },
+          {
+            "event_id": "nfp-2026-02-11",
+            "release_date": "2026-02-11",
+            "similarity": 0.6,
+            "grade": "LOSS"
+          },
+          {
+            "event_id": "nfp-2026-03-06",
+            "release_date": "2026-03-06",
+            "similarity": 0.5,
+            "grade": "LOSS"
+          }
+        ],
+        "method": "Walk-forward historical cases only for historical records; all completed historical cases for upcoming records. Reliability weights use signed indicator deltas and GC=F reaction returns."
       }
     },
     {
@@ -2120,6 +3060,99 @@
         "skipped": 1,
         "win_rate": 30.0,
         "definition": "N counts only BUY/SELL cases with an available non-flat gold reaction; UNSURE-skipped cases are reported separately."
+      },
+      "confidence": {
+        "confidence_pct": 50.0,
+        "conviction_pct": 0.0,
+        "confidence_label": "directional evidence",
+        "walk_forward": true,
+        "walk_forward_eligible": true,
+        "prior_case_N": 11,
+        "similar_case_N": 2,
+        "similar_case_candidates": 3,
+        "similar_hit_rate_shrunk": 50.0,
+        "similar_wins": 1,
+        "similar_losses": 1,
+        "weighted_vote_net": 0.0,
+        "weighted_vote_support_pct": 0.0,
+        "reliability": [
+          {
+            "release_type": "cpi",
+            "series_id": "CPIAUCSL",
+            "label": "Headline inflation rose",
+            "N": 0,
+            "spearman_rho": null,
+            "p_value": null,
+            "weight_raw": 0.0,
+            "status": "underpowered",
+            "note": "Positive rho means the configured BUY direction historically aligned with a positive GC=F reaction. p_value is a normal approximation; it is not a guarantee of predictive power."
+          },
+          {
+            "release_type": "cpi",
+            "series_id": "CPILFESL",
+            "label": "Core inflation rose",
+            "N": 0,
+            "spearman_rho": null,
+            "p_value": null,
+            "weight_raw": 0.0,
+            "status": "underpowered",
+            "note": "Positive rho means the configured BUY direction historically aligned with a positive GC=F reaction. p_value is a normal approximation; it is not a guarantee of predictive power."
+          },
+          {
+            "release_type": "cpi",
+            "series_id": "PPIFES",
+            "label": "Core producer prices rose",
+            "N": 0,
+            "spearman_rho": null,
+            "p_value": null,
+            "weight_raw": 0.0,
+            "status": "underpowered",
+            "note": "Positive rho means the configured BUY direction historically aligned with a positive GC=F reaction. p_value is a normal approximation; it is not a guarantee of predictive power."
+          },
+          {
+            "release_type": "cpi",
+            "series_id": "IR",
+            "label": "Import prices rose",
+            "N": 0,
+            "spearman_rho": null,
+            "p_value": null,
+            "weight_raw": 0.0,
+            "status": "underpowered",
+            "note": "Positive rho means the configured BUY direction historically aligned with a positive GC=F reaction. p_value is a normal approximation; it is not a guarantee of predictive power."
+          },
+          {
+            "release_type": "cpi",
+            "series_id": "GASREGW",
+            "label": "Gasoline prices rose",
+            "N": 0,
+            "spearman_rho": null,
+            "p_value": null,
+            "weight_raw": 0.0,
+            "status": "underpowered",
+            "note": "Positive rho means the configured BUY direction historically aligned with a positive GC=F reaction. p_value is a normal approximation; it is not a guarantee of predictive power."
+          }
+        ],
+        "similar_cases": [
+          {
+            "event_id": "cpi-2026-03-11",
+            "release_date": "2026-03-11",
+            "similarity": 1.0,
+            "grade": "WIN"
+          },
+          {
+            "event_id": "cpi-2026-02-13",
+            "release_date": "2026-02-13",
+            "similarity": 0.8,
+            "grade": "LOSS"
+          },
+          {
+            "event_id": "cpi-2026-01-13",
+            "release_date": "2026-01-13",
+            "similarity": 0.667,
+            "grade": "UNSURE-skipped"
+          }
+        ],
+        "method": "Walk-forward historical cases only for historical records; all completed historical cases for upcoming records. Reliability weights use signed indicator deltas and GC=F reaction returns."
       }
     },
     {
@@ -2260,6 +3293,88 @@
         "skipped": 4,
         "win_rate": 62.5,
         "definition": "N counts only BUY/SELL cases with an available non-flat gold reaction; UNSURE-skipped cases are reported separately."
+      },
+      "confidence": {
+        "confidence_pct": 54.64,
+        "conviction_pct": 0.0,
+        "confidence_label": "directional evidence",
+        "walk_forward": true,
+        "walk_forward_eligible": true,
+        "prior_case_N": 11,
+        "similar_case_N": 3,
+        "similar_case_candidates": 3,
+        "similar_hit_rate_shrunk": 57.14,
+        "similar_wins": 2,
+        "similar_losses": 1,
+        "weighted_vote_net": 0.0,
+        "weighted_vote_support_pct": 0.0,
+        "reliability": [
+          {
+            "release_type": "ppi",
+            "series_id": "PPIFIS",
+            "label": "Final demand PPI rose",
+            "N": 0,
+            "spearman_rho": null,
+            "p_value": null,
+            "weight_raw": 0.0,
+            "status": "underpowered",
+            "note": "Positive rho means the configured BUY direction historically aligned with a positive GC=F reaction. p_value is a normal approximation; it is not a guarantee of predictive power."
+          },
+          {
+            "release_type": "ppi",
+            "series_id": "PPIFES",
+            "label": "Core final demand PPI rose",
+            "N": 0,
+            "spearman_rho": null,
+            "p_value": null,
+            "weight_raw": 0.0,
+            "status": "underpowered",
+            "note": "Positive rho means the configured BUY direction historically aligned with a positive GC=F reaction. p_value is a normal approximation; it is not a guarantee of predictive power."
+          },
+          {
+            "release_type": "ppi",
+            "series_id": "DCOILWTICO",
+            "label": "WTI rose",
+            "N": 0,
+            "spearman_rho": null,
+            "p_value": null,
+            "weight_raw": 0.0,
+            "status": "underpowered",
+            "note": "Positive rho means the configured BUY direction historically aligned with a positive GC=F reaction. p_value is a normal approximation; it is not a guarantee of predictive power."
+          },
+          {
+            "release_type": "ppi",
+            "series_id": "GASREGW",
+            "label": "Gasoline prices rose",
+            "N": 0,
+            "spearman_rho": null,
+            "p_value": null,
+            "weight_raw": 0.0,
+            "status": "underpowered",
+            "note": "Positive rho means the configured BUY direction historically aligned with a positive GC=F reaction. p_value is a normal approximation; it is not a guarantee of predictive power."
+          }
+        ],
+        "similar_cases": [
+          {
+            "event_id": "ppi-2026-02-27",
+            "release_date": "2026-02-27",
+            "similarity": 1.0,
+            "grade": "WIN"
+          },
+          {
+            "event_id": "ppi-2026-03-18",
+            "release_date": "2026-03-18",
+            "similarity": 1.0,
+            "grade": "LOSS"
+          },
+          {
+            "event_id": "ppi-2026-01-30",
+            "release_date": "2026-01-30",
+            "similarity": 0.5,
+            "grade": "WIN"
+          }
+        ],
+        "method": "Walk-forward historical cases only for historical records; all completed historical cases for upcoming records. Reliability weights use signed indicator deltas and GC=F reaction returns."
       }
     },
     {
@@ -2378,6 +3493,71 @@
         "skipped": 7,
         "win_rate": null,
         "definition": "N counts only BUY/SELL cases with an available non-flat gold reaction; UNSURE-skipped cases are reported separately."
+      },
+      "confidence": {
+        "confidence_pct": 50.0,
+        "conviction_pct": 0.0,
+        "confidence_label": "evidence strength only; action remains UNSURE",
+        "walk_forward": true,
+        "walk_forward_eligible": true,
+        "prior_case_N": 7,
+        "similar_case_N": 0,
+        "similar_case_candidates": 2,
+        "similar_hit_rate_shrunk": 50.0,
+        "similar_wins": 0,
+        "similar_losses": 0,
+        "weighted_vote_net": 0.0,
+        "weighted_vote_support_pct": 0.0,
+        "reliability": [
+          {
+            "release_type": "fomc",
+            "series_id": "FEDFUNDS",
+            "label": "Effective policy rate fell",
+            "N": 0,
+            "spearman_rho": null,
+            "p_value": null,
+            "weight_raw": 0.0,
+            "status": "underpowered",
+            "note": "Positive rho means the configured BUY direction historically aligned with a positive GC=F reaction. p_value is a normal approximation; it is not a guarantee of predictive power."
+          },
+          {
+            "release_type": "fomc",
+            "series_id": "DGS2",
+            "label": "Two-year yield fell",
+            "N": 0,
+            "spearman_rho": null,
+            "p_value": null,
+            "weight_raw": 0.0,
+            "status": "underpowered",
+            "note": "Positive rho means the configured BUY direction historically aligned with a positive GC=F reaction. p_value is a normal approximation; it is not a guarantee of predictive power."
+          },
+          {
+            "release_type": "fomc",
+            "series_id": "SOFR",
+            "label": "Funding rate fell",
+            "N": 0,
+            "spearman_rho": null,
+            "p_value": null,
+            "weight_raw": 0.0,
+            "status": "underpowered",
+            "note": "Positive rho means the configured BUY direction historically aligned with a positive GC=F reaction. p_value is a normal approximation; it is not a guarantee of predictive power."
+          }
+        ],
+        "similar_cases": [
+          {
+            "event_id": "fomc-2026-01-28",
+            "release_date": "2026-01-28",
+            "similarity": 0.667,
+            "grade": "UNSURE-skipped"
+          },
+          {
+            "event_id": "fomc-2026-03-18",
+            "release_date": "2026-03-18",
+            "similarity": 0.667,
+            "grade": "UNSURE-skipped"
+          }
+        ],
+        "method": "Walk-forward historical cases only for historical records; all completed historical cases for upcoming records. Reliability weights use signed indicator deltas and GC=F reaction returns."
       }
     },
     {
@@ -2540,6 +3720,87 @@
         "skipped": 7,
         "win_rate": 25.0,
         "definition": "N counts only BUY/SELL cases with an available non-flat gold reaction; UNSURE-skipped cases are reported separately."
+      },
+      "confidence": {
+        "confidence_pct": 43.5,
+        "conviction_pct": 0.0,
+        "confidence_label": "directional evidence",
+        "walk_forward": true,
+        "walk_forward_eligible": true,
+        "prior_case_N": 11,
+        "similar_case_N": 1,
+        "similar_case_candidates": 1,
+        "similar_hit_rate_shrunk": 40.0,
+        "similar_wins": 0,
+        "similar_losses": 1,
+        "weighted_vote_net": 0.0,
+        "weighted_vote_support_pct": 0.0,
+        "reliability": [
+          {
+            "release_type": "nfp",
+            "series_id": "PAYEMS",
+            "label": "Payroll growth cooled",
+            "N": 0,
+            "spearman_rho": null,
+            "p_value": null,
+            "weight_raw": 0.0,
+            "status": "underpowered",
+            "note": "Positive rho means the configured BUY direction historically aligned with a positive GC=F reaction. p_value is a normal approximation; it is not a guarantee of predictive power."
+          },
+          {
+            "release_type": "nfp",
+            "series_id": "UNRATE",
+            "label": "Unemployment rose",
+            "N": 0,
+            "spearman_rho": null,
+            "p_value": null,
+            "weight_raw": 0.0,
+            "status": "underpowered",
+            "note": "Positive rho means the configured BUY direction historically aligned with a positive GC=F reaction. p_value is a normal approximation; it is not a guarantee of predictive power."
+          },
+          {
+            "release_type": "nfp",
+            "series_id": "CES0500000003",
+            "label": "Hourly earnings rose",
+            "N": 0,
+            "spearman_rho": null,
+            "p_value": null,
+            "weight_raw": 0.0,
+            "status": "underpowered",
+            "note": "Positive rho means the configured BUY direction historically aligned with a positive GC=F reaction. p_value is a normal approximation; it is not a guarantee of predictive power."
+          },
+          {
+            "release_type": "nfp",
+            "series_id": "ICSA",
+            "label": "Claims pressure rose",
+            "N": 0,
+            "spearman_rho": null,
+            "p_value": null,
+            "weight_raw": 0.0,
+            "status": "underpowered",
+            "note": "Positive rho means the configured BUY direction historically aligned with a positive GC=F reaction. p_value is a normal approximation; it is not a guarantee of predictive power."
+          },
+          {
+            "release_type": "nfp",
+            "series_id": "JTSJOL",
+            "label": "Job openings fell",
+            "N": 0,
+            "spearman_rho": null,
+            "p_value": null,
+            "weight_raw": 0.0,
+            "status": "underpowered",
+            "note": "Positive rho means the configured BUY direction historically aligned with a positive GC=F reaction. p_value is a normal approximation; it is not a guarantee of predictive power."
+          }
+        ],
+        "similar_cases": [
+          {
+            "event_id": "nfp-2026-03-06",
+            "release_date": "2026-03-06",
+            "similarity": 1.0,
+            "grade": "LOSS"
+          }
+        ],
+        "method": "Walk-forward historical cases only for historical records; all completed historical cases for upcoming records. Reliability weights use signed indicator deltas and GC=F reaction returns."
       }
     },
     {
@@ -2702,6 +3963,105 @@
         "skipped": 1,
         "win_rate": 30.0,
         "definition": "N counts only BUY/SELL cases with an available non-flat gold reaction; UNSURE-skipped cases are reported separately."
+      },
+      "confidence": {
+        "confidence_pct": 54.64,
+        "conviction_pct": 0.0,
+        "confidence_label": "directional evidence",
+        "walk_forward": true,
+        "walk_forward_eligible": true,
+        "prior_case_N": 11,
+        "similar_case_N": 3,
+        "similar_case_candidates": 4,
+        "similar_hit_rate_shrunk": 57.14,
+        "similar_wins": 2,
+        "similar_losses": 1,
+        "weighted_vote_net": 0.0,
+        "weighted_vote_support_pct": 0.0,
+        "reliability": [
+          {
+            "release_type": "cpi",
+            "series_id": "CPIAUCSL",
+            "label": "Headline inflation rose",
+            "N": 0,
+            "spearman_rho": null,
+            "p_value": null,
+            "weight_raw": 0.0,
+            "status": "underpowered",
+            "note": "Positive rho means the configured BUY direction historically aligned with a positive GC=F reaction. p_value is a normal approximation; it is not a guarantee of predictive power."
+          },
+          {
+            "release_type": "cpi",
+            "series_id": "CPILFESL",
+            "label": "Core inflation rose",
+            "N": 0,
+            "spearman_rho": null,
+            "p_value": null,
+            "weight_raw": 0.0,
+            "status": "underpowered",
+            "note": "Positive rho means the configured BUY direction historically aligned with a positive GC=F reaction. p_value is a normal approximation; it is not a guarantee of predictive power."
+          },
+          {
+            "release_type": "cpi",
+            "series_id": "PPIFES",
+            "label": "Core producer prices rose",
+            "N": 0,
+            "spearman_rho": null,
+            "p_value": null,
+            "weight_raw": 0.0,
+            "status": "underpowered",
+            "note": "Positive rho means the configured BUY direction historically aligned with a positive GC=F reaction. p_value is a normal approximation; it is not a guarantee of predictive power."
+          },
+          {
+            "release_type": "cpi",
+            "series_id": "IR",
+            "label": "Import prices rose",
+            "N": 0,
+            "spearman_rho": null,
+            "p_value": null,
+            "weight_raw": 0.0,
+            "status": "underpowered",
+            "note": "Positive rho means the configured BUY direction historically aligned with a positive GC=F reaction. p_value is a normal approximation; it is not a guarantee of predictive power."
+          },
+          {
+            "release_type": "cpi",
+            "series_id": "GASREGW",
+            "label": "Gasoline prices rose",
+            "N": 0,
+            "spearman_rho": null,
+            "p_value": null,
+            "weight_raw": 0.0,
+            "status": "underpowered",
+            "note": "Positive rho means the configured BUY direction historically aligned with a positive GC=F reaction. p_value is a normal approximation; it is not a guarantee of predictive power."
+          }
+        ],
+        "similar_cases": [
+          {
+            "event_id": "cpi-2026-03-11",
+            "release_date": "2026-03-11",
+            "similarity": 1.0,
+            "grade": "WIN"
+          },
+          {
+            "event_id": "cpi-2026-04-10",
+            "release_date": "2026-04-10",
+            "similarity": 1.0,
+            "grade": "WIN"
+          },
+          {
+            "event_id": "cpi-2026-02-13",
+            "release_date": "2026-02-13",
+            "similarity": 0.8,
+            "grade": "LOSS"
+          },
+          {
+            "event_id": "cpi-2026-01-13",
+            "release_date": "2026-01-13",
+            "similarity": 0.667,
+            "grade": "UNSURE-skipped"
+          }
+        ],
+        "method": "Walk-forward historical cases only for historical records; all completed historical cases for upcoming records. Reliability weights use signed indicator deltas and GC=F reaction returns."
       }
     },
     {
@@ -2842,6 +4202,94 @@
         "skipped": 4,
         "win_rate": 62.5,
         "definition": "N counts only BUY/SELL cases with an available non-flat gold reaction; UNSURE-skipped cases are reported separately."
+      },
+      "confidence": {
+        "confidence_pct": 58.13,
+        "conviction_pct": 0.0,
+        "confidence_label": "directional evidence",
+        "walk_forward": true,
+        "walk_forward_eligible": true,
+        "prior_case_N": 11,
+        "similar_case_N": 4,
+        "similar_case_candidates": 4,
+        "similar_hit_rate_shrunk": 62.5,
+        "similar_wins": 3,
+        "similar_losses": 1,
+        "weighted_vote_net": 0.0,
+        "weighted_vote_support_pct": 0.0,
+        "reliability": [
+          {
+            "release_type": "ppi",
+            "series_id": "PPIFIS",
+            "label": "Final demand PPI rose",
+            "N": 0,
+            "spearman_rho": null,
+            "p_value": null,
+            "weight_raw": 0.0,
+            "status": "underpowered",
+            "note": "Positive rho means the configured BUY direction historically aligned with a positive GC=F reaction. p_value is a normal approximation; it is not a guarantee of predictive power."
+          },
+          {
+            "release_type": "ppi",
+            "series_id": "PPIFES",
+            "label": "Core final demand PPI rose",
+            "N": 0,
+            "spearman_rho": null,
+            "p_value": null,
+            "weight_raw": 0.0,
+            "status": "underpowered",
+            "note": "Positive rho means the configured BUY direction historically aligned with a positive GC=F reaction. p_value is a normal approximation; it is not a guarantee of predictive power."
+          },
+          {
+            "release_type": "ppi",
+            "series_id": "DCOILWTICO",
+            "label": "WTI rose",
+            "N": 0,
+            "spearman_rho": null,
+            "p_value": null,
+            "weight_raw": 0.0,
+            "status": "underpowered",
+            "note": "Positive rho means the configured BUY direction historically aligned with a positive GC=F reaction. p_value is a normal approximation; it is not a guarantee of predictive power."
+          },
+          {
+            "release_type": "ppi",
+            "series_id": "GASREGW",
+            "label": "Gasoline prices rose",
+            "N": 0,
+            "spearman_rho": null,
+            "p_value": null,
+            "weight_raw": 0.0,
+            "status": "underpowered",
+            "note": "Positive rho means the configured BUY direction historically aligned with a positive GC=F reaction. p_value is a normal approximation; it is not a guarantee of predictive power."
+          }
+        ],
+        "similar_cases": [
+          {
+            "event_id": "ppi-2026-02-27",
+            "release_date": "2026-02-27",
+            "similarity": 0.75,
+            "grade": "WIN"
+          },
+          {
+            "event_id": "ppi-2026-03-18",
+            "release_date": "2026-03-18",
+            "similarity": 0.75,
+            "grade": "LOSS"
+          },
+          {
+            "event_id": "ppi-2026-04-14",
+            "release_date": "2026-04-14",
+            "similarity": 0.75,
+            "grade": "WIN"
+          },
+          {
+            "event_id": "ppi-2026-01-30",
+            "release_date": "2026-01-30",
+            "similarity": 0.5,
+            "grade": "WIN"
+          }
+        ],
+        "method": "Walk-forward historical cases only for historical records; all completed historical cases for upcoming records. Reliability weights use signed indicator deltas and GC=F reaction returns."
       }
     },
     {
@@ -3004,6 +4452,93 @@
         "skipped": 7,
         "win_rate": 25.0,
         "definition": "N counts only BUY/SELL cases with an available non-flat gold reaction; UNSURE-skipped cases are reported separately."
+      },
+      "confidence": {
+        "confidence_pct": 39.17,
+        "conviction_pct": 0.0,
+        "confidence_label": "evidence strength only; action remains UNSURE",
+        "walk_forward": true,
+        "walk_forward_eligible": true,
+        "prior_case_N": 11,
+        "similar_case_N": 2,
+        "similar_case_candidates": 2,
+        "similar_hit_rate_shrunk": 33.33,
+        "similar_wins": 0,
+        "similar_losses": 2,
+        "weighted_vote_net": 0.0,
+        "weighted_vote_support_pct": 0.0,
+        "reliability": [
+          {
+            "release_type": "nfp",
+            "series_id": "PAYEMS",
+            "label": "Payroll growth cooled",
+            "N": 0,
+            "spearman_rho": null,
+            "p_value": null,
+            "weight_raw": 0.0,
+            "status": "underpowered",
+            "note": "Positive rho means the configured BUY direction historically aligned with a positive GC=F reaction. p_value is a normal approximation; it is not a guarantee of predictive power."
+          },
+          {
+            "release_type": "nfp",
+            "series_id": "UNRATE",
+            "label": "Unemployment rose",
+            "N": 0,
+            "spearman_rho": null,
+            "p_value": null,
+            "weight_raw": 0.0,
+            "status": "underpowered",
+            "note": "Positive rho means the configured BUY direction historically aligned with a positive GC=F reaction. p_value is a normal approximation; it is not a guarantee of predictive power."
+          },
+          {
+            "release_type": "nfp",
+            "series_id": "CES0500000003",
+            "label": "Hourly earnings rose",
+            "N": 0,
+            "spearman_rho": null,
+            "p_value": null,
+            "weight_raw": 0.0,
+            "status": "underpowered",
+            "note": "Positive rho means the configured BUY direction historically aligned with a positive GC=F reaction. p_value is a normal approximation; it is not a guarantee of predictive power."
+          },
+          {
+            "release_type": "nfp",
+            "series_id": "ICSA",
+            "label": "Claims pressure rose",
+            "N": 0,
+            "spearman_rho": null,
+            "p_value": null,
+            "weight_raw": 0.0,
+            "status": "underpowered",
+            "note": "Positive rho means the configured BUY direction historically aligned with a positive GC=F reaction. p_value is a normal approximation; it is not a guarantee of predictive power."
+          },
+          {
+            "release_type": "nfp",
+            "series_id": "JTSJOL",
+            "label": "Job openings fell",
+            "N": 0,
+            "spearman_rho": null,
+            "p_value": null,
+            "weight_raw": 0.0,
+            "status": "underpowered",
+            "note": "Positive rho means the configured BUY direction historically aligned with a positive GC=F reaction. p_value is a normal approximation; it is not a guarantee of predictive power."
+          }
+        ],
+        "similar_cases": [
+          {
+            "event_id": "nfp-2026-02-11",
+            "release_date": "2026-02-11",
+            "similarity": 0.6,
+            "grade": "LOSS"
+          },
+          {
+            "event_id": "nfp-2026-03-06",
+            "release_date": "2026-03-06",
+            "similarity": 0.5,
+            "grade": "LOSS"
+          }
+        ],
+        "method": "Walk-forward historical cases only for historical records; all completed historical cases for upcoming records. Reliability weights use signed indicator deltas and GC=F reaction returns."
       }
     },
     {
@@ -3166,6 +4701,111 @@
         "skipped": 1,
         "win_rate": 30.0,
         "definition": "N counts only BUY/SELL cases with an available non-flat gold reaction; UNSURE-skipped cases are reported separately."
+      },
+      "confidence": {
+        "confidence_pct": 50.0,
+        "conviction_pct": 0.0,
+        "confidence_label": "directional evidence",
+        "walk_forward": true,
+        "walk_forward_eligible": true,
+        "prior_case_N": 11,
+        "similar_case_N": 4,
+        "similar_case_candidates": 5,
+        "similar_hit_rate_shrunk": 50.0,
+        "similar_wins": 2,
+        "similar_losses": 2,
+        "weighted_vote_net": 0.0,
+        "weighted_vote_support_pct": 0.0,
+        "reliability": [
+          {
+            "release_type": "cpi",
+            "series_id": "CPIAUCSL",
+            "label": "Headline inflation rose",
+            "N": 0,
+            "spearman_rho": null,
+            "p_value": null,
+            "weight_raw": 0.0,
+            "status": "underpowered",
+            "note": "Positive rho means the configured BUY direction historically aligned with a positive GC=F reaction. p_value is a normal approximation; it is not a guarantee of predictive power."
+          },
+          {
+            "release_type": "cpi",
+            "series_id": "CPILFESL",
+            "label": "Core inflation rose",
+            "N": 0,
+            "spearman_rho": null,
+            "p_value": null,
+            "weight_raw": 0.0,
+            "status": "underpowered",
+            "note": "Positive rho means the configured BUY direction historically aligned with a positive GC=F reaction. p_value is a normal approximation; it is not a guarantee of predictive power."
+          },
+          {
+            "release_type": "cpi",
+            "series_id": "PPIFES",
+            "label": "Core producer prices rose",
+            "N": 0,
+            "spearman_rho": null,
+            "p_value": null,
+            "weight_raw": 0.0,
+            "status": "underpowered",
+            "note": "Positive rho means the configured BUY direction historically aligned with a positive GC=F reaction. p_value is a normal approximation; it is not a guarantee of predictive power."
+          },
+          {
+            "release_type": "cpi",
+            "series_id": "IR",
+            "label": "Import prices rose",
+            "N": 0,
+            "spearman_rho": null,
+            "p_value": null,
+            "weight_raw": 0.0,
+            "status": "underpowered",
+            "note": "Positive rho means the configured BUY direction historically aligned with a positive GC=F reaction. p_value is a normal approximation; it is not a guarantee of predictive power."
+          },
+          {
+            "release_type": "cpi",
+            "series_id": "GASREGW",
+            "label": "Gasoline prices rose",
+            "N": 0,
+            "spearman_rho": null,
+            "p_value": null,
+            "weight_raw": 0.0,
+            "status": "underpowered",
+            "note": "Positive rho means the configured BUY direction historically aligned with a positive GC=F reaction. p_value is a normal approximation; it is not a guarantee of predictive power."
+          }
+        ],
+        "similar_cases": [
+          {
+            "event_id": "cpi-2026-01-13",
+            "release_date": "2026-01-13",
+            "similarity": 1.0,
+            "grade": "UNSURE-skipped"
+          },
+          {
+            "event_id": "cpi-2026-03-11",
+            "release_date": "2026-03-11",
+            "similarity": 0.8,
+            "grade": "WIN"
+          },
+          {
+            "event_id": "cpi-2026-04-10",
+            "release_date": "2026-04-10",
+            "similarity": 0.8,
+            "grade": "WIN"
+          },
+          {
+            "event_id": "cpi-2026-05-12",
+            "release_date": "2026-05-12",
+            "similarity": 0.8,
+            "grade": "LOSS"
+          },
+          {
+            "event_id": "cpi-2026-02-13",
+            "release_date": "2026-02-13",
+            "similarity": 0.6,
+            "grade": "LOSS"
+          }
+        ],
+        "method": "Walk-forward historical cases only for historical records; all completed historical cases for upcoming records. Reliability weights use signed indicator deltas and GC=F reaction returns."
       }
     },
     {
@@ -3306,6 +4946,106 @@
         "skipped": 4,
         "win_rate": 62.5,
         "definition": "N counts only BUY/SELL cases with an available non-flat gold reaction; UNSURE-skipped cases are reported separately."
+      },
+      "confidence": {
+        "confidence_pct": 53.61,
+        "conviction_pct": 0.0,
+        "confidence_label": "evidence strength only; action remains UNSURE",
+        "walk_forward": true,
+        "walk_forward_eligible": true,
+        "prior_case_N": 11,
+        "similar_case_N": 5,
+        "similar_case_candidates": 6,
+        "similar_hit_rate_shrunk": 55.56,
+        "similar_wins": 3,
+        "similar_losses": 2,
+        "weighted_vote_net": 0.0,
+        "weighted_vote_support_pct": 0.0,
+        "reliability": [
+          {
+            "release_type": "ppi",
+            "series_id": "PPIFIS",
+            "label": "Final demand PPI rose",
+            "N": 0,
+            "spearman_rho": null,
+            "p_value": null,
+            "weight_raw": 0.0,
+            "status": "underpowered",
+            "note": "Positive rho means the configured BUY direction historically aligned with a positive GC=F reaction. p_value is a normal approximation; it is not a guarantee of predictive power."
+          },
+          {
+            "release_type": "ppi",
+            "series_id": "PPIFES",
+            "label": "Core final demand PPI rose",
+            "N": 0,
+            "spearman_rho": null,
+            "p_value": null,
+            "weight_raw": 0.0,
+            "status": "underpowered",
+            "note": "Positive rho means the configured BUY direction historically aligned with a positive GC=F reaction. p_value is a normal approximation; it is not a guarantee of predictive power."
+          },
+          {
+            "release_type": "ppi",
+            "series_id": "DCOILWTICO",
+            "label": "WTI rose",
+            "N": 0,
+            "spearman_rho": null,
+            "p_value": null,
+            "weight_raw": 0.0,
+            "status": "underpowered",
+            "note": "Positive rho means the configured BUY direction historically aligned with a positive GC=F reaction. p_value is a normal approximation; it is not a guarantee of predictive power."
+          },
+          {
+            "release_type": "ppi",
+            "series_id": "GASREGW",
+            "label": "Gasoline prices rose",
+            "N": 0,
+            "spearman_rho": null,
+            "p_value": null,
+            "weight_raw": 0.0,
+            "status": "underpowered",
+            "note": "Positive rho means the configured BUY direction historically aligned with a positive GC=F reaction. p_value is a normal approximation; it is not a guarantee of predictive power."
+          }
+        ],
+        "similar_cases": [
+          {
+            "event_id": "ppi-2026-05-13",
+            "release_date": "2026-05-13",
+            "similarity": 0.75,
+            "grade": "LOSS"
+          },
+          {
+            "event_id": "ppi-2026-01-14",
+            "release_date": "2026-01-14",
+            "similarity": 0.5,
+            "grade": "UNSURE-skipped"
+          },
+          {
+            "event_id": "ppi-2026-01-30",
+            "release_date": "2026-01-30",
+            "similarity": 0.5,
+            "grade": "WIN"
+          },
+          {
+            "event_id": "ppi-2026-02-27",
+            "release_date": "2026-02-27",
+            "similarity": 0.5,
+            "grade": "WIN"
+          },
+          {
+            "event_id": "ppi-2026-03-18",
+            "release_date": "2026-03-18",
+            "similarity": 0.5,
+            "grade": "LOSS"
+          },
+          {
+            "event_id": "ppi-2026-04-14",
+            "release_date": "2026-04-14",
+            "similarity": 0.5,
+            "grade": "WIN"
+          }
+        ],
+        "method": "Walk-forward historical cases only for historical records; all completed historical cases for upcoming records. Reliability weights use signed indicator deltas and GC=F reaction returns."
       }
     },
     {
@@ -3424,6 +5164,77 @@
         "skipped": 7,
         "win_rate": null,
         "definition": "N counts only BUY/SELL cases with an available non-flat gold reaction; UNSURE-skipped cases are reported separately."
+      },
+      "confidence": {
+        "confidence_pct": 50.0,
+        "conviction_pct": 0.0,
+        "confidence_label": "evidence strength only; action remains UNSURE",
+        "walk_forward": true,
+        "walk_forward_eligible": true,
+        "prior_case_N": 7,
+        "similar_case_N": 0,
+        "similar_case_candidates": 3,
+        "similar_hit_rate_shrunk": 50.0,
+        "similar_wins": 0,
+        "similar_losses": 0,
+        "weighted_vote_net": 0.0,
+        "weighted_vote_support_pct": 0.0,
+        "reliability": [
+          {
+            "release_type": "fomc",
+            "series_id": "FEDFUNDS",
+            "label": "Effective policy rate fell",
+            "N": 0,
+            "spearman_rho": null,
+            "p_value": null,
+            "weight_raw": 0.0,
+            "status": "underpowered",
+            "note": "Positive rho means the configured BUY direction historically aligned with a positive GC=F reaction. p_value is a normal approximation; it is not a guarantee of predictive power."
+          },
+          {
+            "release_type": "fomc",
+            "series_id": "DGS2",
+            "label": "Two-year yield fell",
+            "N": 0,
+            "spearman_rho": null,
+            "p_value": null,
+            "weight_raw": 0.0,
+            "status": "underpowered",
+            "note": "Positive rho means the configured BUY direction historically aligned with a positive GC=F reaction. p_value is a normal approximation; it is not a guarantee of predictive power."
+          },
+          {
+            "release_type": "fomc",
+            "series_id": "SOFR",
+            "label": "Funding rate fell",
+            "N": 0,
+            "spearman_rho": null,
+            "p_value": null,
+            "weight_raw": 0.0,
+            "status": "underpowered",
+            "note": "Positive rho means the configured BUY direction historically aligned with a positive GC=F reaction. p_value is a normal approximation; it is not a guarantee of predictive power."
+          }
+        ],
+        "similar_cases": [
+          {
+            "event_id": "fomc-2026-04-29",
+            "release_date": "2026-04-29",
+            "similarity": 1.0,
+            "grade": "UNSURE-skipped"
+          },
+          {
+            "event_id": "fomc-2026-01-28",
+            "release_date": "2026-01-28",
+            "similarity": 0.667,
+            "grade": "UNSURE-skipped"
+          },
+          {
+            "event_id": "fomc-2026-03-18",
+            "release_date": "2026-03-18",
+            "similarity": 0.667,
+            "grade": "UNSURE-skipped"
+          }
+        ],
+        "method": "Walk-forward historical cases only for historical records; all completed historical cases for upcoming records. Reliability weights use signed indicator deltas and GC=F reaction returns."
       }
     },
     {
@@ -3586,6 +5397,99 @@
         "skipped": 7,
         "win_rate": 25.0,
         "definition": "N counts only BUY/SELL cases with an available non-flat gold reaction; UNSURE-skipped cases are reported separately."
+      },
+      "confidence": {
+        "confidence_pct": 50.0,
+        "conviction_pct": 0.0,
+        "confidence_label": "evidence strength only; action remains UNSURE",
+        "walk_forward": true,
+        "walk_forward_eligible": true,
+        "prior_case_N": 11,
+        "similar_case_N": 2,
+        "similar_case_candidates": 3,
+        "similar_hit_rate_shrunk": 50.0,
+        "similar_wins": 1,
+        "similar_losses": 1,
+        "weighted_vote_net": 0.0,
+        "weighted_vote_support_pct": 0.0,
+        "reliability": [
+          {
+            "release_type": "nfp",
+            "series_id": "PAYEMS",
+            "label": "Payroll growth cooled",
+            "N": 0,
+            "spearman_rho": null,
+            "p_value": null,
+            "weight_raw": 0.0,
+            "status": "underpowered",
+            "note": "Positive rho means the configured BUY direction historically aligned with a positive GC=F reaction. p_value is a normal approximation; it is not a guarantee of predictive power."
+          },
+          {
+            "release_type": "nfp",
+            "series_id": "UNRATE",
+            "label": "Unemployment rose",
+            "N": 0,
+            "spearman_rho": null,
+            "p_value": null,
+            "weight_raw": 0.0,
+            "status": "underpowered",
+            "note": "Positive rho means the configured BUY direction historically aligned with a positive GC=F reaction. p_value is a normal approximation; it is not a guarantee of predictive power."
+          },
+          {
+            "release_type": "nfp",
+            "series_id": "CES0500000003",
+            "label": "Hourly earnings rose",
+            "N": 0,
+            "spearman_rho": null,
+            "p_value": null,
+            "weight_raw": 0.0,
+            "status": "underpowered",
+            "note": "Positive rho means the configured BUY direction historically aligned with a positive GC=F reaction. p_value is a normal approximation; it is not a guarantee of predictive power."
+          },
+          {
+            "release_type": "nfp",
+            "series_id": "ICSA",
+            "label": "Claims pressure rose",
+            "N": 0,
+            "spearman_rho": null,
+            "p_value": null,
+            "weight_raw": 0.0,
+            "status": "underpowered",
+            "note": "Positive rho means the configured BUY direction historically aligned with a positive GC=F reaction. p_value is a normal approximation; it is not a guarantee of predictive power."
+          },
+          {
+            "release_type": "nfp",
+            "series_id": "JTSJOL",
+            "label": "Job openings fell",
+            "N": 0,
+            "spearman_rho": null,
+            "p_value": null,
+            "weight_raw": 0.0,
+            "status": "underpowered",
+            "note": "Positive rho means the configured BUY direction historically aligned with a positive GC=F reaction. p_value is a normal approximation; it is not a guarantee of predictive power."
+          }
+        ],
+        "similar_cases": [
+          {
+            "event_id": "nfp-2026-05-08",
+            "release_date": "2026-05-08",
+            "similarity": 0.6,
+            "grade": "WIN"
+          },
+          {
+            "event_id": "nfp-2026-06-05",
+            "release_date": "2026-06-05",
+            "similarity": 0.6,
+            "grade": "UNSURE-skipped"
+          },
+          {
+            "event_id": "nfp-2026-03-06",
+            "release_date": "2026-03-06",
+            "similarity": 0.5,
+            "grade": "LOSS"
+          }
+        ],
+        "method": "Walk-forward historical cases only for historical records; all completed historical cases for upcoming records. Reliability weights use signed indicator deltas and GC=F reaction returns."
       }
     },
     {
@@ -3748,6 +5652,117 @@
         "skipped": 1,
         "win_rate": 30.0,
         "definition": "N counts only BUY/SELL cases with an available non-flat gold reaction; UNSURE-skipped cases are reported separately."
+      },
+      "confidence": {
+        "confidence_pct": 46.39,
+        "conviction_pct": 0.0,
+        "confidence_label": "directional evidence",
+        "walk_forward": true,
+        "walk_forward_eligible": true,
+        "prior_case_N": 11,
+        "similar_case_N": 5,
+        "similar_case_candidates": 6,
+        "similar_hit_rate_shrunk": 44.44,
+        "similar_wins": 2,
+        "similar_losses": 3,
+        "weighted_vote_net": 0.0,
+        "weighted_vote_support_pct": 0.0,
+        "reliability": [
+          {
+            "release_type": "cpi",
+            "series_id": "CPIAUCSL",
+            "label": "Headline inflation rose",
+            "N": 0,
+            "spearman_rho": null,
+            "p_value": null,
+            "weight_raw": 0.0,
+            "status": "underpowered",
+            "note": "Positive rho means the configured BUY direction historically aligned with a positive GC=F reaction. p_value is a normal approximation; it is not a guarantee of predictive power."
+          },
+          {
+            "release_type": "cpi",
+            "series_id": "CPILFESL",
+            "label": "Core inflation rose",
+            "N": 0,
+            "spearman_rho": null,
+            "p_value": null,
+            "weight_raw": 0.0,
+            "status": "underpowered",
+            "note": "Positive rho means the configured BUY direction historically aligned with a positive GC=F reaction. p_value is a normal approximation; it is not a guarantee of predictive power."
+          },
+          {
+            "release_type": "cpi",
+            "series_id": "PPIFES",
+            "label": "Core producer prices rose",
+            "N": 0,
+            "spearman_rho": null,
+            "p_value": null,
+            "weight_raw": 0.0,
+            "status": "underpowered",
+            "note": "Positive rho means the configured BUY direction historically aligned with a positive GC=F reaction. p_value is a normal approximation; it is not a guarantee of predictive power."
+          },
+          {
+            "release_type": "cpi",
+            "series_id": "IR",
+            "label": "Import prices rose",
+            "N": 0,
+            "spearman_rho": null,
+            "p_value": null,
+            "weight_raw": 0.0,
+            "status": "underpowered",
+            "note": "Positive rho means the configured BUY direction historically aligned with a positive GC=F reaction. p_value is a normal approximation; it is not a guarantee of predictive power."
+          },
+          {
+            "release_type": "cpi",
+            "series_id": "GASREGW",
+            "label": "Gasoline prices rose",
+            "N": 0,
+            "spearman_rho": null,
+            "p_value": null,
+            "weight_raw": 0.0,
+            "status": "underpowered",
+            "note": "Positive rho means the configured BUY direction historically aligned with a positive GC=F reaction. p_value is a normal approximation; it is not a guarantee of predictive power."
+          }
+        ],
+        "similar_cases": [
+          {
+            "event_id": "cpi-2026-01-13",
+            "release_date": "2026-01-13",
+            "similarity": 1.0,
+            "grade": "UNSURE-skipped"
+          },
+          {
+            "event_id": "cpi-2026-06-10",
+            "release_date": "2026-06-10",
+            "similarity": 1.0,
+            "grade": "LOSS"
+          },
+          {
+            "event_id": "cpi-2026-03-11",
+            "release_date": "2026-03-11",
+            "similarity": 0.8,
+            "grade": "WIN"
+          },
+          {
+            "event_id": "cpi-2026-04-10",
+            "release_date": "2026-04-10",
+            "similarity": 0.8,
+            "grade": "WIN"
+          },
+          {
+            "event_id": "cpi-2026-05-12",
+            "release_date": "2026-05-12",
+            "similarity": 0.8,
+            "grade": "LOSS"
+          },
+          {
+            "event_id": "cpi-2026-02-13",
+            "release_date": "2026-02-13",
+            "similarity": 0.6,
+            "grade": "LOSS"
+          }
+        ],
+        "method": "Walk-forward historical cases only for historical records; all completed historical cases for upcoming records. Reliability weights use signed indicator deltas and GC=F reaction returns."
       }
     },
     {
@@ -3888,6 +5903,112 @@
         "skipped": 4,
         "win_rate": 62.5,
         "definition": "N counts only BUY/SELL cases with an available non-flat gold reaction; UNSURE-skipped cases are reported separately."
+      },
+      "confidence": {
+        "confidence_pct": 53.61,
+        "conviction_pct": 0.0,
+        "confidence_label": "evidence strength only; action remains UNSURE",
+        "walk_forward": true,
+        "walk_forward_eligible": true,
+        "prior_case_N": 11,
+        "similar_case_N": 5,
+        "similar_case_candidates": 7,
+        "similar_hit_rate_shrunk": 55.56,
+        "similar_wins": 3,
+        "similar_losses": 2,
+        "weighted_vote_net": 0.0,
+        "weighted_vote_support_pct": 0.0,
+        "reliability": [
+          {
+            "release_type": "ppi",
+            "series_id": "PPIFIS",
+            "label": "Final demand PPI rose",
+            "N": 0,
+            "spearman_rho": null,
+            "p_value": null,
+            "weight_raw": 0.0,
+            "status": "underpowered",
+            "note": "Positive rho means the configured BUY direction historically aligned with a positive GC=F reaction. p_value is a normal approximation; it is not a guarantee of predictive power."
+          },
+          {
+            "release_type": "ppi",
+            "series_id": "PPIFES",
+            "label": "Core final demand PPI rose",
+            "N": 0,
+            "spearman_rho": null,
+            "p_value": null,
+            "weight_raw": 0.0,
+            "status": "underpowered",
+            "note": "Positive rho means the configured BUY direction historically aligned with a positive GC=F reaction. p_value is a normal approximation; it is not a guarantee of predictive power."
+          },
+          {
+            "release_type": "ppi",
+            "series_id": "DCOILWTICO",
+            "label": "WTI rose",
+            "N": 0,
+            "spearman_rho": null,
+            "p_value": null,
+            "weight_raw": 0.0,
+            "status": "underpowered",
+            "note": "Positive rho means the configured BUY direction historically aligned with a positive GC=F reaction. p_value is a normal approximation; it is not a guarantee of predictive power."
+          },
+          {
+            "release_type": "ppi",
+            "series_id": "GASREGW",
+            "label": "Gasoline prices rose",
+            "N": 0,
+            "spearman_rho": null,
+            "p_value": null,
+            "weight_raw": 0.0,
+            "status": "underpowered",
+            "note": "Positive rho means the configured BUY direction historically aligned with a positive GC=F reaction. p_value is a normal approximation; it is not a guarantee of predictive power."
+          }
+        ],
+        "similar_cases": [
+          {
+            "event_id": "ppi-2026-06-11",
+            "release_date": "2026-06-11",
+            "similarity": 1.0,
+            "grade": "UNSURE-skipped"
+          },
+          {
+            "event_id": "ppi-2026-05-13",
+            "release_date": "2026-05-13",
+            "similarity": 0.75,
+            "grade": "LOSS"
+          },
+          {
+            "event_id": "ppi-2026-01-14",
+            "release_date": "2026-01-14",
+            "similarity": 0.5,
+            "grade": "UNSURE-skipped"
+          },
+          {
+            "event_id": "ppi-2026-01-30",
+            "release_date": "2026-01-30",
+            "similarity": 0.5,
+            "grade": "WIN"
+          },
+          {
+            "event_id": "ppi-2026-02-27",
+            "release_date": "2026-02-27",
+            "similarity": 0.5,
+            "grade": "WIN"
+          },
+          {
+            "event_id": "ppi-2026-03-18",
+            "release_date": "2026-03-18",
+            "similarity": 0.5,
+            "grade": "LOSS"
+          },
+          {
+            "event_id": "ppi-2026-04-14",
+            "release_date": "2026-04-14",
+            "similarity": 0.5,
+            "grade": "WIN"
+          }
+        ],
+        "method": "Walk-forward historical cases only for historical records; all completed historical cases for upcoming records. Reliability weights use signed indicator deltas and GC=F reaction returns."
       }
     },
     {
@@ -4006,6 +6127,83 @@
         "skipped": 7,
         "win_rate": null,
         "definition": "N counts only BUY/SELL cases with an available non-flat gold reaction; UNSURE-skipped cases are reported separately."
+      },
+      "confidence": {
+        "confidence_pct": 50.0,
+        "conviction_pct": 0.0,
+        "confidence_label": "evidence strength only; action remains UNSURE",
+        "walk_forward": true,
+        "walk_forward_eligible": true,
+        "prior_case_N": 7,
+        "similar_case_N": 0,
+        "similar_case_candidates": 4,
+        "similar_hit_rate_shrunk": 50.0,
+        "similar_wins": 0,
+        "similar_losses": 0,
+        "weighted_vote_net": 0.0,
+        "weighted_vote_support_pct": 0.0,
+        "reliability": [
+          {
+            "release_type": "fomc",
+            "series_id": "FEDFUNDS",
+            "label": "Effective policy rate fell",
+            "N": 0,
+            "spearman_rho": null,
+            "p_value": null,
+            "weight_raw": 0.0,
+            "status": "underpowered",
+            "note": "Positive rho means the configured BUY direction historically aligned with a positive GC=F reaction. p_value is a normal approximation; it is not a guarantee of predictive power."
+          },
+          {
+            "release_type": "fomc",
+            "series_id": "DGS2",
+            "label": "Two-year yield fell",
+            "N": 0,
+            "spearman_rho": null,
+            "p_value": null,
+            "weight_raw": 0.0,
+            "status": "underpowered",
+            "note": "Positive rho means the configured BUY direction historically aligned with a positive GC=F reaction. p_value is a normal approximation; it is not a guarantee of predictive power."
+          },
+          {
+            "release_type": "fomc",
+            "series_id": "SOFR",
+            "label": "Funding rate fell",
+            "N": 0,
+            "spearman_rho": null,
+            "p_value": null,
+            "weight_raw": 0.0,
+            "status": "underpowered",
+            "note": "Positive rho means the configured BUY direction historically aligned with a positive GC=F reaction. p_value is a normal approximation; it is not a guarantee of predictive power."
+          }
+        ],
+        "similar_cases": [
+          {
+            "event_id": "fomc-2026-04-29",
+            "release_date": "2026-04-29",
+            "similarity": 1.0,
+            "grade": "UNSURE-skipped"
+          },
+          {
+            "event_id": "fomc-2026-06-17",
+            "release_date": "2026-06-17",
+            "similarity": 1.0,
+            "grade": "UNSURE-skipped"
+          },
+          {
+            "event_id": "fomc-2026-01-28",
+            "release_date": "2026-01-28",
+            "similarity": 0.667,
+            "grade": "UNSURE-skipped"
+          },
+          {
+            "event_id": "fomc-2026-03-18",
+            "release_date": "2026-03-18",
+            "similarity": 0.667,
+            "grade": "UNSURE-skipped"
+          }
+        ],
+        "method": "Walk-forward historical cases only for historical records; all completed historical cases for upcoming records. Reliability weights use signed indicator deltas and GC=F reaction returns."
       }
     },
     {
@@ -4168,6 +6366,105 @@
         "skipped": 7,
         "win_rate": 25.0,
         "definition": "N counts only BUY/SELL cases with an available non-flat gold reaction; UNSURE-skipped cases are reported separately."
+      },
+      "confidence": {
+        "confidence_pct": 36.07,
+        "conviction_pct": 0.0,
+        "confidence_label": "evidence strength only; action remains UNSURE",
+        "walk_forward": true,
+        "walk_forward_eligible": true,
+        "prior_case_N": 11,
+        "similar_case_N": 3,
+        "similar_case_candidates": 4,
+        "similar_hit_rate_shrunk": 28.57,
+        "similar_wins": 0,
+        "similar_losses": 3,
+        "weighted_vote_net": 0.0,
+        "weighted_vote_support_pct": 0.0,
+        "reliability": [
+          {
+            "release_type": "nfp",
+            "series_id": "PAYEMS",
+            "label": "Payroll growth cooled",
+            "N": 0,
+            "spearman_rho": null,
+            "p_value": null,
+            "weight_raw": 0.0,
+            "status": "underpowered",
+            "note": "Positive rho means the configured BUY direction historically aligned with a positive GC=F reaction. p_value is a normal approximation; it is not a guarantee of predictive power."
+          },
+          {
+            "release_type": "nfp",
+            "series_id": "UNRATE",
+            "label": "Unemployment rose",
+            "N": 0,
+            "spearman_rho": null,
+            "p_value": null,
+            "weight_raw": 0.0,
+            "status": "underpowered",
+            "note": "Positive rho means the configured BUY direction historically aligned with a positive GC=F reaction. p_value is a normal approximation; it is not a guarantee of predictive power."
+          },
+          {
+            "release_type": "nfp",
+            "series_id": "CES0500000003",
+            "label": "Hourly earnings rose",
+            "N": 0,
+            "spearman_rho": null,
+            "p_value": null,
+            "weight_raw": 0.0,
+            "status": "underpowered",
+            "note": "Positive rho means the configured BUY direction historically aligned with a positive GC=F reaction. p_value is a normal approximation; it is not a guarantee of predictive power."
+          },
+          {
+            "release_type": "nfp",
+            "series_id": "ICSA",
+            "label": "Claims pressure rose",
+            "N": 0,
+            "spearman_rho": null,
+            "p_value": null,
+            "weight_raw": 0.0,
+            "status": "underpowered",
+            "note": "Positive rho means the configured BUY direction historically aligned with a positive GC=F reaction. p_value is a normal approximation; it is not a guarantee of predictive power."
+          },
+          {
+            "release_type": "nfp",
+            "series_id": "JTSJOL",
+            "label": "Job openings fell",
+            "N": 0,
+            "spearman_rho": null,
+            "p_value": null,
+            "weight_raw": 0.0,
+            "status": "underpowered",
+            "note": "Positive rho means the configured BUY direction historically aligned with a positive GC=F reaction. p_value is a normal approximation; it is not a guarantee of predictive power."
+          }
+        ],
+        "similar_cases": [
+          {
+            "event_id": "nfp-2026-02-11",
+            "release_date": "2026-02-11",
+            "similarity": 0.8,
+            "grade": "LOSS"
+          },
+          {
+            "event_id": "nfp-2026-04-03",
+            "release_date": "2026-04-03",
+            "similarity": 0.8,
+            "grade": "LOSS"
+          },
+          {
+            "event_id": "nfp-2026-01-09",
+            "release_date": "2026-01-09",
+            "similarity": 0.6,
+            "grade": "UNSURE-skipped"
+          },
+          {
+            "event_id": "nfp-2026-03-06",
+            "release_date": "2026-03-06",
+            "similarity": 0.5,
+            "grade": "LOSS"
+          }
+        ],
+        "method": "Walk-forward historical cases only for historical records; all completed historical cases for upcoming records. Reliability weights use signed indicator deltas and GC=F reaction returns."
       }
     },
     {
@@ -4330,6 +6627,123 @@
         "skipped": 1,
         "win_rate": 30.0,
         "definition": "N counts only BUY/SELL cases with an available non-flat gold reaction; UNSURE-skipped cases are reported separately."
+      },
+      "confidence": {
+        "confidence_pct": 50.0,
+        "conviction_pct": 0.0,
+        "confidence_label": "directional evidence",
+        "walk_forward": true,
+        "walk_forward_eligible": true,
+        "prior_case_N": 11,
+        "similar_case_N": 6,
+        "similar_case_candidates": 7,
+        "similar_hit_rate_shrunk": 50.0,
+        "similar_wins": 3,
+        "similar_losses": 3,
+        "weighted_vote_net": 0.0,
+        "weighted_vote_support_pct": 0.0,
+        "reliability": [
+          {
+            "release_type": "cpi",
+            "series_id": "CPIAUCSL",
+            "label": "Headline inflation rose",
+            "N": 0,
+            "spearman_rho": null,
+            "p_value": null,
+            "weight_raw": 0.0,
+            "status": "underpowered",
+            "note": "Positive rho means the configured BUY direction historically aligned with a positive GC=F reaction. p_value is a normal approximation; it is not a guarantee of predictive power."
+          },
+          {
+            "release_type": "cpi",
+            "series_id": "CPILFESL",
+            "label": "Core inflation rose",
+            "N": 0,
+            "spearman_rho": null,
+            "p_value": null,
+            "weight_raw": 0.0,
+            "status": "underpowered",
+            "note": "Positive rho means the configured BUY direction historically aligned with a positive GC=F reaction. p_value is a normal approximation; it is not a guarantee of predictive power."
+          },
+          {
+            "release_type": "cpi",
+            "series_id": "PPIFES",
+            "label": "Core producer prices rose",
+            "N": 0,
+            "spearman_rho": null,
+            "p_value": null,
+            "weight_raw": 0.0,
+            "status": "underpowered",
+            "note": "Positive rho means the configured BUY direction historically aligned with a positive GC=F reaction. p_value is a normal approximation; it is not a guarantee of predictive power."
+          },
+          {
+            "release_type": "cpi",
+            "series_id": "IR",
+            "label": "Import prices rose",
+            "N": 0,
+            "spearman_rho": null,
+            "p_value": null,
+            "weight_raw": 0.0,
+            "status": "underpowered",
+            "note": "Positive rho means the configured BUY direction historically aligned with a positive GC=F reaction. p_value is a normal approximation; it is not a guarantee of predictive power."
+          },
+          {
+            "release_type": "cpi",
+            "series_id": "GASREGW",
+            "label": "Gasoline prices rose",
+            "N": 0,
+            "spearman_rho": null,
+            "p_value": null,
+            "weight_raw": 0.0,
+            "status": "underpowered",
+            "note": "Positive rho means the configured BUY direction historically aligned with a positive GC=F reaction. p_value is a normal approximation; it is not a guarantee of predictive power."
+          }
+        ],
+        "similar_cases": [
+          {
+            "event_id": "cpi-2026-03-11",
+            "release_date": "2026-03-11",
+            "similarity": 1.0,
+            "grade": "WIN"
+          },
+          {
+            "event_id": "cpi-2026-04-10",
+            "release_date": "2026-04-10",
+            "similarity": 1.0,
+            "grade": "WIN"
+          },
+          {
+            "event_id": "cpi-2026-05-12",
+            "release_date": "2026-05-12",
+            "similarity": 1.0,
+            "grade": "LOSS"
+          },
+          {
+            "event_id": "cpi-2026-02-13",
+            "release_date": "2026-02-13",
+            "similarity": 0.8,
+            "grade": "LOSS"
+          },
+          {
+            "event_id": "cpi-2026-06-10",
+            "release_date": "2026-06-10",
+            "similarity": 0.8,
+            "grade": "LOSS"
+          },
+          {
+            "event_id": "cpi-2026-07-14",
+            "release_date": "2026-07-14",
+            "similarity": 0.8,
+            "grade": "WIN"
+          },
+          {
+            "event_id": "cpi-2026-01-13",
+            "release_date": "2026-01-13",
+            "similarity": 0.667,
+            "grade": "UNSURE-skipped"
+          }
+        ],
+        "method": "Walk-forward historical cases only for historical records; all completed historical cases for upcoming records. Reliability weights use signed indicator deltas and GC=F reaction returns."
       }
     },
     {
@@ -4470,6 +6884,112 @@
         "skipped": 4,
         "win_rate": 62.5,
         "definition": "N counts only BUY/SELL cases with an available non-flat gold reaction; UNSURE-skipped cases are reported separately."
+      },
+      "confidence": {
+        "confidence_pct": 53.61,
+        "conviction_pct": 0.0,
+        "confidence_label": "directional evidence",
+        "walk_forward": true,
+        "walk_forward_eligible": true,
+        "prior_case_N": 11,
+        "similar_case_N": 5,
+        "similar_case_candidates": 7,
+        "similar_hit_rate_shrunk": 55.56,
+        "similar_wins": 3,
+        "similar_losses": 2,
+        "weighted_vote_net": 0.0,
+        "weighted_vote_support_pct": 0.0,
+        "reliability": [
+          {
+            "release_type": "ppi",
+            "series_id": "PPIFIS",
+            "label": "Final demand PPI rose",
+            "N": 0,
+            "spearman_rho": null,
+            "p_value": null,
+            "weight_raw": 0.0,
+            "status": "underpowered",
+            "note": "Positive rho means the configured BUY direction historically aligned with a positive GC=F reaction. p_value is a normal approximation; it is not a guarantee of predictive power."
+          },
+          {
+            "release_type": "ppi",
+            "series_id": "PPIFES",
+            "label": "Core final demand PPI rose",
+            "N": 0,
+            "spearman_rho": null,
+            "p_value": null,
+            "weight_raw": 0.0,
+            "status": "underpowered",
+            "note": "Positive rho means the configured BUY direction historically aligned with a positive GC=F reaction. p_value is a normal approximation; it is not a guarantee of predictive power."
+          },
+          {
+            "release_type": "ppi",
+            "series_id": "DCOILWTICO",
+            "label": "WTI rose",
+            "N": 0,
+            "spearman_rho": null,
+            "p_value": null,
+            "weight_raw": 0.0,
+            "status": "underpowered",
+            "note": "Positive rho means the configured BUY direction historically aligned with a positive GC=F reaction. p_value is a normal approximation; it is not a guarantee of predictive power."
+          },
+          {
+            "release_type": "ppi",
+            "series_id": "GASREGW",
+            "label": "Gasoline prices rose",
+            "N": 0,
+            "spearman_rho": null,
+            "p_value": null,
+            "weight_raw": 0.0,
+            "status": "underpowered",
+            "note": "Positive rho means the configured BUY direction historically aligned with a positive GC=F reaction. p_value is a normal approximation; it is not a guarantee of predictive power."
+          }
+        ],
+        "similar_cases": [
+          {
+            "event_id": "ppi-2026-02-27",
+            "release_date": "2026-02-27",
+            "similarity": 1.0,
+            "grade": "WIN"
+          },
+          {
+            "event_id": "ppi-2026-03-18",
+            "release_date": "2026-03-18",
+            "similarity": 1.0,
+            "grade": "LOSS"
+          },
+          {
+            "event_id": "ppi-2026-04-14",
+            "release_date": "2026-04-14",
+            "similarity": 1.0,
+            "grade": "WIN"
+          },
+          {
+            "event_id": "ppi-2026-05-13",
+            "release_date": "2026-05-13",
+            "similarity": 0.75,
+            "grade": "LOSS"
+          },
+          {
+            "event_id": "ppi-2026-01-30",
+            "release_date": "2026-01-30",
+            "similarity": 0.5,
+            "grade": "WIN"
+          },
+          {
+            "event_id": "ppi-2026-06-11",
+            "release_date": "2026-06-11",
+            "similarity": 0.5,
+            "grade": "UNSURE-skipped"
+          },
+          {
+            "event_id": "ppi-2026-07-15",
+            "release_date": "2026-07-15",
+            "similarity": 0.5,
+            "grade": "UNSURE-skipped"
+          }
+        ],
+        "method": "Walk-forward historical cases only for historical records; all completed historical cases for upcoming records. Reliability weights use signed indicator deltas and GC=F reaction returns."
       }
     },
     {
@@ -4632,6 +7152,80 @@
         "skipped": 7,
         "win_rate": 25.0,
         "definition": "N counts only BUY/SELL cases with an available non-flat gold reaction; UNSURE-skipped cases are reported separately."
+      },
+      "confidence": {
+        "confidence_pct": 50.0,
+        "conviction_pct": 0.0,
+        "confidence_label": "evidence strength only; action remains UNSURE",
+        "walk_forward": true,
+        "walk_forward_eligible": true,
+        "prior_case_N": 11,
+        "similar_case_N": 0,
+        "similar_case_candidates": 0,
+        "similar_hit_rate_shrunk": 50.0,
+        "similar_wins": 0,
+        "similar_losses": 0,
+        "weighted_vote_net": 0.0,
+        "weighted_vote_support_pct": 0.0,
+        "reliability": [
+          {
+            "release_type": "nfp",
+            "series_id": "PAYEMS",
+            "label": "Payroll growth cooled",
+            "N": 0,
+            "spearman_rho": null,
+            "p_value": null,
+            "weight_raw": 0.0,
+            "status": "underpowered",
+            "note": "Positive rho means the configured BUY direction historically aligned with a positive GC=F reaction. p_value is a normal approximation; it is not a guarantee of predictive power."
+          },
+          {
+            "release_type": "nfp",
+            "series_id": "UNRATE",
+            "label": "Unemployment rose",
+            "N": 0,
+            "spearman_rho": null,
+            "p_value": null,
+            "weight_raw": 0.0,
+            "status": "underpowered",
+            "note": "Positive rho means the configured BUY direction historically aligned with a positive GC=F reaction. p_value is a normal approximation; it is not a guarantee of predictive power."
+          },
+          {
+            "release_type": "nfp",
+            "series_id": "CES0500000003",
+            "label": "Hourly earnings rose",
+            "N": 0,
+            "spearman_rho": null,
+            "p_value": null,
+            "weight_raw": 0.0,
+            "status": "underpowered",
+            "note": "Positive rho means the configured BUY direction historically aligned with a positive GC=F reaction. p_value is a normal approximation; it is not a guarantee of predictive power."
+          },
+          {
+            "release_type": "nfp",
+            "series_id": "ICSA",
+            "label": "Claims pressure rose",
+            "N": 0,
+            "spearman_rho": null,
+            "p_value": null,
+            "weight_raw": 0.0,
+            "status": "underpowered",
+            "note": "Positive rho means the configured BUY direction historically aligned with a positive GC=F reaction. p_value is a normal approximation; it is not a guarantee of predictive power."
+          },
+          {
+            "release_type": "nfp",
+            "series_id": "JTSJOL",
+            "label": "Job openings fell",
+            "N": 0,
+            "spearman_rho": null,
+            "p_value": null,
+            "weight_raw": 0.0,
+            "status": "underpowered",
+            "note": "Positive rho means the configured BUY direction historically aligned with a positive GC=F reaction. p_value is a normal approximation; it is not a guarantee of predictive power."
+          }
+        ],
+        "similar_cases": [],
+        "method": "Walk-forward historical cases only for historical records; all completed historical cases for upcoming records. Reliability weights use signed indicator deltas and GC=F reaction returns."
       }
     },
     {
@@ -4772,6 +7366,118 @@
         "skipped": 4,
         "win_rate": 62.5,
         "definition": "N counts only BUY/SELL cases with an available non-flat gold reaction; UNSURE-skipped cases are reported separately."
+      },
+      "confidence": {
+        "confidence_pct": 50.0,
+        "conviction_pct": 0.0,
+        "confidence_label": "directional evidence",
+        "walk_forward": true,
+        "walk_forward_eligible": true,
+        "prior_case_N": 11,
+        "similar_case_N": 6,
+        "similar_case_candidates": 8,
+        "similar_hit_rate_shrunk": 50.0,
+        "similar_wins": 3,
+        "similar_losses": 3,
+        "weighted_vote_net": 0.0,
+        "weighted_vote_support_pct": 0.0,
+        "reliability": [
+          {
+            "release_type": "ppi",
+            "series_id": "PPIFIS",
+            "label": "Final demand PPI rose",
+            "N": 0,
+            "spearman_rho": null,
+            "p_value": null,
+            "weight_raw": 0.0,
+            "status": "underpowered",
+            "note": "Positive rho means the configured BUY direction historically aligned with a positive GC=F reaction. p_value is a normal approximation; it is not a guarantee of predictive power."
+          },
+          {
+            "release_type": "ppi",
+            "series_id": "PPIFES",
+            "label": "Core final demand PPI rose",
+            "N": 0,
+            "spearman_rho": null,
+            "p_value": null,
+            "weight_raw": 0.0,
+            "status": "underpowered",
+            "note": "Positive rho means the configured BUY direction historically aligned with a positive GC=F reaction. p_value is a normal approximation; it is not a guarantee of predictive power."
+          },
+          {
+            "release_type": "ppi",
+            "series_id": "DCOILWTICO",
+            "label": "WTI rose",
+            "N": 0,
+            "spearman_rho": null,
+            "p_value": null,
+            "weight_raw": 0.0,
+            "status": "underpowered",
+            "note": "Positive rho means the configured BUY direction historically aligned with a positive GC=F reaction. p_value is a normal approximation; it is not a guarantee of predictive power."
+          },
+          {
+            "release_type": "ppi",
+            "series_id": "GASREGW",
+            "label": "Gasoline prices rose",
+            "N": 0,
+            "spearman_rho": null,
+            "p_value": null,
+            "weight_raw": 0.0,
+            "status": "underpowered",
+            "note": "Positive rho means the configured BUY direction historically aligned with a positive GC=F reaction. p_value is a normal approximation; it is not a guarantee of predictive power."
+          }
+        ],
+        "similar_cases": [
+          {
+            "event_id": "ppi-2026-02-27",
+            "release_date": "2026-02-27",
+            "similarity": 1.0,
+            "grade": "WIN"
+          },
+          {
+            "event_id": "ppi-2026-03-18",
+            "release_date": "2026-03-18",
+            "similarity": 1.0,
+            "grade": "LOSS"
+          },
+          {
+            "event_id": "ppi-2026-04-14",
+            "release_date": "2026-04-14",
+            "similarity": 1.0,
+            "grade": "WIN"
+          },
+          {
+            "event_id": "ppi-2026-08-13",
+            "release_date": "2026-08-13",
+            "similarity": 1.0,
+            "grade": "LOSS"
+          },
+          {
+            "event_id": "ppi-2026-05-13",
+            "release_date": "2026-05-13",
+            "similarity": 0.75,
+            "grade": "LOSS"
+          },
+          {
+            "event_id": "ppi-2026-01-30",
+            "release_date": "2026-01-30",
+            "similarity": 0.5,
+            "grade": "WIN"
+          },
+          {
+            "event_id": "ppi-2026-06-11",
+            "release_date": "2026-06-11",
+            "similarity": 0.5,
+            "grade": "UNSURE-skipped"
+          },
+          {
+            "event_id": "ppi-2026-07-15",
+            "release_date": "2026-07-15",
+            "similarity": 0.5,
+            "grade": "UNSURE-skipped"
+          }
+        ],
+        "method": "Walk-forward historical cases only for historical records; all completed historical cases for upcoming records. Reliability weights use signed indicator deltas and GC=F reaction returns."
       }
     },
     {
@@ -4934,6 +7640,129 @@
         "skipped": 1,
         "win_rate": 30.0,
         "definition": "N counts only BUY/SELL cases with an available non-flat gold reaction; UNSURE-skipped cases are reported separately."
+      },
+      "confidence": {
+        "confidence_pct": 47.05,
+        "conviction_pct": 0.0,
+        "confidence_label": "directional evidence",
+        "walk_forward": true,
+        "walk_forward_eligible": true,
+        "prior_case_N": 11,
+        "similar_case_N": 7,
+        "similar_case_candidates": 8,
+        "similar_hit_rate_shrunk": 45.45,
+        "similar_wins": 3,
+        "similar_losses": 4,
+        "weighted_vote_net": 0.0,
+        "weighted_vote_support_pct": 0.0,
+        "reliability": [
+          {
+            "release_type": "cpi",
+            "series_id": "CPIAUCSL",
+            "label": "Headline inflation rose",
+            "N": 0,
+            "spearman_rho": null,
+            "p_value": null,
+            "weight_raw": 0.0,
+            "status": "underpowered",
+            "note": "Positive rho means the configured BUY direction historically aligned with a positive GC=F reaction. p_value is a normal approximation; it is not a guarantee of predictive power."
+          },
+          {
+            "release_type": "cpi",
+            "series_id": "CPILFESL",
+            "label": "Core inflation rose",
+            "N": 0,
+            "spearman_rho": null,
+            "p_value": null,
+            "weight_raw": 0.0,
+            "status": "underpowered",
+            "note": "Positive rho means the configured BUY direction historically aligned with a positive GC=F reaction. p_value is a normal approximation; it is not a guarantee of predictive power."
+          },
+          {
+            "release_type": "cpi",
+            "series_id": "PPIFES",
+            "label": "Core producer prices rose",
+            "N": 0,
+            "spearman_rho": null,
+            "p_value": null,
+            "weight_raw": 0.0,
+            "status": "underpowered",
+            "note": "Positive rho means the configured BUY direction historically aligned with a positive GC=F reaction. p_value is a normal approximation; it is not a guarantee of predictive power."
+          },
+          {
+            "release_type": "cpi",
+            "series_id": "IR",
+            "label": "Import prices rose",
+            "N": 0,
+            "spearman_rho": null,
+            "p_value": null,
+            "weight_raw": 0.0,
+            "status": "underpowered",
+            "note": "Positive rho means the configured BUY direction historically aligned with a positive GC=F reaction. p_value is a normal approximation; it is not a guarantee of predictive power."
+          },
+          {
+            "release_type": "cpi",
+            "series_id": "GASREGW",
+            "label": "Gasoline prices rose",
+            "N": 0,
+            "spearman_rho": null,
+            "p_value": null,
+            "weight_raw": 0.0,
+            "status": "underpowered",
+            "note": "Positive rho means the configured BUY direction historically aligned with a positive GC=F reaction. p_value is a normal approximation; it is not a guarantee of predictive power."
+          }
+        ],
+        "similar_cases": [
+          {
+            "event_id": "cpi-2026-03-11",
+            "release_date": "2026-03-11",
+            "similarity": 1.0,
+            "grade": "WIN"
+          },
+          {
+            "event_id": "cpi-2026-04-10",
+            "release_date": "2026-04-10",
+            "similarity": 1.0,
+            "grade": "WIN"
+          },
+          {
+            "event_id": "cpi-2026-05-12",
+            "release_date": "2026-05-12",
+            "similarity": 1.0,
+            "grade": "LOSS"
+          },
+          {
+            "event_id": "cpi-2026-08-12",
+            "release_date": "2026-08-12",
+            "similarity": 1.0,
+            "grade": "LOSS"
+          },
+          {
+            "event_id": "cpi-2026-02-13",
+            "release_date": "2026-02-13",
+            "similarity": 0.8,
+            "grade": "LOSS"
+          },
+          {
+            "event_id": "cpi-2026-06-10",
+            "release_date": "2026-06-10",
+            "similarity": 0.8,
+            "grade": "LOSS"
+          },
+          {
+            "event_id": "cpi-2026-07-14",
+            "release_date": "2026-07-14",
+            "similarity": 0.8,
+            "grade": "WIN"
+          },
+          {
+            "event_id": "cpi-2026-01-13",
+            "release_date": "2026-01-13",
+            "similarity": 0.667,
+            "grade": "UNSURE-skipped"
+          }
+        ],
+        "method": "Walk-forward historical cases only for historical records; all completed historical cases for upcoming records. Reliability weights use signed indicator deltas and GC=F reaction returns."
       }
     },
     {
@@ -5052,6 +7881,83 @@
         "skipped": 7,
         "win_rate": null,
         "definition": "N counts only BUY/SELL cases with an available non-flat gold reaction; UNSURE-skipped cases are reported separately."
+      },
+      "confidence": {
+        "confidence_pct": 50.0,
+        "conviction_pct": 0.0,
+        "confidence_label": "evidence strength only; action remains UNSURE",
+        "walk_forward": true,
+        "walk_forward_eligible": true,
+        "prior_case_N": 7,
+        "similar_case_N": 0,
+        "similar_case_candidates": 4,
+        "similar_hit_rate_shrunk": 50.0,
+        "similar_wins": 0,
+        "similar_losses": 0,
+        "weighted_vote_net": 0.0,
+        "weighted_vote_support_pct": 0.0,
+        "reliability": [
+          {
+            "release_type": "fomc",
+            "series_id": "FEDFUNDS",
+            "label": "Effective policy rate fell",
+            "N": 0,
+            "spearman_rho": null,
+            "p_value": null,
+            "weight_raw": 0.0,
+            "status": "underpowered",
+            "note": "Positive rho means the configured BUY direction historically aligned with a positive GC=F reaction. p_value is a normal approximation; it is not a guarantee of predictive power."
+          },
+          {
+            "release_type": "fomc",
+            "series_id": "DGS2",
+            "label": "Two-year yield fell",
+            "N": 0,
+            "spearman_rho": null,
+            "p_value": null,
+            "weight_raw": 0.0,
+            "status": "underpowered",
+            "note": "Positive rho means the configured BUY direction historically aligned with a positive GC=F reaction. p_value is a normal approximation; it is not a guarantee of predictive power."
+          },
+          {
+            "release_type": "fomc",
+            "series_id": "SOFR",
+            "label": "Funding rate fell",
+            "N": 0,
+            "spearman_rho": null,
+            "p_value": null,
+            "weight_raw": 0.0,
+            "status": "underpowered",
+            "note": "Positive rho means the configured BUY direction historically aligned with a positive GC=F reaction. p_value is a normal approximation; it is not a guarantee of predictive power."
+          }
+        ],
+        "similar_cases": [
+          {
+            "event_id": "fomc-2026-03-18",
+            "release_date": "2026-03-18",
+            "similarity": 1.0,
+            "grade": "UNSURE-skipped"
+          },
+          {
+            "event_id": "fomc-2026-04-29",
+            "release_date": "2026-04-29",
+            "similarity": 0.667,
+            "grade": "UNSURE-skipped"
+          },
+          {
+            "event_id": "fomc-2026-06-17",
+            "release_date": "2026-06-17",
+            "similarity": 0.667,
+            "grade": "UNSURE-skipped"
+          },
+          {
+            "event_id": "fomc-2026-07-29",
+            "release_date": "2026-07-29",
+            "similarity": 0.667,
+            "grade": "UNSURE-skipped"
+          }
+        ],
+        "method": "Walk-forward historical cases only for historical records; all completed historical cases for upcoming records. Reliability weights use signed indicator deltas and GC=F reaction returns."
       }
     },
     {
@@ -5214,6 +8120,123 @@
         "skipped": 7,
         "win_rate": 25.0,
         "definition": "N counts only BUY/SELL cases with an available non-flat gold reaction; UNSURE-skipped cases are reported separately."
+      },
+      "confidence": {
+        "confidence_pct": 41.87,
+        "conviction_pct": 0.0,
+        "confidence_label": "evidence strength only; action remains UNSURE",
+        "walk_forward": true,
+        "walk_forward_eligible": true,
+        "prior_case_N": 11,
+        "similar_case_N": 4,
+        "similar_case_candidates": 7,
+        "similar_hit_rate_shrunk": 37.5,
+        "similar_wins": 1,
+        "similar_losses": 3,
+        "weighted_vote_net": 0.0,
+        "weighted_vote_support_pct": 0.0,
+        "reliability": [
+          {
+            "release_type": "nfp",
+            "series_id": "PAYEMS",
+            "label": "Payroll growth cooled",
+            "N": 0,
+            "spearman_rho": null,
+            "p_value": null,
+            "weight_raw": 0.0,
+            "status": "underpowered",
+            "note": "Positive rho means the configured BUY direction historically aligned with a positive GC=F reaction. p_value is a normal approximation; it is not a guarantee of predictive power."
+          },
+          {
+            "release_type": "nfp",
+            "series_id": "UNRATE",
+            "label": "Unemployment rose",
+            "N": 0,
+            "spearman_rho": null,
+            "p_value": null,
+            "weight_raw": 0.0,
+            "status": "underpowered",
+            "note": "Positive rho means the configured BUY direction historically aligned with a positive GC=F reaction. p_value is a normal approximation; it is not a guarantee of predictive power."
+          },
+          {
+            "release_type": "nfp",
+            "series_id": "CES0500000003",
+            "label": "Hourly earnings rose",
+            "N": 0,
+            "spearman_rho": null,
+            "p_value": null,
+            "weight_raw": 0.0,
+            "status": "underpowered",
+            "note": "Positive rho means the configured BUY direction historically aligned with a positive GC=F reaction. p_value is a normal approximation; it is not a guarantee of predictive power."
+          },
+          {
+            "release_type": "nfp",
+            "series_id": "ICSA",
+            "label": "Claims pressure rose",
+            "N": 0,
+            "spearman_rho": null,
+            "p_value": null,
+            "weight_raw": 0.0,
+            "status": "underpowered",
+            "note": "Positive rho means the configured BUY direction historically aligned with a positive GC=F reaction. p_value is a normal approximation; it is not a guarantee of predictive power."
+          },
+          {
+            "release_type": "nfp",
+            "series_id": "JTSJOL",
+            "label": "Job openings fell",
+            "N": 0,
+            "spearman_rho": null,
+            "p_value": null,
+            "weight_raw": 0.0,
+            "status": "underpowered",
+            "note": "Positive rho means the configured BUY direction historically aligned with a positive GC=F reaction. p_value is a normal approximation; it is not a guarantee of predictive power."
+          }
+        ],
+        "similar_cases": [
+          {
+            "event_id": "nfp-2026-08-07",
+            "release_date": "2026-08-07",
+            "similarity": 0.8,
+            "grade": "UNSURE-skipped"
+          },
+          {
+            "event_id": "nfp-2026-03-06",
+            "release_date": "2026-03-06",
+            "similarity": 0.75,
+            "grade": "LOSS"
+          },
+          {
+            "event_id": "nfp-2026-02-11",
+            "release_date": "2026-02-11",
+            "similarity": 0.6,
+            "grade": "LOSS"
+          },
+          {
+            "event_id": "nfp-2026-04-03",
+            "release_date": "2026-04-03",
+            "similarity": 0.6,
+            "grade": "LOSS"
+          },
+          {
+            "event_id": "nfp-2026-05-08",
+            "release_date": "2026-05-08",
+            "similarity": 0.6,
+            "grade": "WIN"
+          },
+          {
+            "event_id": "nfp-2026-06-05",
+            "release_date": "2026-06-05",
+            "similarity": 0.6,
+            "grade": "UNSURE-skipped"
+          },
+          {
+            "event_id": "nfp-2026-07-02",
+            "release_date": "2026-07-02",
+            "similarity": 0.6,
+            "grade": "UNSURE-skipped"
+          }
+        ],
+        "method": "Walk-forward historical cases only for historical records; all completed historical cases for upcoming records. Reliability weights use signed indicator deltas and GC=F reaction returns."
       }
     },
     {
@@ -5376,6 +8399,135 @@
         "skipped": 1,
         "win_rate": 30.0,
         "definition": "N counts only BUY/SELL cases with an available non-flat gold reaction; UNSURE-skipped cases are reported separately."
+      },
+      "confidence": {
+        "confidence_pct": 44.58,
+        "conviction_pct": 0.0,
+        "confidence_label": "directional evidence",
+        "walk_forward": true,
+        "walk_forward_eligible": true,
+        "prior_case_N": 11,
+        "similar_case_N": 8,
+        "similar_case_candidates": 9,
+        "similar_hit_rate_shrunk": 41.67,
+        "similar_wins": 3,
+        "similar_losses": 5,
+        "weighted_vote_net": 0.0,
+        "weighted_vote_support_pct": 0.0,
+        "reliability": [
+          {
+            "release_type": "cpi",
+            "series_id": "CPIAUCSL",
+            "label": "Headline inflation rose",
+            "N": 0,
+            "spearman_rho": null,
+            "p_value": null,
+            "weight_raw": 0.0,
+            "status": "underpowered",
+            "note": "Positive rho means the configured BUY direction historically aligned with a positive GC=F reaction. p_value is a normal approximation; it is not a guarantee of predictive power."
+          },
+          {
+            "release_type": "cpi",
+            "series_id": "CPILFESL",
+            "label": "Core inflation rose",
+            "N": 0,
+            "spearman_rho": null,
+            "p_value": null,
+            "weight_raw": 0.0,
+            "status": "underpowered",
+            "note": "Positive rho means the configured BUY direction historically aligned with a positive GC=F reaction. p_value is a normal approximation; it is not a guarantee of predictive power."
+          },
+          {
+            "release_type": "cpi",
+            "series_id": "PPIFES",
+            "label": "Core producer prices rose",
+            "N": 0,
+            "spearman_rho": null,
+            "p_value": null,
+            "weight_raw": 0.0,
+            "status": "underpowered",
+            "note": "Positive rho means the configured BUY direction historically aligned with a positive GC=F reaction. p_value is a normal approximation; it is not a guarantee of predictive power."
+          },
+          {
+            "release_type": "cpi",
+            "series_id": "IR",
+            "label": "Import prices rose",
+            "N": 0,
+            "spearman_rho": null,
+            "p_value": null,
+            "weight_raw": 0.0,
+            "status": "underpowered",
+            "note": "Positive rho means the configured BUY direction historically aligned with a positive GC=F reaction. p_value is a normal approximation; it is not a guarantee of predictive power."
+          },
+          {
+            "release_type": "cpi",
+            "series_id": "GASREGW",
+            "label": "Gasoline prices rose",
+            "N": 0,
+            "spearman_rho": null,
+            "p_value": null,
+            "weight_raw": 0.0,
+            "status": "underpowered",
+            "note": "Positive rho means the configured BUY direction historically aligned with a positive GC=F reaction. p_value is a normal approximation; it is not a guarantee of predictive power."
+          }
+        ],
+        "similar_cases": [
+          {
+            "event_id": "cpi-2026-03-11",
+            "release_date": "2026-03-11",
+            "similarity": 1.0,
+            "grade": "WIN"
+          },
+          {
+            "event_id": "cpi-2026-04-10",
+            "release_date": "2026-04-10",
+            "similarity": 1.0,
+            "grade": "WIN"
+          },
+          {
+            "event_id": "cpi-2026-05-12",
+            "release_date": "2026-05-12",
+            "similarity": 1.0,
+            "grade": "LOSS"
+          },
+          {
+            "event_id": "cpi-2026-08-12",
+            "release_date": "2026-08-12",
+            "similarity": 1.0,
+            "grade": "LOSS"
+          },
+          {
+            "event_id": "cpi-2026-09-11",
+            "release_date": "2026-09-11",
+            "similarity": 1.0,
+            "grade": "LOSS"
+          },
+          {
+            "event_id": "cpi-2026-02-13",
+            "release_date": "2026-02-13",
+            "similarity": 0.8,
+            "grade": "LOSS"
+          },
+          {
+            "event_id": "cpi-2026-06-10",
+            "release_date": "2026-06-10",
+            "similarity": 0.8,
+            "grade": "LOSS"
+          },
+          {
+            "event_id": "cpi-2026-07-14",
+            "release_date": "2026-07-14",
+            "similarity": 0.8,
+            "grade": "WIN"
+          },
+          {
+            "event_id": "cpi-2026-01-13",
+            "release_date": "2026-01-13",
+            "similarity": 0.667,
+            "grade": "UNSURE-skipped"
+          }
+        ],
+        "method": "Walk-forward historical cases only for historical records; all completed historical cases for upcoming records. Reliability weights use signed indicator deltas and GC=F reaction returns."
       }
     },
     {
@@ -5516,6 +8668,130 @@
         "skipped": 4,
         "win_rate": 62.5,
         "definition": "N counts only BUY/SELL cases with an available non-flat gold reaction; UNSURE-skipped cases are reported separately."
+      },
+      "confidence": {
+        "confidence_pct": 52.95,
+        "conviction_pct": 0.0,
+        "confidence_label": "directional evidence",
+        "walk_forward": true,
+        "walk_forward_eligible": true,
+        "prior_case_N": 11,
+        "similar_case_N": 7,
+        "similar_case_candidates": 10,
+        "similar_hit_rate_shrunk": 54.55,
+        "similar_wins": 4,
+        "similar_losses": 3,
+        "weighted_vote_net": 0.0,
+        "weighted_vote_support_pct": 0.0,
+        "reliability": [
+          {
+            "release_type": "ppi",
+            "series_id": "PPIFIS",
+            "label": "Final demand PPI rose",
+            "N": 0,
+            "spearman_rho": null,
+            "p_value": null,
+            "weight_raw": 0.0,
+            "status": "underpowered",
+            "note": "Positive rho means the configured BUY direction historically aligned with a positive GC=F reaction. p_value is a normal approximation; it is not a guarantee of predictive power."
+          },
+          {
+            "release_type": "ppi",
+            "series_id": "PPIFES",
+            "label": "Core final demand PPI rose",
+            "N": 0,
+            "spearman_rho": null,
+            "p_value": null,
+            "weight_raw": 0.0,
+            "status": "underpowered",
+            "note": "Positive rho means the configured BUY direction historically aligned with a positive GC=F reaction. p_value is a normal approximation; it is not a guarantee of predictive power."
+          },
+          {
+            "release_type": "ppi",
+            "series_id": "DCOILWTICO",
+            "label": "WTI rose",
+            "N": 0,
+            "spearman_rho": null,
+            "p_value": null,
+            "weight_raw": 0.0,
+            "status": "underpowered",
+            "note": "Positive rho means the configured BUY direction historically aligned with a positive GC=F reaction. p_value is a normal approximation; it is not a guarantee of predictive power."
+          },
+          {
+            "release_type": "ppi",
+            "series_id": "GASREGW",
+            "label": "Gasoline prices rose",
+            "N": 0,
+            "spearman_rho": null,
+            "p_value": null,
+            "weight_raw": 0.0,
+            "status": "underpowered",
+            "note": "Positive rho means the configured BUY direction historically aligned with a positive GC=F reaction. p_value is a normal approximation; it is not a guarantee of predictive power."
+          }
+        ],
+        "similar_cases": [
+          {
+            "event_id": "ppi-2026-01-30",
+            "release_date": "2026-01-30",
+            "similarity": 1.0,
+            "grade": "WIN"
+          },
+          {
+            "event_id": "ppi-2026-01-14",
+            "release_date": "2026-01-14",
+            "similarity": 0.5,
+            "grade": "UNSURE-skipped"
+          },
+          {
+            "event_id": "ppi-2026-02-27",
+            "release_date": "2026-02-27",
+            "similarity": 0.5,
+            "grade": "WIN"
+          },
+          {
+            "event_id": "ppi-2026-03-18",
+            "release_date": "2026-03-18",
+            "similarity": 0.5,
+            "grade": "LOSS"
+          },
+          {
+            "event_id": "ppi-2026-04-14",
+            "release_date": "2026-04-14",
+            "similarity": 0.5,
+            "grade": "WIN"
+          },
+          {
+            "event_id": "ppi-2026-05-13",
+            "release_date": "2026-05-13",
+            "similarity": 0.5,
+            "grade": "LOSS"
+          },
+          {
+            "event_id": "ppi-2026-06-11",
+            "release_date": "2026-06-11",
+            "similarity": 0.5,
+            "grade": "UNSURE-skipped"
+          },
+          {
+            "event_id": "ppi-2026-07-15",
+            "release_date": "2026-07-15",
+            "similarity": 0.5,
+            "grade": "UNSURE-skipped"
+          },
+          {
+            "event_id": "ppi-2026-08-13",
+            "release_date": "2026-08-13",
+            "similarity": 0.5,
+            "grade": "LOSS"
+          },
+          {
+            "event_id": "ppi-2026-09-10",
+            "release_date": "2026-09-10",
+            "similarity": 0.5,
+            "grade": "WIN"
+          }
+        ],
+        "method": "Walk-forward historical cases only for historical records; all completed historical cases for upcoming records. Reliability weights use signed indicator deltas and GC=F reaction returns."
       }
     },
     {
@@ -5634,6 +8910,58 @@
         "skipped": 7,
         "win_rate": null,
         "definition": "N counts only BUY/SELL cases with an available non-flat gold reaction; UNSURE-skipped cases are reported separately."
+      },
+      "confidence": {
+        "confidence_pct": 50.0,
+        "conviction_pct": 0.0,
+        "confidence_label": "evidence strength only; action remains UNSURE",
+        "walk_forward": true,
+        "walk_forward_eligible": true,
+        "prior_case_N": 7,
+        "similar_case_N": 0,
+        "similar_case_candidates": 0,
+        "similar_hit_rate_shrunk": 50.0,
+        "similar_wins": 0,
+        "similar_losses": 0,
+        "weighted_vote_net": 0.0,
+        "weighted_vote_support_pct": 0.0,
+        "reliability": [
+          {
+            "release_type": "fomc",
+            "series_id": "FEDFUNDS",
+            "label": "Effective policy rate fell",
+            "N": 0,
+            "spearman_rho": null,
+            "p_value": null,
+            "weight_raw": 0.0,
+            "status": "underpowered",
+            "note": "Positive rho means the configured BUY direction historically aligned with a positive GC=F reaction. p_value is a normal approximation; it is not a guarantee of predictive power."
+          },
+          {
+            "release_type": "fomc",
+            "series_id": "DGS2",
+            "label": "Two-year yield fell",
+            "N": 0,
+            "spearman_rho": null,
+            "p_value": null,
+            "weight_raw": 0.0,
+            "status": "underpowered",
+            "note": "Positive rho means the configured BUY direction historically aligned with a positive GC=F reaction. p_value is a normal approximation; it is not a guarantee of predictive power."
+          },
+          {
+            "release_type": "fomc",
+            "series_id": "SOFR",
+            "label": "Funding rate fell",
+            "N": 0,
+            "spearman_rho": null,
+            "p_value": null,
+            "weight_raw": 0.0,
+            "status": "underpowered",
+            "note": "Positive rho means the configured BUY direction historically aligned with a positive GC=F reaction. p_value is a normal approximation; it is not a guarantee of predictive power."
+          }
+        ],
+        "similar_cases": [],
+        "method": "Walk-forward historical cases only for historical records; all completed historical cases for upcoming records. Reliability weights use signed indicator deltas and GC=F reaction returns."
       }
     },
     {
@@ -5796,6 +9124,87 @@
         "skipped": 7,
         "win_rate": 25.0,
         "definition": "N counts only BUY/SELL cases with an available non-flat gold reaction; UNSURE-skipped cases are reported separately."
+      },
+      "confidence": {
+        "confidence_pct": 43.5,
+        "conviction_pct": 0.0,
+        "confidence_label": "evidence strength only; action remains UNSURE",
+        "walk_forward": true,
+        "walk_forward_eligible": true,
+        "prior_case_N": 11,
+        "similar_case_N": 1,
+        "similar_case_candidates": 1,
+        "similar_hit_rate_shrunk": 40.0,
+        "similar_wins": 0,
+        "similar_losses": 1,
+        "weighted_vote_net": 0.0,
+        "weighted_vote_support_pct": 0.0,
+        "reliability": [
+          {
+            "release_type": "nfp",
+            "series_id": "PAYEMS",
+            "label": "Payroll growth cooled",
+            "N": 0,
+            "spearman_rho": null,
+            "p_value": null,
+            "weight_raw": 0.0,
+            "status": "underpowered",
+            "note": "Positive rho means the configured BUY direction historically aligned with a positive GC=F reaction. p_value is a normal approximation; it is not a guarantee of predictive power."
+          },
+          {
+            "release_type": "nfp",
+            "series_id": "UNRATE",
+            "label": "Unemployment rose",
+            "N": 0,
+            "spearman_rho": null,
+            "p_value": null,
+            "weight_raw": 0.0,
+            "status": "underpowered",
+            "note": "Positive rho means the configured BUY direction historically aligned with a positive GC=F reaction. p_value is a normal approximation; it is not a guarantee of predictive power."
+          },
+          {
+            "release_type": "nfp",
+            "series_id": "CES0500000003",
+            "label": "Hourly earnings rose",
+            "N": 0,
+            "spearman_rho": null,
+            "p_value": null,
+            "weight_raw": 0.0,
+            "status": "underpowered",
+            "note": "Positive rho means the configured BUY direction historically aligned with a positive GC=F reaction. p_value is a normal approximation; it is not a guarantee of predictive power."
+          },
+          {
+            "release_type": "nfp",
+            "series_id": "ICSA",
+            "label": "Claims pressure rose",
+            "N": 0,
+            "spearman_rho": null,
+            "p_value": null,
+            "weight_raw": 0.0,
+            "status": "underpowered",
+            "note": "Positive rho means the configured BUY direction historically aligned with a positive GC=F reaction. p_value is a normal approximation; it is not a guarantee of predictive power."
+          },
+          {
+            "release_type": "nfp",
+            "series_id": "JTSJOL",
+            "label": "Job openings fell",
+            "N": 0,
+            "spearman_rho": null,
+            "p_value": null,
+            "weight_raw": 0.0,
+            "status": "underpowered",
+            "note": "Positive rho means the configured BUY direction historically aligned with a positive GC=F reaction. p_value is a normal approximation; it is not a guarantee of predictive power."
+          }
+        ],
+        "similar_cases": [
+          {
+            "event_id": "nfp-2026-04-03",
+            "release_date": "2026-04-03",
+            "similarity": 0.6,
+            "grade": "LOSS"
+          }
+        ],
+        "method": "Walk-forward historical cases only for historical records; all completed historical cases for upcoming records. Reliability weights use signed indicator deltas and GC=F reaction returns."
       }
     },
     {
@@ -5958,6 +9367,141 @@
         "skipped": 1,
         "win_rate": 30.0,
         "definition": "N counts only BUY/SELL cases with an available non-flat gold reaction; UNSURE-skipped cases are reported separately."
+      },
+      "confidence": {
+        "confidence_pct": 42.5,
+        "conviction_pct": 0.0,
+        "confidence_label": "directional evidence",
+        "walk_forward": true,
+        "walk_forward_eligible": true,
+        "prior_case_N": 11,
+        "similar_case_N": 9,
+        "similar_case_candidates": 10,
+        "similar_hit_rate_shrunk": 38.46,
+        "similar_wins": 3,
+        "similar_losses": 6,
+        "weighted_vote_net": 0.0,
+        "weighted_vote_support_pct": 0.0,
+        "reliability": [
+          {
+            "release_type": "cpi",
+            "series_id": "CPIAUCSL",
+            "label": "Headline inflation rose",
+            "N": 0,
+            "spearman_rho": null,
+            "p_value": null,
+            "weight_raw": 0.0,
+            "status": "underpowered",
+            "note": "Positive rho means the configured BUY direction historically aligned with a positive GC=F reaction. p_value is a normal approximation; it is not a guarantee of predictive power."
+          },
+          {
+            "release_type": "cpi",
+            "series_id": "CPILFESL",
+            "label": "Core inflation rose",
+            "N": 0,
+            "spearman_rho": null,
+            "p_value": null,
+            "weight_raw": 0.0,
+            "status": "underpowered",
+            "note": "Positive rho means the configured BUY direction historically aligned with a positive GC=F reaction. p_value is a normal approximation; it is not a guarantee of predictive power."
+          },
+          {
+            "release_type": "cpi",
+            "series_id": "PPIFES",
+            "label": "Core producer prices rose",
+            "N": 0,
+            "spearman_rho": null,
+            "p_value": null,
+            "weight_raw": 0.0,
+            "status": "underpowered",
+            "note": "Positive rho means the configured BUY direction historically aligned with a positive GC=F reaction. p_value is a normal approximation; it is not a guarantee of predictive power."
+          },
+          {
+            "release_type": "cpi",
+            "series_id": "IR",
+            "label": "Import prices rose",
+            "N": 0,
+            "spearman_rho": null,
+            "p_value": null,
+            "weight_raw": 0.0,
+            "status": "underpowered",
+            "note": "Positive rho means the configured BUY direction historically aligned with a positive GC=F reaction. p_value is a normal approximation; it is not a guarantee of predictive power."
+          },
+          {
+            "release_type": "cpi",
+            "series_id": "GASREGW",
+            "label": "Gasoline prices rose",
+            "N": 0,
+            "spearman_rho": null,
+            "p_value": null,
+            "weight_raw": 0.0,
+            "status": "underpowered",
+            "note": "Positive rho means the configured BUY direction historically aligned with a positive GC=F reaction. p_value is a normal approximation; it is not a guarantee of predictive power."
+          }
+        ],
+        "similar_cases": [
+          {
+            "event_id": "cpi-2026-01-13",
+            "release_date": "2026-01-13",
+            "similarity": 1.0,
+            "grade": "UNSURE-skipped"
+          },
+          {
+            "event_id": "cpi-2026-06-10",
+            "release_date": "2026-06-10",
+            "similarity": 1.0,
+            "grade": "LOSS"
+          },
+          {
+            "event_id": "cpi-2026-07-14",
+            "release_date": "2026-07-14",
+            "similarity": 1.0,
+            "grade": "WIN"
+          },
+          {
+            "event_id": "cpi-2026-03-11",
+            "release_date": "2026-03-11",
+            "similarity": 0.8,
+            "grade": "WIN"
+          },
+          {
+            "event_id": "cpi-2026-04-10",
+            "release_date": "2026-04-10",
+            "similarity": 0.8,
+            "grade": "WIN"
+          },
+          {
+            "event_id": "cpi-2026-05-12",
+            "release_date": "2026-05-12",
+            "similarity": 0.8,
+            "grade": "LOSS"
+          },
+          {
+            "event_id": "cpi-2026-08-12",
+            "release_date": "2026-08-12",
+            "similarity": 0.8,
+            "grade": "LOSS"
+          },
+          {
+            "event_id": "cpi-2026-09-11",
+            "release_date": "2026-09-11",
+            "similarity": 0.8,
+            "grade": "LOSS"
+          },
+          {
+            "event_id": "cpi-2026-10-14",
+            "release_date": "2026-10-14",
+            "similarity": 0.8,
+            "grade": "LOSS"
+          },
+          {
+            "event_id": "cpi-2026-02-13",
+            "release_date": "2026-02-13",
+            "similarity": 0.6,
+            "grade": "LOSS"
+          }
+        ],
+        "method": "Walk-forward historical cases only for historical records; all completed historical cases for upcoming records. Reliability weights use signed indicator deltas and GC=F reaction returns."
       }
     },
     {
@@ -6098,6 +9642,130 @@
         "skipped": 4,
         "win_rate": 62.5,
         "definition": "N counts only BUY/SELL cases with an available non-flat gold reaction; UNSURE-skipped cases are reported separately."
+      },
+      "confidence": {
+        "confidence_pct": 52.95,
+        "conviction_pct": 0.0,
+        "confidence_label": "evidence strength only; action remains UNSURE",
+        "walk_forward": false,
+        "walk_forward_eligible": true,
+        "prior_case_N": 11,
+        "similar_case_N": 7,
+        "similar_case_candidates": 11,
+        "similar_hit_rate_shrunk": 54.55,
+        "similar_wins": 4,
+        "similar_losses": 3,
+        "weighted_vote_net": 0.0,
+        "weighted_vote_support_pct": 0.0,
+        "reliability": [
+          {
+            "release_type": "ppi",
+            "series_id": "PPIFIS",
+            "label": "Final demand PPI rose",
+            "N": 0,
+            "spearman_rho": null,
+            "p_value": null,
+            "weight_raw": 0.0,
+            "status": "underpowered",
+            "note": "Positive rho means the configured BUY direction historically aligned with a positive GC=F reaction. p_value is a normal approximation; it is not a guarantee of predictive power."
+          },
+          {
+            "release_type": "ppi",
+            "series_id": "PPIFES",
+            "label": "Core final demand PPI rose",
+            "N": 0,
+            "spearman_rho": null,
+            "p_value": null,
+            "weight_raw": 0.0,
+            "status": "underpowered",
+            "note": "Positive rho means the configured BUY direction historically aligned with a positive GC=F reaction. p_value is a normal approximation; it is not a guarantee of predictive power."
+          },
+          {
+            "release_type": "ppi",
+            "series_id": "DCOILWTICO",
+            "label": "WTI rose",
+            "N": 0,
+            "spearman_rho": null,
+            "p_value": null,
+            "weight_raw": 0.0,
+            "status": "underpowered",
+            "note": "Positive rho means the configured BUY direction historically aligned with a positive GC=F reaction. p_value is a normal approximation; it is not a guarantee of predictive power."
+          },
+          {
+            "release_type": "ppi",
+            "series_id": "GASREGW",
+            "label": "Gasoline prices rose",
+            "N": 0,
+            "spearman_rho": null,
+            "p_value": null,
+            "weight_raw": 0.0,
+            "status": "underpowered",
+            "note": "Positive rho means the configured BUY direction historically aligned with a positive GC=F reaction. p_value is a normal approximation; it is not a guarantee of predictive power."
+          }
+        ],
+        "similar_cases": [
+          {
+            "event_id": "ppi-2026-06-11",
+            "release_date": "2026-06-11",
+            "similarity": 1.0,
+            "grade": "UNSURE-skipped"
+          },
+          {
+            "event_id": "ppi-2026-07-15",
+            "release_date": "2026-07-15",
+            "similarity": 1.0,
+            "grade": "UNSURE-skipped"
+          },
+          {
+            "event_id": "ppi-2026-05-13",
+            "release_date": "2026-05-13",
+            "similarity": 0.75,
+            "grade": "LOSS"
+          },
+          {
+            "event_id": "ppi-2026-01-14",
+            "release_date": "2026-01-14",
+            "similarity": 0.5,
+            "grade": "UNSURE-skipped"
+          },
+          {
+            "event_id": "ppi-2026-01-30",
+            "release_date": "2026-01-30",
+            "similarity": 0.5,
+            "grade": "WIN"
+          },
+          {
+            "event_id": "ppi-2026-02-27",
+            "release_date": "2026-02-27",
+            "similarity": 0.5,
+            "grade": "WIN"
+          },
+          {
+            "event_id": "ppi-2026-03-18",
+            "release_date": "2026-03-18",
+            "similarity": 0.5,
+            "grade": "LOSS"
+          },
+          {
+            "event_id": "ppi-2026-04-14",
+            "release_date": "2026-04-14",
+            "similarity": 0.5,
+            "grade": "WIN"
+          },
+          {
+            "event_id": "ppi-2026-08-13",
+            "release_date": "2026-08-13",
+            "similarity": 0.5,
+            "grade": "LOSS"
+          },
+          {
+            "event_id": "ppi-2026-09-10",
+            "release_date": "2026-09-10",
+            "similarity": 0.5,
+            "grade": "WIN"
+          }
+        ],
+        "method": "Walk-forward historical cases only for historical records; all completed historical cases for upcoming records. Reliability weights use signed indicator deltas and GC=F reaction returns."
       }
     }
   ],
@@ -6149,5 +9817,6 @@
         "definition": "N counts only BUY/SELL cases with an available non-flat gold reaction; UNSURE-skipped cases are reported separately."
       }
     }
-  }
+  },
+  "confidence_version": 1
 }
