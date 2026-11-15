@@ -1,20 +1,20 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-11-14T17:02:00.319968+00:00",
+  "generated_at": "2026-11-15T18:49:39.718432+00:00",
   "history_window": {
     "start_date": "2026-01-01",
-    "end_date": "2026-11-13"
+    "end_date": "2026-11-15"
   },
   "data_manifest": {
     "provider": "Yahoo Finance via yfinance",
     "symbol": "GC=F",
     "instrument_label": "COMEX gold futures front-month proxy; not spot XAUUSD",
     "source_url": "https://finance.yahoo.com/quote/GC=F/history",
-    "retrieved_at": "2026-11-13T19:39:01.855035+00:00",
+    "retrieved_at": "2026-11-15T18:49:30.948450+00:00",
     "adjustment": "unadjusted OHLC close",
     "hourly_interval": "1h",
     "daily_interval": "1d",
-    "hourly_rows": 13753,
+    "hourly_rows": 13732,
     "daily_rows": 223
   },
   "measure_definitions": {
@@ -176,7 +176,7 @@
           "provider": "Yahoo Finance via yfinance",
           "symbol": "GC=F",
           "source_url": "https://finance.yahoo.com/quote/GC=F/history",
-          "retrieved_at": "2026-11-13T19:39:01.855035+00:00",
+          "retrieved_at": "2026-11-15T18:49:30.948450+00:00",
           "adjustment": "unadjusted OHLC close"
         }
       },
@@ -410,7 +410,7 @@
           "provider": "Yahoo Finance via yfinance",
           "symbol": "GC=F",
           "source_url": "https://finance.yahoo.com/quote/GC=F/history",
-          "retrieved_at": "2026-11-13T19:39:01.855035+00:00",
+          "retrieved_at": "2026-11-15T18:49:30.948450+00:00",
           "adjustment": "unadjusted OHLC close"
         }
       },
@@ -622,7 +622,7 @@
           "provider": "Yahoo Finance via yfinance",
           "symbol": "GC=F",
           "source_url": "https://finance.yahoo.com/quote/GC=F/history",
-          "retrieved_at": "2026-11-13T19:39:01.855035+00:00",
+          "retrieved_at": "2026-11-15T18:49:30.948450+00:00",
           "adjustment": "unadjusted OHLC close"
         }
       },
@@ -648,7 +648,7 @@
         "confidence_label": "evidence strength only; action remains UNSURE",
         "walk_forward": true,
         "walk_forward_eligible": true,
-        "prior_case_N": 11,
+        "prior_case_N": 12,
         "similar_case_N": 0,
         "similar_case_candidates": 0,
         "similar_hit_rate_shrunk": 50.0,
@@ -803,7 +803,7 @@
           "provider": "Yahoo Finance via yfinance",
           "symbol": "GC=F",
           "source_url": "https://finance.yahoo.com/quote/GC=F/history",
-          "retrieved_at": "2026-11-13T19:39:01.855035+00:00",
+          "retrieved_at": "2026-11-15T18:49:30.948450+00:00",
           "adjustment": "unadjusted OHLC close"
         }
       },
@@ -995,7 +995,7 @@
           "provider": "Yahoo Finance via yfinance",
           "symbol": "GC=F",
           "source_url": "https://finance.yahoo.com/quote/GC=F/history",
-          "retrieved_at": "2026-11-13T19:39:01.855035+00:00",
+          "retrieved_at": "2026-11-15T18:49:30.948450+00:00",
           "adjustment": "unadjusted OHLC close"
         }
       },
@@ -1021,7 +1021,7 @@
         "confidence_label": "directional evidence",
         "walk_forward": true,
         "walk_forward_eligible": true,
-        "prior_case_N": 11,
+        "prior_case_N": 12,
         "similar_case_N": 0,
         "similar_case_candidates": 1,
         "similar_hit_rate_shrunk": 50.0,
@@ -1227,7 +1227,7 @@
           "provider": "Yahoo Finance via yfinance",
           "symbol": "GC=F",
           "source_url": "https://finance.yahoo.com/quote/GC=F/history",
-          "retrieved_at": "2026-11-13T19:39:01.855035+00:00",
+          "retrieved_at": "2026-11-15T18:49:30.948450+00:00",
           "adjustment": "unadjusted OHLC close"
         }
       },
@@ -1463,7 +1463,7 @@
           "provider": "Yahoo Finance via yfinance",
           "symbol": "GC=F",
           "source_url": "https://finance.yahoo.com/quote/GC=F/history",
-          "retrieved_at": "2026-11-13T19:39:01.855035+00:00",
+          "retrieved_at": "2026-11-15T18:49:30.948450+00:00",
           "adjustment": "unadjusted OHLC close"
         }
       },
@@ -1684,7 +1684,7 @@
           "provider": "Yahoo Finance via yfinance",
           "symbol": "GC=F",
           "source_url": "https://finance.yahoo.com/quote/GC=F/history",
-          "retrieved_at": "2026-11-13T19:39:01.855035+00:00",
+          "retrieved_at": "2026-11-15T18:49:30.948450+00:00",
           "adjustment": "unadjusted OHLC close"
         }
       },
@@ -1710,7 +1710,7 @@
         "confidence_label": "directional evidence",
         "walk_forward": true,
         "walk_forward_eligible": true,
-        "prior_case_N": 11,
+        "prior_case_N": 12,
         "similar_case_N": 1,
         "similar_case_candidates": 1,
         "similar_hit_rate_shrunk": 60.0,
@@ -1915,7 +1915,7 @@
           "provider": "Yahoo Finance via yfinance",
           "symbol": "GC=F",
           "source_url": "https://finance.yahoo.com/quote/GC=F/history",
-          "retrieved_at": "2026-11-13T19:39:01.855035+00:00",
+          "retrieved_at": "2026-11-15T18:49:30.948450+00:00",
           "adjustment": "unadjusted OHLC close"
         }
       },
@@ -2151,7 +2151,7 @@
           "provider": "Yahoo Finance via yfinance",
           "symbol": "GC=F",
           "source_url": "https://finance.yahoo.com/quote/GC=F/history",
-          "retrieved_at": "2026-11-13T19:39:01.855035+00:00",
+          "retrieved_at": "2026-11-15T18:49:30.948450+00:00",
           "adjustment": "unadjusted OHLC close"
         }
       },
@@ -2378,7 +2378,7 @@
           "provider": "Yahoo Finance via yfinance",
           "symbol": "GC=F",
           "source_url": "https://finance.yahoo.com/quote/GC=F/history",
-          "retrieved_at": "2026-11-13T19:39:01.855035+00:00",
+          "retrieved_at": "2026-11-15T18:49:30.948450+00:00",
           "adjustment": "unadjusted OHLC close"
         }
       },
@@ -2404,7 +2404,7 @@
         "confidence_label": "directional evidence",
         "walk_forward": true,
         "walk_forward_eligible": true,
-        "prior_case_N": 11,
+        "prior_case_N": 12,
         "similar_case_N": 2,
         "similar_case_candidates": 2,
         "similar_hit_rate_shrunk": 66.67,
@@ -2572,7 +2572,7 @@
           "provider": "Yahoo Finance via yfinance",
           "symbol": "GC=F",
           "source_url": "https://finance.yahoo.com/quote/GC=F/history",
-          "retrieved_at": "2026-11-13T19:39:01.855035+00:00",
+          "retrieved_at": "2026-11-15T18:49:30.948450+00:00",
           "adjustment": "unadjusted OHLC close"
         }
       },
@@ -2786,7 +2786,7 @@
           "provider": "Yahoo Finance via yfinance",
           "symbol": "GC=F",
           "source_url": "https://finance.yahoo.com/quote/GC=F/history",
-          "retrieved_at": "2026-11-13T19:39:01.855035+00:00",
+          "retrieved_at": "2026-11-15T18:49:30.948450+00:00",
           "adjustment": "unadjusted OHLC close"
         }
       },
@@ -3041,7 +3041,7 @@
           "provider": "Yahoo Finance via yfinance",
           "symbol": "GC=F",
           "source_url": "https://finance.yahoo.com/quote/GC=F/history",
-          "retrieved_at": "2026-11-13T19:39:01.855035+00:00",
+          "retrieved_at": "2026-11-15T18:49:30.948450+00:00",
           "adjustment": "unadjusted OHLC close"
         }
       },
@@ -3274,7 +3274,7 @@
           "provider": "Yahoo Finance via yfinance",
           "symbol": "GC=F",
           "source_url": "https://finance.yahoo.com/quote/GC=F/history",
-          "retrieved_at": "2026-11-13T19:39:01.855035+00:00",
+          "retrieved_at": "2026-11-15T18:49:30.948450+00:00",
           "adjustment": "unadjusted OHLC close"
         }
       },
@@ -3300,7 +3300,7 @@
         "confidence_label": "directional evidence",
         "walk_forward": true,
         "walk_forward_eligible": true,
-        "prior_case_N": 11,
+        "prior_case_N": 12,
         "similar_case_N": 3,
         "similar_case_candidates": 3,
         "similar_hit_rate_shrunk": 57.14,
@@ -3474,7 +3474,7 @@
           "provider": "Yahoo Finance via yfinance",
           "symbol": "GC=F",
           "source_url": "https://finance.yahoo.com/quote/GC=F/history",
-          "retrieved_at": "2026-11-13T19:39:01.855035+00:00",
+          "retrieved_at": "2026-11-15T18:49:30.948450+00:00",
           "adjustment": "unadjusted OHLC close"
         }
       },
@@ -3701,7 +3701,7 @@
           "provider": "Yahoo Finance via yfinance",
           "symbol": "GC=F",
           "source_url": "https://finance.yahoo.com/quote/GC=F/history",
-          "retrieved_at": "2026-11-13T19:39:01.855035+00:00",
+          "retrieved_at": "2026-11-15T18:49:30.948450+00:00",
           "adjustment": "unadjusted OHLC close"
         }
       },
@@ -3944,7 +3944,7 @@
           "provider": "Yahoo Finance via yfinance",
           "symbol": "GC=F",
           "source_url": "https://finance.yahoo.com/quote/GC=F/history",
-          "retrieved_at": "2026-11-13T19:39:01.855035+00:00",
+          "retrieved_at": "2026-11-15T18:49:30.948450+00:00",
           "adjustment": "unadjusted OHLC close"
         }
       },
@@ -4183,7 +4183,7 @@
           "provider": "Yahoo Finance via yfinance",
           "symbol": "GC=F",
           "source_url": "https://finance.yahoo.com/quote/GC=F/history",
-          "retrieved_at": "2026-11-13T19:39:01.855035+00:00",
+          "retrieved_at": "2026-11-15T18:49:30.948450+00:00",
           "adjustment": "unadjusted OHLC close"
         }
       },
@@ -4209,7 +4209,7 @@
         "confidence_label": "directional evidence",
         "walk_forward": true,
         "walk_forward_eligible": true,
-        "prior_case_N": 11,
+        "prior_case_N": 12,
         "similar_case_N": 4,
         "similar_case_candidates": 4,
         "similar_hit_rate_shrunk": 62.5,
@@ -4433,7 +4433,7 @@
           "provider": "Yahoo Finance via yfinance",
           "symbol": "GC=F",
           "source_url": "https://finance.yahoo.com/quote/GC=F/history",
-          "retrieved_at": "2026-11-13T19:39:01.855035+00:00",
+          "retrieved_at": "2026-11-15T18:49:30.948450+00:00",
           "adjustment": "unadjusted OHLC close"
         }
       },
@@ -4682,7 +4682,7 @@
           "provider": "Yahoo Finance via yfinance",
           "symbol": "GC=F",
           "source_url": "https://finance.yahoo.com/quote/GC=F/history",
-          "retrieved_at": "2026-11-13T19:39:01.855035+00:00",
+          "retrieved_at": "2026-11-15T18:49:30.948450+00:00",
           "adjustment": "unadjusted OHLC close"
         }
       },
@@ -4927,7 +4927,7 @@
           "provider": "Yahoo Finance via yfinance",
           "symbol": "GC=F",
           "source_url": "https://finance.yahoo.com/quote/GC=F/history",
-          "retrieved_at": "2026-11-13T19:39:01.855035+00:00",
+          "retrieved_at": "2026-11-15T18:49:30.948450+00:00",
           "adjustment": "unadjusted OHLC close"
         }
       },
@@ -4953,7 +4953,7 @@
         "confidence_label": "evidence strength only; action remains UNSURE",
         "walk_forward": true,
         "walk_forward_eligible": true,
-        "prior_case_N": 11,
+        "prior_case_N": 12,
         "similar_case_N": 5,
         "similar_case_candidates": 6,
         "similar_hit_rate_shrunk": 55.56,
@@ -5145,7 +5145,7 @@
           "provider": "Yahoo Finance via yfinance",
           "symbol": "GC=F",
           "source_url": "https://finance.yahoo.com/quote/GC=F/history",
-          "retrieved_at": "2026-11-13T19:39:01.855035+00:00",
+          "retrieved_at": "2026-11-15T18:49:30.948450+00:00",
           "adjustment": "unadjusted OHLC close"
         }
       },
@@ -5378,7 +5378,7 @@
           "provider": "Yahoo Finance via yfinance",
           "symbol": "GC=F",
           "source_url": "https://finance.yahoo.com/quote/GC=F/history",
-          "retrieved_at": "2026-11-13T19:39:01.855035+00:00",
+          "retrieved_at": "2026-11-15T18:49:30.948450+00:00",
           "adjustment": "unadjusted OHLC close"
         }
       },
@@ -5633,7 +5633,7 @@
           "provider": "Yahoo Finance via yfinance",
           "symbol": "GC=F",
           "source_url": "https://finance.yahoo.com/quote/GC=F/history",
-          "retrieved_at": "2026-11-13T19:39:01.855035+00:00",
+          "retrieved_at": "2026-11-15T18:49:30.948450+00:00",
           "adjustment": "unadjusted OHLC close"
         }
       },
@@ -5884,7 +5884,7 @@
           "provider": "Yahoo Finance via yfinance",
           "symbol": "GC=F",
           "source_url": "https://finance.yahoo.com/quote/GC=F/history",
-          "retrieved_at": "2026-11-13T19:39:01.855035+00:00",
+          "retrieved_at": "2026-11-15T18:49:30.948450+00:00",
           "adjustment": "unadjusted OHLC close"
         }
       },
@@ -5910,7 +5910,7 @@
         "confidence_label": "evidence strength only; action remains UNSURE",
         "walk_forward": true,
         "walk_forward_eligible": true,
-        "prior_case_N": 11,
+        "prior_case_N": 12,
         "similar_case_N": 5,
         "similar_case_candidates": 7,
         "similar_hit_rate_shrunk": 55.56,
@@ -6108,7 +6108,7 @@
           "provider": "Yahoo Finance via yfinance",
           "symbol": "GC=F",
           "source_url": "https://finance.yahoo.com/quote/GC=F/history",
-          "retrieved_at": "2026-11-13T19:39:01.855035+00:00",
+          "retrieved_at": "2026-11-15T18:49:30.948450+00:00",
           "adjustment": "unadjusted OHLC close"
         }
       },
@@ -6347,7 +6347,7 @@
           "provider": "Yahoo Finance via yfinance",
           "symbol": "GC=F",
           "source_url": "https://finance.yahoo.com/quote/GC=F/history",
-          "retrieved_at": "2026-11-13T19:39:01.855035+00:00",
+          "retrieved_at": "2026-11-15T18:49:30.948450+00:00",
           "adjustment": "unadjusted OHLC close"
         }
       },
@@ -6608,7 +6608,7 @@
           "provider": "Yahoo Finance via yfinance",
           "symbol": "GC=F",
           "source_url": "https://finance.yahoo.com/quote/GC=F/history",
-          "retrieved_at": "2026-11-13T19:39:01.855035+00:00",
+          "retrieved_at": "2026-11-15T18:49:30.948450+00:00",
           "adjustment": "unadjusted OHLC close"
         }
       },
@@ -6865,7 +6865,7 @@
           "provider": "Yahoo Finance via yfinance",
           "symbol": "GC=F",
           "source_url": "https://finance.yahoo.com/quote/GC=F/history",
-          "retrieved_at": "2026-11-13T19:39:01.855035+00:00",
+          "retrieved_at": "2026-11-15T18:49:30.948450+00:00",
           "adjustment": "unadjusted OHLC close"
         }
       },
@@ -6891,7 +6891,7 @@
         "confidence_label": "directional evidence",
         "walk_forward": true,
         "walk_forward_eligible": true,
-        "prior_case_N": 11,
+        "prior_case_N": 12,
         "similar_case_N": 5,
         "similar_case_candidates": 7,
         "similar_hit_rate_shrunk": 55.56,
@@ -7133,7 +7133,7 @@
           "provider": "Yahoo Finance via yfinance",
           "symbol": "GC=F",
           "source_url": "https://finance.yahoo.com/quote/GC=F/history",
-          "retrieved_at": "2026-11-13T19:39:01.855035+00:00",
+          "retrieved_at": "2026-11-15T18:49:30.948450+00:00",
           "adjustment": "unadjusted OHLC close"
         }
       },
@@ -7347,7 +7347,7 @@
           "provider": "Yahoo Finance via yfinance",
           "symbol": "GC=F",
           "source_url": "https://finance.yahoo.com/quote/GC=F/history",
-          "retrieved_at": "2026-11-13T19:39:01.855035+00:00",
+          "retrieved_at": "2026-11-15T18:49:30.948450+00:00",
           "adjustment": "unadjusted OHLC close"
         }
       },
@@ -7373,7 +7373,7 @@
         "confidence_label": "directional evidence",
         "walk_forward": true,
         "walk_forward_eligible": true,
-        "prior_case_N": 11,
+        "prior_case_N": 12,
         "similar_case_N": 6,
         "similar_case_candidates": 8,
         "similar_hit_rate_shrunk": 50.0,
@@ -7621,7 +7621,7 @@
           "provider": "Yahoo Finance via yfinance",
           "symbol": "GC=F",
           "source_url": "https://finance.yahoo.com/quote/GC=F/history",
-          "retrieved_at": "2026-11-13T19:39:01.855035+00:00",
+          "retrieved_at": "2026-11-15T18:49:30.948450+00:00",
           "adjustment": "unadjusted OHLC close"
         }
       },
@@ -7862,7 +7862,7 @@
           "provider": "Yahoo Finance via yfinance",
           "symbol": "GC=F",
           "source_url": "https://finance.yahoo.com/quote/GC=F/history",
-          "retrieved_at": "2026-11-13T19:39:01.855035+00:00",
+          "retrieved_at": "2026-11-15T18:49:30.948450+00:00",
           "adjustment": "unadjusted OHLC close"
         }
       },
@@ -8101,7 +8101,7 @@
           "provider": "Yahoo Finance via yfinance",
           "symbol": "GC=F",
           "source_url": "https://finance.yahoo.com/quote/GC=F/history",
-          "retrieved_at": "2026-11-13T19:39:01.855035+00:00",
+          "retrieved_at": "2026-11-15T18:49:30.948450+00:00",
           "adjustment": "unadjusted OHLC close"
         }
       },
@@ -8380,7 +8380,7 @@
           "provider": "Yahoo Finance via yfinance",
           "symbol": "GC=F",
           "source_url": "https://finance.yahoo.com/quote/GC=F/history",
-          "retrieved_at": "2026-11-13T19:39:01.855035+00:00",
+          "retrieved_at": "2026-11-15T18:49:30.948450+00:00",
           "adjustment": "unadjusted OHLC close"
         }
       },
@@ -8649,7 +8649,7 @@
           "provider": "Yahoo Finance via yfinance",
           "symbol": "GC=F",
           "source_url": "https://finance.yahoo.com/quote/GC=F/history",
-          "retrieved_at": "2026-11-13T19:39:01.855035+00:00",
+          "retrieved_at": "2026-11-15T18:49:30.948450+00:00",
           "adjustment": "unadjusted OHLC close"
         }
       },
@@ -8675,7 +8675,7 @@
         "confidence_label": "directional evidence",
         "walk_forward": true,
         "walk_forward_eligible": true,
-        "prior_case_N": 11,
+        "prior_case_N": 12,
         "similar_case_N": 7,
         "similar_case_candidates": 10,
         "similar_hit_rate_shrunk": 54.55,
@@ -8891,7 +8891,7 @@
           "provider": "Yahoo Finance via yfinance",
           "symbol": "GC=F",
           "source_url": "https://finance.yahoo.com/quote/GC=F/history",
-          "retrieved_at": "2026-11-13T19:39:01.855035+00:00",
+          "retrieved_at": "2026-11-15T18:49:30.948450+00:00",
           "adjustment": "unadjusted OHLC close"
         }
       },
@@ -9105,7 +9105,7 @@
           "provider": "Yahoo Finance via yfinance",
           "symbol": "GC=F",
           "source_url": "https://finance.yahoo.com/quote/GC=F/history",
-          "retrieved_at": "2026-11-13T19:39:01.855035+00:00",
+          "retrieved_at": "2026-11-15T18:49:30.948450+00:00",
           "adjustment": "unadjusted OHLC close"
         }
       },
@@ -9348,7 +9348,7 @@
           "provider": "Yahoo Finance via yfinance",
           "symbol": "GC=F",
           "source_url": "https://finance.yahoo.com/quote/GC=F/history",
-          "retrieved_at": "2026-11-13T19:39:01.855035+00:00",
+          "retrieved_at": "2026-11-15T18:49:30.948450+00:00",
           "adjustment": "unadjusted OHLC close"
         }
       },
@@ -9623,7 +9623,7 @@
           "provider": "Yahoo Finance via yfinance",
           "symbol": "GC=F",
           "source_url": "https://finance.yahoo.com/quote/GC=F/history",
-          "retrieved_at": "2026-11-13T19:39:01.855035+00:00",
+          "retrieved_at": "2026-11-15T18:49:30.948450+00:00",
           "adjustment": "unadjusted OHLC close"
         }
       },
@@ -9647,9 +9647,9 @@
         "confidence_pct": 52.95,
         "conviction_pct": 0.0,
         "confidence_label": "evidence strength only; action remains UNSURE",
-        "walk_forward": false,
+        "walk_forward": true,
         "walk_forward_eligible": true,
-        "prior_case_N": 11,
+        "prior_case_N": 12,
         "similar_case_N": 7,
         "similar_case_candidates": 11,
         "similar_hit_rate_shrunk": 54.55,

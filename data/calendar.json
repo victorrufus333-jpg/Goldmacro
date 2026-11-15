@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-11-14T17:57:29.626943+00:00",
+  "generated_at": "2026-11-15T18:47:19.447095+00:00",
   "events": [
     {
       "id": "fomc-2026-01-28",
@@ -1052,7 +1052,7 @@
       "name": "FRED release dates API",
       "url": "https://api.stlouisfed.org/fred/releases/dates",
       "state": "ok",
-      "last_checked": "2026-11-14T17:57:29.626943+00:00",
+      "last_checked": "2026-11-15T18:47:19.447095+00:00",
       "records": 3,
       "detail": "Fetched 3 verified release-date records from FRED.",
       "mode": "live"
@@ -1061,7 +1061,7 @@
       "name": "BLS official release schedules",
       "url": "https://www.bls.gov/schedule/news_release/",
       "state": "ok",
-      "last_checked": "2026-11-14T17:57:29.626943+00:00",
+      "last_checked": "2026-11-15T18:47:19.447095+00:00",
       "records": 42,
       "detail": "Parsed 42 official BLS NFP, CPI, and PPI schedule records.",
       "mode": "live"
@@ -1070,7 +1070,7 @@
       "name": "Federal Reserve FOMC calendar",
       "url": "https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm",
       "state": "ok",
-      "last_checked": "2026-11-14T17:57:29.626943+00:00",
+      "last_checked": "2026-11-15T18:47:19.447095+00:00",
       "records": 16,
       "detail": "Parsed 16 meetings from the official Federal Reserve page.",
       "mode": "live"
@@ -1079,7 +1079,7 @@
       "name": "12-month calendar coverage check",
       "url": "https://www.bls.gov/schedule/news_release/",
       "state": "ok",
-      "last_checked": "2026-11-14T17:57:29.626943+00:00",
+      "last_checked": "2026-11-15T18:47:19.447095+00:00",
       "records": 44,
       "detail": "Upcoming dates within 12 months by release: {'nfp': 12, 'cpi': 12, 'ppi': 12, 'fomc': 8}.",
       "mode": "automatic_check"
