@@ -27,9 +27,8 @@ Task 2 adds `data/confidence.json` through `scripts/build_confidence.py`. It rep
 1. Open the repository on GitHub in the GitHub mobile app or your phone browser.
 2. Open **Settings → Secrets and variables → Actions → New repository secret**.
 3. Create a secret named `FRED_API_KEY` and paste your free FRED API key as the value. Do not put the key in a tracked file.
-4. Optional: create a secret named `ALERT_WEBHOOK_URL` and paste a private Slack-compatible or Discord-compatible incoming-webhook URL. The workflows send an alert when any generated source is `unavailable`, `stale`, `fallback`, or `error`; the URL is never printed or committed.
-5. Open **Actions → Refresh macro calendar → Run workflow** once to test the refresh. The schedule then runs daily at 12:15 UTC. A separate lock-window workflow runs at four UTC times to cover the 08:30 ET BLS releases and 14:00 ET FOMC statements across daylight-saving schedules.
-6. Open the deployed site and tap **Status**. A green source means the latest fetch worked. A yellow source means the last known data was kept while the source was stale. A grey source means no verified data is available yet. The **12-month coverage** card must also be green for NFP, CPI, PPI, and FOMC.
+4. Open **Actions → Refresh macro calendar → Run workflow** once to test the refresh. The schedule then runs daily at 12:15 UTC. A separate lock-window workflow runs at four UTC times to cover the 08:30 ET BLS releases and 14:00 ET FOMC statements across daylight-saving schedules.
+5. Open the deployed site and tap **Status**. A green source means the latest fetch worked. A yellow source means the last known data was kept while the source was stale. A grey source means no verified data is available yet. The **12-month coverage** card must also be green for NFP, CPI, PPI, and FOMC.
 
 ## Phone-editable fallback files
 
@@ -45,7 +44,6 @@ python3 -m pip install -r requirements.txt
 python3 scripts/build_historical.py
 python3 scripts/build_signals.py
 python3 scripts/build_confidence.py
-python3 scripts/notify_source_failures.py --dry-run
 python3 scripts/capture_locked_signals.py
 python3 scripts/update_track_record.py
 python3 scripts/build_chains.py

@@ -50,13 +50,6 @@ jobs:
       - name: Build chained cases
         run: python3 scripts/build_chains.py
 
-      - name: Notify source-health failures
-        if: always()
-        continue-on-error: true
-        env:
-          ALERT_WEBHOOK_URL: ${{ secrets.ALERT_WEBHOOK_URL }}
-        run: python3 scripts/notify_source_failures.py
-
       - name: Commit changed generated data
         run: |
           git config user.name "github-actions[bot]"

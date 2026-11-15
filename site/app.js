@@ -253,6 +253,10 @@ function getView() {
 }
 
 function render() {
+  if (status.load_error) {
+    app.innerHTML = `${nav("home")}<section class="page-heading"><p class="eyebrow">DATA LOAD ERROR</p><h1>Verified data could not be loaded.</h1><p>The dashboard stopped instead of showing partial or stale values as if they were current.</p></section><section class="method-note load-error" role="alert"><span class="notice-mark">!</span><div><p class="eyebrow">FILES TO CHECK</p><ul>${(status.load_error.files || []).map((item) => `<li><strong>${esc(item.file)}</strong>: ${esc(item.error || item.reason || "unknown error")}</li>`).join("")}</ul><p>Reload after the source or hosting problem is resolved. The last successful generated timestamp was ${esc(status.load_error.generated_at || "not available")}.</p></div></section>`;
+    return;
+  }
   const view = getView();
   app.innerHTML = view === "calendar" ? calendarView() : view === "status" ? statusView() : view === "track" ? trackRecordViewFinal() : view === "release" ? releaseDetailView() : view === "methodology" ? methodologyView() : homeView();
   document.querySelectorAll("[data-view]").forEach((link) => {
@@ -276,19 +280,45 @@ function render() {
 }
 
 async function loadData() {
+  const dataFiles = [
+    ["data/calendar.json", "calendar"],
+    ["data/status.json", "status"],
+    ["data/signals.json", "signals"],
+    ["data/historical_reactions.json", "reactionHistory"],
+    ["data/track_record.json", "trackRecord"],
+    ["data/chained_cases.json", "chainedCases"],
+    ["data/confidence.json", "confidence"],
+  ];
   try {
-    const [calendarResponse, statusResponse, signalsResponse, historyResponse, trackResponse, chainsResponse, confidenceResponse] = await Promise.all([fetch("./data/calendar.json", { cache: "no-store" }), fetch("./data/status.json", { cache: "no-store" }), fetch("./data/signals.json", { cache: "no-store" }), fetch("./data/historical_reactions.json", { cache: "no-store" }), fetch("./data/track_record.json", { cache: "no-store" }), fetch("./data/chained_cases.json", { cache: "no-store" }), fetch("./data/confidence.json", { cache: "no-store" })]);
-    if (!calendarResponse.ok || !statusResponse.ok) throw new Error("generated JSON is not available");
-    calendar = await calendarResponse.json();
-    status = await statusResponse.json();
-    signals = signalsResponse.ok ? await signalsResponse.json() : { records: [], summary: {} };
-    reactionHistory = historyResponse.ok ? await historyResponse.json() : { records: [] };
-    trackRecord = trackResponse.ok ? await trackResponse.json() : { records: [], summary: {} };
-    chainedCases = chainsResponse.ok ? await chainsResponse.json() : { records: [], summary: {} };
-    confidence = confidenceResponse.ok ? await confidenceResponse.json() : { records: {}, validation: {}, indicator_reliability: [] };
+    const results = await Promise.all(dataFiles.map(async ([file]) => {
+      try {
+        const response = await fetch(`./${file}`, { cache: "no-store" });
+        if (!response.ok) return { file, error: `HTTP ${response.status} ${response.statusText}` };
+        try {
+          return { file, value: await response.json() };
+        } catch (error) {
+          return { file, error: `invalid JSON (${error.message})` };
+        }
+      } catch (error) {
+        return { file, error: `network request failed (${error.message})` };
+      }
+    }));
+    const failures = results.filter((item) => item.error);
+    if (failures.length) {
+      status = { sources: {}, generated_at: null, load_error: { files: failures, generated_at: "not available" } };
+    } else {
+      const values = Object.fromEntries(results.map((item) => [item.file, item.value]));
+      calendar = values["data/calendar.json"];
+      status = values["data/status.json"];
+      signals = values["data/signals.json"];
+      reactionHistory = values["data/historical_reactions.json"];
+      trackRecord = values["data/track_record.json"];
+      chainedCases = values["data/chained_cases.json"];
+      confidence = values["data/confidence.json"];
+    }
   } catch (error) {
     calendar = { events: [], source_status: {}, generated_at: null };
-    status = { sources: {}, generated_at: null, load_error: error.message };
+    status = { sources: {}, generated_at: null, load_error: { files: [{ file: "application", error: error.message }], generated_at: "not available" } };
     signals = { records: [], summary: {} };
     reactionHistory = { records: [] };
     trackRecord = { records: [], summary: {} };

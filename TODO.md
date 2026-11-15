@@ -66,4 +66,3 @@
 - [x] Enforce walk-forward historical contexts using only chronologically prior cases, while upcoming contexts use completed historical cases; report in-sample and walk-forward out-of-sample validation separately.
 - [x] Report calibration buckets and explicit limitations: GC=F is a futures proxy, FRED vintages are not licensed real-time consensus, approximate p-values are not guarantees, and small samples/regime shifts can make reliability unstable.
 - [x] Run Task 2 from both the daily refresh workflow and the lock-window workflow, include generated confidence data in the static build, and show confidence-engine health on Status.
-- [x] Add optional phone-configurable webhook notifications for unavailable, stale, fallback, or error source states in both scheduled workflows, without exposing webhook URLs or API keys.
