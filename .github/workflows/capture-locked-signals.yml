@@ -31,6 +31,7 @@ jobs:
           before=$(python3 -c 'import json; print(len(json.load(open("data/locked_signals.json"))["records"]))')
           python3 scripts/build_signals.py
           python3 scripts/build_confidence.py
+          ALERT_WEBHOOK_URL="${{ secrets.ALERT_WEBHOOK_URL }}" python3 scripts/notify_source_failures.py || echo "Source-health notification did not complete; continuing lock capture."
           python3 scripts/capture_locked_signals.py
           after=$(python3 -c 'import json; print(len(json.load(open("data/locked_signals.json"))["records"]))')
           if [ "$before" = "$after" ]; then
