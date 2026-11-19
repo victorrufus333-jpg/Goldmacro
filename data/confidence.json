@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-11-18T20:29:09.872913+00:00",
+  "generated_at": "2026-11-19T20:32:10.811703+00:00",
   "method": "Point-in-time confidence engine using historical FRED-vintage votes and the existing post-release GC=F reaction measure.",
   "limitations": [
     "Spearman p-values use a deterministic large-sample normal approximation; small samples are marked underpowered.",
