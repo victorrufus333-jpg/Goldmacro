@@ -1,12 +1,12 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-11-20T20:07:43.710666+00:00",
+  "generated_at": "2026-11-21T19:10:51.053160+00:00",
   "sources": {
     "fred_history": {
       "name": "FRED release dates API",
       "url": "https://api.stlouisfed.org/fred/releases/dates",
       "state": "ok",
-      "last_checked": "2026-11-20T20:05:34.585285+00:00",
+      "last_checked": "2026-11-21T19:08:37.469621+00:00",
       "records": 34,
       "detail": "Fetched 34 historical BLS release records across 9 FRED pages.",
       "mode": "live"
@@ -15,7 +15,7 @@
       "name": "Federal Reserve FOMC calendar",
       "url": "https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm",
       "state": "ok",
-      "last_checked": "2026-11-20T20:05:34.585285+00:00",
+      "last_checked": "2026-11-21T19:08:37.469621+00:00",
       "records": 7,
       "detail": "Parsed 7 historical FOMC events from the official calendar.",
       "mode": "live"
@@ -24,16 +24,16 @@
       "name": "Yahoo Finance via yfinance",
       "url": "https://finance.yahoo.com/quote/GC=F/history",
       "state": "ok",
-      "last_checked": "2026-11-20T20:05:34.585285+00:00",
-      "records": 13691,
-      "detail": "Loaded 13691 hourly GC=F rows; Yahoo hourly history is limited to approximately 730 days.",
+      "last_checked": "2026-11-21T19:08:37.469621+00:00",
+      "records": 13756,
+      "detail": "Loaded 13756 hourly GC=F rows; Yahoo hourly history is limited to approximately 730 days.",
       "mode": "hourly"
     },
     "gold_price_daily": {
       "name": "Yahoo Finance via yfinance",
       "url": "https://finance.yahoo.com/quote/GC=F/history",
       "state": "ok",
-      "last_checked": "2026-11-20T20:05:34.585285+00:00",
+      "last_checked": "2026-11-21T19:08:37.469621+00:00",
       "records": 228,
       "detail": "Loaded 228 daily GC=F rows for the daily fallback.",
       "mode": "daily_fallback"
@@ -42,7 +42,7 @@
       "name": "Historical reaction database",
       "url": "data/historical_reactions.json",
       "state": "ok",
-      "last_checked": "2026-11-20T20:05:34.585285+00:00",
+      "last_checked": "2026-11-21T19:08:37.469621+00:00",
       "records": 41,
       "detail": "Built 41 records across all configured release types using explicit measure labels.",
       "mode": "phase2"
@@ -51,8 +51,8 @@
       "name": "FRED indicator observations",
       "url": "https://api.stlouisfed.org/fred/series/observations",
       "state": "ok",
-      "last_checked": "2026-11-20T20:07:37.635697+00:00",
-      "records": 2810,
+      "last_checked": "2026-11-21T19:10:44.276400+00:00",
+      "records": 2812,
       "detail": "Retrieved 15 of 15 configured indicator series using vintage_dates.",
       "mode": "vintage"
     },
@@ -60,7 +60,7 @@
       "name": "Configurable signal engine",
       "url": "data/signals.json",
       "state": "ok",
-      "last_checked": "2026-11-20T20:07:37.635697+00:00",
+      "last_checked": "2026-11-21T19:10:44.276400+00:00",
       "records": 89,
       "detail": "Built 41 historical reconstructions and 48 upcoming signal records.",
       "mode": "phase3"
@@ -69,7 +69,7 @@
       "name": "Confidence and conviction engine",
       "url": "data/confidence.json",
       "state": "ok",
-      "last_checked": "2026-11-20T20:07:43.710666+00:00",
+      "last_checked": "2026-11-21T19:10:51.053160+00:00",
       "records": 89,
       "detail": "Built confidence contexts for 89 signals with reliability, similar-case, walk-forward, and calibration outputs.",
       "mode": "task2"
@@ -78,7 +78,7 @@
       "name": "FRED release dates API",
       "url": "https://api.stlouisfed.org/fred/releases/dates",
       "state": "ok",
-      "last_checked": "2026-11-20T20:05:28.990750+00:00",
+      "last_checked": "2026-11-21T19:08:33.217752+00:00",
       "records": 3,
       "detail": "Fetched 3 verified release-date records from FRED.",
       "mode": "live"
@@ -87,7 +87,7 @@
       "name": "BLS official release schedules",
       "url": "https://www.bls.gov/schedule/news_release/",
       "state": "ok",
-      "last_checked": "2026-11-20T20:05:28.990750+00:00",
+      "last_checked": "2026-11-21T19:08:33.217752+00:00",
       "records": 42,
       "detail": "Parsed 42 official BLS NFP, CPI, and PPI schedule records.",
       "mode": "live"
@@ -96,7 +96,7 @@
       "name": "Federal Reserve FOMC calendar",
       "url": "https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm",
       "state": "ok",
-      "last_checked": "2026-11-20T20:05:28.990750+00:00",
+      "last_checked": "2026-11-21T19:08:33.217752+00:00",
       "records": 16,
       "detail": "Parsed 16 meetings from the official Federal Reserve page.",
       "mode": "live"
@@ -105,7 +105,7 @@
       "name": "12-month calendar coverage check",
       "url": "https://www.bls.gov/schedule/news_release/",
       "state": "ok",
-      "last_checked": "2026-11-20T20:05:28.990750+00:00",
+      "last_checked": "2026-11-21T19:08:33.217752+00:00",
       "records": 45,
       "detail": "Upcoming dates within 12 months by release: {'nfp': 12, 'cpi': 12, 'ppi': 12, 'fomc': 9}.",
       "mode": "automatic_check"
