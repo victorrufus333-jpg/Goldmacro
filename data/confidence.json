@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-11-27T21:11:28.794593+00:00",
+  "generated_at": "2026-11-28T19:58:25.849809+00:00",
   "method": "Point-in-time confidence engine using historical FRED-vintage votes and the existing post-release GC=F reaction measure.",
   "limitations": [
     "Spearman p-values use a deterministic large-sample normal approximation; small samples are marked underpowered.",
@@ -199,36 +199,36 @@
   "validation": {
     "in_sample": {
       "N": 22,
-      "wins": 8,
-      "losses": 14,
+      "wins": 9,
+      "losses": 13,
       "skipped": 19,
-      "win_rate": 36.36,
+      "win_rate": 40.91,
       "eligible_records": 41,
       "definition": "Directional records with sufficient prior history; UNSURE and non-directional reactions remain excluded from N."
     },
     "walk_forward_out_of_sample": {
       "N": 22,
-      "wins": 8,
-      "losses": 14,
+      "wins": 9,
+      "losses": 13,
       "skipped": 19,
-      "win_rate": 36.36,
+      "win_rate": 40.91,
       "eligible_records": 41,
       "definition": "Directional records with sufficient prior history; UNSURE and non-directional reactions remain excluded from N."
     },
     "calibration": [
       {
         "bucket": "0-39",
-        "N": 3,
+        "N": 1,
         "wins": 0,
-        "losses": 3,
+        "losses": 1,
         "observed_win_rate": 0.0
       },
       {
         "bucket": "40-59",
-        "N": 18,
-        "wins": 8,
-        "losses": 10,
-        "observed_win_rate": 44.44
+        "N": 20,
+        "wins": 9,
+        "losses": 11,
+        "observed_win_rate": 45.0
       },
       {
         "bucket": "60-74",
@@ -2552,7 +2552,7 @@
       "method": "Walk-forward historical cases only for historical records; all completed historical cases for upcoming records. Reliability weights use signed indicator deltas and GC=F reaction returns."
     },
     "cpi-2026-08-12": {
-      "confidence_pct": 43.5,
+      "confidence_pct": 50.0,
       "conviction_pct": 0.0,
       "confidence_label": "directional evidence",
       "walk_forward": true,
@@ -2560,9 +2560,9 @@
       "prior_case_N": 11,
       "similar_case_N": 6,
       "similar_case_candidates": 7,
-      "similar_hit_rate_shrunk": 40.0,
-      "similar_wins": 2,
-      "similar_losses": 4,
+      "similar_hit_rate_shrunk": 50.0,
+      "similar_wins": 3,
+      "similar_losses": 3,
       "weighted_vote_net": 0.0,
       "weighted_vote_support_pct": 0.0,
       "reliability": [
@@ -2657,7 +2657,7 @@
           "event_id": "cpi-2026-07-14",
           "release_date": "2026-07-14",
           "similarity": 0.8,
-          "grade": "LOSS"
+          "grade": "WIN"
         },
         {
           "event_id": "cpi-2026-01-13",
@@ -2961,7 +2961,7 @@
       "method": "Walk-forward historical cases only for historical records; all completed historical cases for upcoming records. Reliability weights use signed indicator deltas and GC=F reaction returns."
     },
     "cpi-2026-09-11": {
-      "confidence_pct": 41.14,
+      "confidence_pct": 47.05,
       "conviction_pct": 0.0,
       "confidence_label": "directional evidence",
       "walk_forward": true,
@@ -2969,9 +2969,9 @@
       "prior_case_N": 11,
       "similar_case_N": 7,
       "similar_case_candidates": 8,
-      "similar_hit_rate_shrunk": 36.36,
-      "similar_wins": 2,
-      "similar_losses": 5,
+      "similar_hit_rate_shrunk": 45.45,
+      "similar_wins": 3,
+      "similar_losses": 4,
       "weighted_vote_net": 0.0,
       "weighted_vote_support_pct": 0.0,
       "reliability": [
@@ -3072,7 +3072,7 @@
           "event_id": "cpi-2026-07-14",
           "release_date": "2026-07-14",
           "similarity": 0.8,
-          "grade": "LOSS"
+          "grade": "WIN"
         },
         {
           "event_id": "cpi-2026-01-13",
@@ -3278,7 +3278,7 @@
       "method": "Walk-forward historical cases only for historical records; all completed historical cases for upcoming records. Reliability weights use signed indicator deltas and GC=F reaction returns."
     },
     "cpi-2026-10-14": {
-      "confidence_pct": 39.17,
+      "confidence_pct": 44.58,
       "conviction_pct": 0.0,
       "confidence_label": "directional evidence",
       "walk_forward": true,
@@ -3286,9 +3286,9 @@
       "prior_case_N": 11,
       "similar_case_N": 8,
       "similar_case_candidates": 9,
-      "similar_hit_rate_shrunk": 33.33,
-      "similar_wins": 2,
-      "similar_losses": 6,
+      "similar_hit_rate_shrunk": 41.67,
+      "similar_wins": 3,
+      "similar_losses": 5,
       "weighted_vote_net": 0.0,
       "weighted_vote_support_pct": 0.0,
       "reliability": [
@@ -3395,7 +3395,7 @@
           "event_id": "cpi-2026-07-14",
           "release_date": "2026-07-14",
           "similarity": 0.8,
-          "grade": "LOSS"
+          "grade": "WIN"
         },
         {
           "event_id": "cpi-2026-01-13",
@@ -3664,7 +3664,7 @@
       "method": "Walk-forward historical cases only for historical records; all completed historical cases for upcoming records. Reliability weights use signed indicator deltas and GC=F reaction returns."
     },
     "cpi-2026-11-10": {
-      "confidence_pct": 37.5,
+      "confidence_pct": 42.5,
       "conviction_pct": 0.0,
       "confidence_label": "directional evidence",
       "walk_forward": true,
@@ -3672,9 +3672,9 @@
       "prior_case_N": 11,
       "similar_case_N": 9,
       "similar_case_candidates": 10,
-      "similar_hit_rate_shrunk": 30.77,
-      "similar_wins": 2,
-      "similar_losses": 7,
+      "similar_hit_rate_shrunk": 38.46,
+      "similar_wins": 3,
+      "similar_losses": 6,
       "weighted_vote_net": 0.0,
       "weighted_vote_support_pct": 0.0,
       "reliability": [
@@ -3751,7 +3751,7 @@
           "event_id": "cpi-2026-07-14",
           "release_date": "2026-07-14",
           "similarity": 1.0,
-          "grade": "LOSS"
+          "grade": "WIN"
         },
         {
           "event_id": "cpi-2026-03-11",
@@ -4035,7 +4035,7 @@
       "walk_forward_eligible": true,
       "prior_case_N": 7,
       "similar_case_N": 0,
-      "similar_case_candidates": 5,
+      "similar_case_candidates": 1,
       "similar_hit_rate_shrunk": 50.0,
       "similar_wins": 0,
       "similar_losses": 0,
@@ -4078,40 +4078,16 @@
       ],
       "similar_cases": [
         {
-          "event_id": "fomc-2026-01-28",
-          "release_date": "2026-01-28",
-          "similarity": 0.667,
-          "grade": "UNSURE-skipped"
-        },
-        {
-          "event_id": "fomc-2026-04-29",
-          "release_date": "2026-04-29",
-          "similarity": 0.667,
-          "grade": "UNSURE-skipped"
-        },
-        {
-          "event_id": "fomc-2026-06-17",
-          "release_date": "2026-06-17",
-          "similarity": 0.667,
-          "grade": "UNSURE-skipped"
-        },
-        {
-          "event_id": "fomc-2026-07-29",
-          "release_date": "2026-07-29",
-          "similarity": 0.667,
-          "grade": "UNSURE-skipped"
-        },
-        {
           "event_id": "fomc-2026-10-28",
           "release_date": "2026-10-28",
-          "similarity": 0.667,
+          "similarity": 1.0,
           "grade": "UNSURE-skipped"
         }
       ],
       "method": "Walk-forward historical cases only for historical records; all completed historical cases for upcoming records. Reliability weights use signed indicator deltas and GC=F reaction returns."
     },
     "cpi-2026-12-10": {
-      "confidence_pct": 37.5,
+      "confidence_pct": 42.5,
       "conviction_pct": 0.0,
       "confidence_label": "directional evidence",
       "walk_forward": false,
@@ -4119,9 +4095,9 @@
       "prior_case_N": 11,
       "similar_case_N": 9,
       "similar_case_candidates": 11,
-      "similar_hit_rate_shrunk": 30.77,
-      "similar_wins": 2,
-      "similar_losses": 7,
+      "similar_hit_rate_shrunk": 38.46,
+      "similar_wins": 3,
+      "similar_losses": 6,
       "weighted_vote_net": 0.0,
       "weighted_vote_support_pct": 0.0,
       "reliability": [
@@ -4198,7 +4174,7 @@
           "event_id": "cpi-2026-07-14",
           "release_date": "2026-07-14",
           "similarity": 1.0,
-          "grade": "LOSS"
+          "grade": "WIN"
         },
         {
           "event_id": "cpi-2026-11-10",
@@ -4475,7 +4451,7 @@
       "method": "Walk-forward historical cases only for historical records; all completed historical cases for upcoming records. Reliability weights use signed indicator deltas and GC=F reaction returns."
     },
     "cpi-2027-01-13": {
-      "confidence_pct": 37.5,
+      "confidence_pct": 42.5,
       "conviction_pct": 0.0,
       "confidence_label": "directional evidence",
       "walk_forward": false,
@@ -4483,9 +4459,9 @@
       "prior_case_N": 11,
       "similar_case_N": 9,
       "similar_case_candidates": 11,
-      "similar_hit_rate_shrunk": 30.77,
-      "similar_wins": 2,
-      "similar_losses": 7,
+      "similar_hit_rate_shrunk": 38.46,
+      "similar_wins": 3,
+      "similar_losses": 6,
       "weighted_vote_net": 0.0,
       "weighted_vote_support_pct": 0.0,
       "reliability": [
@@ -4562,7 +4538,7 @@
           "event_id": "cpi-2026-07-14",
           "release_date": "2026-07-14",
           "similarity": 1.0,
-          "grade": "LOSS"
+          "grade": "WIN"
         },
         {
           "event_id": "cpi-2026-11-10",
@@ -4741,7 +4717,7 @@
       "walk_forward_eligible": true,
       "prior_case_N": 7,
       "similar_case_N": 0,
-      "similar_case_candidates": 5,
+      "similar_case_candidates": 1,
       "similar_hit_rate_shrunk": 50.0,
       "similar_wins": 0,
       "similar_losses": 0,
@@ -4784,33 +4760,9 @@
       ],
       "similar_cases": [
         {
-          "event_id": "fomc-2026-01-28",
-          "release_date": "2026-01-28",
-          "similarity": 0.667,
-          "grade": "UNSURE-skipped"
-        },
-        {
-          "event_id": "fomc-2026-04-29",
-          "release_date": "2026-04-29",
-          "similarity": 0.667,
-          "grade": "UNSURE-skipped"
-        },
-        {
-          "event_id": "fomc-2026-06-17",
-          "release_date": "2026-06-17",
-          "similarity": 0.667,
-          "grade": "UNSURE-skipped"
-        },
-        {
-          "event_id": "fomc-2026-07-29",
-          "release_date": "2026-07-29",
-          "similarity": 0.667,
-          "grade": "UNSURE-skipped"
-        },
-        {
           "event_id": "fomc-2026-10-28",
           "release_date": "2026-10-28",
-          "similarity": 0.667,
+          "similarity": 1.0,
           "grade": "UNSURE-skipped"
         }
       ],
@@ -4922,7 +4874,7 @@
       "method": "Walk-forward historical cases only for historical records; all completed historical cases for upcoming records. Reliability weights use signed indicator deltas and GC=F reaction returns."
     },
     "cpi-2027-02-11": {
-      "confidence_pct": 37.5,
+      "confidence_pct": 42.5,
       "conviction_pct": 0.0,
       "confidence_label": "directional evidence",
       "walk_forward": false,
@@ -4930,9 +4882,9 @@
       "prior_case_N": 11,
       "similar_case_N": 9,
       "similar_case_candidates": 11,
-      "similar_hit_rate_shrunk": 30.77,
-      "similar_wins": 2,
-      "similar_losses": 7,
+      "similar_hit_rate_shrunk": 38.46,
+      "similar_wins": 3,
+      "similar_losses": 6,
       "weighted_vote_net": 0.0,
       "weighted_vote_support_pct": 0.0,
       "reliability": [
@@ -5009,7 +4961,7 @@
           "event_id": "cpi-2026-07-14",
           "release_date": "2026-07-14",
           "similarity": 1.0,
-          "grade": "LOSS"
+          "grade": "WIN"
         },
         {
           "event_id": "cpi-2026-11-10",
@@ -5286,7 +5238,7 @@
       "method": "Walk-forward historical cases only for historical records; all completed historical cases for upcoming records. Reliability weights use signed indicator deltas and GC=F reaction returns."
     },
     "cpi-2027-03-10": {
-      "confidence_pct": 37.5,
+      "confidence_pct": 42.5,
       "conviction_pct": 0.0,
       "confidence_label": "directional evidence",
       "walk_forward": false,
@@ -5294,9 +5246,9 @@
       "prior_case_N": 11,
       "similar_case_N": 9,
       "similar_case_candidates": 11,
-      "similar_hit_rate_shrunk": 30.77,
-      "similar_wins": 2,
-      "similar_losses": 7,
+      "similar_hit_rate_shrunk": 38.46,
+      "similar_wins": 3,
+      "similar_losses": 6,
       "weighted_vote_net": 0.0,
       "weighted_vote_support_pct": 0.0,
       "reliability": [
@@ -5373,7 +5325,7 @@
           "event_id": "cpi-2026-07-14",
           "release_date": "2026-07-14",
           "similarity": 1.0,
-          "grade": "LOSS"
+          "grade": "WIN"
         },
         {
           "event_id": "cpi-2026-11-10",
@@ -5552,7 +5504,7 @@
       "walk_forward_eligible": true,
       "prior_case_N": 7,
       "similar_case_N": 0,
-      "similar_case_candidates": 5,
+      "similar_case_candidates": 1,
       "similar_hit_rate_shrunk": 50.0,
       "similar_wins": 0,
       "similar_losses": 0,
@@ -5595,33 +5547,9 @@
       ],
       "similar_cases": [
         {
-          "event_id": "fomc-2026-01-28",
-          "release_date": "2026-01-28",
-          "similarity": 0.667,
-          "grade": "UNSURE-skipped"
-        },
-        {
-          "event_id": "fomc-2026-04-29",
-          "release_date": "2026-04-29",
-          "similarity": 0.667,
-          "grade": "UNSURE-skipped"
-        },
-        {
-          "event_id": "fomc-2026-06-17",
-          "release_date": "2026-06-17",
-          "similarity": 0.667,
-          "grade": "UNSURE-skipped"
-        },
-        {
-          "event_id": "fomc-2026-07-29",
-          "release_date": "2026-07-29",
-          "similarity": 0.667,
-          "grade": "UNSURE-skipped"
-        },
-        {
           "event_id": "fomc-2026-10-28",
           "release_date": "2026-10-28",
-          "similarity": 0.667,
+          "similarity": 1.0,
           "grade": "UNSURE-skipped"
         }
       ],
@@ -5733,7 +5661,7 @@
       "method": "Walk-forward historical cases only for historical records; all completed historical cases for upcoming records. Reliability weights use signed indicator deltas and GC=F reaction returns."
     },
     "cpi-2027-04-13": {
-      "confidence_pct": 37.5,
+      "confidence_pct": 42.5,
       "conviction_pct": 0.0,
       "confidence_label": "directional evidence",
       "walk_forward": false,
@@ -5741,9 +5669,9 @@
       "prior_case_N": 11,
       "similar_case_N": 9,
       "similar_case_candidates": 11,
-      "similar_hit_rate_shrunk": 30.77,
-      "similar_wins": 2,
-      "similar_losses": 7,
+      "similar_hit_rate_shrunk": 38.46,
+      "similar_wins": 3,
+      "similar_losses": 6,
       "weighted_vote_net": 0.0,
       "weighted_vote_support_pct": 0.0,
       "reliability": [
@@ -5820,7 +5748,7 @@
           "event_id": "cpi-2026-07-14",
           "release_date": "2026-07-14",
           "similarity": 1.0,
-          "grade": "LOSS"
+          "grade": "WIN"
         },
         {
           "event_id": "cpi-2026-11-10",
@@ -5999,7 +5927,7 @@
       "walk_forward_eligible": true,
       "prior_case_N": 7,
       "similar_case_N": 0,
-      "similar_case_candidates": 5,
+      "similar_case_candidates": 1,
       "similar_hit_rate_shrunk": 50.0,
       "similar_wins": 0,
       "similar_losses": 0,
@@ -6042,33 +5970,9 @@
       ],
       "similar_cases": [
         {
-          "event_id": "fomc-2026-01-28",
-          "release_date": "2026-01-28",
-          "similarity": 0.667,
-          "grade": "UNSURE-skipped"
-        },
-        {
-          "event_id": "fomc-2026-04-29",
-          "release_date": "2026-04-29",
-          "similarity": 0.667,
-          "grade": "UNSURE-skipped"
-        },
-        {
-          "event_id": "fomc-2026-06-17",
-          "release_date": "2026-06-17",
-          "similarity": 0.667,
-          "grade": "UNSURE-skipped"
-        },
-        {
-          "event_id": "fomc-2026-07-29",
-          "release_date": "2026-07-29",
-          "similarity": 0.667,
-          "grade": "UNSURE-skipped"
-        },
-        {
           "event_id": "fomc-2026-10-28",
           "release_date": "2026-10-28",
-          "similarity": 0.667,
+          "similarity": 1.0,
           "grade": "UNSURE-skipped"
         }
       ],
@@ -6180,7 +6084,7 @@
       "method": "Walk-forward historical cases only for historical records; all completed historical cases for upcoming records. Reliability weights use signed indicator deltas and GC=F reaction returns."
     },
     "cpi-2027-05-12": {
-      "confidence_pct": 37.5,
+      "confidence_pct": 42.5,
       "conviction_pct": 0.0,
       "confidence_label": "directional evidence",
       "walk_forward": false,
@@ -6188,9 +6092,9 @@
       "prior_case_N": 11,
       "similar_case_N": 9,
       "similar_case_candidates": 11,
-      "similar_hit_rate_shrunk": 30.77,
-      "similar_wins": 2,
-      "similar_losses": 7,
+      "similar_hit_rate_shrunk": 38.46,
+      "similar_wins": 3,
+      "similar_losses": 6,
       "weighted_vote_net": 0.0,
       "weighted_vote_support_pct": 0.0,
       "reliability": [
@@ -6267,7 +6171,7 @@
           "event_id": "cpi-2026-07-14",
           "release_date": "2026-07-14",
           "similarity": 1.0,
-          "grade": "LOSS"
+          "grade": "WIN"
         },
         {
           "event_id": "cpi-2026-11-10",
@@ -6551,7 +6455,7 @@
       "walk_forward_eligible": true,
       "prior_case_N": 7,
       "similar_case_N": 0,
-      "similar_case_candidates": 5,
+      "similar_case_candidates": 1,
       "similar_hit_rate_shrunk": 50.0,
       "similar_wins": 0,
       "similar_losses": 0,
@@ -6594,40 +6498,16 @@
       ],
       "similar_cases": [
         {
-          "event_id": "fomc-2026-01-28",
-          "release_date": "2026-01-28",
-          "similarity": 0.667,
-          "grade": "UNSURE-skipped"
-        },
-        {
-          "event_id": "fomc-2026-04-29",
-          "release_date": "2026-04-29",
-          "similarity": 0.667,
-          "grade": "UNSURE-skipped"
-        },
-        {
-          "event_id": "fomc-2026-06-17",
-          "release_date": "2026-06-17",
-          "similarity": 0.667,
-          "grade": "UNSURE-skipped"
-        },
-        {
-          "event_id": "fomc-2026-07-29",
-          "release_date": "2026-07-29",
-          "similarity": 0.667,
-          "grade": "UNSURE-skipped"
-        },
-        {
           "event_id": "fomc-2026-10-28",
           "release_date": "2026-10-28",
-          "similarity": 0.667,
+          "similarity": 1.0,
           "grade": "UNSURE-skipped"
         }
       ],
       "method": "Walk-forward historical cases only for historical records; all completed historical cases for upcoming records. Reliability weights use signed indicator deltas and GC=F reaction returns."
     },
     "cpi-2027-06-10": {
-      "confidence_pct": 37.5,
+      "confidence_pct": 42.5,
       "conviction_pct": 0.0,
       "confidence_label": "directional evidence",
       "walk_forward": false,
@@ -6635,9 +6515,9 @@
       "prior_case_N": 11,
       "similar_case_N": 9,
       "similar_case_candidates": 11,
-      "similar_hit_rate_shrunk": 30.77,
-      "similar_wins": 2,
-      "similar_losses": 7,
+      "similar_hit_rate_shrunk": 38.46,
+      "similar_wins": 3,
+      "similar_losses": 6,
       "weighted_vote_net": 0.0,
       "weighted_vote_support_pct": 0.0,
       "reliability": [
@@ -6714,7 +6594,7 @@
           "event_id": "cpi-2026-07-14",
           "release_date": "2026-07-14",
           "similarity": 1.0,
-          "grade": "LOSS"
+          "grade": "WIN"
         },
         {
           "event_id": "cpi-2026-11-10",
@@ -6991,7 +6871,7 @@
       "method": "Walk-forward historical cases only for historical records; all completed historical cases for upcoming records. Reliability weights use signed indicator deltas and GC=F reaction returns."
     },
     "cpi-2027-07-14": {
-      "confidence_pct": 37.5,
+      "confidence_pct": 42.5,
       "conviction_pct": 0.0,
       "confidence_label": "directional evidence",
       "walk_forward": false,
@@ -6999,9 +6879,9 @@
       "prior_case_N": 11,
       "similar_case_N": 9,
       "similar_case_candidates": 11,
-      "similar_hit_rate_shrunk": 30.77,
-      "similar_wins": 2,
-      "similar_losses": 7,
+      "similar_hit_rate_shrunk": 38.46,
+      "similar_wins": 3,
+      "similar_losses": 6,
       "weighted_vote_net": 0.0,
       "weighted_vote_support_pct": 0.0,
       "reliability": [
@@ -7078,7 +6958,7 @@
           "event_id": "cpi-2026-07-14",
           "release_date": "2026-07-14",
           "similarity": 1.0,
-          "grade": "LOSS"
+          "grade": "WIN"
         },
         {
           "event_id": "cpi-2026-11-10",
@@ -7257,7 +7137,7 @@
       "walk_forward_eligible": true,
       "prior_case_N": 7,
       "similar_case_N": 0,
-      "similar_case_candidates": 5,
+      "similar_case_candidates": 1,
       "similar_hit_rate_shrunk": 50.0,
       "similar_wins": 0,
       "similar_losses": 0,
@@ -7300,33 +7180,9 @@
       ],
       "similar_cases": [
         {
-          "event_id": "fomc-2026-01-28",
-          "release_date": "2026-01-28",
-          "similarity": 0.667,
-          "grade": "UNSURE-skipped"
-        },
-        {
-          "event_id": "fomc-2026-04-29",
-          "release_date": "2026-04-29",
-          "similarity": 0.667,
-          "grade": "UNSURE-skipped"
-        },
-        {
-          "event_id": "fomc-2026-06-17",
-          "release_date": "2026-06-17",
-          "similarity": 0.667,
-          "grade": "UNSURE-skipped"
-        },
-        {
-          "event_id": "fomc-2026-07-29",
-          "release_date": "2026-07-29",
-          "similarity": 0.667,
-          "grade": "UNSURE-skipped"
-        },
-        {
           "event_id": "fomc-2026-10-28",
           "release_date": "2026-10-28",
-          "similarity": 0.667,
+          "similarity": 1.0,
           "grade": "UNSURE-skipped"
         }
       ],
@@ -7562,7 +7418,7 @@
       "method": "Walk-forward historical cases only for historical records; all completed historical cases for upcoming records. Reliability weights use signed indicator deltas and GC=F reaction returns."
     },
     "cpi-2027-08-11": {
-      "confidence_pct": 37.5,
+      "confidence_pct": 42.5,
       "conviction_pct": 0.0,
       "confidence_label": "directional evidence",
       "walk_forward": false,
@@ -7570,9 +7426,9 @@
       "prior_case_N": 11,
       "similar_case_N": 9,
       "similar_case_candidates": 11,
-      "similar_hit_rate_shrunk": 30.77,
-      "similar_wins": 2,
-      "similar_losses": 7,
+      "similar_hit_rate_shrunk": 38.46,
+      "similar_wins": 3,
+      "similar_losses": 6,
       "weighted_vote_net": 0.0,
       "weighted_vote_support_pct": 0.0,
       "reliability": [
@@ -7649,7 +7505,7 @@
           "event_id": "cpi-2026-07-14",
           "release_date": "2026-07-14",
           "similarity": 1.0,
-          "grade": "LOSS"
+          "grade": "WIN"
         },
         {
           "event_id": "cpi-2026-11-10",
@@ -7926,7 +7782,7 @@
       "method": "Walk-forward historical cases only for historical records; all completed historical cases for upcoming records. Reliability weights use signed indicator deltas and GC=F reaction returns."
     },
     "cpi-2027-09-14": {
-      "confidence_pct": 37.5,
+      "confidence_pct": 42.5,
       "conviction_pct": 0.0,
       "confidence_label": "directional evidence",
       "walk_forward": false,
@@ -7934,9 +7790,9 @@
       "prior_case_N": 11,
       "similar_case_N": 9,
       "similar_case_candidates": 11,
-      "similar_hit_rate_shrunk": 30.77,
-      "similar_wins": 2,
-      "similar_losses": 7,
+      "similar_hit_rate_shrunk": 38.46,
+      "similar_wins": 3,
+      "similar_losses": 6,
       "weighted_vote_net": 0.0,
       "weighted_vote_support_pct": 0.0,
       "reliability": [
@@ -8013,7 +7869,7 @@
           "event_id": "cpi-2026-07-14",
           "release_date": "2026-07-14",
           "similarity": 1.0,
-          "grade": "LOSS"
+          "grade": "WIN"
         },
         {
           "event_id": "cpi-2026-11-10",
@@ -8068,7 +7924,7 @@
       "walk_forward_eligible": true,
       "prior_case_N": 7,
       "similar_case_N": 0,
-      "similar_case_candidates": 5,
+      "similar_case_candidates": 1,
       "similar_hit_rate_shrunk": 50.0,
       "similar_wins": 0,
       "similar_losses": 0,
@@ -8111,33 +7967,9 @@
       ],
       "similar_cases": [
         {
-          "event_id": "fomc-2026-01-28",
-          "release_date": "2026-01-28",
-          "similarity": 0.667,
-          "grade": "UNSURE-skipped"
-        },
-        {
-          "event_id": "fomc-2026-04-29",
-          "release_date": "2026-04-29",
-          "similarity": 0.667,
-          "grade": "UNSURE-skipped"
-        },
-        {
-          "event_id": "fomc-2026-06-17",
-          "release_date": "2026-06-17",
-          "similarity": 0.667,
-          "grade": "UNSURE-skipped"
-        },
-        {
-          "event_id": "fomc-2026-07-29",
-          "release_date": "2026-07-29",
-          "similarity": 0.667,
-          "grade": "UNSURE-skipped"
-        },
-        {
           "event_id": "fomc-2026-10-28",
           "release_date": "2026-10-28",
-          "similarity": 0.667,
+          "similarity": 1.0,
           "grade": "UNSURE-skipped"
         }
       ],
@@ -8249,7 +8081,7 @@
       "method": "Walk-forward historical cases only for historical records; all completed historical cases for upcoming records. Reliability weights use signed indicator deltas and GC=F reaction returns."
     },
     "cpi-2027-10-14": {
-      "confidence_pct": 37.5,
+      "confidence_pct": 42.5,
       "conviction_pct": 0.0,
       "confidence_label": "directional evidence",
       "walk_forward": false,
@@ -8257,9 +8089,9 @@
       "prior_case_N": 11,
       "similar_case_N": 9,
       "similar_case_candidates": 11,
-      "similar_hit_rate_shrunk": 30.77,
-      "similar_wins": 2,
-      "similar_losses": 7,
+      "similar_hit_rate_shrunk": 38.46,
+      "similar_wins": 3,
+      "similar_losses": 6,
       "weighted_vote_net": 0.0,
       "weighted_vote_support_pct": 0.0,
       "reliability": [
@@ -8336,7 +8168,7 @@
           "event_id": "cpi-2026-07-14",
           "release_date": "2026-07-14",
           "similarity": 1.0,
-          "grade": "LOSS"
+          "grade": "WIN"
         },
         {
           "event_id": "cpi-2026-11-10",
@@ -8515,7 +8347,7 @@
       "walk_forward_eligible": true,
       "prior_case_N": 7,
       "similar_case_N": 0,
-      "similar_case_candidates": 5,
+      "similar_case_candidates": 1,
       "similar_hit_rate_shrunk": 50.0,
       "similar_wins": 0,
       "similar_losses": 0,
@@ -8558,33 +8390,9 @@
       ],
       "similar_cases": [
         {
-          "event_id": "fomc-2026-01-28",
-          "release_date": "2026-01-28",
-          "similarity": 0.667,
-          "grade": "UNSURE-skipped"
-        },
-        {
-          "event_id": "fomc-2026-04-29",
-          "release_date": "2026-04-29",
-          "similarity": 0.667,
-          "grade": "UNSURE-skipped"
-        },
-        {
-          "event_id": "fomc-2026-06-17",
-          "release_date": "2026-06-17",
-          "similarity": 0.667,
-          "grade": "UNSURE-skipped"
-        },
-        {
-          "event_id": "fomc-2026-07-29",
-          "release_date": "2026-07-29",
-          "similarity": 0.667,
-          "grade": "UNSURE-skipped"
-        },
-        {
           "event_id": "fomc-2026-10-28",
           "release_date": "2026-10-28",
-          "similarity": 0.667,
+          "similarity": 1.0,
           "grade": "UNSURE-skipped"
         }
       ],
@@ -8696,7 +8504,7 @@
       "method": "Walk-forward historical cases only for historical records; all completed historical cases for upcoming records. Reliability weights use signed indicator deltas and GC=F reaction returns."
     },
     "cpi-2027-11-10": {
-      "confidence_pct": 37.5,
+      "confidence_pct": 42.5,
       "conviction_pct": 0.0,
       "confidence_label": "directional evidence",
       "walk_forward": false,
@@ -8704,9 +8512,9 @@
       "prior_case_N": 11,
       "similar_case_N": 9,
       "similar_case_candidates": 11,
-      "similar_hit_rate_shrunk": 30.77,
-      "similar_wins": 2,
-      "similar_losses": 7,
+      "similar_hit_rate_shrunk": 38.46,
+      "similar_wins": 3,
+      "similar_losses": 6,
       "weighted_vote_net": 0.0,
       "weighted_vote_support_pct": 0.0,
       "reliability": [
@@ -8783,7 +8591,7 @@
           "event_id": "cpi-2026-07-14",
           "release_date": "2026-07-14",
           "similarity": 1.0,
-          "grade": "LOSS"
+          "grade": "WIN"
         },
         {
           "event_id": "cpi-2026-11-10",
@@ -8962,7 +8770,7 @@
       "walk_forward_eligible": true,
       "prior_case_N": 7,
       "similar_case_N": 0,
-      "similar_case_candidates": 5,
+      "similar_case_candidates": 1,
       "similar_hit_rate_shrunk": 50.0,
       "similar_wins": 0,
       "similar_losses": 0,
@@ -9005,33 +8813,9 @@
       ],
       "similar_cases": [
         {
-          "event_id": "fomc-2026-01-28",
-          "release_date": "2026-01-28",
-          "similarity": 0.667,
-          "grade": "UNSURE-skipped"
-        },
-        {
-          "event_id": "fomc-2026-04-29",
-          "release_date": "2026-04-29",
-          "similarity": 0.667,
-          "grade": "UNSURE-skipped"
-        },
-        {
-          "event_id": "fomc-2026-06-17",
-          "release_date": "2026-06-17",
-          "similarity": 0.667,
-          "grade": "UNSURE-skipped"
-        },
-        {
-          "event_id": "fomc-2026-07-29",
-          "release_date": "2026-07-29",
-          "similarity": 0.667,
-          "grade": "UNSURE-skipped"
-        },
-        {
           "event_id": "fomc-2026-10-28",
           "release_date": "2026-10-28",
-          "similarity": 0.667,
+          "similarity": 1.0,
           "grade": "UNSURE-skipped"
         }
       ],
@@ -9143,7 +8927,7 @@
       "method": "Walk-forward historical cases only for historical records; all completed historical cases for upcoming records. Reliability weights use signed indicator deltas and GC=F reaction returns."
     },
     "cpi-2027-12-10": {
-      "confidence_pct": 37.5,
+      "confidence_pct": 42.5,
       "conviction_pct": 0.0,
       "confidence_label": "directional evidence",
       "walk_forward": false,
@@ -9151,9 +8935,9 @@
       "prior_case_N": 11,
       "similar_case_N": 9,
       "similar_case_candidates": 11,
-      "similar_hit_rate_shrunk": 30.77,
-      "similar_wins": 2,
-      "similar_losses": 7,
+      "similar_hit_rate_shrunk": 38.46,
+      "similar_wins": 3,
+      "similar_losses": 6,
       "weighted_vote_net": 0.0,
       "weighted_vote_support_pct": 0.0,
       "reliability": [
@@ -9230,7 +9014,7 @@
           "event_id": "cpi-2026-07-14",
           "release_date": "2026-07-14",
           "similarity": 1.0,
-          "grade": "LOSS"
+          "grade": "WIN"
         },
         {
           "event_id": "cpi-2026-11-10",
